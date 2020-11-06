@@ -1,4 +1,5 @@
 import React from "react"
+import SocialLinks from './socialLinks'
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Navigation from "../components/navigation"
 import 'prismjs/themes/prism-okaidia.css';
@@ -25,6 +26,7 @@ export default ({ children }) => {
       </header>
       {children}
       <footer className="site-footer">
+        <SocialLinks />
         <p>&copy; {new Date().getFullYear()} &bull; Crafted with <span role="img" aria-label="love">❤️</span> by The Code Dose</p>
       </footer>
     </div>

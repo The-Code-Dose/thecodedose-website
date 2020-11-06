@@ -1,5 +1,7 @@
 import React from "react"
+import SocialLinks from './socialLinks'
 import { StaticQuery, graphql, Link } from "gatsby"
+
 export default () => (
   <StaticQuery
     query={graphql`
@@ -17,6 +19,7 @@ export default () => (
     render={data => (
       <div className="hero-header">
         <div className="headline">{data.site.siteMetadata.home.title}</div>
+        <SocialLinks />
         <div 
           className="primary-content" 
           dangerouslySetInnerHTML={{ __html: data.site.siteMetadata.home.description}}
