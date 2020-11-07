@@ -1,0 +1,23 @@
+.post {
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+  }
+  &__tag {
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 3px 8px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border: 1px solid var(--tag-text);
+    color: var(--tag-text);
+    background: var(--tag-bg);
+    cursor: pointer;
+    &:hover {
+      text-decoration: none;
+      color: var(--tag-bg);
+      background: var(--tag-text);
+    }
+  }
+}

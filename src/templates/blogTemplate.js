@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 
-export default function Template({
+export default function BlogTemplate({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { site, markdownRemark } = data; // data.markdownRemark holds your post data

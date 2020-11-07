@@ -2,14 +2,14 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
-import PostLink from '../components/post-link';
+import PostLink from '../components/postLink';
 import HeroHeader from '../components/heroHeader';
 import Store from '../components/store';
 
 const IndexPage = ({
   data: {
     site,
-    allMarkdownRemark: { edges },
+    blogPosts: { edges },
   },
 }) => {
   const Posts = edges
@@ -39,7 +39,7 @@ export const pageQuery = graphql`
         description
       }
     }
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    blogPosts: allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
           id
@@ -49,6 +49,7 @@ export const pageQuery = graphql`
             path
             title
             thumbnail
+            tags
           }
         }
       }

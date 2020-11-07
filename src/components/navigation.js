@@ -7,6 +7,9 @@ export default () => (
     <Link to="/contact" className="button -primary">
       Get in touch
     </Link>
+    <Link to="/">
+      Home
+    </Link>
     <a
       href="https://www.redbubble.com/people/thecodedose/shop"
       target="__blank"
