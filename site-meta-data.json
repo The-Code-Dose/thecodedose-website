@@ -1,15 +1,9 @@
 {
   "title": "The Code Dose",
   "siteUrl": "https://thecodedose.com/",
-  "description": "Visual online learning platform",
+  "description": "Tech Blog | Women in Tech Community",
   "home": {
     "title": "The Code Dose",
     "description": ""
-  },
-  "social": {
-    "twitter": "https://twitter.com/thecodedose",
-    "instagram": "https://www.instagram.com/thecodedose/",
-    "redbubble": "https://www.redbubble.com/people/thecodedose/shop",
-    "github": "https://github.com/ihsavru"
   }
 }
