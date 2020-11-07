@@ -60,6 +60,10 @@ collections:
         hint: "Path must start with /"
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        default: []
       - label: Meta Description
         name: metaDescription
         widget: text
