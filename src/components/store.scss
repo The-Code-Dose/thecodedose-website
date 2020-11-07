@@ -1,16 +1,17 @@
 .products {
-  margin-top: 50px;
+  margin-bottom: 50px;
 
   &__container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 20px;
+    grid-gap: 20px;
   }
 
   &__item {
     height: 250px;
     width: 250px;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
   }
 
   &__cta {
@@ -28,7 +29,35 @@
 
       &:hover {
         opacity: 1;
+        background: rgba($color: #000000, $alpha: 0.4)
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .products {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 50px;
+    }
+
+    &__item {
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .products {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      width: 100%;
     }
   }
 }

@@ -26,8 +26,14 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0",
-    "prettier": "^1.19.1"
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "gh-pages": "^3.1.0"
   },
   "keywords": [
     "gatsby",
@@ -45,6 +51,10 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "lint": "npm run lint:js && npm run lint:scss",
+    "lint:scss": "stylelint app/**/*.scss",
+    "lint:js": "eslint --ignore-path .eslintignore -- .",
+    "lint:js:fix": "eslint --ignore-path .eslintignore --fix -- ."
   }
 }
