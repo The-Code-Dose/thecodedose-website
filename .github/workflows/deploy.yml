@@ -12,6 +12,14 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-
+
       - name: Install and Build 🔧
         run: |
           npm install

@@ -37,8 +37,8 @@ export default function TagTemplate({
           <div className="grids">{Posts}</div>
           <h2 className="all-tags">All Tags &darr;</h2>
           <div className="post__tags tags-container">
-            {tags.map(({ tag }) => (
-              <Link to={`/tags/${tag}`} className="post__tag">{tag}</Link>
+            {tags.map(({ tag: tagName }) => (
+              <Link to={`/tags/${tagName}`} className="post__tag">{tagName}</Link>
             ))}
           </div>
         </div>
