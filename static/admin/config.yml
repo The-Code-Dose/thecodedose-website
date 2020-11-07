@@ -57,7 +57,8 @@ collections:
         label: Path
         widget: string
         pattern: [/]
-        hint: "Path must start with /"
+        default: "/blog"
+        hint: "Path must start with /blog"
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - label: "Tags"

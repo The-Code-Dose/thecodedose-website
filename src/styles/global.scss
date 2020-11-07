@@ -135,7 +135,7 @@ a {
   &.-primary {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
-    color: var(--primary-text-color);
+    color: var(--primary-text-color) !important;
     &:hover {
       background-color: var(--secondary-color);
       color: var(--primary-text-color);

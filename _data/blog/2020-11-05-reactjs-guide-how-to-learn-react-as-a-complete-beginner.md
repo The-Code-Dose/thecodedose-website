@@ -1,6 +1,6 @@
 ---
 template: BlogPost
-path: /reactjs-guide-how-to-learn-react-as-a-complete-beginner
+path: /blog/reactjs-guide-how-to-learn-react-as-a-complete-beginner
 date: 2020-11-05T16:46:51.652Z
 title: 'ReactJS Guide: How to learn React as a complete beginner?'
 thumbnail: /assets/IMG_20201030_215109-2-2.png
