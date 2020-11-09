@@ -245,9 +245,8 @@ blockquote {
   justify-content: center;
 }
 .grids {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   margin-top: 32px;
 }
 .card {
