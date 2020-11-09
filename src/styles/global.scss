@@ -90,6 +90,10 @@ blockquote {
   margin: 50px auto;
   width: 100px;
 }
+.section__header {
+  display: flex;
+  justify-content: space-between;
+}
 .site-wrapper {
   padding: 32px;
   max-width: 1140px;

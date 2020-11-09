@@ -10,6 +10,9 @@ export default () => (
     <Link to="/">
       Home
     </Link>
+    <Link to="/blog">
+      Blog
+    </Link>
     <a
       href="https://www.redbubble.com/people/thecodedose/shop"
       target="__blank"

@@ -8,37 +8,43 @@ export default function BlogTemplate({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { site, markdownRemark, blogPosts: { edges } } = data;
-  const { siteMetadata } = site;
-  const { frontmatter, html } = markdownRemark;
+  const { siteMetadata: { title: siteTitle } } = site;
+  const {
+    frontmatter: {
+      title: blogTitle,
+      metaDescription: blogMetaDescription,
+      thumbnail,
+      date,
+    }, html,
+  } = markdownRemark;
+
   const Posts = edges
     .filter((edge) => !!edge.node.frontmatter.date)
     .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
+
   return (
     <Layout>
       <Helmet>
         <title>
-          {frontmatter.title}
-          {' '}
-          |
-          {siteMetadata.title}
+          {`${blogTitle} | ${siteTitle}`}
         </title>
-        <meta name="description" content={frontmatter.metaDescription} />
+        <meta name="description" content={blogMetaDescription} />
       </Helmet>
       <div className="blog-post-container">
         <article className="post">
-          {!frontmatter.thumbnail && (
+          {!thumbnail && (
             <div className="post-thumbnail">
-              <h1 className="post-title">{frontmatter.title}</h1>
-              <div className="post-meta">{frontmatter.date}</div>
+              <h1 className="post-title">{blogTitle}</h1>
+              <div className="post-meta">{date}</div>
             </div>
           )}
-          {!!frontmatter.thumbnail && (
+          {!!thumbnail && (
             <div
               className="post-thumbnail"
-              style={{ backgroundImage: `url(${frontmatter.thumbnail})` }}
+              style={{ backgroundImage: `url(${thumbnail})` }}
             >
-              <h1 className="post-title">{frontmatter.title}</h1>
-              <div className="post-meta">{frontmatter.date}</div>
+              <h1 className="post-title">{blogTitle}</h1>
+              <div className="post-meta">{date}</div>
             </div>
           )}
           <div
@@ -48,7 +54,7 @@ export default function BlogTemplate({
         </article>
         <div className="divider" />
         <section className="mt-100">
-          <h2>Read Latest &darr;</h2>
+          <h2>Read More &darr;</h2>
           <div className="grids">{Posts}</div>
         </section>
       </div>
