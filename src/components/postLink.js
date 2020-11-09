@@ -13,9 +13,10 @@ const PostLink = ({
   <article className="card ">
     <Link to={path}>
       {!!thumbnail && (
-        <div
+        <img
           className="post__featured-shot"
-          style={{ backgroundImage: `url(${thumbnail}` }}
+          src={thumbnail}
+          alt=""
         />
       )}
     </Link>
