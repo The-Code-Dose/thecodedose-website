@@ -69,6 +69,27 @@ a {
     text-decoration: underline;
   }
 }
+blockquote {
+  border-left: 3px solid var(--primary-color);
+  padding-left: 10px;
+}
+.gatsby-highlight {
+  margin: 20px 0px;
+}
+:not(pre) > code[class*="language-"] {
+  color: crimson;
+  background: #f1f1f1 !important;
+  text-shadow: none;
+}
+.mt-100 {
+  margin-top: 100px;
+}
+.divider {
+  height: 3px;
+  background: var(--primary-color);
+  margin: 50px auto;
+  width: 100px;
+}
 .site-wrapper {
   padding: 32px;
   max-width: 1140px;

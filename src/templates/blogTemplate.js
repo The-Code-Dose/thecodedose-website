@@ -2,13 +2,17 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
+import PostLink from '../components/postLink';
 
 export default function BlogTemplate({
   data, // this prop will be injected by the GraphQL query below.
 }) {
-  const { site, markdownRemark } = data; // data.markdownRemark holds your post data
+  const { site, markdownRemark, blogPosts: { edges } } = data;
   const { siteMetadata } = site;
   const { frontmatter, html } = markdownRemark;
+  const Posts = edges
+    .filter((edge) => !!edge.node.frontmatter.date)
+    .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
   return (
     <Layout>
       <Helmet>
@@ -42,6 +46,11 @@ export default function BlogTemplate({
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </article>
+        <div className="divider" />
+        <section className="mt-100">
+          <h2>Read Latest &darr;</h2>
+          <div className="grids">{Posts}</div>
+        </section>
       </div>
     </Layout>
   );
@@ -62,6 +71,24 @@ export const pageQuery = graphql`
         title
         thumbnail
         metaDescription
+      }
+    }
+    blogPosts: allMarkdownRemark(
+      limit: 3
+      sort: { order: DESC, fields: [frontmatter___date] }
+      ) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            path
+            title
+            thumbnail
+            tags
+          }
+        }
       }
     }
   }

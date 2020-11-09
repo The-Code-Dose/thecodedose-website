@@ -5,7 +5,7 @@ import ThemeChanger from './themeChanger';
 export default () => (
   <nav className="navigation">
     <Link to="/contact" className="button -primary">
-      Get in touch
+      Contact
     </Link>
     <Link to="/">
       Home
