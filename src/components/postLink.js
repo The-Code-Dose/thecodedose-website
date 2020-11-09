@@ -13,9 +13,9 @@ const PostLink = ({
   <article className="card ">
     <Link to={path}>
       {!!thumbnail && (
-        <img
-          src={thumbnail}
-          alt={`${title}- Featured Shot`}
+        <div
+          className="post__featured-shot"
+          style={{ backgroundImage: `url(${thumbnail}` }}
         />
       )}
     </Link>

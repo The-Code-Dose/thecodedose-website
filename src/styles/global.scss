@@ -245,9 +245,9 @@ blockquote {
   justify-content: center;
 }
 .grids {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 32px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 32px;
 }
 .card {
@@ -258,6 +258,8 @@ blockquote {
   box-shadow: 0 0 30px var(--card-shadow);
   overflow: hidden;
   line-height: 1.5;
+  width: 350px;
+  margin-bottom: 40px;
   &:hover .post-link {
     color: var(--primary-color);
   }

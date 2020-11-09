@@ -20,4 +20,11 @@
       background: var(--tag-text);
     }
   }
+  &__featured-shot {
+    width: 350px;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    
+  }
 }
