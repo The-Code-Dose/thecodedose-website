@@ -246,8 +246,8 @@ blockquote {
 }
 .grids {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+  grid-template-columns: 1fr;
+  grid-gap: 32px;
   margin-top: 32px;
 }
 .card {
