@@ -87,7 +87,6 @@ node_modules
 public
 .cache
 .DS_Store
-
 ```
 
 After you are done, commit your changes and push it to GitHub.
@@ -124,14 +123,14 @@ Once the build status is completed, you can visit your site at the same url whic
 5. After that click on "Generate a new client secret" and copy it
 6. Go to [apps.netlify.org](http://apps.netlify.org) and go to your site
 7. Go to Site Settings > Access Control
-8. Under OAuth section, click on "Install Provider".
-9. Select GitHub and copy and paste your client secret as well as your client ID and click on install.
+8. Under OAuth section, click on "Install Provider"
+9. Select GitHub and copy and paste your client secret as well as your client ID and click on install
 
 # Create Posts
 
-1. Go your deployed Netlify site url - <https://confident-ritchie-123a6d.netlify.app/admin>
+1. Go to your deployed Netlify site and go to the Admin page - [](https://confident-ritchie-123a6d.netlify.app/admin)https://your-site.netlify.app/admin
 2. Log in using GitHub.
-3. Now you can edit your blog as well as your site metadata from here itself!
+3. Now you can edit your blogs as well as your site metadata from here itself!
 4. You can delete the sample blogs that come with the template and add your own.
 
 **Start creating!**
