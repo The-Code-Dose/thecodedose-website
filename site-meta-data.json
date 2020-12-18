@@ -11,5 +11,13 @@
     "instagram": "https://www.instagram.com/thecodedose/",
     "redbubble": "https://www.redbubble.com/people/thecodedose/shop",
     "github": "https://github.com/ihsavru"
-  }
+  },
+  "links": [
+    { "name": "30 days of code", "href": "https://ihsavru.me/30-days-of-code/" },
+    { "name": "Animated SVG Handwriting", "href": "https://codesandbox.io/s/beautiful-kalam-6zhe0?file=/src/styles.css" },
+    { "name": "Setup your Gatsby Blog in under an hour", "href": "https://thecodedose.com/blog/the-beginners-guide-to-setting-up-a-gatsby-blog-in-under-an-hour" },
+    { "name": "Buy stickers, tshirts and more!", "href": "https://www.redbubble.com/people/thecodedose/shop?asc=u" },
+    { "name": "Github", "href": "https://github.com/ihsavru" },
+    { "name": "Twitter", "href": "https://twitter.com/thecodedose" }
+  ]
 }

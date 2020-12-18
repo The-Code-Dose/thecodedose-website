@@ -1,0 +1,20 @@
+.links-tree {
+  &__link {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid var(--tag-text);
+    color: var(--tag-text);
+    background: var(--tag-bg);
+    cursor: pointer;
+    &:hover {
+      text-decoration: none;
+      color: var(--tag-bg);
+      background: var(--tag-text);
+    }
+  }
+}
