@@ -42,7 +42,7 @@ A collection of the best design practices.
 
 Link: [](https://www.checklist.design/)<https://www.checklist.design/>
 
-
+![](/assets/Screenshot 2020-12-22 at 3.15.26 PM.png)
 
 ### 5. Accessibility checklist by The A11y Project
 
@@ -50,11 +50,15 @@ This checklist uses The Web Content Accessibility Guidelines (WCAG) as a referen
 
 Link <https://www.a11yproject.com/checklist/>
 
+![](/assets/Screenshot 2020-12-22 at 3.16.24 PM.png)
+
 ### 6. OWASP Web Application Security Testing Checklist
 
 Also available in [PDF](https://github.com/0xRadi/OWASP-Web-Checklist/blob/master/OWASP/OWASP%20Web%20Application%20Security%20Testing%20Checklist.pdf) or [Docx](https://github.com/0xRadi/OWASP-Web-Checklist/blob/master/OWASP/OWASP%20Web%20Application%20Security%20Testing%20Checklist.docx) for printing as well as a [Trello Board to copy yours](https://trello.com/b/zTSkJPkL/owasp-web-checklist).
 
 Link: [](https://github.com/0xRadi/OWASP-Web-Checklist)<https://github.com/0xRadi/OWASP-Web-Checklist>
+
+![](/assets/Screenshot 2020-12-22 at 3.17.29 PM.png)
 
 ### 7. API Security Checklist
 
@@ -62,8 +66,12 @@ Checklist of the most important security countermeasures when designing, testing
 
 Link: <https://github.com/shieldfy/API-Security-Checklist>
 
+![](/assets/Screenshot 2020-12-22 at 3.18.05 PM.png)
+
 ### 8. Web Developer Checklist by Toptal
 
 Also available as Chrome and Firefox extensions.
 
 Link: <https://www.toptal.com/developers/webdevchecklist>
+
+![](/assets/Screenshot 2020-12-22 at 3.18.36 PM.png)
