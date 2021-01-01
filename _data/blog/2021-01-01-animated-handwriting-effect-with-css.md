@@ -2,7 +2,7 @@
 template: BlogPost
 path: /blog/animated-handwriting-effect-with-css
 date: 2021-01-01T10:31:54.690Z
-title: Animated Handwriting Effect with CSS
+title: Animated Handwriting Effect with SVG and CSS
 tags:
   - html
   - css
@@ -13,6 +13,7 @@ tags:
   - frontend
   - svg
 metaDescription: ''
+thumbnail: /assets/cover.jpg
 ---
 If you want to create a handwriting animation with CSS and SVG like the one below, please keep on reading. Here is the Codesandbox for the example used in this post, you can fork and play around with it!
 
@@ -102,23 +103,37 @@ Notice how my SVG code has 2 paths as mentioned above, so I added a unique class
 
 #### 3. Using stroke-dashoffset and stroke-dasharray
 
-> The `stroke-dashoffset` property in CSS defines the location along an SVG path where the dash of a `stroke` will begin. The higher the number, the further along the path the dashes will begin.
->
 > The `stroke-dasharray` property in CSS is for creating dashes in the stroke of SVG shapes. The higher the number, the more space in between dashes in the stroke.
 
-To the signature__base class, experiment and figure out a value for property stroke-dasharray such that the entire word is written in a single dash with no space in between.
+To the `signature__base` class, experiment and figure out a value for property `stroke-dasharray` such that the entire word is written in a single dash with no space in between.
 
-I tried different values - 8, 80, 800, 8000. Finally figured 8000 was good enough for me.
+I experimented with different values - 8, 80, 800, 8000. Finally decided 8000 was good enough for me.
+
+![](/assets/Screenshot 2021-01-01 at 6.04.14 PM.png "stroke-dasharray: 8")
+
+![](/assets/Screenshot 2021-01-01 at 6.04.21 PM.png "stroke-dasharray: 80")
+
+![](/assets/Screenshot 2021-01-01 at 6.04.34 PM.png "stroke-dasharray: 800")
+
+![](/assets/Screenshot 2021-01-01 at 6.04.41 PM.png "stroke-dasharray: 8000")
+
+As you can see above, the value 8000 is perfect for me.
+
+> The `stroke-dashoffset` property in CSS defines the location along an SVG path where the dash of a `stroke` will begin. The higher the number, the further along the path the dashes will begin.
 
 #### 4. Adding CSS animations
-Add an animation to it which makes the `stroke-dashoffset` property go from 8000 (this should be equal to the `stroke-dasharray` value from above step) to 0.
+
+Add an animation to the `signature__base` class which makes the `stroke-dashoffset` property go from 8000 (this should be equal to the `stroke-dasharray` value from above step) to 0 in 4s or whatever looks better for your animation.
 
 Add a similar animation to all your paths' classes.
 
+At this point, you will be able to see that handwriting effect but it isn't synced yet.
+
 #### 5. Syncing the animations
 
-Now, we want to sync the animations such that the dash of 't' is drawn after the base word is drawn.
-To achieve that, I set the animation for my base word to finish by 80% of the time i.e. it is drawn from 0% of 4s to 80% of 4s.
+Now, we want to sync the animations such that the dash of 't' is drawn after the base word is drawn.  To achieve that, I set the animation for my base word to finish by 80% of the total animation time i.e. it is drawn from 0% of 4s to 80% of 4s. 
 Next, set the animation of the second path, the dash path to start after 80% of 4s and finish by 100% of 4s.
+
+![](/assets/Animation_timeline.jpg)
 
 Done 🎉🎉🎉
