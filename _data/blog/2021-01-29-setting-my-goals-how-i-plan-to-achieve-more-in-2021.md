@@ -65,4 +65,4 @@ I used to create daily goals but not anymore. Nowadays, I just follow up with my
 
 I have created a Notion template for you to set your own goals! Check it out using [this link.](https://www.notion.so/2021-9c7e2e0a5aa140bb9bcb9650df02deea)
 
-![Notion template](/assets/www.notion.so_2021-9c7e2e0a5aa140bb9bcb9650df02deea (3).jpg)
+![](/assets/www.notion.so_2021-9c7e2e0a5aa140bb9bcb9650df02deea (3).jpg)
