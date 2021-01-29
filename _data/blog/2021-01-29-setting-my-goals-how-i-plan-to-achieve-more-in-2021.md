@@ -9,6 +9,7 @@ tags:
   - notion
   - mindset
   - self help
+thumbnail: /assets/Vision Board Instagram feed template.jpg
 ---
 I recently saw [this video by Lenks](https://www.youtube.com/watch?v=xTEQw9tFTzo) where she shared her goals setting process. I was inspired by it to use a similar system to set my own goals for 2021. Keep on reading to find out how I plan to achieve more in 2021!  
 
