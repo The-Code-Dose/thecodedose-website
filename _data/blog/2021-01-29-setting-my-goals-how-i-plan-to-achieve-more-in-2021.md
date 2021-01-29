@@ -34,7 +34,7 @@ Next, I started filtering and reviewing these ideas into more concrete goals. I 
 
 For example, one of my goals is to continue my habit of reading. Last year I was able to finish my goal of 20 books. This year, I set my reading goal to 24 books which automatically becomes more measurable than just "reading more". 
 
-I have also taken the [Goodreads reading challenge](https://www.goodreads.com/challenges/11650-2021-reading-challenge) since I feel like tracking my progress at multiple places (especially publically) makes me more accountable. Similarly, I maintain [a thread on Twitter](https://twitter.com/urvaxhi/status/1319306928166596608) where I document my progress of learning the Korean language.
+I have also taken the [Goodreads reading challenge](https://www.goodreads.com/challenges/11650-2021-reading-challenge) since I feel like tracking my progress at multiple places (especially publically) makes me more accountable. Similarly, I maintain [a thread on Twitter](https://twitter.com/urvaxhi/status/1319306928166596608) where I document my progress while learning the Korean language.
 
 ## Setting Quarterly Goals
 
@@ -56,6 +56,12 @@ This way, I get time to review and reflect on the past month as well as pivot in
 
 Similarly, I only set goals for the upcoming week using the monthly goals as the basis. I don't finish all my goals every week or most weeks even. It's fine as long as I am making progress.
 
-## Daily Goals
+## Daily Goals: Yes, No, Maybe?
 
 I used to create daily goals but not anymore. Nowadays, I just follow up with my weekly goals that help me know the tasks for the day. But you can create yours if you wish to. I sometimes use the Momentum Chrome extension for a quick-to-access to-do list on days where I have a lot to do.
+
+## Free Notion Template
+
+I have created a Notion template for you to set your own goals! Check it out using [this link.](https://www.notion.so/2021-9c7e2e0a5aa140bb9bcb9650df02deea)
+
+![Notion template](/assets/www.notion.so_2021-9c7e2e0a5aa140bb9bcb9650df02deea (3).jpg)
