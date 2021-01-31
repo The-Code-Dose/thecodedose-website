@@ -39,7 +39,7 @@ I have also taken the [Goodreads reading challenge](https://www.goodreads.com/ch
 
 ## Setting Quarterly Goals
 
-Setting my quarterly goals reminded me of setting my OKRs at my job. If I am following this system at my workspace, why not bring it to my personal life as well? 
+Setting quarterly goals reminded me of setting my OKRs at my job. If I am following this system at my workplace, why not bring it to my personal life as well? 
 
 For setting my quarterly goals, I divided my yearly goals equally into the different quarters. So, if I want to read 24 books in a year, it means I want to read 6 books every quarter. The point of dividing goals is to make tracking and reviewing the progress easier as well as to have multiple chances to reset if needed!
 
@@ -49,13 +49,15 @@ For setting my quarterly goals, I divided my yearly goals equally into the diffe
 
 ## Setting Monthly Goals: One month at a time
 
-I didn't set goals for every month but rather for only the upcoming ones. This is because I don't wish to over plan since life happens and things change constantly and I don't want to end up with outdated goals that no longer interest me. 
+I didn't set goals for every month but rather for only the upcoming one. This is because I don't want to over plan since life happens and things change constantly and I don't want to end up with outdated goals that no longer interest or motivate me. 
 
 This way, I get time to review and reflect on the past month as well as pivot in the next month if I feel like. 
 
 ## Let's talk about Weekly Goals
 
 Similarly, I only set goals for the upcoming week using the monthly goals as the basis. I don't finish all my goals every week or most weeks even. It's fine as long as I am making progress.
+
+> Small progress is still progress.
 
 ## Daily Goals: Yes, No, Maybe?
 
