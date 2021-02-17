@@ -1,6 +1,6 @@
 ---
 template: BlogPost
-path: /blog
+path: /blog/strategies-for-self-learning-as-a-software-engineer
 date: 2021-02-01T16:23:36.642Z
 title: Strategies for Self Learning for a Software Engineer
 tags:
