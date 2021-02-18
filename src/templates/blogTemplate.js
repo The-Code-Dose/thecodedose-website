@@ -39,21 +39,10 @@ export default function BlogTemplate({
       </Helmet>
       <div className="blog-post-container">
         <article className="post">
-          {!thumbnail && (
-            <div className="post-thumbnail">
-              <h1 className="post-title">{blogTitle}</h1>
-              <div className="post-meta">{date}</div>
-            </div>
-          )}
-          {!!thumbnail && (
-            <div
-              className="post-thumbnail"
-              style={{ backgroundImage: `url(${thumbnail})` }}
-            >
-              <h1 className="post-title">{blogTitle}</h1>
-              <div className="post-meta">{date}</div>
-            </div>
-          )}
+          <div className="post-thumbnail">
+            <h1 className="post-title">{blogTitle}</h1>
+            <div className="post-meta">{date}</div>
+          </div>
           <div
             className="blog-post-content"
             dangerouslySetInnerHTML={{ __html: html }}
