@@ -32,7 +32,7 @@ We'll be talking about the cognitive domain only since it's the one that has bee
 
 According to the 1956 original version of the taxonomy, it is broken into the six levels of objectives. In 2001, the levels were revised and reordered as below:
 
-![Bloom's Taxonomy Pyramid](/assets/Read this if you're a delf taught programmer (1).jpg)
+![Bloom's Taxonomy Pyramid](/assets/blooms_taxonomy_pyramid.jpg)
 
 ## Knowledge
 
