@@ -6,9 +6,9 @@ import './navigation.scss';
 
 export default () => (
   <nav className="navigation">
-    <Link to="/contact" className="button -primary navigation__cta">
+    <a href="mailto:thecodedoseofficial@gmail.com" className="button -primary navigation__cta">
       Contact
-    </Link>
+    </a>
     <Link to="/">
       Home
     </Link>
