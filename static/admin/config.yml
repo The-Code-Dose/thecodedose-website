@@ -41,6 +41,32 @@ collections:
                 label: Description
                 default: ''
                 required: false
+          - widget: object
+            name: social
+            label: Social Links
+            fields:
+              - widget: string
+                name: instagram
+                label: Instagram
+              - widget: string
+                name: twitter
+                label: Twitter
+              - widget: string
+                name: github
+                label: Github
+              - widget: string
+                name: redbubble
+                label: Redbubble
+          - widget: list
+            name: links
+            label: Links Page
+            fields:
+              - widget: string
+                name: name
+                label: name
+              - widget: string
+                name: href
+                label: Url
   - name: blog
     label: Blog
     folder: _data/blog
