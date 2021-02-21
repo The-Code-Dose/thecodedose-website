@@ -9,10 +9,20 @@ import Store from '../components/store';
 const IndexPage = ({
   data: {
     site,
-    blogPosts: { edges },
+    latestBlogPosts: { edges },
+    reactBlogPosts: { edges: reactPosts },
+    selfHelpBlogPosts: { edges: selfHelpPosts },
   },
 }) => {
-  const Posts = edges
+  const LatestPosts = edges
+    .filter((edge) => !!edge.node.frontmatter.date)
+    .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
+
+  const ReactPosts = reactPosts
+    .filter((edge) => !!edge.node.frontmatter.date)
+    .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
+
+  const SelfHelpPosts = selfHelpPosts
     .filter((edge) => !!edge.node.frontmatter.date)
     .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
 
@@ -24,11 +34,21 @@ const IndexPage = ({
       </Helmet>
       <HeroHeader />
       <div className="section__header">
+        <h2>Self Help &darr;</h2>
+        <Link to="/blog">View All</Link>
+      </div>
+      <div className="grids">{SelfHelpPosts}</div>
+      <div className="section__header">
+        <h2>Programming - React &darr;</h2>
+        <Link to="/blog">View All</Link>
+      </div>
+      <div className="grids">{ReactPosts}</div>
+      <Store />
+      <div className="section__header">
         <h2>Latest Blogs &darr;</h2>
         <Link to="/blog">View All</Link>
       </div>
-      <div className="grids">{Posts}</div>
-      <Store />
+      <div className="grids">{LatestPosts}</div>
     </Layout>
   );
 };
@@ -42,9 +62,47 @@ export const pageQuery = graphql`
         description
       }
     }
-    blogPosts: allMarkdownRemark(
+    latestBlogPosts: allMarkdownRemark(
       limit: 3
       sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            path
+            title
+            thumbnail
+            tags
+          }
+        }
+      }
+    }
+    reactBlogPosts: allMarkdownRemark(
+      limit: 3
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { tags: { in: ["react"] } } }
+    ) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            path
+            title
+            thumbnail
+            tags
+          }
+        }
+      }
+    }
+    selfHelpBlogPosts: allMarkdownRemark(
+      limit: 3
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { tags: { in: ["self help"] } } }
     ) {
       edges {
         node {

@@ -91,6 +91,11 @@ collections:
         name: "tags"
         widget: "list"
         default: []
+      - label: "Featured"
+        name: "featured"
+        widget: "boolean"
+        default: false
+        required: false
       - label: Meta Description
         name: metaDescription
         widget: text
