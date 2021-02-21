@@ -7,19 +7,43 @@
     "description": ""
   },
   "social": {
-    "twitter": "https://twitter.com/thecodedose",
     "instagram": "https://www.instagram.com/thecodedose/",
-    "redbubble": "https://www.redbubble.com/people/thecodedose/shop",
-    "github": "https://github.com/ihsavru"
+    "twitter": "https://twitter.com/thecodedose",
+    "github": "https://github.com/ihsavru",
+    "redbubble": "https://www.redbubble.com/people/thecodedose/shop"
   },
   "links": [
-    { "name": "Goals Setting Process & Free Notion Template", "href": "https://thecodedose.com/blog/goals-setting-for-2021" },
-    { "name": "Useful Checklists for Web Developers", "href": "https://thecodedose.com/blog/useful-checklists-for-web-developers" },
-    { "name": "30 days of code", "href": "https://ihsavru.me/30-days-of-code/" },
-    { "name": "Animated Handwriting Effect with SVG and CSS", "href": "https://thecodedose.com/blog/animated-handwriting-effect-with-css" },
-    { "name": "Setup your Gatsby Blog in under an hour", "href": "https://thecodedose.com/blog/the-beginners-guide-to-setting-up-a-gatsby-blog-in-under-an-hour" },
-    { "name": "Buy stickers, tshirts and more!", "href": "https://www.redbubble.com/people/thecodedose/shop?asc=u" },
-    { "name": "Github", "href": "https://github.com/ihsavru" },
-    { "name": "Twitter", "href": "https://twitter.com/thecodedose" }
+    {
+      "name": "Read This If You Are Teaching Yourself To Code",
+      "href": "https://www.thecodedose.com/blog/read-this-if-you-are-teaching-yourself-to-code"
+    },
+    {
+      "name": "Goals Setting Process & Free Notion Template",
+      "href": "https://thecodedose.com/blog/goals-setting-for-2021"
+    },
+    {
+      "name": "Useful Checklists for Web Developers",
+      "href": "https://thecodedose.com/blog/useful-checklists-for-web-developers"
+    },
+    {
+      "name": "30 days of code challenge",
+      "href": "https://ihsavru.me/30-days-of-code/"
+    },
+    {
+      "name": "Setup your Gatsby Blog in under an hour",
+      "href": "https://thecodedose.com/blog/the-beginners-guide-to-setting-up-a-gatsby-blog-in-under-an-hour"
+    },
+    {
+      "name": "Buy stickers, tshirts and more!",
+      "href": "https://www.redbubble.com/people/thecodedose/shop?asc=u"
+    },
+    {
+      "name": "Github",
+      "href": "https://github.com/ihsavru"
+    },
+    {
+      "name": "Twitter",
+      "href": "https://twitter.com/thecodedose"
+    }
   ]
 }
