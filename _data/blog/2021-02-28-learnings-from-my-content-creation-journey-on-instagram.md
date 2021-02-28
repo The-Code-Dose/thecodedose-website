@@ -13,10 +13,9 @@ featured: true
 metaDescription: >-
   I began my content creation journey on Instagram in May 2019. These are my
   learnings so far:
+thumbnail: /assets/learning_instagram.jpg
 ---
-I began my content creation journey on Instagram in May 2019. It's been a little less than 2 years but I only started taking it more seriously since November 2020. I have grown from 1000 followers to 6000 followers.
-
-
+I began my content creation journey on Instagram in May 2019. It's been a little less than 2 years but I only started taking it more seriously since November 2020. Since then, I have grown from 1000 followers to 6000 followers.
 
 ![](/assets/Screenshot 2021-02-28 at 12.47.02 PM.png)
 
@@ -38,7 +37,7 @@ I believed that since my posts were so 'high effort', I didn't have to post freq
 
 ***Learning #1: Put out high quality posts consistently.***
 
-Later, I figured out a system that worked for me, it wasn't too hard or too easy.
+Later, I figured out a system that worked for me which wasn't too hard or too easy. I automated a lot of the steps required and created a more efficient system for myself so that it wasn't too hard for me to stay consistent.
 
 ## Letting go of my Hashtag Fear
 
@@ -56,6 +55,8 @@ Another mistake I was making was copying the exact set of hashtags every single 
 
 Doing this, made my reach almost double than before!
 
+***Learning #2: Hashtags are your friends.***
+
 ## Community over everything else
 
 Here are some rules I live by today to build stronger connections and friendships with people on Instagram:
@@ -65,12 +66,16 @@ Here are some rules I live by today to build stronger connections and friendship
 3. Take out some time and interact with other people's posts and stories.
 4. Go to my DMs, and reply to the messages as well as look through my requests.
 
+***Learning #3: Do not just chase vanity metrics, build a community.***
+
 ## Being a bit more personal
 
 Earlier I used to talk nothing about myself. Just post my content and leave. This made my page look like a, well, just a page. It lacked that 'human' touch. It didn't feel like there was an actual person behind the account. Now, I make sure to add a little personal touch every now and then. It could mean showing my face more often or even sharing behind the scenes of my life in my stories.
 
 This has helped me build friendships on Instagram and connect on other levels than just my niche.
 
+***Learning #4: You have to be social on social media.***
 
+#### ***Conclusion***
 
-Thanks for reading 🙂
+I hope you learned something today. Thanks for reading 🙂  I will be writing more on my blog about how I have created and automated my content creation process as well as share my growth strategies in the future. So stay tuned!
