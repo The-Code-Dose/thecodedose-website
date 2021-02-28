@@ -181,8 +181,6 @@ blockquote {
 }
 .post {
   padding: 0;
-  display: grid;
-  grid-template-columns: 5fr 2fr;
   column-gap: 50px;
   background: var(--background);
   color: var(--text-color);
@@ -329,6 +327,10 @@ blockquote {
     grid-template-columns: 1fr 1fr;
     grid-gap: 64px;
   }
+  .post {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+  }
 }
 
 .about {
@@ -336,6 +338,7 @@ blockquote {
     border-radius: 10px;
     box-shadow: 0 0 30px var(--card-shadow);
     margin-bottom: 20px;
+    max-width: 500px !important;
   }
 }
 
