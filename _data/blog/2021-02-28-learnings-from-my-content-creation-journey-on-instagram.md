@@ -28,11 +28,11 @@ Here are my top learnings so far on what ACTUALLY made a difference:
 
 When I first started out, I was making these digitally drawn programming concepts which were certainly high quality (at least I'd like to think so) but required so much time and effort. 
 
-![](/assets/D-oLF3AUYAA7kbl (1).jpeg)
+![](/assets/D-oLF3AUYAA7kbl.jpeg)
 
-![](/assets/D9QRuDEU0AAmktT (1).jpeg)
+![](/assets/D9QRuDEU0AAmktT.jpeg)
 
-![](/assets/D-JEK6LUEAAaImg (1).jpeg)
+![](/assets/D-JEK6LUEAAaImg.jpeg)
 
 I believed that since my posts were so 'high effort', I didn't have to post frequently. In fact, my content creation process was too 'high effort' for me and I would not post for months on end. This result in great inconsistency.
 
