@@ -14,20 +14,16 @@
   },
   "links": [
     {
+      "name": "Join My Newsletter!",
+      "href": "https://thecodedose.substack.com/p/coming-soon?r=iz63f&utm_campaign=post&utm_medium=web&utm_source=copy"
+    },
+    {
       "name": "Read This If You Are Teaching Yourself To Code",
       "href": "https://www.thecodedose.com/blog/read-this-if-you-are-teaching-yourself-to-code"
     },
     {
-      "name": "Learnings From My Content Creation Journey On Instagram",
-      "href": "https://www.thecodedose.com/blog/learnings-from-instagram"
-    },
-    {
       "name": "Useful Checklists for Web Developers",
       "href": "https://thecodedose.com/blog/useful-checklists-for-web-developers"
-    },
-    {
-      "name": "30 days of code challenge",
-      "href": "https://ihsavru.me/30-days-of-code/"
     },
     {
       "name": "Setup your Gatsby Blog in under an hour",
