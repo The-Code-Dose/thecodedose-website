@@ -25,6 +25,18 @@ export default ({ children }) => {
         <Navigation />
       </header>
       {children}
+      <section className="mt-100">
+        <h2>Subscribe to my Newsletter &darr;</h2>
+        <iframe
+          title="newsletter"
+          className="card"
+          src="https://thecodedose.substack.com/embed"
+          height="320"
+          style={{ width: '100%' }}
+          frameBorder="0"
+          scrolling="no"
+        />
+      </section>
       <footer className="site-footer">
         <SocialLinks />
         <p>
