@@ -14,20 +14,16 @@
   },
   "links": [
     {
+      "name": "YouTube",
+      "href": "https://www.youtube.com/channel/UCUqYu_GiAzFL4ErDEiK9xbA"
+    },
+    {
       "name": "Join My Newsletter!",
       "href": "https://thecodedose.substack.com/p/coming-soon?r=iz63f&utm_campaign=post&utm_medium=web&utm_source=copy"
     },
     {
       "name": "Read This If You Are Teaching Yourself To Code",
       "href": "https://www.thecodedose.com/blog/read-this-if-you-are-teaching-yourself-to-code"
-    },
-    {
-      "name": "Useful Checklists for Web Developers",
-      "href": "https://thecodedose.com/blog/useful-checklists-for-web-developers"
-    },
-    {
-      "name": "Setup your Gatsby Blog in under an hour",
-      "href": "https://thecodedose.com/blog/the-beginners-guide-to-setting-up-a-gatsby-blog-in-under-an-hour"
     },
     {
       "name": "Buy stickers, tshirts and more!",
