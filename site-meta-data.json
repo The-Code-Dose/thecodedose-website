@@ -14,6 +14,10 @@
   },
   "links": [
     {
+      "name": "Ambient Light LEGO Letter (Use \"THECODEDOSE\" at checkout for 10% off)",
+      "href": "https://wlwyb.com/shop/ambient-light-lego-letter/"
+    },
+    {
       "name": "YouTube",
       "href": "https://www.youtube.com/channel/UCUqYu_GiAzFL4ErDEiK9xbA"
     },
@@ -22,20 +26,12 @@
       "href": "https://thecodedose.substack.com/p/coming-soon?r=iz63f&utm_campaign=post&utm_medium=web&utm_source=copy"
     },
     {
-      "name": "Read This If You Are Teaching Yourself To Code",
-      "href": "https://www.thecodedose.com/blog/read-this-if-you-are-teaching-yourself-to-code"
-    },
-    {
       "name": "Buy stickers, tshirts and more!",
       "href": "https://www.redbubble.com/people/thecodedose/shop?asc=u"
     },
     {
       "name": "Github",
       "href": "https://github.com/ihsavru"
-    },
-    {
-      "name": "Twitter",
-      "href": "https://twitter.com/thecodedose"
     }
   ]
 }
