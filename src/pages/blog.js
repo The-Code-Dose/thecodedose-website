@@ -12,7 +12,6 @@ const BlogPage = ({
 }) => {
   const Posts = edges
     .filter((edge) => !!edge.node.frontmatter.date)
-    .filter((edge) => !edge.node.frontmatter.draft)
     .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
 
   return (
@@ -45,7 +44,6 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             path
             title
-            draft
             thumbnail
             tags
           }
