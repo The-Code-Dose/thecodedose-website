@@ -7,12 +7,12 @@ tags:
   - typescript
   - javascript
 featured: false
-draft: true
+draft: false
 metaDescription: ''
 ---
 Over the years, the popularity as well as the complexity of JavaScript programs have grown exponentially.
 
-A﻿s you know, JavaScript is a typed language. This means that it is unable to cope with the complexities of such large projects. As JavaScript developers, it's easy to miss out on one of the most common types of error: **TypeError**.
+A﻿s you know, JavaScript is a weakly typed language. This means that it is unable to cope with the complexities of such large projects. As JavaScript developers, it's easy to miss out on one of the most common types of error: **TypeError**.
 
 T﻿ype errors happen when there's a type mismatch between the data and the operation you want to perform on it.
 
