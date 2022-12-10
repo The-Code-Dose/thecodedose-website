@@ -1,6 +1,6 @@
 ---
 template: BlogPost
-path: /blog
+path: /blog/my-top-tips-for-people-who-are-teaching-themselves-to-code
 date: 2022-12-10T06:37:59.568Z
 title: My Top Tips for People who are Teaching Themselves to Code
 tags:
