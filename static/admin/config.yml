@@ -96,6 +96,11 @@ collections:
         widget: "boolean"
         default: false
         required: false
+      - label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+        required: false
       - label: Meta Description
         name: metaDescription
         widget: text
