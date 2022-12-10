@@ -5,8 +5,9 @@ date: 2020-11-05T12:30:00.000Z
 title: Implementing a Pie Chart using React and D3.js
 metaDescription: >-
   Learn how to implement a Pie Chart and a Donut Chart in ReactJS using D3.js
-  visualization library. 
+  visualization library.
 thumbnail: /assets/1_sVVzkzCBvAOmYdxzAApdWg.png
+draft: false
 tags: ["javascript","d3.js","react","visualization"]
 ---
 Today, we will be looking into how to create a Pie Chart using React and D3.js
@@ -36,7 +37,7 @@ function PieChart(props) {
 
   function drawChart() {
     // draw the chart here
-  }    
+  }
 
   return <div id="pie-container" />;
 }
@@ -69,9 +70,9 @@ First, let us define what interpolations is —
 > **Interpolation** is the process of estimating unknown values that fall between known values.
 
 ```javascript
-const colorScale = d3     
-    .scaleSequential()      
-    .interpolator(d3.interpolateCool)      
+const colorScale = d3
+    .scaleSequential()
+    .interpolator(d3.interpolateCool)
     .domain([0, data.length]);
 ```
 

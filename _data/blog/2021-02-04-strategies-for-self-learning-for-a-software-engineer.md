@@ -15,6 +15,7 @@ metaDescription: >-
   simple ways to invest in your knowledge portfolio and get the best returns in
   your career as a software engineer.
 thumbnail: /assets/1.jpg
+draft: false
 ---
  I am currently reading 'The Pragmatic Programmer' by Andy Hunt and Dave Thomas when I came across this golden advice. I knew I had to write a blog about it for people who haven't yet read the book.
 
@@ -22,7 +23,7 @@ Here are 6 strategies for self learning for software engineers-
 
 ### 1. Learn at least one language every year
 
-Stop favouriting a single language, instead learn a language every year. Different languages solve the same problems in different ways. By learning several different approaches, you can help broaden your thinking and avoid getting stuck in a rut. Learn the idiosyncrasies of each language and really understand why one is a better fit than the other for a particular use case. 
+Stop favouriting a single language, instead learn a language every year. Different languages solve the same problems in different ways. By learning several different approaches, you can help broaden your thinking and avoid getting stuck in a rut. Learn the idiosyncrasies of each language and really understand why one is a better fit than the other for a particular use case.
 
 ### 2. Read technical as well as non-technical books
 
@@ -42,7 +43,7 @@ Participate in meetups, give talks, conduct workshops, attend conferences and ne
 
 ### 5. Experiment and challenge yourself
 
-Step outside your comfort zone and try out a new technology. Challenge yourself to lose your old ways and learn new and better ways to do something you already do. 
+Step outside your comfort zone and try out a new technology. Challenge yourself to lose your old ways and learn new and better ways to do something you already do.
 
 ### 6. Stay up to date
 

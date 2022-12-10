@@ -14,13 +14,14 @@ metaDescription: >-
   modules in our JavaScript code. We will be using C++ code to compile .wasm
   modules. You need to have Emscripten downloaded and installed to follow the
   examples below.
+draft: false
 thumbnail: /assets/1_wm8F4bRLH4TXykwK6gAPoA.png
 ---
 If you don't already know what WebAssembly is, I highly recommending reaidng more about it. According to the official website, WebAssembly is described as below —
 
 > WebAssembly (abbreviated*Wasm*) is a binary instruction format for a stack-based virtual machine. Wasm is designed as a portable compilation target for programming languages, enabling deployment on the web for client and server applications.
 
-For the purpose of this article, I am going to assume that you are aware of what it is and what it aims to achieve. 
+For the purpose of this article, I am going to assume that you are aware of what it is and what it aims to achieve.
 
 **Disclaimer:** *I don’t claim to be an expert in WebAssembly. Most of my knowledge of this article comes from [“Learn WebAssembly”](https://www.packtpub.com/product/learn-webassembly/9781788997379)— by Mike Rourke, <https://emscripten.org/>,[WebAssembly on MDN](https://developer.mozilla.org/en-US/docs/WebAssembly). If you find any errors in the article below, please let me know! I am just learning and playing around with it.*
 

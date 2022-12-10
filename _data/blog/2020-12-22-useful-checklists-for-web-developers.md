@@ -11,6 +11,7 @@ tags:
   - security
 metaDescription: A compilation of useful checklists for web developers.
 thumbnail: /assets/checklists.jpg
+draft: false
 ---
 ### 1. Frontend Checklist
 
@@ -38,7 +39,7 @@ Link: [](https://github.com/thedaviddias/Front-End-Performance-Checklist)<https:
 
 ### 4. Checklist Design
 
-A collection of the best design practices. 
+A collection of the best design practices.
 
 Link: [](https://www.checklist.design/)<https://www.checklist.design/>
 
@@ -46,7 +47,7 @@ Link: [](https://www.checklist.design/)<https://www.checklist.design/>
 
 ### 5. Accessibility checklist by The A11y Project
 
-This checklist uses The Web Content Accessibility Guidelines (WCAG) as a reference point. 
+This checklist uses The Web Content Accessibility Guidelines (WCAG) as a reference point.
 
 Link <https://www.a11yproject.com/checklist/>
 

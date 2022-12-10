@@ -11,16 +11,17 @@ tags:
   - mindset
   - self help
 thumbnail: /assets/Vision Board Instagram feed template.jpg
+draft: false
 ---
-I recently saw [this video by Lenks](https://www.youtube.com/watch?v=xTEQw9tFTzo) where she shared her goals setting process. I was inspired by it to use a similar system to set my own goals for 2021. Keep on reading to find out how I plan to achieve more in 2021!  
+I recently saw [this video by Lenks](https://www.youtube.com/watch?v=xTEQw9tFTzo) where she shared her goals setting process. I was inspired by it to use a similar system to set my own goals for 2021. Keep on reading to find out how I plan to achieve more in 2021!
 
 #### Notion and Kanban Boards
 
-I use Notion for basically anything and everything - from shopping lists to expense tracking and as well as travel planning. Naturally, the best place for me to set and track my goals was Notion. 
+I use Notion for basically anything and everything - from shopping lists to expense tracking and as well as travel planning. Naturally, the best place for me to set and track my goals was Notion.
 
 *Confession:* I love Kanban Boards.
 
-> A *kanban board* is a visual way to manage tasks and workflows, which utilizes an analog or digital board with columns and cards. 
+> A *kanban board* is a visual way to manage tasks and workflows, which utilizes an analog or digital board with columns and cards.
 
 They look something like this in Notion-
 
@@ -34,13 +35,13 @@ Next, I started filtering and reviewing these ideas into more concrete goals. I 
 
 ##### *What do I mean by measurable goals?*
 
-For example, one of my goals is to continue my habit of reading. Last year I was able to finish my goal of 20 books. This year, I set my reading goal to 24 books which automatically becomes more measurable than just "reading more". 
+For example, one of my goals is to continue my habit of reading. Last year I was able to finish my goal of 20 books. This year, I set my reading goal to 24 books which automatically becomes more measurable than just "reading more".
 
 I have also taken the [Goodreads reading challenge](https://www.goodreads.com/challenges/11650-2021-reading-challenge) since I feel like tracking my progress at multiple places (especially publically) makes me more accountable. Similarly, I maintain [a thread on Twitter](https://twitter.com/urvaxhi/status/1319306928166596608) where I document my progress while learning the Korean language.
 
 ## Setting Quarterly Goals
 
-Setting quarterly goals reminded me of setting my OKRs at my job. If I am following this system at my workplace, why not bring it to my personal life as well? 
+Setting quarterly goals reminded me of setting my OKRs at my job. If I am following this system at my workplace, why not bring it to my personal life as well?
 
 For setting my quarterly goals, I divided my yearly goals equally into the different quarters. So, if I want to read 24 books in a year, it means I want to read 6 books every quarter. The point of dividing goals is to make tracking and reviewing the progress easier as well as to have multiple chances to reset if needed!
 
@@ -50,9 +51,9 @@ For setting my quarterly goals, I divided my yearly goals equally into the diffe
 
 ## Setting Monthly Goals: One month at a time
 
-I didn't set goals for every month but rather for only the upcoming one. This is because I don't want to over plan since life happens and things change constantly and I don't want to end up with outdated goals that no longer interest or motivate me. 
+I didn't set goals for every month but rather for only the upcoming one. This is because I don't want to over plan since life happens and things change constantly and I don't want to end up with outdated goals that no longer interest or motivate me.
 
-This way, I get time to review and reflect on the past month as well as pivot in the next month if I feel like. 
+This way, I get time to review and reflect on the past month as well as pivot in the next month if I feel like.
 
 ## Let's talk about Weekly Goals
 

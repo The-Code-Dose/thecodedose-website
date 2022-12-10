@@ -8,6 +8,7 @@ tags:
   - beginner
   - github
 featured: false
+draft: true
 ---
 I﻿f you want to contribute to open source but don't know where to begin, then this post is for you. H﻿ere's a step-by-step guide to help you make your very first open source contribution!
 
@@ -21,7 +22,7 @@ A﻿lternatively, you can directly look for projects on GitHub and filter them b
 
 ## S﻿tep 2: Setup the Project Locally
 
-U﻿sually, all projects will have documentation guides for new contributors. 
+U﻿sually, all projects will have documentation guides for new contributors.
 
 L﻿ook for the guide to setup the project locally to get started. Hopefully, the guide will be enough to get you setup but incase you get stuck, you should look out for the project's communication channel to seek help from other contributors.
 

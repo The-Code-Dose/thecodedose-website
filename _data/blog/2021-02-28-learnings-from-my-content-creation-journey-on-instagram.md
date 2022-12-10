@@ -14,6 +14,7 @@ metaDescription: >-
   I began my content creation journey on Instagram in May 2019. These are my
   learnings so far:
 thumbnail: /assets/learning_instagram.jpg
+draft: false
 ---
 I began my content creation journey on Instagram in May 2019. It's been a little less than 2 years but I only started taking it more seriously since November 2020. Since then, I have grown from 1000 followers to 6000 followers.
 
@@ -25,7 +26,7 @@ Here are my top learnings so far on what ACTUALLY made a difference:
 
 ## Quality vs Quantity
 
-When I first started out, I was making these digitally drawn programming concepts which were certainly high quality (at least I'd like to think so) but required so much time and effort. 
+When I first started out, I was making these digitally drawn programming concepts which were certainly high quality (at least I'd like to think so) but required so much time and effort.
 
 ![](/assets/D-oLF3AUYAA7kbl.jpeg)
 
@@ -45,9 +46,9 @@ Earlier, I had a mindset that using hashtags was tacky and if I used them I woul
 
 First of all, how are people going to find out about my content? And if they don't even know about me how am I going to grow?
 
-Now, I have adopted a hashtag strategy that works for me. 
+Now, I have adopted a hashtag strategy that works for me.
 
-Another mistake I was making was copying the exact set of hashtags every single time. This resulted in my hashtags reach being ineffective. Now, I type them along with my caption when I am posting to avoid having the same hashtags every time. Though most of the hashtags I use will be the same but their order differs. Also, I make sure that I add a couple of new hashtags to the mix which are more relevant to that particular post. 
+Another mistake I was making was copying the exact set of hashtags every single time. This resulted in my hashtags reach being ineffective. Now, I type them along with my caption when I am posting to avoid having the same hashtags every time. Though most of the hashtags I use will be the same but their order differs. Also, I make sure that I add a couple of new hashtags to the mix which are more relevant to that particular post.
 
 ![](/assets/3.jpg)
 

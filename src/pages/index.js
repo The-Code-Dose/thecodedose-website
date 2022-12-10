@@ -65,6 +65,7 @@ export const pageQuery = graphql`
     latestBlogPosts: allMarkdownRemark(
       limit: 3
       sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { draft: false } }
     ) {
       edges {
         node {
@@ -83,7 +84,7 @@ export const pageQuery = graphql`
     reactBlogPosts: allMarkdownRemark(
       limit: 3
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { tags: { in: ["react"] } } }
+      filter: { frontmatter: { tags: { in: ["react"] }, draft: false } }
     ) {
       edges {
         node {
@@ -102,7 +103,7 @@ export const pageQuery = graphql`
     selfHelpBlogPosts: allMarkdownRemark(
       limit: 3
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { tags: { in: ["self help"] } } }
+      filter: { frontmatter: { tags: { in: ["self help"] }, draft: false } }
     ) {
       edges {
         node {

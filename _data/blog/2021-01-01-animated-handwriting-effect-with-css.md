@@ -14,6 +14,7 @@ tags:
   - svg
 metaDescription: ''
 thumbnail: /assets/cover.jpg
+draft: false
 ---
 If you want to create a handwriting animation with CSS and SVG like the one below, please keep on reading. Here is the Codesandbox for the example used in this post, you can fork and play around with it!
 
@@ -49,7 +50,7 @@ The word 'the' has 2 paths -
 
 #### 3. Export the paths as a single SVG
 
-Select all the paths and 'Group Selection'. 
+Select all the paths and 'Group Selection'.
 
 ![](/assets/Screenshot 2021-01-01 at 5.35.44 PM.png)
 
@@ -131,7 +132,7 @@ At this point, you will be able to see that handwriting effect but it isn't sync
 
 #### 5. Syncing the animations
 
-Now, we want to sync the animations such that the dash of 't' is drawn after the base word is drawn.  To achieve that, I set the animation for my base word to finish by 80% of the total animation time i.e. it is drawn from 0% of 4s to 80% of 4s. 
+Now, we want to sync the animations such that the dash of 't' is drawn after the base word is drawn.  To achieve that, I set the animation for my base word to finish by 80% of the total animation time i.e. it is drawn from 0% of 4s to 80% of 4s.
 Next, set the animation of the second path, the dash path to start after 80% of 4s and finish by 100% of 4s.
 
 ![](/assets/Animation_timeline.jpg)

@@ -8,8 +8,9 @@ tags:
   - beginner
   - ''
 featured: false
+draft: true
 ---
-* Do not worry about figuring out the entire journey in the beginning. Figure out a starting point and just start. You can refer to roadmaps to identify where you are in your journey and where to go from there. 
+* Do not worry about figuring out the entire journey in the beginning. Figure out a starting point and just start. You can refer to roadmaps to identify where you are in your journey and where to go from there.
 * Learn from other people's journeys. Seek out other self-taught developers and listen to their advice and tips.
 * Try learning from different resources. Sometimes, it's good to know the different perspectives out there to form a better and complete understanding.
 * There are many ways to get "real world experience" before you start a full-time job. You can get started with open source, internships and freelance work.

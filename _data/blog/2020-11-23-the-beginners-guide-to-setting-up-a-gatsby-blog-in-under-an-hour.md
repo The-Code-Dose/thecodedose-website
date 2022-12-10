@@ -14,6 +14,7 @@ metaDescription: >-
   on Netlify. For the purposes of this blog, we will be using a Gatsby starter
   site (demo) rather than building it from scratch.
 thumbnail: /assets/oct_28.jpg
+draft: false
 ---
 Today we will be creating a blog with Gatsby and deploying it on Netlify. For the purposes of this blog, we will be using a Gatsby starter site ([demo](https://confident-ritchie-123a6d.netlify.app/)) rather than building it from scratch.
 

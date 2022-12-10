@@ -35,7 +35,10 @@ export const pageQuery = graphql`
         description
       }
     }
-    blogPosts: allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    blogPosts: allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { draft: false } }
+    ) {
       edges {
         node {
           id

@@ -11,6 +11,7 @@ metaDescription: >-
   If you're a complete beginner to git, this post will help you understand what
   git is and what it is used for as well as help you get started with git in
   your projects.
+draft: false
 ---
 If you're a complete beginner to git, this post will help you understand what git is and what it is used for as well as help you get started with git in your projects.
 
@@ -18,7 +19,7 @@ If you're a complete beginner to git, this post will help you understand what gi
 In simple terms, git is a tool that helps you manage software (or rather any set of files). It does so by:
 
 - helping you maintain different versions of a software (a version control system)
-- enabling collaboration within a distributed team of developers 
+- enabling collaboration within a distributed team of developers
 - allowing you to work on different features in isolation
 - and much more...
 
@@ -26,7 +27,7 @@ In simple terms, git is a tool that helps you manage software (or rather any set
 
 It has a "commit" system wherein you wrap a set of changes in a single unit which is known as a commit. It maintains a chronological history of all the commits (and the related information such as the author, the exact changes made, when they were made etc) in a "commit log".
 
-You can use this commit log to go back in history if things go wrong or if you accidentally made a bad commit and you want to go back to the last working state. 
+You can use this commit log to go back in history if things go wrong or if you accidentally made a bad commit and you want to go back to the last working state.
 
 When you start a git project, all of your changes live on the `main` (or `master`) branch which acts as the backbone of your project. You can create another branch from this `main` branch and develop any
  features on the new branch and later merge this branch into the `main` when you're happy with the changes.
@@ -48,7 +49,7 @@ Suppose you want to maintain different versions of your resume for different job
 
 ### Initialising a Git Repository
 
-Before you can start using the magic of git, you will need to initialise your repository and enable git. A repository is nothing but just another word for a git enabled directory. 
+Before you can start using the magic of git, you will need to initialise your repository and enable git. A repository is nothing but just another word for a git enabled directory.
 
 You need to create a new directory for your resume and `cd` into it and use the following command to initialise git:
 
@@ -70,7 +71,7 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 ```
 
-This will show you any new files that you've added or deleted. 
+This will show you any new files that you've added or deleted.
 Notice that you are automatically on the `main` branch.
 You need to add the `resume.txt` file to the "staging area" before creating a new commit. The staging area refers to the files or the changes that will be a part of the next commit.
 
@@ -100,18 +101,18 @@ You'll notice that each commit has an alphanumeric string attached with it. It i
 
 Suppose you now want to customise your resume for a backend developer role by adding a backend related project to it.
 
-You can create a new branch from the `main` branch and call it `backend-developer`. 
+You can create a new branch from the `main` branch and call it `backend-developer`.
 
 `$ git branch -b backend-developer`
 
-Now you can edit the resume in your editor and add the new project, you can use git to view the exact changes that you have made. 
+Now you can edit the resume in your editor and add the new project, you can use git to view the exact changes that you have made.
 
 `$ git diff`
 
-It will show you any lines that you deleted along with any new lines that you added. 
+It will show you any lines that you deleted along with any new lines that you added.
 You can package all of these changes and add them to a new commit along with a brief message that describes the changes that you made. This message will help you remember in the future what you changed.
 
-You now have two versions of your resume: a general version in the `main` branch and a backend developer version in the `backend-developer` branch. 
+You now have two versions of your resume: a general version in the `main` branch and a backend developer version in the `backend-developer` branch.
 
 ```
 COMMIT LOG (main)
@@ -130,7 +131,7 @@ You can also maintain further new versions of your resume for more job roles in 
 
 ### Reverting Changes
 
-Now suppose you felt like you want a completely different layout for your `backend-developer` resume. So you switched sections around, changed the fonts, and added some more projects to it.  After a few days, you realise that this new layout is not as impressive as you initially thought it was and you want to go back to the older version of your resume. 
+Now suppose you felt like you want a completely different layout for your `backend-developer` resume. So you switched sections around, changed the fonts, and added some more projects to it.  After a few days, you realise that this new layout is not as impressive as you initially thought it was and you want to go back to the older version of your resume.
 You can do this by resetting your project to the previous commit.
 
 `$ git reset --hard <commit-hash>`
@@ -139,4 +140,4 @@ You can go back further down in history using the relevant commit hash from the 
 
 ## Conclusion
 
-As you just saw, by using git you didn't have to explicitly manage multiple copies of your resume with every change because git is already doing that for you in a much more sophisticated way. 
+As you just saw, by using git you didn't have to explicitly manage multiple copies of your resume with every change because git is already doing that for you in a much more sophisticated way.

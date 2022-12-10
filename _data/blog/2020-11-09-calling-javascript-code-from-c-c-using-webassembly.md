@@ -14,6 +14,7 @@ metaDescription: >-
   article, we will be discussing different approaches using Emscripten and
   without using Emscripten.
 thumbnail: /assets/pexels-eugene-shirokov-5739049.jpg
+draft: false
 ---
 In the last blog post, we talked about [calling C/C++ code from JavaScript using WebAssembly and Emscripten](https://thecodedose.com/blog/loading-webassembly-modules-in-javascript). Today, we will be discussing how to call JavaScript code from C/C++ with and without Emscripten.
 
