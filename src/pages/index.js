@@ -4,7 +4,13 @@ import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 import PostLink from '../components/postLink';
 import HeroHeader from '../components/heroHeader';
-import Store from '../components/store';
+import BlogSection from '../components/blogSection';
+import CSIllustrated from '../components/csIllustrated';
+import DsaRevisionNotes from '../components/dsaRevisionNotes';
+import ProductRecommendations from '../components/productRecommendations';
+import GatsbyBlog from '../components/gatsbyBlog';
+import RedBubble from '../components/redBubble';
+import Youtube from '../components/youtube';
 
 const IndexPage = ({
   data: {
@@ -33,22 +39,24 @@ const IndexPage = ({
         <meta name="description" content={site.siteMetadata.description} />
       </Helmet>
       <HeroHeader />
-      <div className="section__header">
-        <h2>Self Help &darr;</h2>
-        <Link to="/blog">View All</Link>
-      </div>
-      <div className="grids">{SelfHelpPosts}</div>
-      <div className="section__header">
-        <h2>Programming - React &darr;</h2>
-        <Link to="/blog">View All</Link>
-      </div>
-      <div className="grids">{ReactPosts}</div>
-      <Store />
-      <div className="section__header">
-        <h2>Latest Blogs &darr;</h2>
-        <Link to="/blog">View All</Link>
-      </div>
-      <div className="grids">{LatestPosts}</div>
+      <BlogSection />
+      <CSIllustrated />
+      <DsaRevisionNotes />
+      <ProductRecommendations />
+      <GatsbyBlog />
+      <RedBubble />
+      <Youtube />
+      <section className="newsletter-section">
+        <iframe
+          title="newsletter"
+          className="card"
+          src="https://thecodedose.substack.com/embed"
+          height="320"
+          style={{ width: '100%' }}
+          frameBorder="0"
+          scrolling="no"
+        />
+      </section>
     </Layout>
   );
 };

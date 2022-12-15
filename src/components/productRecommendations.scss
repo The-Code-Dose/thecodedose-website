@@ -1,0 +1,131 @@
+.product-recommendations {
+  &__header {
+    background-color: var(--black);
+    padding: 40px 60px;
+  }
+
+  &__heading {
+    color: var(--white);
+    text-align: center;
+    font-size: 58px;
+    margin-bottom: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  &__products {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 80px 50px;
+  }
+
+  &__product {
+    border: 1px solid var(--black);
+    padding: 0;
+    background-color: var(--yellow);
+
+    &-image {
+      width: 300px;
+      border-bottom: 1px solid var(--black);
+    }
+
+    &-title {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 18px;
+      margin: 15px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+
+    &-left {
+      background-color: var(--blue);
+      border-right: 1px solid var(--black);
+      width: 70%;
+      padding: 50px;
+    }
+
+    &-title {
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      font-weight: 900;
+    }
+
+    &-right {
+      background-color: var(--yellow);
+      width: 30%;
+      padding: 50px;
+      display: flex;
+      align-items: center;
+    }
+
+    &-btn {
+      margin-bottom: 0;
+      font-size: 26px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    &-content {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .product-recommendations {
+    &__product {
+      &-image {
+        width: 200px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .product-recommendations {
+    &__heading {
+      font-size: 28px
+    }
+
+    &__products {
+      display: block;
+    }
+
+    &__product {
+      margin-bottom: 30px;
+
+      &-image {
+        width: 100%;
+      }
+    }
+
+    &__footer {
+      display: block;
+
+      &-left {
+        border-right: none;
+        width: 100%;
+      }
+
+      &-title {
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-weight: 900;
+      }
+
+      &-right {
+        border-top: 1px solid var(--black);
+        width: 100%;
+      }
+    }
+  }
+}

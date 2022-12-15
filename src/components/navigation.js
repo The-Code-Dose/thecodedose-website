@@ -1,26 +1,22 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import ThemeChanger from './themeChanger';
-
-import './navigation.scss';
 
 export default () => (
-  <nav className="navigation">
-    <a href="mailto:thecodedoseofficial@gmail.com" className="button -primary navigation__cta">
-      Contact
-    </a>
+  <nav className="site-header__navigation">
     <Link to="/">
       Home
     </Link>
     <Link to="/blog">
       Blog
     </Link>
+    <Link to="/blog">
+      CS Illustrated
+    </Link>
     <a
       href="https://www.redbubble.com/people/thecodedose/shop"
       target="__blank"
     >
-      Store
+      Shop
     </a>
-    <ThemeChanger />
   </nav>
 );

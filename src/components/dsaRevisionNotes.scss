@@ -1,0 +1,59 @@
+.dsa-revision {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--black);
+  }
+
+  &__left {
+    box-sizing: border-box;
+    width: 60%;
+    border-right: 1px solid var(--black);
+  }
+
+  &__right {
+    box-sizing: border-box;
+    width: 40%;
+    background-image: url('../images/dsa-revision-notes.jpeg');
+    background-size: cover;
+  }
+
+  &__heading {
+    font-size: 56px;
+    font-weight: 900;
+    margin-bottom: 20px;
+
+    &-container {
+      background-color: var(--yellow);
+      padding: 50px;
+      border-bottom: 1px solid var(--black);
+    }
+  }
+
+  &__content {
+    font-size: 22px;
+
+    &-container {
+      padding: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .dsa-revision {
+    &__container {
+      display: block;
+    }
+
+    &__left {
+      width: 100%;
+      border-right: none;
+      border-bottom: 1px solid var(--black);
+    }
+
+    &__right {
+      width: 100%;
+      height: 600px;
+    }
+  }
+}

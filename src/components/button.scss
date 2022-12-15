@@ -1,0 +1,33 @@
+.button {
+  border: 1px solid var(--black);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: 'Archivo';
+  letter-spacing: 2px;
+  cursor: pointer;
+  color: var(--black);
+  width: fit-content;
+
+  &--yellow {
+    background-color: var(--yellow);
+  }
+
+  &--pink {
+    background-color: var(--pink);
+  }
+
+  &--black {
+    background-color: var(--black);
+    color: var(--white);
+  }
+
+  &--normal {
+    padding: 16px 26px;
+    font-size: 16px;
+  }
+
+  &--small {
+    padding: 12px 22px;
+    font-size: 12px;
+  }
+}

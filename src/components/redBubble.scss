@@ -1,0 +1,103 @@
+.redbubble {
+  &__container {
+    display: flex;
+    border-bottom: 1px solid var(--black);
+  }
+
+  &__left {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__right {
+    box-sizing: border-box;
+    width: 50%;
+    background-color: var(--purple);
+    color: var(--white);
+    border-left: 1px solid var(--black);
+    padding: 100px 50px;
+  }
+
+  &__heading {
+    font-size: 56px;
+    font-weight: 900;
+  }
+
+  &__content {
+    font-size: 22px;
+  }
+
+  &__product {
+    &-one {
+      background-image: url(../images/kawaii-coding-tea-sticker.jpeg);
+      border-bottom: 1px solid var(--black);
+    }
+
+    &-two {
+      background-image: url(../images/coding-baby-sticker.jpg);
+      border-bottom: 1px solid var(--black);
+      border-left: 1px solid var(--black);
+    }
+
+    &-three {
+      background-image: url(../images/coding-baby-tshirt.jpg);
+      border-right: 1px solid var(--black);
+    }
+
+    &-four {
+      background-image: url(../images/worlds-noicest-programmer-tshirt.jpeg);
+      border-left: 1px solid var(--black);
+    }
+
+    &-one, &-two, &-three, &-four {
+      width: 100%;
+      background-size: cover;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .redbubble {
+    &__container {
+      display: block;
+    }
+
+    &__left {
+      width: 100%;
+    }
+
+    &__right {
+      width: 100%;
+      border-top: 1px solid var(--black);
+    }
+
+    &__product {
+      &-three {
+        background-image: url(../images/coding-baby-tshirt.jpg);
+        border-right: none;
+      }
+
+      &-one, &-two, &-three, &-four {
+        width: 100%;
+        background-size: cover;
+        height: 400px;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .redbubble {
+    &__left {
+      display: block;
+    }
+
+    &__product {
+      &-three {
+        border-bottom: 1px solid var(--black);
+      }
+    }
+  }
+}

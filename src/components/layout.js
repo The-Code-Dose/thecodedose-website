@@ -3,6 +3,8 @@ import { Link, useStaticQuery, graphql } from 'gatsby';
 import SocialLinks from './socialLinks';
 import Navigation from './navigation';
 import 'prismjs/themes/prism-okaidia.css';
+import './layout.scss';
+import logo from '../images/logo.png';
 
 export default ({ children }) => {
   const data = useStaticQuery(
@@ -20,36 +22,24 @@ export default ({ children }) => {
     <div className="site-wrapper">
       <header className="site-header">
         <div className="site-title">
-          <Link to="/">{data.site.siteMetadata.title}</Link>
+          <Link to="/">
+            <img className="site-header__logo" src={logo} alt="Logo" />
+          </Link>
         </div>
         <Navigation />
       </header>
       {children}
-      <section className="mt-100">
-        <h2>Subscribe to my Newsletter &darr;</h2>
-        <iframe
-          title="newsletter"
-          className="card"
-          src="https://thecodedose.substack.com/embed"
-          height="320"
-          style={{ width: '100%' }}
-          frameBorder="0"
-          scrolling="no"
-        />
-      </section>
       <footer className="site-footer">
+        <div className="site-footer__left">
+          <Link to="/">
+            <img className="site-footer__logo" src={logo} alt="Logo" />
+          </Link>
+          <h4>
+            Subscribe to receive latest updates right in your inbox!
+          </h4>
+          <input className="site-footer__input" placeholder="Email Address" />
+        </div>
         <SocialLinks />
-        <p>
-          &copy;
-          {new Date().getFullYear()}
-          &bull; Crafted with
-          <span role="img" aria-label="love">
-            {' '}
-            ❤️
-            {' '}
-          </span>
-          by The Code Dose
-        </p>
       </footer>
     </div>
   );

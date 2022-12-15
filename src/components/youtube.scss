@@ -1,0 +1,61 @@
+.youtube {
+  &__container {
+    display: flex;
+    border-bottom: 1px solid var(--black);
+  }
+
+  &__left {
+    box-sizing: border-box;
+    padding: 80px 50px;
+    width: 50%;
+    background-color: var(--red);
+  }
+
+  &__right {
+    width: 50%;
+    position: relative;
+  }
+
+  &__heading {
+    font-size: 56px;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+
+  &__content {
+    font-size: 22px;
+  }
+
+  &__video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-left: 1px solid var(--black);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .youtube {
+    &__container {
+      display: block;
+    }
+
+    &__left {
+      width: 100%;
+      height: max-content;
+      border-bottom: 1px solid var(--black);
+    }
+
+    &__right {
+      width: 100%;
+    }
+
+    &__video {
+      position: relative;
+      width: 100%;
+    }
+  }
+}

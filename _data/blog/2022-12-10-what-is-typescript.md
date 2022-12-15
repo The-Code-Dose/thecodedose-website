@@ -8,6 +8,7 @@ tags:
   - javascript
 featured: false
 draft: false
+thumbnail: /assets/D-oLF3AUYAA7kbl.jpeg
 metaDescription: ''
 ---
 Over the years, the popularity as well as the complexity of JavaScript programs have grown exponentially.

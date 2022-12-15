@@ -1,0 +1,119 @@
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  background: var(--purple);
+  align-items: center;
+  padding: 10px 50px;
+  border-bottom: 1px solid var(--black);
+  position: sticky;
+  z-index: 1001;
+  top: 0;
+
+  &__logo {
+    width: 35px;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    a {
+      color: var(--white);
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 14px;
+      margin-left: 20px;
+      font-family: 'Archivo';
+      letter-spacing: 2px;
+    }
+  }
+}
+
+
+.site-footer {
+  display: flex;
+  border-top: 1px solid var(--black);
+
+  &__left {
+    text-align: left;
+    padding: 80px 50px;
+    background-color: var(--purple);
+    width: 50%;
+    border-right: 1px solid var(--black);
+
+    h4 {
+      font-size: 20px;
+      color: var(--white);
+    }
+  }
+
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+    padding: 80px 0px 50px 0px;
+    background-color: var(--black);
+    width: 50%;
+    padding: 80px 50px;
+
+    div {
+      display: inline-block;
+      text-align: right;
+      margin-left: 30px;
+
+      a {
+        display: block;
+        font-size: 14px;
+        color: var(--white);
+        text-transform: uppercase;
+        font-weight: 900;
+        font-family: 'Archivo';
+        margin-top: 15px;
+        letter-spacing: 2px;
+      }
+    }
+  }
+
+  &__input {
+    border: 1px solid var(--black);
+    padding: 10px;
+    font-family: 'Poppins';
+    width: 250px;
+  }
+
+  &__logo {
+    width: 100px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .site-footer {
+    display: block;
+
+    &__left {
+      width: 100%;
+      padding: 80px 50px;
+    }
+
+    &__right {
+      width: 100%;
+      padding: 80px 50px;
+      display: flex;
+      justify-content: flex-start;
+
+      div {
+        margin-right: 30px;
+        margin-left: 0;
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .site-header {
+    &__navigation {
+      display: none;
+    }
+  }
+}

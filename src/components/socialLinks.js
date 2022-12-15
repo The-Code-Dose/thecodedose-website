@@ -1,9 +1,5 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import TwitterIcon from '../images/twitter.svg';
-import InstagramIcon from '../images/instagram.svg';
-import RedBubbleIcon from '../images/redbubble.svg';
-import GithubIcon from '../images/github.svg';
+import { StaticQuery, graphql, Link } from 'gatsby';
 
 import './socialLinks.scss';
 
@@ -32,31 +28,38 @@ export default () => (
         },
       },
     }) => (
-      <div className="social-links__container">
-        <a href={instagram} target="__blank">
-          <img
-            src={InstagramIcon}
-            className="social-links__icon"
-            alt="instagram"
-          />
-        </a>
-        <a href={twitter} target="__blank">
-          <img src={TwitterIcon} className="social-links__icon" alt="twitter" />
-        </a>
-        <a href={redbubble} target="__blank">
-          <img
-            src={RedBubbleIcon}
-            className="social-links__icon"
-            alt="redbubble"
-          />
-        </a>
-        <a href={github} target="__blank">
-          <img
-            src={GithubIcon}
-            className="social-links__icon"
-            alt="redbubble"
-          />
-        </a>
+      <div className="site-footer__right">
+        <div>
+          <Link to="/">
+            Home
+          </Link>
+          <Link to="/blog">
+            Blog
+          </Link>
+          <Link to="/blog">
+            CS Illustrated
+          </Link>
+          <a href={redbubble} target="__blank">
+            Shop
+          </a>
+        </div>
+        <div>
+          <a href={instagram} target="__blank">
+            Instagram
+          </a>
+          <a href={github} target="__blank">
+            Discord
+          </a>
+          <a href={twitter} target="__blank">
+            Twitter
+          </a>
+          <a href={twitter} target="__blank">
+            YouTube
+          </a>
+          <a href={github} target="__blank">
+            Github
+          </a>
+        </div>
       </div>
     )}
   />
