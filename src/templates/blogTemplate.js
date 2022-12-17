@@ -3,11 +3,10 @@ import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import PostLink from '../components/postLink';
-import SocialLinks from '../components/socialLinks';
-import Avatar from '../images/avatar.jpg';
+import './blogTemplate.scss';
 
 export default function BlogTemplate({
-  data, // this prop will be injected by the GraphQL query below.
+  data,
 }) {
   const {
     site, markdownRemark, blogPosts: { edges }, featuredPosts: { edges: featuredPosts },
@@ -47,32 +46,22 @@ export default function BlogTemplate({
         <meta property="og:image" content={thumbnail} />
       </Helmet>
       <div className="blog-post-container">
-        <article className="post">
+        <h1 className="blog-post__title">{blogTitle}</h1>
+        <article className="blog-post__content">
           <div>
-            <div className="post-thumbnail">
-              <h1 className="post-title">{blogTitle}</h1>
-              <div className="post-meta">{date}</div>
-            </div>
+              <div className="blog-post__date">{date}</div>
+              <img className="blog-post__thumbnail" src={thumbnail} />
             <div
               className="blog-post-content"
               dangerouslySetInnerHTML={{ __html: html }}
             />
           </div>
-          <div style={{ textAlign: 'center' }}>
-            <h3>About</h3>
-            <img alt="author" className="about__image" src={Avatar} />
-            <p>Hey! I am Urvashi. I am a software engineer at HackerRank.</p>
-            <h4>Follow Me</h4>
-            <SocialLinks />
-            <div className="section__header">
-              <h2>Featured &darr;</h2>
-            </div>
-            <div style={{ display: 'grid', rowGap: '25px' }}>{FeaturedPosts}</div>
+          <div className="blog-post__table">
+            <h3 className="blog-post__table-title">Table of Contents</h3>
           </div>
         </article>
-        <div className="divider" />
-        <section className="mt-100">
-          <h2>Read More &darr;</h2>
+        <section className="blog-post__related-articles">
+          <h2 className="blog-post__related-articles__heading">Related Articles</h2>
           <div className="grids">{Posts}</div>
         </section>
       </div>
