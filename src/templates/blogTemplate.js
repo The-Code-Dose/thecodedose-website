@@ -19,7 +19,10 @@ export default function BlogTemplate({
       thumbnail,
       date,
       path,
-    }, html,
+    },
+    html,
+    tableOfContents,
+    timeToRead,
   } = markdownRemark;
 
   const Posts = edges
@@ -30,6 +33,7 @@ export default function BlogTemplate({
     .filter((edge) => !!edge.node.frontmatter.date)
     .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
 
+    console.log(tableOfContents, timeToRead)
 
   return (
     <Layout>
@@ -58,6 +62,9 @@ export default function BlogTemplate({
           </div>
           <div className="blog-post__table">
             <h3 className="blog-post__table-title">Table of Contents</h3>
+            <section
+              dangerouslySetInnerHTML={{ __html: tableOfContents }}
+              />
           </div>
         </article>
         <section className="blog-post__related-articles">
@@ -78,6 +85,7 @@ export const pageQuery = graphql`
     }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
+      tableOfContents(pathToSlugField: "frontmatter.path")
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         path
@@ -85,6 +93,7 @@ export const pageQuery = graphql`
         thumbnail
         metaDescription
       }
+      timeToRead
     }
     blogPosts: allMarkdownRemark(
       limit: 3

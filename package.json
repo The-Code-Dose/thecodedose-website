@@ -14,6 +14,7 @@
     "gatsby-plugin-react-helmet": "^3.1.22",
     "gatsby-plugin-sass": "^3.2.0",
     "gatsby-plugin-sitemap": "^2.4.0",
+    "gatsby-remark-autolink-headers": "^1.0.0",
     "gatsby-remark-emojis": "^0.4.2",
     "gatsby-remark-prismjs": "^3.3.31",
     "gatsby-source-filesystem": "^2.1.48",
