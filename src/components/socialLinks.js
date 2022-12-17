@@ -36,7 +36,7 @@ export default () => (
           <Link to="/blog">
             Blog
           </Link>
-          <Link to="/blog">
+          <Link to="/cs-illustrated">
             CS Illustrated
           </Link>
           <a href={redbubble} target="__blank">

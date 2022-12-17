@@ -33,8 +33,6 @@ export default function BlogTemplate({
     .filter((edge) => !!edge.node.frontmatter.date)
     .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
 
-    console.log(tableOfContents, timeToRead)
-
   return (
     <Layout>
       <Helmet>
@@ -49,14 +47,14 @@ export default function BlogTemplate({
         <meta property="og:description" content={blogMetaDescription} />
         <meta property="og:image" content={thumbnail} />
       </Helmet>
-      <div className="blog-post-container">
+      <div className="blog-post__container">
         <h1 className="blog-post__title">{blogTitle}</h1>
-        <article className="blog-post__content">
-          <div>
+        <article className="blog-post__section">
+          <div  className="blog-post__left">
               <div className="blog-post__date">{date}</div>
               <img className="blog-post__thumbnail" src={thumbnail} />
             <div
-              className="blog-post-content"
+              className="blog-post__content"
               dangerouslySetInnerHTML={{ __html: html }}
             />
           </div>
