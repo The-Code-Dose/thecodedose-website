@@ -8,6 +8,20 @@
   color: var(--black);
   width: fit-content;
 
+  &:hover {
+    text-decoration: none;
+  }
+
+  @keyframes letter-space {
+    0% {
+      letter-spacing: normal;
+    }
+
+    100% {
+      letter-spacing: 5px;
+    }
+  }
+
   &--yellow {
     background-color: var(--yellow);
   }

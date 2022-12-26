@@ -49,7 +49,7 @@ export default () => {
     <div className="blog-section">
       <div className="blog-section__heading">
         <h1>
-          Check out our blog
+          Read our blog
         </h1>
       </div>
       <div className="blog-section__container">

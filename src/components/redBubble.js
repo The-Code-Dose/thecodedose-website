@@ -19,9 +19,9 @@ export default () => (
         Check us out on RedBubble
       </h2>
       <p className="redbubble__content">
-        This short quiz will sort you out. Answer a few simple questions to get personal career advice and course recommendations.
+        Make the nerd in you happy! View our collection of t-shirts, stickers, magnets and more.
       </p>
-      <Button text="Visit Store" variant="yellow" />
+      <Button text="Visit Store" variant="yellow" link to="https://www.redbubble.com/people/thecodedose/shop" />
     </div>
   </div>
 );

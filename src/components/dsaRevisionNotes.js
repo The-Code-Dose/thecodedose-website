@@ -12,11 +12,9 @@ export default () => (
       </div>
       <div className="dsa-revision__content-container">
         <p className="dsa-revision__content">
-          These are the notes that I made back in University when I was studying Data Structures and Algorithms for interviewing.
-          These are not meant to be used as learning material but as revision notes.
-          Please note that, there might be errors in the notes because they were not made with the intention of distribution but I have put them up here because I thought someone might find them useful!
+          This free e-book contains notes and references on common algorithms and data structures used in programming interviews. These are not meant to be used as learning material, but as revision notes.
         </p>
-        <Button text="Download for free" variant="pink" />
+        <Button text="Free Download" variant="pink" link to="https://thecodedose.gumroad.com/l/DSA-revision-notes" />
       </div>
     </div>
     <div className="dsa-revision__right" />

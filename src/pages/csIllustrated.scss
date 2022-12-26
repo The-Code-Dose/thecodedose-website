@@ -6,6 +6,7 @@
     background-color: var(--blue);
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     &-two {
       background-color: var(--yellow);
@@ -106,6 +107,7 @@
 
     &__right {
       width: 100%;
+      margin-left: 0px;
     }
   }
 }

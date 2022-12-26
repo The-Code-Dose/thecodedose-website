@@ -14,6 +14,8 @@ export default () => (
               twitter
               redbubble
               github
+              discord
+              youtube
             }
           }
         }
@@ -23,7 +25,7 @@ export default () => (
       site: {
         siteMetadata: {
           social: {
-            instagram, redbubble, twitter, github,
+            instagram, redbubble, twitter, github, discord, youtube,
           },
         },
       },
@@ -47,13 +49,13 @@ export default () => (
           <a href={instagram} target="__blank">
             Instagram
           </a>
-          <a href={github} target="__blank">
+          <a href={discord} target="__blank">
             Discord
           </a>
           <a href={twitter} target="__blank">
             Twitter
           </a>
-          <a href={twitter} target="__blank">
+          <a href={youtube} target="__blank">
             YouTube
           </a>
           <a href={github} target="__blank">

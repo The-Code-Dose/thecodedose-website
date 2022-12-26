@@ -8,7 +8,7 @@ tags:
   - javascript
 featured: false
 thumbnail: /assets/D9QRuDEU0AAmktT.jpeg
-draft: false
+draft: true
 ---
 I﻿f you're learning TypeScript or want to learn TypeScript, here are some resources you might want to check out:
 

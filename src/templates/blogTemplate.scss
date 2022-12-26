@@ -19,9 +19,13 @@
 
   &__section {
     padding: 50px;
-    display: grid;
-    grid-template-columns: 3.5fr 1fr;
+    width: 100%;
     column-gap: 50px;
+    display: flex;
+  }
+
+  &__left {
+    width: 70%;
   }
 
   &__table {
@@ -29,6 +33,8 @@
     height: fit-content;
     position: sticky;
     top: 100px;
+    width: 30%;
+    background-color: var(--blue);
 
     &-title {
       color: var(--white);
@@ -39,8 +45,13 @@
       font-weight: 900;
     }
 
+    &-list {
+      margin: 50px 20px;
+    }
+
     a {
-      color: var(--purple);
+      color: var(--black);
+      font-size: 18px;
     }
 
     p {

@@ -61,7 +61,6 @@
     &-right {
       background-color: var(--yellow);
       width: 30%;
-      padding: 50px;
       display: flex;
       align-items: center;
     }
@@ -71,6 +70,13 @@
       font-size: 26px;
       font-weight: 900;
       text-transform: uppercase;
+      font-family: 'Archivo';
+      padding: 50px;
+      width: 100%;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
 
     &-content {

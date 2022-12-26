@@ -7,7 +7,7 @@ tags:
   - typescript
   - javascript
 featured: false
-draft: false
+draft: true
 thumbnail: /assets/D-oLF3AUYAA7kbl.jpeg
 metaDescription: ''
 ---

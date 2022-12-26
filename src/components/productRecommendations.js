@@ -29,10 +29,10 @@ const ProductRecommendations = () => (
     <div className="product-recommendations__footer">
       <div className="product-recommendations__footer-left">
         <h4 className="product-recommendations__footer-title">The Setup</h4>
-        <p className="product-recommendations__footer-content">These are the products that you can spot on our Instagram page.</p>
+        <p className="product-recommendations__footer-content">These are the products that you can spot on our Instagram page. Any purchases made through the links on our page will earn us a small commission at no extra cost to you!</p>
       </div>
       <div className="product-recommendations__footer-right">
-        <h2 className="product-recommendations__footer-btn">Explore</h2>
+        <a className="product-recommendations__footer-btn" href='https://www.amazon.in/shop/thecodedose' target="__blank">Explore</a>
       </div>
     </div>
   </div>

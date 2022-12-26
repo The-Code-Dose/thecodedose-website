@@ -76,17 +76,19 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Archivo', sans-serif;
 }
 
-a {
-  color: var(--primary-color);
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-}
 blockquote {
   border-left: 3px solid var(--primary-color);
   padding-left: 10px;
 }
+
+a {
+  text-decoration: none;
+  color: var(--black);
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .gatsby-highlight {
   margin: 20px 0px;
 }
@@ -108,34 +110,6 @@ blockquote {
   display: flex;
   margin-top: 60px;
   justify-content: space-between;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-  font-weight: 300;
-  a {
-    color: #888;
-    text-decoration: none;
-    margin: 0 8px 0;
-    &[aria-current] {
-      color: var(--primary-color);
-      font-weight: 700;
-    }
-    &:hover {
-      color: var(--primary-color);
-    }
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-}
-
-.site-title a {
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: 900;
-  text-transform: uppercase;
 }
 
 .headline {

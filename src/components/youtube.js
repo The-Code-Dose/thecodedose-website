@@ -10,9 +10,9 @@ export default () => (
         Check us out on YouTube
       </h2>
       <p className="youtube__content">
-        This short quiz will sort you out. Answer a few simple questions to get personal career advice and course recommendations.
+        Understand computer science concepts with hand-drawn animations.
       </p>
-      <Button text="Watch Now" variant="black" />
+      <Button text="Open YouTube" variant="black" to="https://www.youtube.com/channel/UC74LLw9u0wG4arsn8wYpC7w" link />
     </div>
     <div className="youtube__right">
       <video autoPlay muted loop className="youtube__video">

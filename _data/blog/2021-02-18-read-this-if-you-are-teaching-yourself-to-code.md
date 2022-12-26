@@ -15,7 +15,7 @@ metaDescription: >-
   It's a framework that has been used by teachers in traditional education. And
   if you're your own teacher, you need to know about it.
 thumbnail: /assets/Read this if you're a delf taught programmer (1).jpg
-draft: false
+draft: true
 ---
 Some days back, I came across this term called "Bloom's taxonomy". After learning more about it, I found it very interesting. And if you're a self-taught programmer or a self-taught anything, you would probably find it interesting as well!
 

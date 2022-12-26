@@ -61,8 +61,9 @@ export default function BlogTemplate({
           <div className="blog-post__table">
             <h3 className="blog-post__table-title">Table of Contents</h3>
             <section
+              className="blog-post__table-list"
               dangerouslySetInnerHTML={{ __html: tableOfContents }}
-              />
+            />
           </div>
         </article>
         <section className="blog-post__related-articles">

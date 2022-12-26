@@ -5,6 +5,7 @@ import Navigation from './navigation';
 import 'prismjs/themes/prism-okaidia.css';
 import './layout.scss';
 import logo from '../images/logo.png';
+import '../styles/prismjs/monokai.css';
 
 export default ({ children }) => {
   const data = useStaticQuery(

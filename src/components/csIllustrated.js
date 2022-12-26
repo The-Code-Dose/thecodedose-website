@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from './button';
 import './csIllustrated.scss';
-import thumbnail from '../images/featured_blog_thumbnail.png';
+import thumbnail from '../images/cs-illustrated.jpg';
 
 export default () => (
   <div className="cs-illustrated__container">
@@ -13,7 +13,7 @@ export default () => (
         Computer Science <span className="cs-illustrated__heading--pink">Illustrated</span>
       </h1>
       <p className="cs-illustrated__content">
-        This short quiz will sort you out. Answer a few simple questions to get personal career advice and course recommendations.
+        Check out our collection of computer science concepts explained using illustrations.
       </p>
       <Button text="View More" color="yellow" />
     </div>
