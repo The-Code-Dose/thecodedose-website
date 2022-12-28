@@ -68,7 +68,7 @@ export default function BlogTemplate({
         </article>
         <section className="blog-post__related-articles">
           <h2 className="blog-post__related-articles__heading">Related Articles</h2>
-          <div className="grids">{Posts}</div>
+          <div className="blog-post__related-articles--list">{Posts}</div>
         </section>
       </div>
     </Layout>
@@ -97,6 +97,7 @@ export const pageQuery = graphql`
     blogPosts: allMarkdownRemark(
       limit: 3
       sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { draft: { eq: false } } }
       ) {
       edges {
         node {
@@ -115,7 +116,7 @@ export const pageQuery = graphql`
     featuredPosts: allMarkdownRemark(
       limit: 3
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { featured: { eq: true } } }
+      filter: { frontmatter: { featured: { eq: true }, draft: { eq: false } } }
       ) {
       edges {
         node {

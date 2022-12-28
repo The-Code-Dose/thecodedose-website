@@ -3,7 +3,7 @@ template: BlogPost
 path: /blog/goals-setting-for-2021
 date: 2021-01-26T15:55:45.925Z
 title: Setting My Goals | How I Plan To Achieve More In 2021
-featured: true
+featured: false
 tags:
   - productivity
   - self development

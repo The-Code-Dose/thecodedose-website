@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import PostLink from '../components/postLink';
+import './blog.scss';
 
 const BlogPage = ({
   data: {
@@ -20,8 +21,10 @@ const BlogPage = ({
         <title>{site.siteMetadata.title}</title>
         <meta name="description" content={site.siteMetadata.description} />
       </Helmet>
-      <h2>Blog Posts &darr;</h2>
-      <div className="grids">{Posts}</div>
+      <div className="blog__title">
+        <h1>Blog</h1>
+      </div>
+      <div className="blog__posts">{Posts}</div>
     </Layout>
   );
 };

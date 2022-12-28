@@ -15,6 +15,7 @@ tags:
 metaDescription: ''
 thumbnail: /assets/cover.jpg
 draft: false
+featured: true
 ---
 If you want to create a handwriting animation with CSS and SVG like the one below, please keep on reading. Here is the Codesandbox for the example used in this post, you can fork and play around with it!
 

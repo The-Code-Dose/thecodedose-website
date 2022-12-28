@@ -12,6 +12,7 @@ tags:
 metaDescription: A compilation of useful checklists for web developers.
 thumbnail: /assets/checklists.jpg
 draft: false
+featured: true
 ---
 ### 1. Frontend Checklist
 

@@ -15,6 +15,7 @@
   &__thumbnail {
     margin-bottom: 50px;
     width: 100%;
+    border: 1px solid var(--black);
   }
 
   &__section {
@@ -26,6 +27,11 @@
 
   &__left {
     width: 70%;
+
+    img {
+      width: 100%;
+      border: 1px solid var(--black);
+    }
   }
 
   &__table {
@@ -73,7 +79,23 @@
       font-weight: 900;
       text-shadow: 8px 8px var(--black), -1px -1px 0 var(--black), 1px -1px 0 var(--black), -1px 1px 0 var(--black), 1px 1px 0 var(--black);
       text-decoration: solid;
-      margin-bottom: 0px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .blog-post {
+    &__left {
+      width: 100%;
+    }
+
+    &__table {
+      display: none;
+    }
+
+    &__related-articles--list {
+      padding: 50px;
     }
   }
 }

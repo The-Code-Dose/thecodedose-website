@@ -30,11 +30,11 @@ const PostLink = ({
       </h2>
       <div className="post-meta">{date}</div>
       <p>{excerpt}</p>
-      <div className="post-card__tags">
+      {/* <div className="post-card__tags">
         {tags.map(tag => (
           <Link to={`/tags/${tag}`} className="post-card__tag">{tag}</Link>
         ))}
-      </div>
+      </div> */}
       <Button text="Read more" color="yellow" size="small" />
     </section>
   </article>

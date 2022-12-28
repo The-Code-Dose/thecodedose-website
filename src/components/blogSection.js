@@ -3,7 +3,6 @@ import { useStaticQuery, graphql } from 'gatsby';
 import PostLink from './postLink';
 import Button from './button';
 import './blogSection.scss';
-import thumbnail from '../images/featured_blog_thumbnail.png';
 
 export default () => {
   const data = useStaticQuery(
@@ -15,9 +14,9 @@ export default () => {
           }
         }
         latestBlogPosts: allMarkdownRemark(
-          limit: 3
+          limit: 4
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { draft: { eq: false } } }
+          filter: { frontmatter: { draft: { eq: false }, featured: { eq: true } } }
         ) {
           edges {
             node {
@@ -39,10 +38,14 @@ export default () => {
 
   const {
     latestBlogPosts: { edges },
-  } = data
+  } = data;
 
-  const LatestPosts = edges
-    .filter((edge) => !!edge.node.frontmatter.date)
+  const posts = edges
+    .filter((edge) => !!edge.node.frontmatter.date);
+
+  const featuredPost = posts.shift();
+
+  const LatestPosts = posts
     .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
 
   return (
@@ -55,11 +58,11 @@ export default () => {
       <div className="blog-section__container">
         <div className="blog-section__featured">
           <h2 className="blog-section__featured-title">
-            How to teach yourself to code
+            {featuredPost.node.frontmatter.title}
           </h2>
-          <img src={thumbnail} className="blog-section__featured-thumbnail" />
+          <img src={featuredPost.node.frontmatter.thumbnail} className="blog-section__featured-thumbnail" />
           <p>
-            Curabitur vel magna ullamcorper, volutpat est vitae, viverra turpis. Etiam suscipit pulvinar enim et pulvinar. Nunc aliquam elit odio, et elementum quam scelerisque id. Integer semper elit luctus quam tristique, vel volutpat nisl rhoncus. Proin leo erat, cursus in odio at, lacinia ultricies mauris.
+            {featuredPost.node.excerpt}
           </p>
           <Button text="Read more" color="yellow" />
         </div>

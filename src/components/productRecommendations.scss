@@ -1,7 +1,7 @@
 .product-recommendations {
   &__header {
     background-color: var(--black);
-    padding: 40px 60px;
+    padding: 60px;
   }
 
   &__heading {
@@ -22,11 +22,22 @@
   &__product {
     border: 1px solid var(--black);
     padding: 0;
+    width: 300px;
     background-color: var(--yellow);
 
-    &-image {
+    &-video {
       width: 300px;
-      border-bottom: 1px solid var(--black);
+      height: 300px;
+
+      video {
+        position: relative;
+        width: 100%;
+        border-bottom: 1px solid var(--black);
+      }
+
+      &:hover {
+        filter: grayscale(1);
+      }
     }
 
     &-title {

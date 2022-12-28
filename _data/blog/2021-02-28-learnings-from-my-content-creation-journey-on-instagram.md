@@ -9,7 +9,7 @@ tags:
   - blog
   - social media
   - content creation
-featured: true
+featured: false
 metaDescription: >-
   I began my content creation journey on Instagram in May 2019. These are my
   learnings so far:

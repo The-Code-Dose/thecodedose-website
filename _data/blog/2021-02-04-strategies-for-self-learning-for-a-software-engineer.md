@@ -3,7 +3,7 @@ template: BlogPost
 path: /blog/strategies-for-self-learning-as-a-software-engineer
 date: 2021-02-01T16:23:36.642Z
 title: Strategies for Self Learning for a Software Engineer
-featured: true
+featured: false
 tags:
   - self taught
   - self development

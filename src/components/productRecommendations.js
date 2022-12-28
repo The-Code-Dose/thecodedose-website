@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'gatsby';
-import productImage from '../images/coding-baby-sticker.jpg';
-import Button from './button';
+import Monitor from '../videos/monitor.mp4';
+import Keyboard from '../videos/keyboard.mp4';
+import Laptop from '../videos/laptop.mp4';
 
 import './productRecommendations.scss';
 
@@ -13,18 +13,36 @@ const ProductRecommendations = () => (
       </h1>
     </div>
     <div className="product-recommendations__products">
-      <div className="product-recommendations__product">
-        <img className="product-recommendations__product-image" src={productImage} />
-        <h5 className="product-recommendations__product-title">Monitor</h5>
-      </div>
-      <div className="product-recommendations__product">
-        <img className="product-recommendations__product-image" src={productImage} />
-        <h5 className="product-recommendations__product-title">Laptop</h5>
-      </div>
-      <div className="product-recommendations__product">
-        <img className="product-recommendations__product-image" src={productImage} />
-        <h5 className="product-recommendations__product-title">Keyboard</h5>
-      </div>
+      <a href="https://www.amazon.in/shop/thecodedose/list/1XAFNK5R5DPMF?ref_=aip_sf_list_spv_ofs_mixed_d" target="__blank">
+        <div className="product-recommendations__product">
+          <div className="product-recommendations__product-video">
+            <video autoPlay muted loop>
+              <source src={Monitor} type="video/mp4" />
+            </video>
+          </div>
+          <h5 className="product-recommendations__product-title">Monitor</h5>
+        </div>
+      </a>
+      <a href="https://www.amazon.in/shop/thecodedose/list/1XAFNK5R5DPMF?ref_=aip_sf_list_spv_ofs_mixed_d" target="__blank">
+        <div className="product-recommendations__product">
+          <div className="product-recommendations__product-video">
+            <video autoPlay muted loop>
+              <source src={Laptop} type="video/mp4" />
+            </video>
+          </div>
+          <h5 className="product-recommendations__product-title">Laptop</h5>
+        </div>
+      </a>
+      <a href="https://www.amazon.in/shop/thecodedose/list/1XAFNK5R5DPMF?ref_=aip_sf_list_spv_ofs_mixed_d" target="__blank">
+        <div className="product-recommendations__product">
+          <div className="product-recommendations__product-video">
+            <video autoPlay muted loop>
+              <source src={Keyboard} type="video/mp4" />
+            </video>
+          </div>
+          <h5 className="product-recommendations__product-title">Keyboard</h5>
+        </div>
+      </a>
     </div>
     <div className="product-recommendations__footer">
       <div className="product-recommendations__footer-left">
@@ -32,7 +50,7 @@ const ProductRecommendations = () => (
         <p className="product-recommendations__footer-content">These are the products that you can spot on our Instagram page. Any purchases made through the links on our page will earn us a small commission at no extra cost to you!</p>
       </div>
       <div className="product-recommendations__footer-right">
-        <a className="product-recommendations__footer-btn" href='https://www.amazon.in/shop/thecodedose' target="__blank">Explore</a>
+        <a className="product-recommendations__footer-btn" href="https://www.amazon.in/shop/thecodedose" target="__blank">Explore</a>
       </div>
     </div>
   </div>

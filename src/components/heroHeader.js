@@ -28,10 +28,10 @@ export default () => (
           className="hero-header__right"
         >
           <h1 className="hero-header__heading">
-            Not sure where to <span className="hero-header__heading--focus">start</span>?
+            Want to learn to <span className="hero-header__heading--focus">code</span>?
           </h1>
           <p className="hero-header__content">
-            This short quiz will sort you out. Answer a few simple questions to get personal career advice and course recommendations.
+          Do you want to learn about computer programming but don't know where to start? This beginner's guide will help you find the best resources to start coding today.
           </p>
           <Button text="Start here" color="yellow" />
         </div>
