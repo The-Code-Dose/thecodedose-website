@@ -15,7 +15,7 @@ export default () => (
       <p className="cs-illustrated__content">
         Check out our collection of computer science concepts explained using illustrations.
       </p>
-      <Button text="View More" color="yellow" />
+      <Button text="View More" color="yellow" link to="/cs-illustrated" />
     </div>
   </div>
 );

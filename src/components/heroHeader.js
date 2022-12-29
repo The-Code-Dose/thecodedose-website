@@ -33,7 +33,7 @@ export default () => (
           <p className="hero-header__content">
           Do you want to learn about computer programming but don't know where to start? This beginner's guide will help you find the best resources to start coding today.
           </p>
-          <Button text="Start here" color="yellow" />
+          <Button text="Start here" color="yellow" link to="/blog/how-to-learn-coding" />
         </div>
       </div>
     )}
