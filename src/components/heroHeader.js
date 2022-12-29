@@ -1,6 +1,6 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import hero from '../images/hero.png';
+import hero from '../images/hero_image.png';
 import Button from './button';
 
 import './heroHeader.scss';
