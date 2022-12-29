@@ -33,7 +33,7 @@ const ProductRecommendations = () => (
           <h5 className="product-recommendations__product-title">Laptop</h5>
         </div>
       </a>
-      <a href="https://www.amazon.in/shop/thecodedose/list/1XAFNK5R5DPMF?ref_=aip_sf_list_spv_ofs_mixed_d" target="__blank">
+      <a href="https://www.amazon.in/shop/thecodedose/list/1XAFNK5R5DPMF?ref_=aip_sf_list_spv_ofs_mixed_d" target="__xxblank">
         <div className="product-recommendations__product">
           <div className="product-recommendations__product-video">
             <video autoPlay muted loop>
