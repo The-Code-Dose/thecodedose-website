@@ -15,6 +15,7 @@ metaDescription: >-
   learnings so far:
 thumbnail: /assets/learning_instagram.jpg
 draft: false
+author: Urvashi
 ---
 I began my content creation journey on Instagram in May 2019. It's been a little less than 2 years but I only started taking it more seriously since November 2020. Since then, I have grown from 1000 followers to 6000 followers.
 

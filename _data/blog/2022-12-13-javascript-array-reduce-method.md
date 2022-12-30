@@ -8,6 +8,7 @@ tags:
   - js
   - array
 featured: false
+author: Urvashi
 draft: true
 thumbnail: /assets/58858158_1588950074573999_2243165519936535483_n.jpg
 ---
@@ -15,7 +16,7 @@ T﻿he `reduce` array method iterates through the elements of the array and runs
 
 T﻿he `reduce`It is used to reduce the elements of the array into a single value called the "accumulator".
 
-W﻿ithin each iteration, the accumulator is updated and returned. A﻿t the end, reduce returns the final value of the accumulator. 
+W﻿ithin each iteration, the accumulator is updated and returned. A﻿t the end, reduce returns the final value of the accumulator.
 
 Y﻿ou can also pass an initial value of the accumulator to `reduce`.
 

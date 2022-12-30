@@ -16,6 +16,7 @@ metaDescription: >-
   if you're your own teacher, you need to know about it.
 thumbnail: /assets/Read this if you're a delf taught programmer (1).jpg
 draft: true
+author: Urvashi
 ---
 Some days back, I came across this term called "Bloom's taxonomy". After learning more about it, I found it very interesting. And if you're a self-taught programmer or a self-taught anything, you would probably find it interesting as well!
 

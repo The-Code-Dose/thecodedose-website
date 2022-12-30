@@ -4,12 +4,20 @@
   }
 
   &__title {
-    font-size: 42px;
-    font-weight: 900;
     background-color: var(--yellow);
     padding: 20px 50px;
     text-align: center;
     border-bottom: 1px solid var(--black);
+
+    h1 {
+      font-size: 42px;
+      font-weight: 900;
+      margin-bottom: 0;
+    }
+  }
+
+  &__date, &__read, &__author {
+    font-size: 12px;
   }
 
   &__thumbnail {

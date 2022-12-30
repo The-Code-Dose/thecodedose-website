@@ -12,6 +12,7 @@ metaDescription: >-
   git is and what it is used for as well as help you get started with git in
   your projects.
 draft: true
+author: Urvashi
 ---
 If you're a complete beginner to git, this post will help you understand what git is and what it is used for as well as help you get started with git in your projects.
 

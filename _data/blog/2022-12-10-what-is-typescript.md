@@ -10,6 +10,7 @@ featured: false
 draft: true
 thumbnail: /assets/D-oLF3AUYAA7kbl.jpeg
 metaDescription: ''
+author: Urvashi
 ---
 Over the years, the popularity as well as the complexity of JavaScript programs have grown exponentially.
 

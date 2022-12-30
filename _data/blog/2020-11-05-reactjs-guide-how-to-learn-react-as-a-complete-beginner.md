@@ -6,6 +6,7 @@ featured: true
 title: 'ReactJS Guide: How to learn React as a complete beginner?'
 thumbnail: /assets/IMG_20201030_215109-2-2.png
 draft: false
+author: Urvashi
 tags: ["javascript","beginner","react","roadmap"]
 ---
 

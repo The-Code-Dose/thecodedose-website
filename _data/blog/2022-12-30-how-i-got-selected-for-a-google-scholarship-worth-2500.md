@@ -1,20 +1,23 @@
 ---
 template: BlogPost
-path: /blog
+path: /blog/how-i-got-selected-for-a-google-scholarship-worth-2500-dollars
 date: 2022-12-30T15:59:25.968Z
 title: How I got selected for a Google Scholarship worth $2500
 tags:
   - scholarship
   - google
 featured: false
-draft: true
+draft: false
+thumbnail: /assets/google_generation_swag.png
 author: Deeya Sethi
 ---
 **April 7 7:56 AM**: Congratulations! You have been selected as a scholar!
 
+![Selection email screenshot](/assets/google_generation_email.png)
+
 # **What is the Google Generation Scholarship?**
 
-The Google Generation Scholarship is available to female students worldwide interested in computer science. The scholarship program is designed to assist students from under-represented groups and those who firmly commit to their field of study and future profession. Students in their first and second college years are eligible for the scholarship.
+The [Google Generation Scholarship](https://buildyourfuture.withgoogle.com/scholarships/generation-google-scholarship-apac) is available to female students worldwide interested in computer science. The scholarship program is designed to assist students from under-represented groups and those who firmly commit to their field of study and future profession. Students in their first and second college years are eligible for the scholarship.
 
 The scholarship includes a $1000 cash reward and an interview opportunity for a summer internship at Google. The recipients of this scholarship are invited to a retreat with Googlers and other scholarship recipients, either virtual or offline, depending on the circumstances. In addition, they receive Google swag!
 
@@ -63,7 +66,7 @@ H﻿ere's a [GeeksForGeeks article](https://www.geeksforgeeks.org/generation-goo
 
 ## I﻿nterview
 
-## After getting selected for the interview round, I consulted my seniors and read medium blogs to get familiar with the interview process. I started with an introduction that I had prepared days before the interview.
+After getting selected for the interview round, I consulted my seniors and read medium blogs to get familiar with the interview process. I started with an introduction that I had prepared days before the interview.
 
 My interview was personalized just for me. They asked me about myself, primarily non-technical, and why my interests align with their scholarship program.
 

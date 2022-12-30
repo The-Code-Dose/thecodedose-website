@@ -9,6 +9,7 @@ tags:
 featured: false
 thumbnail: /assets/learning_instagram.jpg
 draft: true
+author: Urvashi
 ---
 Are you thinking about buying a mechanical keyboard? Don’t know what to look for? Don’t worry, I got you covered in this post.
 

@@ -105,6 +105,11 @@ collections:
         name: metaDescription
         widget: text
         required: false
+      - label: Author
+        name: author
+        widget: string
+        required: true
+        default: "Urvashi"
       - label: Featured Image
         name: thumbnail
         widget: image

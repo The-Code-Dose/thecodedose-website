@@ -10,6 +10,7 @@ tags:
 featured: false
 thumbnail: /assets/D-JEK6LUEAAaImg.jpeg
 draft: true
+author: Urvashi
 ---
 **1. Choose your project wisely**. This is an important step, so take your time to figure out the project you are most comfortable with and then start contributing to it. Most projects are listed before the application procedure actually opens.
 

@@ -18,6 +18,7 @@ export default function BlogTemplate({
       metaDescription: blogMetaDescription,
       thumbnail,
       date,
+      author,
       path,
     },
     html,
@@ -48,10 +49,14 @@ export default function BlogTemplate({
         <meta property="og:image" content={thumbnail} />
       </Helmet>
       <div className="blog-post__container">
-        <h1 className="blog-post__title">{blogTitle}</h1>
+        <div className="blog-post__title">
+          <h1 >{blogTitle}</h1>
+          <span className="blog-post__date">{date} • </span>
+          <span className="blog-post__author">{author} • </span>
+          <span className="blog-post__read">{timeToRead} min read</span>
+        </div>
         <article className="blog-post__section">
           <div  className="blog-post__left">
-              <div className="blog-post__date">{date}</div>
               <img className="blog-post__thumbnail" src={thumbnail} />
             <div
               className="blog-post__content"
@@ -89,6 +94,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        author
         thumbnail
         metaDescription
       }

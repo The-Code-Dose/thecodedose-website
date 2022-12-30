@@ -7,6 +7,7 @@ tags:
   - beginner
 featured: false
 draft: false
+author: Urvashi
 thumbnail: /assets/IMG_4280.png
 metaDescription: >-
   Do you want to learn about computer programming but don't know where to start?

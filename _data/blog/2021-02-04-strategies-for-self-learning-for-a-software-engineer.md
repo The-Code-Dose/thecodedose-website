@@ -16,6 +16,7 @@ metaDescription: >-
   your career as a software engineer.
 thumbnail: /assets/1.jpg
 draft: false
+author: Urvashi
 ---
  I am currently reading 'The Pragmatic Programmer' by Andy Hunt and Dave Thomas when I came across this golden advice. I knew I had to write a blog about it for people who haven't yet read the book.
 

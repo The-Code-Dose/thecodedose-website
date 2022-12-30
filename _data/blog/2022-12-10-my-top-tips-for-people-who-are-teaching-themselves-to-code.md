@@ -9,6 +9,7 @@ tags:
   - ''
 featured: false
 draft: true
+author: Urvashi
 ---
 * Do not worry about figuring out the entire journey in the beginning. Figure out a starting point and just start. You can refer to roadmaps to identify where you are in your journey and where to go from there.
 * Learn from other people's journeys. Seek out other self-taught developers and listen to their advice and tips.

@@ -3,6 +3,7 @@ template: BlogPost
 path: /blog/loading-webassembly-modules-in-javascript
 date: 2020-11-07T11:18:10.773Z
 title: Loading WebAssembly Modules in JavaScript
+author: Urvashi
 tags:
   - webassembly
   - c

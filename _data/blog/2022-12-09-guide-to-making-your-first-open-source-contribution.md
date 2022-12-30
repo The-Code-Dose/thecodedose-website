@@ -9,6 +9,7 @@ tags:
   - github
 featured: false
 draft: true
+author: Urvashi
 ---
 I﻿f you want to contribute to open source but don't know where to begin, then this post is for you. H﻿ere's a step-by-step guide to help you make your very first open source contribution!
 

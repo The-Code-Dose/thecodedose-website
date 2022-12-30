@@ -8,6 +8,7 @@ metaDescription: >-
   visualization library.
 thumbnail: /assets/1_sVVzkzCBvAOmYdxzAApdWg.png
 draft: false
+author: Urvashi
 tags: ["javascript","d3.js","react","visualization"]
 ---
 Today, we will be looking into how to create a Pie Chart using React and D3.js

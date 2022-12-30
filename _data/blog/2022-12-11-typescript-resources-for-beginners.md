@@ -7,6 +7,7 @@ tags:
   - typescript
   - javascript
 featured: false
+author: Urvashi
 thumbnail: /assets/D9QRuDEU0AAmktT.jpeg
 draft: true
 ---
