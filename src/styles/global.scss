@@ -9,7 +9,6 @@ body {
   margin-top: 0;
 }
 body.dark {
-  --primary-color: #664015;
   --purple: #7562ab;
   --black: #2a2a2a;
   --white: #ffffff;
@@ -18,51 +17,10 @@ body.dark {
   --pink: #ff84ca;
   --blue: #9FD7FA;
   --red: #F15555;
-  --primary-text-color: #fff;
-  --featured-bg: #493b8a;
-  --featured-text: #fff;
-  --secondary-color: #10072b;
-  --background: #fff;
-  --card-bg: #fff;
-  --card-bdr: #eee;
-  --card-shadow: #d5d5d5;
-  --btn-bg: var(--background);
-  --btn-bdr: #d3d6e7;
-  --btn-text-color: #868892;
-  --btn-hover-bg: var(--btn-bdr);
-  --btn-hover-text-color: #00062b;
-  --contact-bg: #f7f8fe;
-  --contact-bdr: #d3d6e7;
-  --input-bg: var(--background);
-  --tag-bg: #F7F3E9;
-  --tag-text: #664015;
 }
-body.light {
-  --primary-color: #a1663f;
-  --primary-text-color: #D7D2C6;
-  --featured-bg: #66578d;
-  --featured-text: #fff;
-  --secondary-color: #66578d;
-  --background: #2b1d14;
-  --text-color: #D7D2C6;
-  --text-secondary-color: #D7D2C6;
-  --card-bg: #20160f;
-  --card-bdr: #181326;
-  --card-shadow: #25140c;
-  --btn-bg: var(--background);
-  --btn-bdr: #d3d6e7;
-  --btn-text-color: #868892;
-  --btn-hover-bg: var(--btn-bdr);
-  --btn-hover-text-color: #00062b;
-  --contact-bg: var(--card-shadow);
-  --contact-bdr: var(--card-bg);
-  --input-bg: var(--card-bg);
-  --tag-bg: var(--background);
-  --tag-text: var(--primary-text-color);
-}
+
 /* System Fonts as used by Medium and WordPress */
 body {
-  background-color: var(--background);
   color: var(--black);
   font-family: 'Poppins';
   box-sizing: border-box;
