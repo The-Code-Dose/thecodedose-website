@@ -6,7 +6,7 @@ title: How I got selected for a Google Scholarship worth $2500
 tags:
   - scholarship
   - google
-featured: false
+featured: true
 draft: false
 thumbnail: /assets/google_generation_swag.png
 author: Deeya Sethi

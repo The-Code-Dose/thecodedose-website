@@ -64,7 +64,7 @@ export default () => {
           <p>
             {featuredPost.node.excerpt}
           </p>
-          <Button text="Read more" color="yellow" />
+          <Button text="Read more" color="yellow" link to={featuredPost.node.frontmatter.path} />
         </div>
         <div className="blog-section__list">
           {LatestPosts}
