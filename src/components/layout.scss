@@ -1,6 +1,6 @@
 .site-header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 20px 0;
   background: var(--purple);
   align-items: center;
@@ -15,16 +15,22 @@
   }
 
   &__navigation {
-    display: flex;
-    justify-content: space-between;
-    a {
-      color: var(--white);
-      text-transform: uppercase;
-      font-weight: 500;
-      font-size: 14px;
-      margin-left: 20px;
-      font-family: 'Archivo';
-      letter-spacing: 2px;
+    &--desktop, &--mobile {
+      display: flex;
+      justify-content: space-between;
+      a {
+        color: var(--white);
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 14px;
+        margin-left: 20px;
+        font-family: 'Archivo';
+        letter-spacing: 2px;
+      }
+    }
+
+    &--menu-icon {
+      display: none;
     }
   }
 }
@@ -113,7 +119,25 @@
 @media only screen and (max-width: 600px) {
   .site-header {
     &__navigation {
-      display: none;
+      &--desktop {
+        display: none;
+      }
+
+      &--menu-icon {
+        display: block;
+        text-align: right;
+        color: white;
+        font-family: 'Archivo';
+        text-transform: uppercase;
+      }
+
+      &--mobile {
+        a {
+          display: block;
+          margin: 20px;
+          margin-left: 0;
+        }
+      }
     }
   }
 }
