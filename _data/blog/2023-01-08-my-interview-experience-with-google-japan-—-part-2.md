@@ -9,6 +9,7 @@ tags:
 featured: false
 draft: false
 author: Urvashi
+thumbnail: /assets/Screenshot 2023-01-08 at 10.13.15 AM.png
 ---
 I recently interviewed with Google for a University Grad role based in Tokyo, Japan in October. After passing my phone screen, I was invited to interview onsite in Bangalore. Honestly, I was a bit disappointed because I was hoping to visit the Tokyo office for the onsite but unfortunately that didn’t happen.
 
