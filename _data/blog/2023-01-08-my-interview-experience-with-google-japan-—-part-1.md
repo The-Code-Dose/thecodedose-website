@@ -1,13 +1,13 @@
 ---
 template: BlogPost
 path: /blog/my-interview-experience-with-google-japan-part-1
-date: 2023-01-08T01:05:57.825Z
+date: 2019-11-07T01:05:57.825Z
 title: 'My Interview Experience with Google [Japan] — Part 1'
 tags:
   - interview
   - google
 featured: false
-draft: true
+draft: false
 author: Urvashi
 thumbnail: /assets/Screenshot 2023-01-08 at 10.13.15 AM.png
 ---
@@ -43,4 +43,4 @@ My technical phone interview was scheduled in August end. I was supposed to code
 
 I received positive feedback on my performance and was moved to the onsites. Since I had mid-semester exams, I requested my interview to be held the next month in October.
 
-I don’t want this post to be too long, so I will be posting about my Onsite experience in Part — 2! :)
+I don’t want this post to be too long, so I will be posting about my Onsite experience in [Part — 2](https://www.thecodedose.com/blog/my-interview-experience-with-google-japan-part-2)! :)
