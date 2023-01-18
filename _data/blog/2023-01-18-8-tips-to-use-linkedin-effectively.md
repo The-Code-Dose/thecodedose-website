@@ -7,7 +7,7 @@ tags:
   - career
   - social media
 featured: false
-draft: true
+draft: false
 metaDescription: >-
   Here are some tips to use LinkedIn effectively:
 
