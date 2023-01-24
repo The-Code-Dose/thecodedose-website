@@ -101,6 +101,11 @@ collections:
         widget: "boolean"
         default: true
         required: true
+      - label: "Travel"
+        name: "travel"
+        widget: "boolean"
+        default: false
+        required: false
       - label: Meta Description
         name: metaDescription
         widget: text

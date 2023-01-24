@@ -5,7 +5,7 @@ import Layout from '../components/layout';
 import PostLink from '../components/postLink';
 import './blog.scss';
 
-const BlogPage = ({
+const TravelPage = ({
   data: {
     site,
     blogPosts: { edges },
@@ -22,16 +22,16 @@ const BlogPage = ({
         <meta name="description" content={site.siteMetadata.description} />
       </Helmet>
       <div className="blog__title">
-        <h1>Blog</h1>
+        <h1>The Travel Dose</h1>
       </div>
       <div className="blog__posts">{Posts}</div>
     </Layout>
   );
 };
 
-export default BlogPage;
+export default TravelPage;
 export const pageQuery = graphql`
-  query blogPageQuery {
+  query travelPageQuery {
     site {
       siteMetadata {
         title
@@ -40,7 +40,7 @@ export const pageQuery = graphql`
     }
     blogPosts: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { draft: { eq: false }, travel: { ne: true } } }
+      filter: { frontmatter: { draft: { eq: false }, travel: { eq: true } } }
     ) {
       edges {
         node {
