@@ -38,12 +38,16 @@ export default function BlogTemplate({
           {`${blogTitle} | ${siteTitle}`}
         </title>
         <meta name="description" content={blogMetaDescription} />
-        <meta name="twitter:site" content="@thecodedose" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`https://thecodedose.com${path}`} />
         <meta property="og:title" content={blogTitle} />
         <meta property="og:description" content={blogMetaDescription} />
         <meta property="og:image" content={thumbnail} />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@thecodedose" />
+        <meta name="twitter:title" content={blogTitle} />
+        <meta name="twitter:description" content={blogMetaDescription} />
+        <meta name="twitter:image" content={thumbnail} />
       </Helmet>
       <div className="blog-post__container">
         <div className="blog-post__title">
