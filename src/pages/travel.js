@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import PostLink from '../components/postLink';
-import './blog.scss';
+import './travel.scss';
 
 const TravelPage = ({
   data: {
@@ -21,10 +21,10 @@ const TravelPage = ({
         <title>{site.siteMetadata.title}</title>
         <meta name="description" content={site.siteMetadata.description} />
       </Helmet>
-      <div className="blog__title">
+      <div className="travel__title">
         <h1>The Travel Dose</h1>
       </div>
-      <div className="blog__posts">{Posts}</div>
+      <div className="travel__posts">{Posts}</div>
     </Layout>
   );
 };

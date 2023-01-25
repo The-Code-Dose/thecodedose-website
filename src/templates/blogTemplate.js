@@ -20,6 +20,7 @@ export default function BlogTemplate({
       date,
       author,
       path,
+      travel,
     },
     html,
     tableOfContents,
@@ -27,10 +28,6 @@ export default function BlogTemplate({
   } = markdownRemark;
 
   const Posts = edges
-    .filter((edge) => !!edge.node.frontmatter.date)
-    .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
-
-  const FeaturedPosts = featuredPosts
     .filter((edge) => !!edge.node.frontmatter.date)
     .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
 
