@@ -10,8 +10,8 @@ draft: false
 travel: true
 thumbnail: /assets/how-t-plan-your-next-trip-thumbnail.jpeg
 metaDescription: >-
-  This blog will examine some of the HTML tags that are no longer in use, as
-  well as the alternatives that have been developed.
+  People often ask me how I plan my trips?
+  In this post, I have distilled down my knowledge into a 10 step guide for beginners.
 author: Urvashi
 ---
 
