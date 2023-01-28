@@ -214,3 +214,24 @@ a {
     font-weight: 900;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .affiliate-container {
+    display: block;
+
+    &__thumbnail {
+      max-width: 150px;
+      min-width: 150px;
+      margin-right: 20px;
+    }
+
+    &__heading {
+      font-weight: 900;
+    }
+
+    .button {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+}
