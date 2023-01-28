@@ -37,7 +37,7 @@ Though sometimes, the machine was not able to scan my Indian passport but that's
 No matter how small the hotel room was, there was always a bathtub (well mostly).
 The hotel also provides you with bath salts as complimentary toiletries!
 
-![Bath Tub](/assets/japan-hotel-bathtub.jpeg)
+![Bath Tub](/assets/japan-hotel-bathtub.webp)
 
 Another tiny detail that I observed was that if your stay included 2 people, the toiletries would be marked with separate colours so that you're able to identify which one belongs to you.
 Pretty amazing right?
@@ -49,7 +49,7 @@ That's a lifesaver!
 They also have bath sponges or towels.
 This concept was new to me but they are a nice alternative to loofahs!
 
-![Body Towel](/assets/japan-hotel-body-towel.jpeg)
+![Body Towel](/assets/japan-hotel-body-towel.webp)
 
 Even the shampoos and conditioners left my hair feeling so soft.
 And the mirrors were heated to avoid fogging up after a hot shower.
@@ -64,7 +64,7 @@ You can customise the position, temperature and the pressure as well!
 There are two modes of the bidet: the back and the front.
 Some toilets would also have a button for raising the toilet lid and seat.
 
-![Toilet Bidet Controls](/assets/japanese-hotel-toilet.jpeg)
+![Toilet Bidet Controls](/assets/japanese-hotel-toilet.webp)
 
 # Yukatas
 

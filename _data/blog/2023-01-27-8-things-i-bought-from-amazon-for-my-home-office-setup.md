@@ -21,7 +21,7 @@ Let's begin!
 
 In a previous _iteration_ of my setup, I was using the BenQ monitor:
 
-![BenQ Monitor](/assets/monitor-home-office.jpeg)
+![BenQ Monitor](/assets/monitor-home-office.webp)
 
 <div class="affiliate-container">
   <img class="affiliate-container__thumbnail" src="https://m.media-amazon.com/images/I/61FCyaFGqhL._AC_SX679_.jpg">
@@ -85,7 +85,7 @@ I own 3 keyboards that I use interchangeably.
 
 The panda theme is cute, but I have switched the keycaps to a sea theme that looks like this:
 
-![Keyboard](/assets/keyboard-home-office-ducky.jpeg)
+![Keyboard](/assets/keyboard-home-office-ducky.webp)
 
 ## Apple
 
