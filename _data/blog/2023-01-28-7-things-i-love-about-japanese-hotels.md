@@ -2,7 +2,7 @@
 template: BlogPost
 path: /travel/7-things-i-love-about-japanese-hotels
 date: 2023-01-27T07:38:06Z
-title: "5 Things I Love About Japanese Hotels"
+title: "7 Things I Love About Japanese Hotels"
 tags:
   - japan
   - hotels
