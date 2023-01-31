@@ -7,6 +7,9 @@ tags:
   - open source
   - beginner
   - github
+thumbnail: /assets/github-animation.png
+metaDescription: >-
+  Here's a step-by-step guide that will help you make your very first open source contribution!
 featured: false
 draft: false
 author: Urvashi
@@ -32,8 +35,9 @@ You can filter open source projects by any programming language of your choice.
 
 You can even sign up to the platform and receive a different open issue in your inbox every day.
 
-Alternatively, you can directly look for projects on GitHub and filter them by languages and topics.
+Alternatively, you can directly look for projects on [GitHub](https://github.com/topics) and filter them by languages and topics.
 
+![Github Topics](/assets/github_topics.png)
 
 If you're still confused about what project to pick, you can think of a library or package that you love and contribute to that.
 Or a bug that you came across in one of the packages, and start by trying to fix that.
@@ -51,6 +55,8 @@ If this doesn't work, then you can try your luck by creating an issue on GitHub 
 
 If a project accepts contributions from the community, it's likely it'll have a contributor guideline present.
 
+![Contribution Guidelines](/assets/contributing_guidelines.png)
+
 You must read it before you go ahead and make any contributions.
 The guideline will help you understand the standards and practices used in the project.
 For example - branch naming, commit message formats, pull request title guidelines etc.
@@ -61,6 +67,8 @@ Navigating new codebases can be intimidating.
 It's easier if you start out with smaller or more beginner friendly tasks.
 
 To look out for those, check if the issue tracker has issues labelled with tags such as 'beginner friendly', 'newcomer friendly', 'good first bug' etc.
+
+![Good first issues](/assets/good_first_issues.png)
 
 If not, then ask in the communication channel if there's a task that you can pick up.
 
@@ -89,3 +97,7 @@ Write good commit message and PR titles.
 
 Be patient and respectful. It's an opportunity to learn from others.
 Sometimes, it might take several rounds of review to get your first PR accepted!
+
+# First Contribution
+
+You can head on to [First Contributions repository on Github](https://github.com/firstcontributions/first-contributions) that will help you walkthrough the process of making your first contribution, from forking a repository to merging a PR, like a practice run.
