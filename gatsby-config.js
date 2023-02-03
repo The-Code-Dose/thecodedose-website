@@ -36,6 +36,12 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-minify',
+      options: {
+        removeAttributeQuotes: true,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-google-gtag',
       options: {
         trackingIds: [
