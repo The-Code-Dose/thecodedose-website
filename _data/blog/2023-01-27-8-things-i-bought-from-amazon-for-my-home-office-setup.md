@@ -7,7 +7,7 @@ tags:
   - planning
 featured: false
 draft: false
-thumbnail: /assets/thing-i-bought-from-amazon.jpeg
+thumbnail: /assets/thing-i-bought-from-amazon.png
 metaDescription: >-
 
 author: Urvashi

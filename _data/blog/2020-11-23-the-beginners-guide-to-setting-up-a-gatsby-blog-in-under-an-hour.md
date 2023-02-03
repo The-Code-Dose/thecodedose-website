@@ -19,9 +19,9 @@ author: Urvashi
 ---
 Today we will be creating a blog with Gatsby and deploying it on Netlify. For the purposes of this blog, we will be using a Gatsby starter site ([demo](https://confident-ritchie-123a6d.netlify.app/)) rather than building it from scratch.
 
-![Dark mode](/assets/confident-ritchie-123a6d.netlify.app_1.png)
+![Dark mode](/assets/confident-ritchie-123a6d.netlify.png)
 
-![Light mode](/assets/confident-ritchie-123a6d.netlify.app_2.png)
+![Light mode](/assets/confident-ritchie-123a6d.netlify_2.png)
 
 Gatsby Starter Peach template has the following features—
 
