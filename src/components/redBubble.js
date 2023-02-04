@@ -4,7 +4,7 @@ import './redBubble.scss';
 import NoicestProgrammerTee from '../images/coding-in-progress-sticker.jpg';
 import WitchCoffeeCoaster from '../images/witch-coffee-coaster.jpg';
 import CodingTeaSticker from '../images/kawaii-coding-tea-sticker.jpeg';
-import CodingBabySticker from '../images/coding-baby-sticker.jpg';
+import CodingBabySticker from '../images/coding-baby-sticker.webp';
 
 export default () => (
   <div className="redbubble__container">
