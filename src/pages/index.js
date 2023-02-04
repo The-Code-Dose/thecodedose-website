@@ -46,7 +46,7 @@ const IndexPage = ({
       <GatsbyBlog />
       <RedBubble />
       <Youtube />
-      <section className="newsletter-section">
+      {/* <section className="newsletter-section">
         <iframe
           title="newsletter"
           className="card"
@@ -56,7 +56,7 @@ const IndexPage = ({
           frameBorder="0"
           scrolling="no"
         />
-      </section>
+      </section> */}
     </Layout>
   );
 };

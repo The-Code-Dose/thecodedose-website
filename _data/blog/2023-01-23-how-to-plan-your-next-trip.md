@@ -70,7 +70,7 @@ I usually start and end at the same city, the largest city in the country and pl
 I divide my total holiday days among the places and depending on the things to do in each.
 Here's an example itinerary for 23 days in Japan:
 
-![Japan Itinerary](/assets/japan-itinerary.png)
+![Japan Itinerary](/assets/japan-itinerary.webp)
 
 An important thing to look out for is public holidays as some places might be closed at that time or the buses/trains service might be reduced.
 

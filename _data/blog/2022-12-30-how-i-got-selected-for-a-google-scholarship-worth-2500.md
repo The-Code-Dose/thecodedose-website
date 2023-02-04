@@ -8,7 +8,7 @@ tags:
   - google
 featured: true
 draft: false
-thumbnail: /assets/google_generation_swag.png
+thumbnail: /assets/google_generation_swag.webp
 author: Deeya Sethi
 ---
 **April 7 7:56 AM**: Congratulations! You have been selected as a scholar!

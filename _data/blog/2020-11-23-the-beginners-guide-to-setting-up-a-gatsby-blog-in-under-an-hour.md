@@ -19,7 +19,7 @@ author: Urvashi
 ---
 Today we will be creating a blog with Gatsby and deploying it on Netlify. For the purposes of this blog, we will be using a Gatsby starter site ([demo](https://confident-ritchie-123a6d.netlify.app/)) rather than building it from scratch.
 
-![Dark mode](/assets/confident-ritchie-123a6d.netlify.png)
+![Dark mode](/assets/confident-ritchie-123a6d.netlify.webp)
 
 ![Light mode](/assets/confident-ritchie-123a6d.netlify_2.png)
 
