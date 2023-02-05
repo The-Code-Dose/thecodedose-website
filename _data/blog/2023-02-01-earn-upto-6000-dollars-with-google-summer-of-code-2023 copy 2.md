@@ -1,7 +1,7 @@
 ---
 template: BlogPost
 path: /blog/earn-upto-6000-dollars-with-google-summer-of-code-2023
-date: 2023-01-28T08:01:51.527Z
+date: 2023-02-01T08:01:51.527Z
 title: Earn Upto 6600$ With Google Summer Of Code 2023
 tags:
   - google summer of code
