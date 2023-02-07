@@ -30,6 +30,7 @@ export default function TagTemplate({
           {siteMetadata.title}
         </title>
         <meta name="description" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5235026168912267" crossOrigin="anonymous" />
       </Helmet>
       <div className="blog-post-container">
         <div>

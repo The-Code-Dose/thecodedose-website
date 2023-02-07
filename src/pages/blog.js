@@ -20,6 +20,7 @@ const BlogPage = ({
       <Helmet>
         <title>{site.siteMetadata.title}</title>
         <meta name="description" content={site.siteMetadata.description} />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5235026168912267" crossOrigin="anonymous" />
       </Helmet>
       <div className="blog__title">
         <h1>Blog</h1>

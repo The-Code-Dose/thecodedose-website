@@ -48,6 +48,7 @@ export default function BlogTemplate({
         <meta name="twitter:title" content={blogTitle} />
         <meta name="twitter:description" content={blogMetaDescription} />
         <meta name="twitter:image" content={thumbnail} />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5235026168912267" crossOrigin="anonymous" />
       </Helmet>
       <div className="blog-post__container">
         <div className="blog-post__title">
