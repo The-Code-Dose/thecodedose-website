@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Helmet from 'react-helmet';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
+import addToMailchimp from 'gatsby-plugin-mailchimp';
 import Layout from '../components/layout';
-import PostLink from '../components/postLink';
 import HeroHeader from '../components/heroHeader';
 import BlogSection from '../components/blogSection';
 import CSIllustrated from '../components/csIllustrated';
@@ -12,25 +12,30 @@ import GatsbyBlog from '../components/gatsbyBlog';
 import RedBubble from '../components/redBubble';
 import Youtube from '../components/youtube';
 
+import './index.scss';
+
 const IndexPage = ({
   data: {
     site,
-    latestBlogPosts: { edges },
-    reactBlogPosts: { edges: reactPosts },
-    selfHelpBlogPosts: { edges: selfHelpPosts },
   },
 }) => {
-  const LatestPosts = edges
-    .filter((edge) => !!edge.node.frontmatter.date)
-    .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
+  const [newsletterDetails, setNewsletterDetails] = useState({});
+  const [subscribed, setSubscribed] = useState(false);
 
-  const ReactPosts = reactPosts
-    .filter((edge) => !!edge.node.frontmatter.date)
-    .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
-
-  const SelfHelpPosts = selfHelpPosts
-    .filter((edge) => !!edge.node.frontmatter.date)
-    .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    addToMailchimp(newsletterDetails.email, {
+      FNAME: newsletterDetails.firstName,
+      LNAME: newsletterDetails.lastName,
+    })
+      .then(data => {
+        setSubscribed(true);
+        alert('Successfully subscribed!');
+      })
+      .catch(() => {
+        alert('Uh Oh! Something went wrong');
+      });
+  };
 
   return (
     <Layout>
@@ -46,17 +51,24 @@ const IndexPage = ({
       <GatsbyBlog />
       <RedBubble />
       <Youtube />
-      {/* <section className="newsletter-section">
-        <iframe
-          title="newsletter"
-          className="card"
-          src="https://thecodedose.substack.com/embed"
-          height="320"
-          style={{ width: '100%' }}
-          frameBorder="0"
-          scrolling="no"
-        />
-      </section> */}
+      <section className="newsletter-section">
+        <form className="newsletter-section__form" onSubmit={handleSubmit}>
+          <h1>Subscribe to receive latest updates right in your inbox!</h1>
+          <label>
+            First Name:
+            <input className="site-footer__input" type="text" value={newsletterDetails.firstName} onChange={(e) => setNewsletterDetails({ ...newsletterDetails, firstName: e.target.value })} />
+          </label>
+          <label>
+            Last Name:
+            <input className="site-footer__input" type="text" value={newsletterDetails.lastName} onChange={(e) => setNewsletterDetails({ ...newsletterDetails, lastName: e.target.value })} />
+          </label>
+          <label>
+            Email:
+            <input className="site-footer__input" type="text" value={newsletterDetails.email} required onChange={(e) => setNewsletterDetails({ ...newsletterDetails, email: e.target.value })} />
+          </label>
+          <input className="site-footer__input newsletter-section__submit" type="submit" value={subscribed ? 'Subscribed' : 'Subscribe!'} disabled={subscribed} />
+        </form>
+      </section>
     </Layout>
   );
 };
@@ -68,63 +80,6 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         description
-      }
-    }
-    latestBlogPosts: allMarkdownRemark(
-      limit: 3
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { draft: { eq: false } } }
-    ) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            path
-            title
-            thumbnail
-            tags
-          }
-        }
-      }
-    }
-    reactBlogPosts: allMarkdownRemark(
-      limit: 3
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { tags: { in: ["react"] }, draft: { eq: false } } }
-    ) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            path
-            title
-            thumbnail
-            tags
-          }
-        }
-      }
-    }
-    selfHelpBlogPosts: allMarkdownRemark(
-      limit: 3
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { tags: { in: ["self help"] }, draft: { eq: false } } }
-    ) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            path
-            title
-            thumbnail
-            tags
-          }
-        }
       }
     }
   }

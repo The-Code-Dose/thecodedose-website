@@ -70,6 +70,13 @@ module.exports = {
         plugins: ['gatsby-remark-autolink-headers'],
       },
     },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://thecodedose.us13.list-manage.com/subscribe/post?u=19b7830d6c32c9c9d4751d55d&amp;id=6ec0226340&amp;f_id=008ee6e2f0" method="post" id="mc-embedded-subscribe-form',
+        timeout: 3500,
+      },
+    },
     'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-netlify-cms',

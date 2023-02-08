@@ -1,5 +1,6 @@
-import React from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
+import React, { useState } from 'react';
+import addToMailchimp from 'gatsby-plugin-mailchimp';
+import { Link } from 'gatsby';
 import SocialLinks from './socialLinks';
 import Navigation from './navigation';
 import 'prismjs/themes/prism-okaidia.css';
@@ -8,17 +9,21 @@ import logo from '../images/logo.png';
 import '../styles/prismjs/monokai.css';
 
 export default ({ children }) => {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `,
-  );
+  const [subscribed, setSubscribed] = useState(false);
+  const [email, setEmail] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    addToMailchimp(email)
+      .then(data => {
+        setSubscribed(true);
+        alert('Successfully subscribed!');
+      })
+      .catch(() => {
+        alert('Uh Oh! Something went wrong');
+      });
+  };
+
   return (
     <div className="site-wrapper">
       <header className="site-header">
@@ -38,7 +43,10 @@ export default ({ children }) => {
           <h4>
             Subscribe to receive latest updates right in your inbox!
           </h4>
-          <input className="site-footer__input" placeholder="Email Address" />
+          <form className="site-footer__form" onSubmit={handleSubmit}>
+            <input className="site-footer__input" placeholder="Email Address" onChange={(e) => setEmail(e.target.value)} required />
+            <input className="button button--yellow" type="submit" value={subscribed ? 'Subscribed' : 'Subscribe!'} disabled={subscribed} />
+          </form>
         </div>
         <SocialLinks />
       </footer>
