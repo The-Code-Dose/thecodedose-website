@@ -38,6 +38,9 @@ export default () => (
           <Link to="/blog">
             Blog
           </Link>
+          <Link to="/travel">
+            Travel
+          </Link>
           <Link to="/cs-illustrated">
             CS Illustrated
           </Link>
