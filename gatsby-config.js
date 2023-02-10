@@ -77,6 +77,12 @@ module.exports = {
         timeout: 3500,
       },
     },
+    {
+      resolve: 'gatsby-plugin-google-adsense',
+      options: {
+        publisherId: 'ca-pub-5235026168912267',
+      },
+    },
     'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-netlify-cms',
