@@ -1,21 +1,29 @@
-.dsa-revision {
+.dmmt {
   &__container {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid var(--black);
   }
 
-  &__left {
-    box-sizing: border-box;
-    width: 60%;
-  }
-
   &__right {
     box-sizing: border-box;
-    width: 40%;
-    background-image: url('../images/dsa-revision-notes.jpg');
-    background-size: cover;
+    width: 60%;
     border-left: 1px solid var(--black);
+  }
+
+  &__left {
+    box-sizing: border-box;
+    width: 40%;
+    background-color: var(--blue);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+
+    img {
+      max-width: 500px;
+      margin: auto;
+      align-self: center;
+    }
   }
 
   &__heading {
@@ -41,20 +49,25 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .dsa-revision {
+  .dmmt {
     &__container {
       display: block;
     }
 
-    &__left {
-      width: 100%;
-      border-right: none;
-      border-bottom: 1px solid var(--black);
-    }
-
     &__right {
       width: 100%;
-      height: 600px;
+      border-right: none;
+      border-top: 1px solid var(--black);
+    }
+
+    &__left {
+      width: 100%;
+      height: 400px;
+
+      img {
+        width: 300px;
+        margin: 50px auto;
+      }
     }
   }
 }

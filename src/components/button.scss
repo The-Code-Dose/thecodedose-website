@@ -30,6 +30,10 @@
     background-color: var(--pink);
   }
 
+  &--blue {
+    background-color: var(--blue);
+  }
+
   &--black {
     background-color: var(--black);
     color: var(--white);
@@ -43,5 +47,15 @@
   &--small {
     padding: 12px 22px;
     font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .button {
+    &--normal {
+      padding: 16px 26px;
+      font-size: 12px;
+    }
   }
 }

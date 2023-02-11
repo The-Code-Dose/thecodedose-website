@@ -13,6 +13,7 @@ import RedBubble from '../components/redBubble';
 import Youtube from '../components/youtube';
 
 import './index.scss';
+import DmmtNotes from '../components/dmmtNotes';
 
 const IndexPage = ({
   data: {
@@ -49,6 +50,7 @@ const IndexPage = ({
       <DsaRevisionNotes />
       <ProductRecommendations />
       <GatsbyBlog />
+      <DmmtNotes />
       <RedBubble />
       <Youtube />
       <section className="newsletter-section">

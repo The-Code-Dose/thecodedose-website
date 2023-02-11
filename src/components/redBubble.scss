@@ -93,6 +93,10 @@
       display: block;
     }
 
+    &__heading {
+      font-size: 46px;
+    }
+
     &__product {
       &-three {
         border-bottom: 1px solid var(--black);
