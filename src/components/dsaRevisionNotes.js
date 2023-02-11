@@ -3,7 +3,7 @@ import Button from './button';
 import './dsaRevisionNotes.scss';
 
 export default () => (
-  <section className="dsa-revision__container" id="#dsa-notes">
+  <section className="dsa-revision__container" id="dsa-notes">
     <div className="dsa-revision__left">
       <div className="dsa-revision__heading-container">
         <h1 className="dsa-revision__heading">

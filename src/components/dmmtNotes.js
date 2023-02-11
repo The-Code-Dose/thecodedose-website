@@ -4,7 +4,7 @@ import notesImg from '../images/dmmt-notes.png';
 import './dmmtNotes.scss';
 
 export default () => (
-  <section className="dmmt__container" id="#dsa-notes">
+  <section className="dmmt__container" id="dmmt-notes">
     <div className="dmmt__left">
       <img src={notesImg} />
     </div>

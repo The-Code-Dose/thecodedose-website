@@ -53,7 +53,7 @@ const IndexPage = ({
       <DmmtNotes />
       <RedBubble />
       <Youtube />
-      <section className="newsletter-section">
+      <section className="newsletter-section" id="newsletter">
         <form className="newsletter-section__form" onSubmit={handleSubmit}>
           <h1>Subscribe to receive latest updates right in your inbox!</h1>
           <label>

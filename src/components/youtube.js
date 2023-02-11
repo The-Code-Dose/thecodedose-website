@@ -4,7 +4,7 @@ import Video from '../images/youtube.mp4';
 import './youtube.scss';
 
 export default () => (
-  <div className="youtube__container">
+  <div className="youtube__container" id="youtube">
     <div className="youtube__left">
       <h2 className="youtube__heading">
         Check us out on YouTube

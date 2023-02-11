@@ -4,7 +4,7 @@ import './csIllustrated.scss';
 import thumbnail from '../images/cs-illustrated.jpg';
 
 export default () => (
-  <div className="cs-illustrated__container">
+  <div className="cs-illustrated__container" id="cs-illustrated">
     <div className="cs-illustrated__left">
       <img className="cs-illustrated__img" src={thumbnail} />
     </div>

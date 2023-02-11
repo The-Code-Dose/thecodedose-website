@@ -3,7 +3,7 @@ import Button from './button';
 import './gatsbyBlog.scss';
 
 export default () => (
-  <div className="gatsby-blog__container">
+  <div className="gatsby-blog__container" id="gastby-blog">
     <div className="gatsby-blog__left">
       <h2 className="gatsby-blog__heading">
         Setup your blog using Gatsby in under an hour: A Beginner’s Guide

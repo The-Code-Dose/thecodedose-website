@@ -7,7 +7,7 @@ import CodingTeaSticker from '../images/kawaii-coding-tea-sticker.jpeg';
 import CodingBabySticker from '../images/coding-baby-sticker.webp';
 
 export default () => (
-  <div className="redbubble__container">
+  <div className="redbubble__container" id="redbubble">
     <div className="redbubble__left">
       <div className="redbubble__product-one" src={NoicestProgrammerTee}  />
       <div className="redbubble__product-two" src={WitchCoffeeCoaster} />

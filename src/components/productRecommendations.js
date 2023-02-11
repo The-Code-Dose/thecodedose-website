@@ -6,7 +6,7 @@ import Laptop from '../videos/laptop.mp4';
 import './productRecommendations.scss';
 
 const ProductRecommendations = () => (
-  <div className="product-recommendations__container">
+  <div className="product-recommendations__container" id="product-recommendations">
     <div className="product-recommendations__header">
       <h1 className="product-recommendations__heading">
         Product Recommendations

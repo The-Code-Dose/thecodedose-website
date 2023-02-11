@@ -49,7 +49,7 @@ export default () => {
     .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
 
   return (
-    <div className="blog-section">
+    <div className="blog-section" id="blog">
       <div className="blog-section__heading">
         <h1>
           Read our blog
