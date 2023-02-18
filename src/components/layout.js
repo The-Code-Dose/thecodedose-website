@@ -3,10 +3,8 @@ import addToMailchimp from 'gatsby-plugin-mailchimp';
 import { Link } from 'gatsby';
 import SocialLinks from './socialLinks';
 import Navigation from './navigation';
-import 'prismjs/themes/prism-okaidia.css';
 import './layout.scss';
 import logo from '../images/logo.png';
-import '../styles/prismjs/monokai.css';
 
 export default ({ children }) => {
   const [subscribed, setSubscribed] = useState(false);
