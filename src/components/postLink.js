@@ -35,7 +35,7 @@ const PostLink = ({
           <Link to={`/tags/${tag}`} className="post-card__tag">{tag}</Link>
         ))}
       </div> */}
-      <Button text="Read more" color="yellow" size="small" />
+      <Button text="Read more" color="yellow" size="small" link to={path} />
     </section>
   </article>
 );
