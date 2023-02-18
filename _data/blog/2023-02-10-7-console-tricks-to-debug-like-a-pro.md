@@ -1,8 +1,8 @@
 ---
 template: BlogPost
-path: /blog/8-console-tricks-to-debug-like-a-pro
+path: /blog/7-console-tricks-to-debug-like-a-pro
 date: 2023-02-10T17:35:54.465Z
-title: 8 Console Tricks To Debug Like A Pro
+title: 7 Console Tricks To Debug Like A Pro
 tags:
   - debugging
   - coding tips
