@@ -124,3 +124,30 @@ collections:
           config:
             multiple: false
       - { name: body, label: Body, widget: markdown }
+  - name: quiz
+    label: Quiz
+    folder: _data/quiz
+    slug: '{{slug}}'
+    create: true
+    fields:
+      - label: Template
+        name: template
+        widget: hidden
+        default: Quiz
+      - name: path
+        label: Path
+        widget: string
+        pattern: [/]
+        default: "/quiz"
+        hint: "Path must start with /quiz"
+      - name: title
+        label: Title
+      - label: Published
+        name: published
+        widget: boolean
+        default: false
+        required: true
+      - label: Description
+        name: description
+        widget: text
+        required: true
