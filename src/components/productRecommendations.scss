@@ -25,15 +25,11 @@
     width: 300px;
     background-color: var(--yellow);
 
-    &-video {
+    img {
       width: 300px;
-      height: 300px;
-
-      video {
-        position: relative;
-        width: 100%;
-        border-bottom: 1px solid var(--black);
-      }
+      height: 300px;position: relative;
+      width: 100%;
+      border-bottom: 1px solid var(--black);
 
       &:hover {
         filter: grayscale(1);
@@ -119,7 +115,7 @@
     &__product {
       margin-bottom: 30px;
 
-      &-image {
+      img {
         width: 100%;
       }
     }

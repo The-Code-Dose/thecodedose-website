@@ -1,7 +1,7 @@
 import React from 'react';
-import Monitor from '../videos/monitor.mp4';
-import Keyboard from '../videos/keyboard.mp4';
-import Laptop from '../videos/laptop.mp4';
+import Monitor from '../images/monitor.webp';
+import Keyboard from '../images/keyboard.webp';
+import Laptop from '../images/laptop.webp';
 
 import './productRecommendations.scss';
 
@@ -16,9 +16,7 @@ const ProductRecommendations = () => (
       <a href="https://www.amazon.in/shop/thecodedose/list/1XAFNK5R5DPMF?ref_=aip_sf_list_spv_ofs_mixed_d" target="__blank">
         <div className="product-recommendations__product">
           <div className="product-recommendations__product-video">
-            <video autoPlay muted loop>
-              <source src={Monitor} type="video/mp4" />
-            </video>
+              <img src={Monitor} />
           </div>
           <h5 className="product-recommendations__product-title">Monitor</h5>
         </div>
@@ -26,9 +24,7 @@ const ProductRecommendations = () => (
       <a href="https://www.amazon.in/shop/thecodedose/list/1XAFNK5R5DPMF?ref_=aip_sf_list_spv_ofs_mixed_d" target="__blank">
         <div className="product-recommendations__product">
           <div className="product-recommendations__product-video">
-            <video autoPlay muted loop>
-              <source src={Laptop} type="video/mp4" />
-            </video>
+              <img src={Laptop} />
           </div>
           <h5 className="product-recommendations__product-title">Laptop</h5>
         </div>
@@ -36,9 +32,7 @@ const ProductRecommendations = () => (
       <a href="https://www.amazon.in/shop/thecodedose/list/1XAFNK5R5DPMF?ref_=aip_sf_list_spv_ofs_mixed_d" target="__xxblank">
         <div className="product-recommendations__product">
           <div className="product-recommendations__product-video">
-            <video autoPlay muted loop>
-              <source src={Keyboard} type="video/mp4" />
-            </video>
+              <img src={Keyboard} />
           </div>
           <h5 className="product-recommendations__product-title">Keyboard</h5>
         </div>
