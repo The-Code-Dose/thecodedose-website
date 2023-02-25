@@ -34,29 +34,19 @@ O﻿ne website that I haven't mentioned because it's not technically a job board
 
 In one of the applications, I was asked to submit video answers to technical questions. Though I believe, talking to a camera by myself is way too awkward than actually having a conversation with a person on the other end, it does not really reflect how good of a culture fit someone would be.
 
-
-
 **Time difference**: Probably the biggest struggle was getting past the time zone requirements. A lot of the companies I was applying for wanted the candidates to be in or around their timezones. So I was targeting European companies because I still had a good couple hours of overlap with the teams.
-
-
 
 **Experience**: While it's possible to find remote software engineering jobs for junior developers, the competition for these roles is often high, and candidates with more experience are often preferred. Therefore, most companies are looking for candidates who have experience working independently, managing their time effectively, and communicating effectively in virtual environments.
 
-
-
-I luckily got an offer from a tech education startup based in the UK. I had a significant time overlap and was willing to work in the evening hours and sometimes at night.
+I luckily got an offer from a tech education startup based in the UK.  I had a significant time overlap and was willing to work in the evening hours and sometimes at night. I found the job on [AngelList (now known as Wellfound)](https://angel.co/).
 
 Even though they were looking for someone more experienced, my unique blend of skills helped me get hired there.I had a computer science degree which meant that I had experience with computer science concepts, I had experience with a couple different technologies and was able to pick up new things quickly.
 
 My blogs and Instagram account were also of huge help since they needed someone who had experience working in education as well.
 
-
-
 Though I wasn’t a formal educator, neither was I a mid or senior level engineer, I still took a shot and the rest is history!
 
 Sometimes you will only know the answer to something after you’ve tried!
-
-
 
 # Present Chapter: Working With A US Based Startup
 
@@ -65,8 +55,6 @@ Even though I enjoyed everything about my second job, my ultimate goal was to wo
 This time, I didn’t apply to the job via a job posting but got a referral from a University friend who started working with them through a Twitter interaction!
 
 Twitter allows users to communicate directly with companies and recruiters, which can be a valuable way to learn more about job opportunities, ask questions, and build relationships with potential employers.
-
-
 
 # K﻿ey Takeaways
 
