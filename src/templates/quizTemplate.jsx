@@ -6,34 +6,35 @@ import Question from '../components/question';
 import Button from '../components/button';
 import './quizTemplate.scss';
 
-export default function QuizTemplate({
-  data,
-}) {
+export default function QuizTemplate({ data }) {
+  const { site, markdownRemark } = data;
   const {
-    site, markdownRemark,
-  } = data;
-  const { siteMetadata: { title: siteTitle } } = site;
+    siteMetadata: { title: siteTitle },
+  } = site;
   const {
     frontmatter: {
-      title,
-      description,
-      thumbnail,
-      path,
-      questions: _questions,
+      title, description, thumbnail, path, questions: _questions,
     },
   } = markdownRemark;
 
-  const processedQuestions = _questions.map(q => {
-    if (q.type === 'mcq' ) {
+  const processedQuestions = _questions.map((q) => {
+    if (q.type === 'mcq') {
       return {
         ...q,
-        options: q.options.map((o, i) => ({ label: o, value: i, selected: false })),
+        options: q.options.map((o, i) => ({
+          label: o,
+          value: i,
+          selected: false,
+        })),
       };
     }
     if (q.type === 'boolean') {
       return {
         ...q,
-        options: [{ label: 'True', value: 1, selected: false }, { label: 'False', value: 0, selected: false }],
+        options: [
+          { label: 'True', value: 1, selected: false },
+          { label: 'False', value: 0, selected: false },
+        ],
       };
     }
   });
@@ -42,19 +43,19 @@ export default function QuizTemplate({
   const [score, setScore] = useState(-1);
 
   const onChangeAnswer = (i, value) => {
-    const updatedQues = [...questions]
+    const updatedQues = [...questions];
     updatedQues[i].options = updatedQues[i].options.map((o) => {
       if (o.value === value) {
-        return { ...o, selected: !o.selected }
+        return { ...o, selected: !o.selected };
       }
-      return { ...o }
-    })
+      return { ...o };
+    });
     setQuestions(updatedQues);
   };
 
   const calculateScore = () => {
     let s = 0;
-    questions.forEach(q => {
+    questions.forEach((q) => {
       if (q.selectedAnswer === q.answer) {
         s += 1;
       }
@@ -63,19 +64,19 @@ export default function QuizTemplate({
   };
 
   const scoreElement = score > -1 ? (
-      <div className="quiz__score-container">
-        <h2 className="quiz__score-heading">Score</h2>
-        <span className="quiz__score-count">{score}</span>
-        <span className="quiz__score-total">/{questions.length}</span>
-      </div>
-    ) : null;
+    <div className="quiz__score-container">
+      <h2 className="quiz__score-heading">Score</h2>
+      <span className="quiz__score-count">{score}</span>
+      <span className="quiz__score-total">/{questions.length}</span>
+    </div>
+  ) : null;
+
+  const showAnswer = score > -1;
 
   return (
     <Layout>
       <Helmet>
-        <title>
-          {`${title} | ${siteTitle}`}
-        </title>
+        <title>{`${title} | ${siteTitle}`}</title>
         <meta name="description" content={description} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`https://thecodedose.com${path}`} />
@@ -94,9 +95,20 @@ export default function QuizTemplate({
         </div>
         <section className="quiz__questions">
           {scoreElement}
-          {questions.map((question, i) => <Question data={question} onChangeAnswer={onChangeAnswer} number={i} showAnswer={score > -1} />)}
+          {questions.map((question, i) => (
+            <Question
+              data={question}
+              onChangeAnswer={onChangeAnswer}
+              number={i}
+              showAnswer={showAnswer}
+            />
+          ))}
           {scoreElement}
-          <Button disabled={score > -1} text="Check score" variant="yellow" onClick={calculateScore} />
+          <Button
+            text={showAnswer ? 'Retake Quiz' : 'Check score'}
+            variant="yellow"
+            onClick={calculateScore}
+          />
         </section>
       </div>
     </Layout>
