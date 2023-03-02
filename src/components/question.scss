@@ -33,6 +33,14 @@
     &--selected {
       background-color: var(--yellow);
     }
+
+    &--correct {
+      background-color: var(--green);
+    }
+
+    &--incorrect {
+      background-color: var(--red);
+    }
   }
 }
 

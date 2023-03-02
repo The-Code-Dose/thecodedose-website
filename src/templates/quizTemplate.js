@@ -24,16 +24,16 @@ export default function QuizTemplate({
   } = markdownRemark;
 
   const processedQuestions = _questions.map(q => {
-    if (q.type === "mcq" ) {
+    if (q.type === 'mcq' ) {
       return {
         ...q,
         options: q.options.map((o, i) => ({ label: o, value: i, selected: false })),
       };
     }
-    if (q.type === "boolean") {
+    if (q.type === 'boolean') {
       return {
         ...q,
-        options: [true, false].map((o, i) => ({ label: o, value: i, selected: false })),
+        options: [{ label: 'True', value: 1, selected: false }, { label: 'False', value: 0, selected: false }],
       };
     }
   });
