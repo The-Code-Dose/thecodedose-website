@@ -48,7 +48,7 @@ export default function QuizTemplate({ data }) {
       if (o.value === value) {
         return { ...o, selected: !o.selected };
       }
-      return { ...o };
+      return { ...o, selected: false };
     });
     setQuestions(updatedQues);
   };
@@ -56,12 +56,19 @@ export default function QuizTemplate({ data }) {
   const calculateScore = () => {
     let s = 0;
     questions.forEach((q) => {
-      if (q.selectedAnswer === q.answer) {
-        s += 1;
-      }
+      q.options.forEach(o => {
+        if (o.selected && q.answer === o.value) {
+          s += 1;
+        }
+      });
     });
     setScore(s);
   };
+
+  const retakeQuiz = () => {
+    setScore(-1);
+    setQuestions(processedQuestions);
+  }
 
   const scoreElement = score > -1 ? (
     <div className="quiz__score-container">
@@ -107,7 +114,7 @@ export default function QuizTemplate({ data }) {
           <Button
             text={showAnswer ? 'Retake Quiz' : 'Check score'}
             variant="yellow"
-            onClick={calculateScore}
+            onClick={showAnswer ? retakeQuiz : calculateScore}
           />
         </section>
       </div>

@@ -41,6 +41,10 @@
     &--incorrect {
       background-color: var(--red);
     }
+
+    &--answer {
+      background-color: var(--grey);
+    }
   }
 }
 

@@ -3,8 +3,8 @@ const path = require('path');
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
 
-  const blogPostTemplate = path.resolve('src/templates/blogTemplate.js');
-  const quizTemplate = path.resolve('src/templates/quizTemplate.js');
+  const blogPostTemplate = path.resolve('src/templates/blogTemplate.jsx');
+  const quizTemplate = path.resolve('src/templates/quizTemplate.jsx');
   const tagTemplate = path.resolve('src/templates/tagTemplate.js');
 
   const result = await graphql(`
