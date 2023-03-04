@@ -51,7 +51,7 @@ export default function BlogTemplate({
       </Helmet>
       <div className="blog-post__container">
         <div className="blog-post__title">
-          <h1 >{blogTitle}</h1>
+          <h1>{blogTitle}</h1>
           <span className="blog-post__date">{date} • </span>
           <span className="blog-post__author">{author} • </span>
           <span className="blog-post__read">{timeToRead} min read</span>
