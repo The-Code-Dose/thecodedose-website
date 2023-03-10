@@ -57,7 +57,7 @@ Here are the steps to create a commit:
 
 After you make the changes, you can check what files were changed using `git status`.
 
-```
+```bash
 $ git status
 On branch main
 Untracked files:
@@ -80,7 +80,7 @@ You can also edit the commit message after you've already created a commit using
 
 You can view the commit history in reverse chronological order using:
 
-```
+```bash
 $ git log
 
 commit 55a3d942cd1d28394a3330486095785797bf0c2e (HEAD -> main)
@@ -94,6 +94,11 @@ You'll notice that each commit has an alphanumeric string attached with it.
 It is known as a commit hash or SHA that helps you uniquely identify a commit.
 
 You can use this commit log to go back in history if things go wrong or if you accidentally made a bad commit and you want to go back to the last working state.
+To do that, you can use `git reset <commit-sha>` to go back to any commit in the past and discard all the commits after it.
+
+```bash
+git reset 55a3d942cd1d28394a3330486095785797bf0c2e
+```
 
 # When to create a commit?
 
