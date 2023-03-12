@@ -93,12 +93,15 @@ Date:   Fri Jan 21 23:43:17 2022 +0530
 You'll notice that each commit has an alphanumeric string attached with it.
 It is known as a commit hash or SHA that helps you uniquely identify a commit.
 
-You can use this commit log to go back in history if things go wrong or if you accidentally made a bad commit and you want to go back to the last working state.
-To do that, you can use `git reset <commit-sha>` to go back to any commit in the past and discard all the commits after it.
+# Using git diff
 
-```bash
-git reset 55a3d942cd1d28394a3330486095785797bf0c2e
-```
+After making your first commit, if you further make any changes to the tracked files, you can view the exact changes in a "diff viewer" using `git diff`.
+
+![Diff view](/assets/git-diff.png)
+
+You can also use `git diff <commit-hash-a> <commit-hash-b>` to compare the changes between two commits and view them in the diff viewer.
+
+However, once you add these changes to the staging area using `git add`, you won't be able to view them by simply using `git diff`, you have to pass the `--cached` option to it: `git diff --cached`.
 
 # When to create a commit?
 
@@ -116,3 +119,23 @@ Here are some best practices for commits:
 - Use the present tense for describing the change and the past tense for describing the original state of the code, for example, "Fix a bug" instead of "Fixed a bug".
 - Keep your commits small and focused.
 - Do not commit unrelated changes in a single commit.
+
+# Undoing Changes
+
+You can use the commit log to go back in history if things go wrong or if you accidentally made a bad commit and you want to go back to the last working state.
+To do that, you can use `git reset <commit-sha>` to go back to any commit in the past and discard all the commits after it.
+
+```bash
+git reset 55a3d942cd1d28394a3330486095785797bf0c2e
+```
+
+You can also discard any "uncommitted" changes to start afresh from the last commit using `git stash`.
+Everytime you use `git stash`, the discarded changes are pushed in to a stack.
+You can view the stash list using `git stash list`.
+
+```bash
+stash@{0}: WIP on dev: fd491d9 Reset
+stash@{1}: WIP on main: db1b67a Add README.md
+```
+
+You can use this list to apply back any discarded changes later on using `git stash apply` which pops and applies the changes last pushed into the stack, or `git stash apply stash@{x}` which applies the stashed changes at the `x` index.
