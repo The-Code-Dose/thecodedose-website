@@ -10,7 +10,7 @@ featured: false
 draft: false
 travel: false
 author: Urvashi
-thumbnail: /assets/getting-started-with-github.png
+thumbnail: /assets/merge-conflicts.png
 ---
 
 # What are merge conflicts?

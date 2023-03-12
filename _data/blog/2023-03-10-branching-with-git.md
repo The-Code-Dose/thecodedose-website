@@ -2,7 +2,7 @@
 template: BlogPost
 path: /blog/branching-with-git
 date: 2023-03-10T01:08:33.275Z
-title: Branching With Git
+title: Branching & Merging in Git
 tags:
   - git
   - beginners
