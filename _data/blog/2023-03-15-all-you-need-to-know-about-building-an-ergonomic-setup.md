@@ -7,7 +7,7 @@ tags:
   - ergonomic
   - office setup
 featured: false
-draft: true
+draft: false
 travel: false
 author: Deeya Sethi
 thumbnail: /assets/IMG_4280.png
