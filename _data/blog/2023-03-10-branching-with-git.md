@@ -32,26 +32,31 @@ In this post, you'll learn about the basics of branches in git.
 
 # What is a git branch?
 
-When you create a commit, you build a "linear" commit history.
-Each new commit sits on top of the previous commit.
-Suppose, you wanted to work on two simultaneous versions of the same project.
-Maybe you wanted to work on a experimental feature but you didn't want to do it on the "main" branch.
+In Git, a branch is essentially a snapshot of your codebase at a specific point in time. It is a pointer to a particular commit that serves as the base for creating new commits.
+
+In a fresh projects, the default branch is the `main` project (or `master` in older projects).
+When you create a commit on the `main` branch, each new commit sits on top of the previous commit thus building a "linear" commit history.
+
+Suppose, you want to work on two simultaneous versions of the same project.
+Maybe you want to work on a experimental feature but you don't want to risk ruining the present state of the project.
+This is where branching becomes helpful.
 Git allows you the branch off your history and create a new version of your project at any point in time.
 
-In Git, a branch is essentially a snapshot of your codebase at a specific point in time. It is a pointer to a particular commit that serves as the base for creating new commits. Each branch can have its own set of changes and can be worked on independently of the other branches. This makes branching an important feature in Git as it enables developers to work on different features or versions of the codebase concurrently.
+ Each branch can have its own set of changes and can be worked on independently of the other branches. This makes branching an important feature in Git as it enables developers to work on different features or versions of the codebase concurrently.
 
 # Creating your first branch
 
-The default branch of your project is called the "master" or "main" branch.
-It acts as the backbone or the trunk of your project.
-It's the source of truth.
-You can create a branch using `git branch <branch-name>`.
+The main branch acts as the backbone or the trunk of your project.
+It's the source of truth for all developers in the team.
+The version living on the main branch is the one released to the end users (usually).
+
+To create a new branch from the main branch, you can do `git branch <branch-name>`.
 
 ```bash
 git branch dev
 ```
 
-This does not automatically take you to the new branch, to do that you can use  `git switch <branch-name>`.
+This does not automatically take you to the new branch, to do that you can use  `git switch <branch-name>` or `git checkout <branch-name>`.
 
 ```bash
 > git switch dev
@@ -60,7 +65,7 @@ Switched to branch 'dev'
 Switched to branch 'master'
 ```
 
-You can also use `git checkout -b <branch-name>` to do what the above two commands did.
+You can also use `git checkout -b <branch-name>` to do what the above two commands did in a single command.
 It creates a new branch and switches to it.
 
 You can view the list of all the branches using `git branch -l`.
@@ -92,6 +97,15 @@ git switch main
 git merge dev
 ```
 
-This will combine the history of the two branches into the main branch.
+This will combine the commits of the dev branch made after the common base commit, into the main branch and create a new merge commit in the main branch.
 
 ![](/assets/git-merge.png)
+
+Or if you want to merge the main branch (source branch) into the dev branch (destination branch):
+
+```bash
+git switch dev
+git merge main
+```
+
+Note that merge does not change the history of the source branch, only the history of the destination branch is altered.
