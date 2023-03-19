@@ -72,6 +72,22 @@ pre {
   justify-content: space-between;
 }
 
+table, th, td {
+  margin: 30px 0px;
+  border: 1px solid var(--black);
+  border-spacing: 0;
+}
+
+td {
+  padding: 5px;
+}
+
+th {
+  font-weight: 900;
+  font-family: Archivo Black;
+  padding: 10px;
+}
+
 .headline {
   font-size: 36px;
   font-weight: 900;
