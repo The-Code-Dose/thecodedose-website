@@ -1,7 +1,7 @@
 ---
 template: BlogPost
 path: /blog/how-to-teach-yourself-dsa
-date: 2023-03-15T19:37:42.146Z
+date: 2023-03-21T19:37:42.146Z
 title: How To Teach Yourself Data Structures & Algorithms
 tags:
   - data structures
