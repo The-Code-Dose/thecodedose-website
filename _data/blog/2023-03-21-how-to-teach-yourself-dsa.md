@@ -37,6 +37,9 @@ You can also use ChatGPT to make a study plan for you ;)
 I'll suggest creating a checklist to maintain a record of your progress and to stay motivated.
 Add strict goals based on your time availabilities and stay consistent!
 
+You can also buy my [90 days Data Structures & Algorithms study plan](https://tagmango.com/mangocheckout/642074a1131c482eadabe331) template on Notion for just $2.41.
+It has a collection of resources to study from and practice with along with a daily progress tracker.
+
 # Step 2: Collect Resources For Studying
 
 If you don't wish to create a curriculum from scratch, you can do a self paced (and free) course on Coursera.
