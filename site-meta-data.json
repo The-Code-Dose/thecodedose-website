@@ -16,32 +16,32 @@
   },
   "links": [
     {
-      "name": "YouTube",
-      "href": "https://www.youtube.com/channel/UC74LLw9u0wG4arsn8wYpC7w"
+      "name": "Data Structures & Algorithms Study Plan on Notion",
+      "href": "https://tagmango.app/08643ca029"
     },
     {
       "name": "Buy My Setup on Amazon ",
       "href": "https://www.amazon.in/shop/thecodedose"
     },
     {
-      "name": " Data Sructures & Algorithms Revision Notes",
+      "name": "Data Sructures & Algorithms Revision Notes",
       "href": "https://thecodedose.gumroad.com/l/DSA-revision-notes"
-    },
-    {
-      "name": "Discord",
-      "href": "https://discord.gg/gZuYKaFTbn"
     },
     {
       "name": "Buy stickers, tshirts and more!",
       "href": "https://www.redbubble.com/people/thecodedose/shop?asc=u"
     },
     {
-      "name": "Github",
-      "href": "https://github.com/ihsavru"
+      "name": "Discord",
+      "href": "https://discord.gg/gZuYKaFTbn"
     },
     {
-      "name": "Set Up Your Gatsby Blog in Under an Hour",
-      "href": "https://www.thecodedose.com/blog/the-beginners-guide-to-setting-up-a-gatsby-blog-in-under-an-hour"
+      "name": "YouTube",
+      "href": "https://www.youtube.com/channel/UC74LLw9u0wG4arsn8wYpC7w"
+    },
+    {
+      "name": "Github",
+      "href": "https://github.com/ihsavru"
     }
   ]
 }

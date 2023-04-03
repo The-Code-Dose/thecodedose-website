@@ -6,7 +6,7 @@ import Layout from '../components/layout';
 
 import './links.scss';
 
-const LinksPage = ({ data: { site: { siteMetadata: { title, description, links }} } }) => (
+const LinksPage = ({ data: { site: { siteMetadata: { title, description, links } } } }) => (
   <Layout>
     <Helmet>
       <title>
