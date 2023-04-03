@@ -19,10 +19,9 @@ const LinksPage = ({ data: { site: { siteMetadata: { title, description, links }
       />
     </Helmet>
     <div>
-      <h1>Links</h1>
-      <div className="links-tree">
+      <div className="links__container">
         {links.map(({ name, href }) => (
-          <a href={href} className="links-tree__link">{name}</a>
+          <a href={href} className="links__link">{name}</a>
         ))}
       </div>
     </div>
