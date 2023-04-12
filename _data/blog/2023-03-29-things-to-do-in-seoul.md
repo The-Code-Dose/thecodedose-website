@@ -15,13 +15,13 @@ thumbnail: /assets/cherry_blossom_closeup.jpeg
 
 # Shop for Skincare & Eat Street Food at Myeongdong
 
-# Take some photos ata photo studio
+# Take some photos at a photo studio
 
 # Go clubbing at Hongdae
 
 # Visit a traditional village at Bukchon Hanok Village
 
-# Indulge in the culture of Gyeongbokgung Palace
+# Indulge in the culture of the palaces
 
 # Soak in Seoul's skyline at Namsan Tower
 
@@ -31,5 +31,17 @@ thumbnail: /assets/cherry_blossom_closeup.jpeg
 
 # Shop at Gangnam Street
 
-# Explore the cafe of Jamsil
+# Explore the cafes of Jeonpo Cafe Street
+
+# Read the the Starfield Library
+
+# Gwangjan Market
+
+# Day Tour to the Nami Islands
+
+# Take a bracelet making experience
+
+# Jamsil
+
+# Seokchon Lake
 
