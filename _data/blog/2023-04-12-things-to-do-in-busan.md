@@ -84,7 +84,7 @@ The street is also home to many small boutique stores and shops, selling unique 
 Gyeongju is a city located in the southeastern part of South Korea, known for its rich cultural heritage and historical significance. It was once the capital of the ancient Silla Kingdom and is now a popular tourist destination.
 You can take a day trip from Busan to Gyeongju as it's only a 30 minutes KTX train ride away from Busan.
 
-![Gyeongju](/assets/gyeongju.jpeg)
+![Gyeongju](/assets/gyeongju.png)
 
 # \[BONUS\] Jinhae Cherry Blossom Festival
 
@@ -95,4 +95,4 @@ Yeojwacheon Stream is a popular spot during the festival, with cherry blossoms l
 
 Gyeonghwa Station is a historic train station in Jinhae that is famous for its cherry blossoms. The station is located in the middle of a cherry blossom tunnel, with trees on both sides of the train tracks. You can visit the station and take photos with the cherry blossoms in the background.
 
-![Jinhae](/assets/jinhae.jpeg)
+![Jinhae](/assets/jinhae.png)
