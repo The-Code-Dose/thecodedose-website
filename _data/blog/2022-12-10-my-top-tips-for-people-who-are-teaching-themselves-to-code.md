@@ -6,7 +6,6 @@ title: My Top Tips for People who are Teaching Themselves to Code
 tags:
   - self-taught
   - beginner
-  - ''
 featured: false
 draft: true
 author: Urvashi

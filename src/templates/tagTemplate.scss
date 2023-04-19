@@ -1,0 +1,56 @@
+.tagpage {
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    background-color: var(--pink);
+    padding: 20px 50px;
+    text-align: center;
+    border-bottom: 1px solid var(--black);
+
+    h1 {
+      font-size: 42px;
+      font-weight: 900;
+      margin-bottom: 0;
+      text-transform: capitalize;
+    }
+  }
+
+  &__all-tags {
+    background-color: var(--blue);
+    padding: 40px 50px;
+    text-align: center;
+    border-bottom: 1px solid var(--black);
+    border-top: 1px solid var(--black);
+
+    h1 {
+      font-size: 42px;
+      font-weight: 900;
+      margin-bottom: 0;
+    }
+  }
+
+  &__tags-container {
+    padding: 40px 50px;
+
+    a {
+      font-size: 12px;
+      border-radius: 15px;
+      border: 1px solid var(--black);
+      padding: 6px 10px;
+      margin: 5px 8px;
+      display: inline-block;
+      background-color: var(--yellow);
+      text-transform: capitalize;
+    }
+  }
+
+  &__subheading {
+    font-size: 12px;
+  }
+
+  &__posts {
+    margin-top: 60px;
+  }
+}

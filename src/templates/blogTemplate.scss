@@ -52,6 +52,19 @@
     }
   }
 
+  &__tags-container {
+    a {
+      font-size: 12px;
+      border-radius: 15px;
+      border: 1px solid var(--black);
+      padding: 6px 10px;
+      margin: 5px 8px;
+      display: inline-block;
+      background-color: var(--white);
+      text-transform: capitalize;
+    }
+  }
+
   &__table {
     border: 1px solid var(--black);
     height: fit-content;

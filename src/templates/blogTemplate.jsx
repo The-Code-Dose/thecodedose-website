@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 import PostLink from '../components/postLink';
 import './blogTemplate.scss';
@@ -21,6 +21,7 @@ export default function BlogTemplate({
       author,
       path,
       travel,
+      tags,
     },
     html,
     tableOfContents,
@@ -55,10 +56,17 @@ export default function BlogTemplate({
           <span className="blog-post__date">{date} • </span>
           <span className="blog-post__author">{author} • </span>
           <span className="blog-post__read">{timeToRead} min read</span>
+          <div className="blog-post__tags-container">
+            {tags.map(tag => (
+              <Link to={`/tags/${tag}`} className="post__tag">
+                {tag}
+              </Link>
+            ))}
+          </div>
         </div>
         <article className="blog-post__section">
           <div  className="blog-post__left">
-              <img className="blog-post__thumbnail" src={thumbnail} />
+            <img className="blog-post__thumbnail" src={thumbnail} />
             <div
               className="blog-post__content"
               dangerouslySetInnerHTML={{ __html: html }}
@@ -98,6 +106,7 @@ export const pageQuery = graphql`
         author
         thumbnail
         metaDescription
+        tags
       }
       timeToRead
     }

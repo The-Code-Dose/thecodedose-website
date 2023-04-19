@@ -4,10 +4,9 @@ import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 import PostLink from '../components/postLink';
 
-export default function TagTemplate({
-  pageContext,
-  data,
-}) {
+import './tagTemplate.scss';
+
+export default function TagTemplate({ pageContext, data }) {
   const { site, blogPosts, tagsGroup } = data;
   const { tag } = pageContext;
 
@@ -26,22 +25,28 @@ export default function TagTemplate({
   return (
     <Layout>
       <Helmet>
-        <title>
-          {siteMetadata.title}
-        </title>
+        <title>{siteMetadata.title}</title>
         <meta name="description" />
       </Helmet>
-      <div className="blog-post-container">
-        <div>
-          <h2>{tagHeader} &darr;</h2>
-          <div className="grids">{Posts}</div>
-          <h2 className="all-tags">All Tags &darr;</h2>
-          <div className="post__tags tags-container">
+      <div className="tagpage__container">
+        <div className="tagpage__title">
+          <h1>{tag}</h1>
+          <span className="tagpage__subheading">{tagHeader} &darr;</span>
+        </div>
+        <div className="tagpage__posts">{Posts}</div>
+
+        <section>
+          <div className="tagpage__all-tags">
+            <h1 className="">All Tags</h1>
+          </div>
+          <div className="tagpage__tags-container">
             {tags.map(({ tag: tagName }) => (
-              <Link to={`/tags/${tagName}`} className="post__tag">{tagName}</Link>
+              <Link to={`/tags/${tagName}`} className="post__tag">
+                {tagName}
+              </Link>
             ))}
           </div>
-        </div>
+        </section>
       </div>
     </Layout>
   );
@@ -62,11 +67,12 @@ export const pageQuery = graphql`
     blogPosts: allMarkdownRemark(
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      filter: { frontmatter: { tags: { in: [$tag] }, draft: { eq: false } } }
     ) {
       totalCount
       edges {
         node {
+          excerpt(pruneLength: 250)
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             path
