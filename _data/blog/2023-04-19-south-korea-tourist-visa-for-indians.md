@@ -86,7 +86,7 @@ Thanking You,
 - Last 6 months attested bank statements. You have to visit your bank’s nearest branch and they’ll give you the sealed statements to you.
 - Last 2 years ITRs
 - Booked accommodations for the entire trip
-- Daily itinerary. You can also use ChatGpt to create a custom one for you. You can use the below format for the itinerary:
+- Daily itinerary. You can also use ChatGPT to create a custom one for you. You can use the below format for the itinerary:
 
 ![Daily Itinerary](/assets/daily_itinerary_format.png)
 
@@ -123,3 +123,8 @@ South Korea does not provide a sticker visa but a visa certificate that you can 
 Once your application is approved, you can go back to the consulate to collect your passport.
 
 The passport collection time is between 3PM and 4PM for the Chennai Consulate. Don’t forget to bring in the receipt at the time of collection.
+
+# Disclaimer
+
+Please note that the above is based on my experience with obtaining a South Korea single entry tourist visa.
+Please take everything in this post as advise and do your own research before applying.
