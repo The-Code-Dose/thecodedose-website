@@ -322,3 +322,7 @@ th {
   float: left; /* 1 */
   min-width: 100%; /* 2 */
 }
+
+:not(pre) > code[class*="language-"] {
+  color: var(--white) !important;
+}
