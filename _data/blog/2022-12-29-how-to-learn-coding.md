@@ -14,13 +14,17 @@ metaDescription: >-
   This beginner's guide will help you find the best resources to start coding
   today.
 ---
-Do you want to learn about computer programming but don't know where to start? This beginner's guide will help you find the best resources to start coding today.
+
+Are you interested in learning computer programming but not sure where to begin? This beginner's guide will help you find the best resources to start coding today.
 
 # Pick one programming language to start with.
 
 P﻿ick a programming language and start learning the fundamentals of what makes a programming language - variables, data types, control structures, pointers, functions etc.
 
 I﻿f you have the time and patience, start with a *statically typed language* such as C/C++ or Java. If you're in a hurry and want something easy, pick a *dynamically typed language* such as Python or JavaScript.
+
+C/C++ is often used for system programming and embedded systems, while Java is commonly used for enterprise applications and Android mobile app development.
+Python is a popular language for data science and machine learning, while JavaScript is used extensively in web development.
 
 H﻿ere's a [flowchart](https://carlcheo.com/wp-content/uploads/2014/12/which-programming-language-should-i-learn-first-pdf.pdf) that will help you pick your first programming language.
 
@@ -36,6 +40,9 @@ Here are some of the best websites where you can learn programming:
 - [Coursera](https://www.coursera.org/)
 - [Udemy](https://www.udemy.com/)
 - [Udacity](https://www.udacity.com/)
+- [edX](edx.org)
+- [Code.org](https://code.org/)
+- [Khan Academy](https://www.khanacademy.org/)
 
 # Learn data structures and algorithms
 
@@ -50,6 +57,10 @@ Here are some platforms where you can practice your problem solving skills:
 
 - [HackerRank](https://www.hackerrank.com/)
 - [Leetcode](https://leetcode.com/study-plan/)
+- [HackerEarth](https://www.hackerearth.com/)
+- [TopCoder](https://www.topcoder.com/)
+
+If you're interested, you can grab my [90 Day Data Structures & Algorithms Study Plan](https://tagmango.app/08643ca029).
 
 # Pick a role
 
@@ -57,13 +68,15 @@ In order to apply for jobs, you need to pick a role that you're interested in.
 
 [Roadmap.sh](https://roadmap.sh/) has roadmaps for different tech roles such as frontend developer, backend developer, blockchain developer etc and roadmaps detailing the exact skills required for each.
 
-# B﻿uild projects
+# Build projects
 
 Projects are really important to practice what you learnt as well as to showcase your skills to recruiters and potential employers.
 
 Create a [Github](https://github.com/) and learn git to host your projects on the internet for others to see.
 
 Github has an excellent [post](https://docs.github.com/en/get-started/quickstart/git-and-github-learning-resources) listing the resources available to learn git and github online.
+
+I have also created a [Git & GitHub self study plan on Notion](https://tagmango.app/4875c2fc42) to help you stay organized and motivated.
 
 # Practice Interviewing
 
