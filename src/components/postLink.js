@@ -1,25 +1,19 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import Button from './button';
+import React from "react";
+import { Link } from "gatsby";
+import Button from "./button";
 
-import './postLink.scss';
+import "./postLink.scss";
 
 const PostLink = ({
   post: {
     excerpt,
-    frontmatter: {
-      path, thumbnail, title, date, tags,
-    },
+    frontmatter: { path, thumbnail, title, date, tags },
   },
 }) => (
   <article className="post-card">
     <Link to={path}>
       {!!thumbnail && (
-        <img
-          className="post-card__thumbnail"
-          src={thumbnail}
-          alt=""
-        />
+        <img className="post-card__thumbnail" src={thumbnail} alt="" />
       )}
     </Link>
     <section className="post-card__content">
@@ -30,11 +24,6 @@ const PostLink = ({
       </h2>
       <div className="post-meta">{date}</div>
       <p>{excerpt}</p>
-      {/* <div className="post-card__tags">
-        {tags.map(tag => (
-          <Link to={`/tags/${tag}`} className="post-card__tag">{tag}</Link>
-        ))}
-      </div> */}
       <Button text="Read more" color="yellow" size="small" link to={path} />
     </section>
   </article>
