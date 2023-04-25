@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Helmet from 'react-helmet';
 import { graphql, Link } from 'gatsby';
+import { request } from "graphql-request";
 import Layout from '../components/layout';
 import PostLink from '../components/postLink';
 import './blogTemplate.scss';
@@ -8,8 +9,10 @@ import './blogTemplate.scss';
 export default function BlogTemplate({
   data,
 }) {
+  const [relatedPosts, setRelatedPosts] = useState([]);
+
   const {
-    site, markdownRemark, blogPosts: { edges }, featuredPosts: { edges: featuredPosts },
+    site, markdownRemark,
   } = data;
   const { siteMetadata: { title: siteTitle } } = site;
   const {
@@ -28,8 +31,54 @@ export default function BlogTemplate({
     timeToRead,
   } = markdownRemark;
 
-  const Posts = edges
-    .filter((edge) => !!edge.node.frontmatter.date)
+  const fetchRelatedPosts = async () => {
+    const query = `query($tags: [String!]) {
+        blogPosts: allMarkdownRemark(
+          limit: 3
+          sort: { order: DESC, fields: [frontmatter___date] }
+          filter: {
+            frontmatter: {
+              draft: { eq: false }
+              tags: {
+                in: $tags
+              }
+            }
+          }
+        ) {
+          edges {
+            node {
+              id
+              excerpt(pruneLength: 250)
+              frontmatter {
+                date(formatString: "MMMM DD, YYYY")
+                path
+                title
+                thumbnail
+                tags
+              }
+            }
+          }
+        }
+      }
+    `;
+
+    const result = await request(
+      window.location.origin + "/__graphql",
+      query,
+      { tags },
+    );
+
+    return result.blogPosts.edges;
+  };
+
+  useEffect(() => {
+    fetchRelatedPosts().then((data) => setRelatedPosts(data));
+  }, [tags]);
+
+  console.log(relatedPosts)
+
+  const Posts = relatedPosts
+    ?.filter((edge) => !!edge.node.frontmatter.date)
     .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
 
   return (
@@ -88,7 +137,6 @@ export default function BlogTemplate({
     </Layout>
   );
 }
-
 export const pageQuery = graphql`
   query($path: String!) {
     site {
@@ -109,44 +157,6 @@ export const pageQuery = graphql`
         tags
       }
       timeToRead
-    }
-    blogPosts: allMarkdownRemark(
-      limit: 3
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { draft: { eq: false } } }
-      ) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            path
-            title
-            thumbnail
-            tags
-          }
-        }
-      }
-    }
-    featuredPosts: allMarkdownRemark(
-      limit: 3
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { featured: { eq: true }, draft: { eq: false } } }
-      ) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            path
-            title
-            thumbnail
-            tags
-          }
-        }
-      }
     }
   }
 `;
