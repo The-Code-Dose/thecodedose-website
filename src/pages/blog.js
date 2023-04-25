@@ -13,7 +13,6 @@ import { request } from "graphql-request";
 import Button from "../components/button";
 
 const BlogPage = ({ data: { site } }) => {
-  const pageParam = 0;
   const fetchPosts = async ({ pageParam = 0 }) => {
     const query = `
       query($skip: Int!, $limit: Int!) {
@@ -45,7 +44,7 @@ const BlogPage = ({ data: { site } }) => {
     const variables = { skip: pageParam, limit: 10 };
 
     const result = await request(
-      "http://localhost:8000/__graphql",
+      window.location.origin + "/__graphql",
       query,
       variables
     );
