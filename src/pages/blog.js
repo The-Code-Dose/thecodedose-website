@@ -80,7 +80,6 @@ const BlogPage = ({ data: { site } }) => {
       </div>
       <div className="blog__posts">{Posts}</div>
       <div className="blog__load-more" style={{ textAlign: "center" }}>
-        {isFetching && <div>Loading...</div>}
         {!hasNextPage && <div>No more posts</div>}
         {hasNextPage && (
           <Button

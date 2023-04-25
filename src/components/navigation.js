@@ -16,6 +16,9 @@ export default () => {
       <Link to="/travel">
         Travel
       </Link>
+      <Link to="/study-plans">
+        Study Plans
+      </Link>
       <Link to="/cs-illustrated">
         CS Illustrated
       </Link>
