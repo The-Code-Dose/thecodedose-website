@@ -113,7 +113,8 @@ const StudyPlansPage = ({
       </h2>
       <p>Data Structures & Algorithms + JavaScript + Git/GitHub Self Study Plans</p>
       <img className="study-plans__combo-img" src={combo} />
-      <h2>Get ADDITIONAL 30% OFF using the coupon 'WEBSITE30'</h2>
+      <h2 className="study-plans__combo-subheading-2">Get ADDITIONAL 30% OFF using the coupon 'WEBSITE30'</h2>
+      <Button className="study-plans__combo-btn" text="I want this!" variant="yellow" link to="https://tagmango.com/mangocheckout/644775cbeaa7cabe22e983c2" />
     </section>
   </Layout>
 );
