@@ -115,7 +115,7 @@
 @media only screen and (max-width: 900px) {
   .study-plans {
     &__header {
-      padding: 50px 50px;
+      padding: 50px;
     }
 
     &__demo {
@@ -123,8 +123,22 @@
     }
 
     &__info {
+      padding: 50px;
+
       &-features {
         display: block;
+      }
+    }
+
+    &__combo {
+      padding: 50px;
+
+      &-heading {
+        font-size: 2rem;
+      }
+
+      &-img {
+        width: 100%;
       }
     }
   }
