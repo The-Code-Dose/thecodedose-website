@@ -288,8 +288,9 @@ th {
  */
 
 .gatsby-highlight {
-  padding: 1em;
   overflow: auto;
+  padding: 1em;
+  background-color: #2a2a2a;
 }
 
 .gatsby-highlight pre[class*="language-"].line-numbers {
