@@ -58,7 +58,7 @@ export default function BlogTemplate({
           <span className="blog-post__read">{timeToRead} min read</span>
           <div className="blog-post__tags-container">
             {tags.map(tag => (
-              <Link to={`/tags/${tag}`} className="post__tag">
+              <Link className="blog-post__tag" to={`/tags/${tag}`}>
                 {tag}
               </Link>
             ))}
