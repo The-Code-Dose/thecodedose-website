@@ -10,8 +10,9 @@ export default function BlogListTemplate({
     site,
     blogPosts: { edges },
   },
+  location,
 }) {
-  const path = window.location.pathname;
+  const path = location.pathname;
   const pageNumber = path.split('/').pop();
   const nextPage = pageNumber === 'blog' ? 2 : parseInt(pageNumber, 10) + 1;
   const previousPage = pageNumber === '2' ? '' : parseInt(pageNumber, 10) - 1;
