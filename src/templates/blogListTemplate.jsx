@@ -35,7 +35,7 @@ export default function BlogListTemplate({
       </div>
       <div className="blog__pagination">
         {pageNumber !== 'blog' && <Link className="blog__pagination-link" to={`/blog${previousPage ? '/' + previousPage : ''}`}>Previous Page</Link>}
-        {Posts.length > 0 && (
+        {Posts.length === 20 && (
           <Link className="blog__pagination-link" to={`/blog/${nextPage}`}>Next Page</Link>
         )}
       </div>
