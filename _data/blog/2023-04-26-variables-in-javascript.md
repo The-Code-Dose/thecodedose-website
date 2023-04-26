@@ -13,12 +13,12 @@ author: Urvashi
 thumbnail: /assets/variables_js.png
 ---
 
+Read the previous blog in this series here: [Comments in JavaScript](https://www.thecodedose.com/blog/comments-in-javascript)
+
 JavaScript is a versatile programming language that allows you to create dynamic and interactive web applications.
 One of the core concepts of any programming language is variables, which enable you to store and manipulate data in your code.
 
 In this post, we'll explore what variables are, how to declare and assign values to them, and some best practices for working with variables in JavaScript.
-
-If you haven't read the previous post in this series already, [read it here to write your first JavaScript program](https://www.thecodedose.com/blog/your-first-javascript-program)!
 
 # What Are Variables?
 

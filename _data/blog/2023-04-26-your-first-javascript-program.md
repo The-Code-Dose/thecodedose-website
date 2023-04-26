@@ -199,4 +199,4 @@ Congratulations, you've just created your first "Hello World" program using Node
 Of course, this is just the beginning of what you can do with JavaScript. With JavaScript, you can create interactive web applications, dynamic user interfaces, and much more.
 Keep practicing and learning, and you'll be able to create amazing things with JavaScript in no time.
 
-Read the next blog in this series here: [Variables & Constants in JavaScript](https://www.thecodedose.com/blog/variables-and-constants-in-javascript)
+Read the next blog in this series here: [Comments in JavaScript](https://www.thecodedose.com/blog/comments-in-javascript)
