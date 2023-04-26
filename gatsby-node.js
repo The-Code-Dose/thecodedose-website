@@ -6,7 +6,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const blogPostTemplate = path.resolve("src/templates/blogTemplate.jsx");
   const quizTemplate = path.resolve("src/templates/quizTemplate.jsx");
   const tagTemplate = path.resolve("src/templates/tagTemplate.js");
-  const blogListTemplate = path.resolve("src/templates/blogListTemplate.jsx");
 
   const result = await graphql(`
     {
@@ -65,22 +64,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       path: node.frontmatter.path,
       component: blogPostTemplate,
       context: {}, // additional data can be passed via context
-    });
-  });
-
-  const posts = result.data.postsRemark.edges;
-  const postsPerPage = 20;
-  const numPages = Math.ceil(posts.length / postsPerPage);
-  Array.from({ length: numPages }).forEach((_, i) => {
-    createPage({
-      path: i === 0 ? "/blog" : `/blog/${i + 1}`,
-      component: blogListTemplate,
-      context: {
-        limit: postsPerPage,
-        skip: i * postsPerPage,
-        numPages,
-        currentPage: i + 1,
-      },
     });
   });
 
