@@ -98,3 +98,4 @@ Here are a few best practices for working with variables in JavaScript:
 - In JavaScript, it's common to use `camelCase` for variable names. This means that the first word is lowercase and subsequent words are capitalized. For example, `firstName` or `userAge`.
 
 I hope you found this post helpful!
+Make sure to read the previous post in this series here: [Blocks, Scope & Hoisting in JavaScript](https://www.thecodedose.com/blog/blocks-scope-and-hoisting-in-javascript)
