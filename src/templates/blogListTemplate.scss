@@ -23,4 +23,28 @@
   &__posts {
     margin: 80px 50px;
   }
+
+  &__pagination {
+    display: flex;
+    margin-bottom: 50px;
+    width: 100%;
+    justify-content: space-around;
+
+    &-link {
+      border: 1px solid var(--black);
+      font-weight: 900;
+      text-transform: uppercase;
+      font-family: 'Archivo';
+      letter-spacing: 2px;
+      cursor: pointer;
+      color: var(--black);
+      padding: 10px 20px;
+      width: fit-content;
+      background-color: var(--blue);
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 }
