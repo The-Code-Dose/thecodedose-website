@@ -52,7 +52,14 @@ You can also assign a value to a variable at the time of declaration, like this:
 var name = "John";
 ```
 
-You can also use the `let` keyword to create variable.
+You can even use a variable to assign value to another variable.
+
+```js
+var greeting = "Hello World!";
+var hello = greeting;
+```
+
+Similarly, you can also use the `let` keyword to create variable.
 For example:
 
 ```javascript
@@ -62,7 +69,7 @@ name = "John";
 ```
 
 There's a slight difference between the scopes of the variables created by `var` and `let`.
-However, we'll cover that in a future post.
+However, we'll cover that [in a future post](https://www.thecodedose.com/blog/blocks-scope-and-hoisting-in-javascript).
 For now, you can assume that you can use them interchangeably.
 
 # Constants
