@@ -107,3 +107,5 @@ console.log(mySymbol == unique) // false
 
 You'll learn more about all these data types in detail and the different operations that you can perform on them in future posts.
 So stay tuned!
+
+Read the next post in this series here: [Working with Operators in JavaScript](https://www.thecodedose.com/blog/operators-in-javascript)
