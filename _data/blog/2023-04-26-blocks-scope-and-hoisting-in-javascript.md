@@ -194,3 +194,6 @@ console.log(x);
 ```
 
 This will throw a `ReferenceError` because the variable `x` is declared with `let` inside a block, and then accessed before it is declared.
+
+Thank you for reading!
+You can find the next post in this series here: [Primitive Data Types in JavaScript](https://www.thecodedose.com/blog/data-types-in-javascript)
