@@ -52,5 +52,14 @@
 
   &__posts {
     margin-top: 60px;
+    padding: 50px 100px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .tagpage {
+    &__posts {
+      padding: 0px 50px;
+    }
   }
 }
