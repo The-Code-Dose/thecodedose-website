@@ -68,6 +68,14 @@ let name;
 name = "John";
 ```
 
+JavaScript allows you to create and define multiple variables on the same line.
+
+```js
+let x, y;
+let a, b = 4, 6;
+x, y = true, true;
+```
+
 There's a slight difference between the scopes of the variables created by `var` and `let`.
 However, we'll cover that [in a future post](https://www.thecodedose.com/blog/blocks-scope-and-hoisting-in-javascript).
 For now, you can assume that you can use them interchangeably.
