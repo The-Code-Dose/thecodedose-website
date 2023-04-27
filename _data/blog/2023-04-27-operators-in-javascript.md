@@ -188,3 +188,5 @@ console.log(bar); // logs "hello"
 
 console.log(undefined ?? "It's undefined!") // It's undefined!
 ```
+
+Read the next post in this series here: [If/Else Statements in JavaScript](https://www.thecodedose.com/blog/if-else-statements-in-javascript)
