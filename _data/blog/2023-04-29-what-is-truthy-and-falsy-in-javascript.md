@@ -115,3 +115,5 @@ In this example, since `num` is a non-zero number, it is considered truthy and t
 Therefore, the program will log "The value of num is 10."
 
 It's important to note that truthy and falsy values can be unpredictable at times, so it's always a good idea to explicitly check for the value you're expecting rather than relying on truthy/falsy evaluation.
+
+Read the next post in this series here: [Understanding Short Circuit Evaluation in JavaScript](https://www.thecodedose.com/blog/understanding-short-circuit-evaluation-in-javascript)
