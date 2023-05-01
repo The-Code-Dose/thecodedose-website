@@ -158,3 +158,5 @@ Switch statements can be pretty helpful when you have a value with several poten
 They can make your code more succinct and easier to comprehend than using a series of if/else if statements.
 
 But before you go wild with switch statements, keep in mind that they should only be used in situations where the number of cases is relatively small and the comparisons are straightforward. If you're dealing with a large number of cases or complex comparisons, it might be better to consider another approach.
+
+Read the next post in this series here: [Working with Loops in JavaScript](https://www.thecodedose.com/blog/loops-in-javascript)
