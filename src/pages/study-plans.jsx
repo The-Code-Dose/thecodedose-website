@@ -104,6 +104,22 @@ const StudyPlansPage = ({
       </div>
       <div className="git-plan__right" />
     </section>
+    <section className="python-plan__container" id="dsa-notes">
+    <div className="python-plan__left" />
+      <div className="python-plan__right">
+        <div className="python-plan__heading-container">
+          <h1 className="python-plan__heading">
+            20 Day Python Study Plan
+          </h1>
+        </div>
+        <div className="python-plan__content-container">
+          <p className="python-plan__content">
+            This study plan is tailored to help you learn Python in just 20 days, and  will equip you with all the foundational knowledge and practical skills you need to succeed. By the end of this plan, you'll be proficient in Python and ready to explore advanced topics like Data Science, Machine Learning, and more.
+          </p>
+          <Button text="I want this!" variant="blue" link to="https://tagmango.com/mangocheckout/645252622f1421f67c1fba99" />
+        </div>
+      </div>
+    </section>
     <section id="combo" className="study-plans__combo">
       <h1 className="study-plans__combo-heading">
         Special Offer
