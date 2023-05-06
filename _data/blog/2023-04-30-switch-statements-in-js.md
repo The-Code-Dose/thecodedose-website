@@ -13,7 +13,7 @@ author: Urvashi
 thumbnail: /assets/switch_in_js.png
 ---
 
-Read the next post in this series here: [Understanding Short Circuit Evaluation in JavaScript](https://www.thecodedose.com/blog/understanding-short-circuit-evaluation-in-javascript)
+Read the previous post in this series here: [Understanding Short Circuit Evaluation in JavaScript](https://www.thecodedose.com/blog/understanding-short-circuit-evaluation-in-javascript)
 
 Now that you're comfortable working with if/else statements, lets learn about another control structure in JavaScript: `switch`.
 
