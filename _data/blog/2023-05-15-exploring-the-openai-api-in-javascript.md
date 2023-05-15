@@ -11,7 +11,7 @@ featured: false
 draft: false
 travel: false
 author: Urvashi
-thumbnail: /assets/automatic1111.png
+thumbnail: /assets/openai_api_in_js.png
 ---
 
 The world of artificial intelligence (AI) and machine learning (ML) has witnessed remarkable advancements in recent years.
