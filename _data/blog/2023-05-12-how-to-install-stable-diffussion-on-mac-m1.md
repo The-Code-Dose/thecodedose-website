@@ -6,6 +6,7 @@ title: How to use Stable Diffusion on Mac using Automatic1111's Web UI
 tags:
   - stable diffusion
   - AI art
+  - AI
 featured: false
 draft: false
 travel: false
