@@ -23,10 +23,10 @@ const StudyPlansPage = ({
       className="study-plans__header"
     >
       <h1 className="study-plans__heading">
-        <span className="study-plans__heading--focus">Self</span> Study Plans
+        <span className="study-plans__heading--focus">Coding</span> Study Plans
       </h1>
       <p className="study-plans__content">
-        Transform Your Learning Journey with these Self Study Plan Templates on Notion
+        Transform Your Learning Journey with Our Study Plans
       </p>
     </div>
     <div className="study-plans__info">
@@ -65,8 +65,9 @@ const StudyPlansPage = ({
       <div className="dsa-plan__left">
         <div className="dsa-plan__heading-container">
           <h1 className="dsa-plan__heading">
-            90 Data Structures & Algorithms Study Plan
+            90 Days Data Structures & Algorithms Study Plan
           </h1>
+          <h3 className="dsa-plan__subheading">Become interview ready in just 90 days!</h3>
         </div>
         <div className="dsa-plan__content-container">
           <p className="dsa-plan__content">
@@ -83,9 +84,12 @@ const StudyPlansPage = ({
       </div>
       <div className="js-plan__right">
         <h1 className="js-plan__heading">
+          21 days
+          <br></br>
           <span className="js-plan__heading--pink">JAVASCRIPT</span>
-          <br></br>Self Study Plan
+          <br></br>Study Plan
         </h1>
+        <h3 className="js-plan__subheading">Become a JavaScript developer in 21 days!</h3>
         <p className="js-plan__content">
           This self study plan covers everything that you need to know to become a confident JavaScript developer!
         </p>
@@ -95,8 +99,9 @@ const StudyPlansPage = ({
     <section className="git-plan__container" id="gastby-blog">
       <div className="git-plan__left">
         <h2 className="git-plan__heading">
-          Git & GitHub Self Study Plan
+          Git & GitHub Study Plan
         </h2>
+        <h3 className="git-plan__subheading">Learn how to collaborate efficiently with other engineers!</h3>
         <p className="git-plan__content">
           This study plan is a Notion template that will make you comfortable with using Git and GitHub. After studying everything in this plan, you’ll be able to integrate Git and GitHub in your daily projects.
         </p>
@@ -109,8 +114,9 @@ const StudyPlansPage = ({
       <div className="python-plan__right">
         <div className="python-plan__heading-container">
           <h1 className="python-plan__heading">
-            20 Day Python Study Plan
+            20 Days Python Study Plan
           </h1>
+          <h3 className="python-plan__subheading">Master Python in just 20 days!</h3>
         </div>
         <div className="python-plan__content-container">
           <p className="python-plan__content">
@@ -125,7 +131,7 @@ const StudyPlansPage = ({
         Special Offer
       </h1>
       <h2 className="study-plans__combo-subheading">
-        Get FLAT 10% OFF on this combo
+        Get flat 10% OFF on this combo
       </h2>
       <p>Data Structures & Algorithms + JavaScript + Git/GitHub Self Study Plans</p>
       <img className="study-plans__combo-img" src={combo} />

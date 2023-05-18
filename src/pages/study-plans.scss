@@ -7,6 +7,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
+    align-items: center;
   }
 
   &__demo {
@@ -97,13 +99,17 @@
   &__heading {
     font-size: 46px;
     font-weight: 900;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 
     &-container {
       background-color: var(--yellow);
       padding: 50px;
       border-bottom: 1px solid var(--black);
     }
+  }
+
+  &__subheading {
+    margin-bottom: 0px;
   }
 
   &__content {
@@ -146,6 +152,11 @@
       padding: 50px;
       border-bottom: 1px solid var(--black);
     }
+  }
+
+  &__subheading {
+    margin-top: 10px;
+    margin-bottom: 0px;
   }
 
   &__content {
@@ -247,6 +258,12 @@
   &__heading {
     font-size: 46px;
     font-weight: 900;
+    margin-bottom: 0px;
+  }
+
+  &__subheading {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   &__content {
@@ -295,7 +312,7 @@
   }
 
   &__heading {
-    font-size: 76px;
+    font-size: 66px;
     font-weight: 900;
     text-transform: uppercase;
     color: var(--white);
