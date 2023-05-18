@@ -70,7 +70,7 @@ const IndexPage = ({ data: { site } }) => {
       <Youtube />
       <section className="newsletter-section" id="newsletter">
         <form className="newsletter-section__form" onSubmit={handleSubmit}>
-          <h1>Subscribe to receive latest updates right in your inbox!</h1>
+          <h1>Subscribe to get access to exclusive coding tutorials, tips, and tricks!</h1>
           <label>
             First Name:
             <input
