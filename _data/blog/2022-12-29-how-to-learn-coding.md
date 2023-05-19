@@ -31,7 +31,7 @@ To help you make the right choice, I've found this handy [flowchart](https://car
 
 So, take your time, consider your goals and interests, and pick the programming language that resonates with you. Your coding adventure is about to begin!
 
-<iframe src="https://giphy.com/embed/jUEP2JgSUPyPlx1m4f" width="480" height="399" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<img src="https://i.giphy.com/media/jUEP2JgSUPyPlx1m4f/giphy.webp"></img>
 
 # Mastering the Fundamentals: Your Learning Resources
 
@@ -63,6 +63,8 @@ Let's explore some websites where you can kickstart your programming adventure:
 
 Take your time to explore these resources and find the ones that resonate with your learning style. Remember, dedication and practice are the keys to excel in programming. With consistent effort, you'll steadily acquire the skills necessary to become a coding maestro.
 
+<img src="https://i.giphy.com/media/POhImPUEBl6bR2EIW0/giphy.webp"></img>
+
 # Mastering Data Structures and Algorithms: Taking Your Skills to the Next Level!
 
 Now that you have a solid grasp of the fundamentals, it's time to dive into the fascinating world of data structures and algorithms. This is where things get really interesting! Acquiring knowledge in this area will not only enhance your problem-solving skills but also give you a competitive edge during technical interviews.
@@ -83,7 +85,7 @@ For those who prefer a structured approach, I've got you covered! Check out my [
 
 Remember, consistent practice is the key to becoming proficient in data structures and algorithms. Make sure to allocate dedicated time to solve problems and challenge yourself. As you tackle more and more coding challenges, you'll strengthen your skills and gain the confidence needed to excel in this critical area of programming.
 
-<iframe src="https://giphy.com/embed/ouvSzoMTx6nXN6PiGu" width="480" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<img src="https://i.giphy.com/media/JudhvsM4M5opjfbaPY/giphy.webp"></img>
 
 # Choosing Your Tech Role: Finding Your Path in the Tech World
 
@@ -111,7 +113,7 @@ So, let your creativity flow, start building those impressive projects, and show
 
 # Mastering the Art of Interviewing: Unlocking Your Career Potential
 
-<iframe src="https://giphy.com/embed/ouvSzoMTx6nXN6PiGu" width="480" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<img src="https://i.giphy.com/media/ouvSzoMTx6nXN6PiGu/giphy.webp"></img>
 
 When it comes to achieving career success, honing your interviewing skills holds immense value. It's no wonder that according to [Pramp](https://www.pramp.com/#/), mastering the art of interviewing can be one of the most profitable skills you can acquire. The good news is, you can start practicing for interviews right now, and it won't cost you a penny!
 
@@ -125,7 +127,7 @@ By leveraging the resources, you can simulate real interview scenarios, gain pra
 
 Congratulations on taking your first steps towards learning computer programming! This is an exciting journey that will undoubtedly bring you new challenges and incredible rewards. Remember, as you embark on this adventure, it's essential to keep an open mind and find joy in the process.
 
-<iframe src="https://giphy.com/embed/IPbS5R4fSUl5S" width="480" height="266" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<img src="https://i.giphy.com/media/1kenyYNFG9wTUyHMjk/giphy.webp"></img>
 
 Learning to code can sometimes feel daunting, but with dedication and perseverance, you can overcome any obstacle that comes your way. Believe in yourself and your ability to acquire new skills and knowledge in the world of programming. You've got this!
 
