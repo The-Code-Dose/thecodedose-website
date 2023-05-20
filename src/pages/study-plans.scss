@@ -93,6 +93,7 @@
     width: 40%;
     background-image: url('/assets/90-day-dsa-plan.png');
     background-size: cover;
+    background-position: center;
     border-left: 1px solid var(--black);
   }
 
@@ -138,6 +139,7 @@
     box-sizing: border-box;
     width: 50%;
     background-image: url('/assets/python_study_plan.png');
+    background-position: center;
     background-size: cover;
     border-right: 1px solid var(--black);
   }
@@ -253,6 +255,7 @@
     background-size: cover;
     border-left: 1px solid var(--black);
     background-image: url('/assets/git-plan.png');
+    background-position: center;
   }
 
   &__heading {
