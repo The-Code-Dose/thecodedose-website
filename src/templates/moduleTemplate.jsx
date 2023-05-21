@@ -86,7 +86,7 @@ export default function ModuleTemplate({
                 dangerouslySetInnerHTML={{ __html: html }}
               />
             </div>
-            <div className="module__table">
+            <div className="module__table module__toc">
               <h3 className="module__table-title">Table of Contents</h3>
               <section
                 className="module__table-list"

@@ -140,6 +140,13 @@
     }
 
     &__table {
+      margin-bottom: 50px;
+      &-list {
+        height: 200px;
+      }
+    }
+
+    &__toc {
       display: none;
     }
   }

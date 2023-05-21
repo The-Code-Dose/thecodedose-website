@@ -12,6 +12,7 @@ export default () => {
         <Link to="/travel">Travel</Link>
         <Link to="/study-plans">Study Plans</Link>
         <Link to="/cs-illustrated">CS Illustrated</Link>
+        <Link to="/curriculum/javascript/your-first-javascript-program">Javascript</Link>
         <a
           href="https://www.redbubble.com/people/thecodedose/shop"
           target="__blank"
@@ -33,6 +34,7 @@ export default () => {
             <Link to="/travel">Travel</Link>
             <Link to="/study-plans">Study Plans</Link>
             <Link to="/cs-illustrated">CS Illustrated</Link>
+            <Link to="/curriculum/javascript/your-first-javascript-program">Javascript</Link>
             <a
               href="https://www.redbubble.com/people/thecodedose/shop"
               target="__blank"
