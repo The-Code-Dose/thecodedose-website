@@ -1,20 +1,10 @@
 ---
-template: BlogPost
-path: /blog/blocks-scope-and-hoisting-in-javascript
-date: 2023-04-26T21:37:42.146Z
+template: ModuleTemplate
+slug: blocks-scope-and-hoisting-in-javascript
 title: 'Blocks, Scope & Hoisting in JavaScript'
-tags:
-  - javascript
-  - beginners
-  - hoisting
-featured: false
-draft: false
-travel: false
-author: Urvashi
+curriculum: javascript
 thumbnail: /assets/blocks_scope_js.png
 ---
-
-Read the previous post in this series here: [Variables & Constants in JavaScript](https://www.thecodedose.com/blog/variables-and-constants-in-javascript)
 
 In the last post, you learned how to create variables in JavaScript using `var` and `let`.
 But what's the difference between these two?
@@ -196,4 +186,3 @@ console.log(x);
 This will throw a `ReferenceError` because the variable `x` is declared with `let` inside a block, and then accessed before it is declared.
 
 Thank you for reading!
-You can find the next post in this series here: [Primitive Data Types in JavaScript](https://www.thecodedose.com/blog/data-types-in-javascript)

@@ -1,19 +1,10 @@
 ---
-template: BlogPost
-path: /blog/loops-in-javascript
-date: 2023-05-01T11:37:42.146Z
+template: ModuleTemplate
+slug: loops-in-javascript
 title: Working with Loops in JavaScript
-tags:
-  - javascript
-  - beginners
-featured: false
-draft: false
-travel: false
-author: Urvashi
+curriculum: javascript
 thumbnail: /assets/loop_js.jpeg
 ---
-
-Read the previous post in this series here: [Switch Statements in JavaScript](https://www.thecodedose.com/blog/switch-statements-in-javascript)
 
 In this blog post, we'll explore loops in JavaScript - a fundamental concept that every developer should know.
 

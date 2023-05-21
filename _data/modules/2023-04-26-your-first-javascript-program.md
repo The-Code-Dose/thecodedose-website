@@ -1,16 +1,8 @@
 ---
-template: BlogPost
-path: /blog/your-first-javascript-program
-date: 2023-04-26T19:37:42.146Z
+template: ModuleTemplate
+slug: your-first-javascript-program
 title: 'Your First JavaScript Program: Hello World'
-tags:
-  - javascript
-  - hello world
-  - beginners
-featured: false
-draft: false
-travel: false
-author: Urvashi
+curriculum: javascript
 thumbnail: /assets/hello_world_js.png
 ---
 
@@ -198,5 +190,3 @@ Congratulations, you've just created your first "Hello World" program using Node
 
 Of course, this is just the beginning of what you can do with JavaScript. With JavaScript, you can create interactive web applications, dynamic user interfaces, and much more.
 Keep practicing and learning, and you'll be able to create amazing things with JavaScript in no time.
-
-Read the next blog in this series here: [Comments in JavaScript](https://www.thecodedose.com/blog/comments-in-javascript)

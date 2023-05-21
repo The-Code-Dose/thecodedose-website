@@ -1,20 +1,10 @@
 ---
-template: BlogPost
-path: /blog/operators-in-javascript
-date: 2023-04-27T10:37:42.146Z
+template: ModuleTemplate
+slug: operators-in-javascript
 title: Working with Operators in JavaScript
-tags:
-  - javascript
-  - beginners
-featured: false
-draft: false
-travel: false
-author: Urvashi
+curriculum: javascript
 thumbnail: /assets/operators_in_js.png
 ---
-
-Welcome to another blog post about JavaScript!
-If you haven't yet, read the previous post in this series here: [Primitive Data Types in JavaScript](https://www.thecodedose.com/blog/data-types-in-javascript)
 
 In this post, we'll be discussing operators in JavaScript and how they work.
 
@@ -188,5 +178,3 @@ console.log(bar); // logs "hello"
 
 console.log(undefined ?? "It's undefined!") // It's undefined!
 ```
-
-Read the next post in this series here: [If/Else Statements in JavaScript](https://www.thecodedose.com/blog/if-else-statements-in-javascript)

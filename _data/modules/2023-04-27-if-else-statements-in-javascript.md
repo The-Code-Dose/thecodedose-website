@@ -1,19 +1,10 @@
 ---
-template: BlogPost
-path: /blog/if-else-statements-in-javascript
-date: 2023-04-27T11:37:42.146Z
+template: ModuleTemplate
+slug: if-else-statements-in-javascript
 title: If/Else Statements in JavaScript
-tags:
-  - javascript
-  - beginners
-featured: false
-draft: false
-travel: false
-author: Urvashi
+curriculum: javascript
 thumbnail: /assets/if_else_in_js.png
 ---
-
-Read the previous post in this series here: [Working with Operators in JavaScript](https://www.thecodedose.com/blog/operators-in-javascript)
 
 # Introduction to If / Else Statements
 
@@ -73,5 +64,3 @@ The first one that evaluates to `true` gets to execute its block and the executi
 
 It's important to note that the conditions in if/else statements are evaluated as boolean values (i.e., `true` or `false`). I
 In JavaScript, there are some "truthy" (truth-like) and "falsy" (false-like) values that we'll explore in a future post.
-
-Read the next post in this series here: [Ternary Operator in JavaScript](https://www.thecodedose.com/blog/ternary-operator-in-javascript)

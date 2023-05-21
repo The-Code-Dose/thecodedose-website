@@ -5,6 +5,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const blogPostTemplate = path.resolve("src/templates/blogTemplate.jsx");
   const quizTemplate = path.resolve("src/templates/quizTemplate.jsx");
+  const moduleTemplate = path.resolve("src/templates/moduleTemplate.jsx");
   const tagTemplate = path.resolve("src/templates/tagTemplate.js");
 
   const result = await graphql(`
@@ -37,6 +38,20 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           }
         }
       }
+      modulesRemark: allMarkdownRemark(
+        limit: 1000
+        filter: { frontmatter: { template: { eq: "ModuleTemplate" } } }
+      ) {
+        edges {
+          node {
+            id
+            frontmatter {
+              slug
+              curriculum
+            }
+          }
+        }
+      }
       tagsGroup: allMarkdownRemark(limit: 2000) {
         group(field: frontmatter___tags) {
           fieldValue
@@ -56,6 +71,17 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       path: node.frontmatter.path,
       component: quizTemplate,
       context: {}, // additional data can be passed via context
+    });
+  });
+
+  result.data.modulesRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: `/curriculum/${node.frontmatter.curriculum}/${node.frontmatter.slug}`,
+      component: moduleTemplate,
+      context: {
+        curriculum: node.frontmatter.curriculum,
+        slug: node.frontmatter.slug,
+      },
     });
   });
 

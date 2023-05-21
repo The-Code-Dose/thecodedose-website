@@ -1,19 +1,10 @@
 ---
-template: BlogPost
-path: /blog/ternary-operator-in-javascript
-date: 2023-04-29T11:37:42.146Z
+template: ModuleTemplate
+slug: ternary-operator-in-javascript
 title: Ternary Operator in JavaScript
-tags:
-  - javascript
-  - beginners
-featured: false
-draft: false
-travel: false
-author: Urvashi
+curriculum: javascript
 thumbnail: /assets/ternary_operator.png
 ---
-
-Read the previous post in this series here: [If/Else Statements in JavaScript](https://www.thecodedose.com/blog/if-else-statements-in-javascript)
 
 Now that you know how to write conditional statements using `if`/`else if`/`else`, lets take a look at a new operator: `?` ternary operator.
 
@@ -49,5 +40,3 @@ If the condition is `true`, `exp1` is executed. If the condition is `false`, `ex
 # Best Practices
 
 While the ternary operator can make your code more concise, it should be used carefully and only in situations where it improves readability and reduces the number of lines of code. When used properly, the ternary operator can make your code easier to read and understand.
-
-Read the next post in this series here: [What is Truthy and Falsy in JavaScript](https://www.thecodedose.com/blog/truthy_and_falsy_in_js)

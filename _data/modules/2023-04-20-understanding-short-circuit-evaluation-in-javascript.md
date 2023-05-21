@@ -1,18 +1,11 @@
 ---
-template: BlogPost
-path: /blog/understanding-short-circuit-evaluation-in-javascript
-date: 2023-04-20T19:37:42.146Z
+template: ModuleTemplate
+slug: understanding-short-circuit-evaluation-in-javascript
 title: Understanding Short Circuit Evaluation in JavaScript
-tags:
-  - javascript
-featured: false
+curriculum: javascript
 draft: false
-travel: false
-author: Urvashi
 thumbnail: /assets/short-circuit-evaluation-js.png
 ---
-
-Read the previous post in this series here: [ What is Truthy and Falsy in JavaScript](https://www.thecodedose.com/blog/what-is-truthy-and-false-in-javascript)
 
 If you work with JavaScript, then you've probably come across logical expressions.
 A logical expression is a statement that evaluates to either `true` (or a truthy value) or `false` (or a falsy value).
@@ -167,5 +160,3 @@ a || b || concatAndPrint(b, c)
 1. `a && b && concatAndPrint(b, c)` will print `undefined`
 2. `b && concatAndPrint(b, c)` will print `Hello World`
 3. `a || b || concatAndPrint(b, c)` will print `Hello`
-
-Read the next post in this series here: [Switch Statements in JavaScript](https://www.thecodedose.com/blog/switch-statements-in-javascript)

@@ -1,19 +1,10 @@
 ---
-template: BlogPost
-path: /blog/switch-statements-in-javascript
-date: 2023-04-29T13:37:42.146Z
+template: ModuleTemplate
+slug: switch-statements-in-javascript
 title: Switch Statements in JavaScript
-tags:
-  - javascript
-  - beginners
-featured: false
-draft: false
-travel: false
-author: Urvashi
+curriculum: javascript
 thumbnail: /assets/switch_in_js.png
 ---
-
-Read the previous post in this series here: [Understanding Short Circuit Evaluation in JavaScript](https://www.thecodedose.com/blog/understanding-short-circuit-evaluation-in-javascript)
 
 Now that you're comfortable working with if/else statements, lets learn about another control structure in JavaScript: `switch`.
 
@@ -158,5 +149,3 @@ Switch statements can be pretty helpful when you have a value with several poten
 They can make your code more succinct and easier to comprehend than using a series of if/else if statements.
 
 But before you go wild with switch statements, keep in mind that they should only be used in situations where the number of cases is relatively small and the comparisons are straightforward. If you're dealing with a large number of cases or complex comparisons, it might be better to consider another approach.
-
-Read the next post in this series here: [Working with Loops in JavaScript](https://www.thecodedose.com/blog/loops-in-javascript)

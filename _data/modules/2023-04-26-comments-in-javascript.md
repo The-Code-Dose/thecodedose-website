@@ -1,15 +1,8 @@
 ---
-template: BlogPost
-path: /blog/comments-in-javascript
-date: 2023-04-26T20:37:42.146Z
+template: ModuleTemplate
+slug: comments-in-javascript
 title: Comments in JavaScript
-tags:
-  - javascript
-  - beginners
-featured: false
-draft: false
-travel: false
-author: Urvashi
+curriculum: javascript
 thumbnail: /assets/comments_in_js.png
 ---
 
@@ -18,8 +11,6 @@ One helpful way to achieve this is by adding comments to your JavaScript code.
 Comments can provide extra information about your code, like what a function does, how a particular code block works, or even tips on how to use your code.
 
 In this post, we'll talk about the different types of comments you can use in JavaScript, as well as some tips for writing effective comments that are helpful for others.
-
-If you haven't read the previous post in this series already, [read it here to write your first JavaScript program](https://www.thecodedose.com/blog/your-first-javascript-program)!
 
 # Types of Comments in JavaScript
 
@@ -78,5 +69,3 @@ When it comes to writing comments in your JavaScript code, there are a few best 
 Though comments are helpful for making your code more understandable, but they shouldn't be relied on too heavily. It's always a good idea to write clear and easy-to-understand code first and use comments only when necessary.
 
 By following best practices for writing comments, you can ensure that they are helpful and easy to read, making it easier for other developers to work with your code.
-
-Read the next blog in this series here: [Variables & Constants in JavaScript](https://www.thecodedose.com/blog/variables-and-constants-in-javascript)

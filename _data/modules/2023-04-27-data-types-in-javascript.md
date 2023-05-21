@@ -1,20 +1,10 @@
 ---
-template: BlogPost
-path: /blog/data-types-in-javascript
-date: 2023-04-27T09:37:42.146Z
+template: ModuleTemplate
+slug: data-types-in-javascript
 title: Primitive Data Types in JavaScript
-tags:
-  - javascript
-  - data types
-  - beginners
-featured: false
-draft: false
-travel: false
-author: Urvashi
+curriculum: javascript
 thumbnail: /assets/data_types_js.png
 ---
-
-Read the previous post in this series here: [Blocks, Scope & Hoisting in JavaScript](https://www.thecodedose.com/blog/blocks-scope-and-hoisting-in-javascript)
 
 To work with data in JavaScript, it's important to understand data types. Data types are a fundamental concept in any programming language and have a direct impact on how your code behaves.
 
@@ -107,5 +97,3 @@ console.log(mySymbol == unique) // false
 
 You'll learn more about all these data types in detail and the different operations that you can perform on them in future posts.
 So stay tuned!
-
-Read the next post in this series here: [Working with Operators in JavaScript](https://www.thecodedose.com/blog/operators-in-javascript)

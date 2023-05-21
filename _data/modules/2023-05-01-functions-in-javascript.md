@@ -1,19 +1,10 @@
 ---
-template: BlogPost
-path: /blog/functions-in-javascript
-date: 2023-05-01T15:37:42.146Z
+template: ModuleTemplate
+slug: functions-in-javascript
 title: Functions in JavaScript
-tags:
-  - javascript
-  - beginners
-featured: false
-draft: false
-travel: false
-author: Urvashi
+curriculum: javascript
 thumbnail: /assets/functions_in_js.png
 ---
-
-Read the previous post in this series here: [Working with Loops in JavaScript](https://www.thecodedose.com/blog/loops-in-javascript)
 
 Today, we're diving into functions and why they're so important in programming.
 So, let's jump right in!

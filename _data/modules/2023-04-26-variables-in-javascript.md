@@ -1,19 +1,10 @@
 ---
-template: BlogPost
-path: /blog/variables-and-constants-in-javascript
-date: 2023-04-26T20:37:42.146Z
+template: ModuleTemplate
+slug: variables-and-constants-in-javascript
 title: Variables & Constants in JavaScript
-tags:
-  - javascript
-  - beginners
-featured: false
-draft: false
-travel: false
-author: Urvashi
+curriculum: javascript
 thumbnail: /assets/variables_js.png
 ---
-
-Read the previous blog in this series here: [Comments in JavaScript](https://www.thecodedose.com/blog/comments-in-javascript)
 
 JavaScript is a versatile programming language that allows you to create dynamic and interactive web applications.
 One of the core concepts of any programming language is variables, which enable you to store and manipulate data in your code.
@@ -77,7 +68,7 @@ x, y = true, true;
 ```
 
 There's a slight difference between the scopes of the variables created by `var` and `let`.
-However, we'll cover that [in a future post](https://www.thecodedose.com/blog/blocks-scope-and-hoisting-in-javascript).
+However, we'll cover that [in a future post](https://www.thecodedose.com/curriculum/javascript/blocks-scope-and-hoisting-in-javascript).
 For now, you can assume that you can use them interchangeably.
 
 # Constants
@@ -113,4 +104,3 @@ Here are a few best practices for working with variables in JavaScript:
 - In JavaScript, it's common to use `camelCase` for variable names. This means that the first word is lowercase and subsequent words are capitalized. For example, `firstName` or `userAge`.
 
 I hope you found this post helpful!
-Make sure to read the previous post in this series here: [Blocks, Scope & Hoisting in JavaScript](https://www.thecodedose.com/blog/blocks-scope-and-hoisting-in-javascript)

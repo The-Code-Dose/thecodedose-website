@@ -1,0 +1,146 @@
+.curriculum {
+  &__title {
+    background-color: var(--black);
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid var(--black);
+    color: var(--white);
+
+    h4 {
+      font-size: 22px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+  }
+
+  &__container {
+    padding-right: 0;
+  }
+}
+
+.parent__container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 30px;
+  padding: 50px 20px;
+}
+
+.module {
+  &__container {
+    position: relative;
+  }
+
+  &__nav-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__tag {
+    font-size: 12px;
+    border-radius: 15px;
+    border: 1px solid var(--black);
+    padding: 6px 10px;
+    margin: 5px 8px;
+    display: inline-block;
+    background-color: var(--white);
+    text-transform: capitalize;
+  }
+
+  &__section {
+    width: 100%;
+    column-gap: 30px;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+  }
+
+  &__left {
+    width: 100%;
+
+    a {
+      font-weight: 900;
+      text-decoration: underline;
+      color: var(--purple);
+      word-break: break-all;
+    }
+  }
+
+  &__thumbnail {
+    margin-bottom: 50px;
+    width: 100% ;
+    border: 1px solid var(--black);
+  }
+
+  &__content {
+    img {
+      max-width: 600px;
+      max-height: 400px;
+      border: 1px solid var(--black);
+    }
+  }
+
+  &__table {
+    border: 1px solid var(--black);
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+
+    &-title {
+      color: var(--white);
+      padding: 20px 40px;
+      background-color: var(--black);
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+
+    &-list {
+      margin: 20px 10px;
+      max-height: 400px;
+      overflow-y: scroll;
+      scrollbar-width: thin; /* For Firefox */
+      scrollbar-color: var(--black) #f1f1f1; /* For Firefox */
+
+      &::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      /* For WebKit browsers */
+      &::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: var(--black);
+      }
+    }
+
+    a {
+      color: var(--black);
+      font-size: 16px;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .parent__container {
+    display: block;
+  }
+  .module {
+    &__section {
+      display: block;
+    }
+
+    &__table {
+      display: none;
+    }
+  }
+}

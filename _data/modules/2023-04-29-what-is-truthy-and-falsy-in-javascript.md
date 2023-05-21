@@ -1,19 +1,10 @@
 ---
-template: BlogPost
-path: /blog/what-is-truthy-and-false-in-javascript
-date: 2023-04-29T12:37:42.146Z
+template: ModuleTemplate
+slug: what-is-truthy-and-false-in-javascript
 title: What is Truthy and Falsy in JavaScript
-tags:
-  - javascript
-  - beginners
-featured: false
-draft: false
-travel: false
-author: Urvashi
+curriculum: javascript
 thumbnail: /assets/truthy_and_falsy_in_js.png
 ---
-
-Read the previous post in this series here: [Ternary Operator in JavaScript](https://www.thecodedose.com/blog/ternary-operator-in-javascript)
 
 # Introduction
 
@@ -115,5 +106,3 @@ In this example, since `num` is a non-zero number, it is considered truthy and t
 Therefore, the program will log "The value of num is 10."
 
 It's important to note that truthy and falsy values can be unpredictable at times, so it's always a good idea to explicitly check for the value you're expecting rather than relying on truthy/falsy evaluation.
-
-Read the next post in this series here: [Understanding Short Circuit Evaluation in JavaScript](https://www.thecodedose.com/blog/understanding-short-circuit-evaluation-in-javascript)

@@ -1,16 +1,8 @@
 ---
-template: BlogPost
-path: /blog/javascript-iterators-and-generators
-date: 2023-04-24T19:37:42.146Z
+template: ModuleTemplate
+slug: javascript-iterators-and-generators
 title: Understanding Iterators and Generators in JavaScript
-tags:
-  - javascript
-  - iterators
-  - generators
-featured: false
-draft: false
-travel: false
-author: Urvashi
+curriculum: javascript
 thumbnail: /assets/iterators_and_generators_js.png
 ---
 
