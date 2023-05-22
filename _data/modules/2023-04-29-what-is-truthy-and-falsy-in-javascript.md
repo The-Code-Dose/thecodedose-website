@@ -3,6 +3,7 @@ template: ModuleTemplate
 slug: what-is-truthy-and-false-in-javascript
 title: What is Truthy and Falsy in JavaScript
 curriculum: javascript
+path: /curriculum/javascript/what-is-truthy-and-false-in-javascript
 thumbnail: /assets/truthy_and_falsy_in_js.png
 ---
 

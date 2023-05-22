@@ -3,6 +3,7 @@ template: ModuleTemplate
 slug: data-types-in-javascript
 title: Primitive Data Types in JavaScript
 curriculum: javascript
+path: /curriculum/javascript/data-types-in-javascript
 thumbnail: /assets/data_types_js.png
 ---
 

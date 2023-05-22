@@ -3,6 +3,7 @@ template: ModuleTemplate
 slug: operators-in-javascript
 title: Working with Operators in JavaScript
 curriculum: javascript
+path: /curriculum/javascript/operators-in-javascript
 thumbnail: /assets/operators_in_js.png
 ---
 

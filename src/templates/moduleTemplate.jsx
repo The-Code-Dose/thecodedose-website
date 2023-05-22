@@ -113,7 +113,7 @@ export const pageQuery = graphql`
     }
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
-      tableOfContents(pathToSlugField: "frontmatter.slug")
+      tableOfContents(pathToSlugField: "frontmatter.path")
       frontmatter {
         slug
         title

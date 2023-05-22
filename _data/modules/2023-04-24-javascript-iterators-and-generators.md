@@ -3,6 +3,7 @@ template: ModuleTemplate
 slug: javascript-iterators-and-generators
 title: Understanding Iterators and Generators in JavaScript
 curriculum: javascript
+path: /curriculum/javascript/javascript-iterators-and-generators
 thumbnail: /assets/iterators_and_generators_js.png
 ---
 

@@ -3,6 +3,7 @@ template: ModuleTemplate
 slug: if-else-statements-in-javascript
 title: If/Else Statements in JavaScript
 curriculum: javascript
+path: /curriculum/javascript/if-else-statements-in-javascript
 thumbnail: /assets/if_else_in_js.png
 ---
 

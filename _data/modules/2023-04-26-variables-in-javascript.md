@@ -3,6 +3,7 @@ template: ModuleTemplate
 slug: variables-and-constants-in-javascript
 title: Variables & Constants in JavaScript
 curriculum: javascript
+path: /curriculum/javascript/variables-and-constants-in-javascript
 thumbnail: /assets/variables_js.png
 ---
 

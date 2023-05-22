@@ -1,6 +1,7 @@
 ---
 template: ModuleTemplate
 slug: understanding-short-circuit-evaluation-in-javascript
+path: /curriculum/javascript/understanding-short-circuit-evaluation-in-javascript
 title: Understanding Short Circuit Evaluation in JavaScript
 curriculum: javascript
 draft: false

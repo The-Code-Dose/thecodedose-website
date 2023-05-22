@@ -3,6 +3,7 @@ template: ModuleTemplate
 slug: arrays-in-javascript
 title: Arrays in JavaScript
 curriculum: javascript
+path: /curriculum/javascript/arrays-in-javascript
 thumbnail: /assets/arrays_in_javascript.png
 ---
 

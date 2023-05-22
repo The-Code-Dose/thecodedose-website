@@ -3,6 +3,7 @@ template: ModuleTemplate
 slug: comments-in-javascript
 title: Comments in JavaScript
 curriculum: javascript
+path: /curriculum/javascript/comments-in-javascript
 thumbnail: /assets/comments_in_js.png
 ---
 

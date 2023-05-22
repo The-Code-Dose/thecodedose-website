@@ -3,6 +3,7 @@ template: ModuleTemplate
 slug: switch-statements-in-javascript
 title: Switch Statements in JavaScript
 curriculum: javascript
+path: /curriculum/javascript/switch-statements-in-javascript
 thumbnail: /assets/switch_in_js.png
 ---
 

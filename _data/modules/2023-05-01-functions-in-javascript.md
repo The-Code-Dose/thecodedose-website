@@ -3,6 +3,7 @@ template: ModuleTemplate
 slug: functions-in-javascript
 title: Functions in JavaScript
 curriculum: javascript
+path: /curriculum/javascript/functions-in-javascript
 thumbnail: /assets/functions_in_js.png
 ---
 

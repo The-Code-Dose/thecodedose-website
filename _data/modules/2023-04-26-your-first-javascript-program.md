@@ -3,6 +3,7 @@ template: ModuleTemplate
 slug: your-first-javascript-program
 title: 'Your First JavaScript Program: Hello World'
 curriculum: javascript
+path: /curriculum/javascript/your-first-javascript-program
 thumbnail: /assets/hello_world_js.png
 ---
 

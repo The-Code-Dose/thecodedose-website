@@ -3,6 +3,7 @@ template: ModuleTemplate
 slug: loops-in-javascript
 title: Working with Loops in JavaScript
 curriculum: javascript
+path: /curriculum/javascript/loops-in-javascript
 thumbnail: /assets/loop_js.jpeg
 ---
 

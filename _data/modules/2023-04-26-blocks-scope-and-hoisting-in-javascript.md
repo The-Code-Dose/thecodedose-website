@@ -3,6 +3,7 @@ template: ModuleTemplate
 slug: blocks-scope-and-hoisting-in-javascript
 title: 'Blocks, Scope & Hoisting in JavaScript'
 curriculum: javascript
+path: /curriculum/javascript/blocks-scope-and-hoisting-in-javascript
 thumbnail: /assets/blocks_scope_js.png
 ---
 

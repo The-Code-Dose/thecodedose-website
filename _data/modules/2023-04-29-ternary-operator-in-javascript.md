@@ -3,6 +3,7 @@ template: ModuleTemplate
 slug: ternary-operator-in-javascript
 title: Ternary Operator in JavaScript
 curriculum: javascript
+path: /curriculum/javascript/ternary-operator-in-javascript
 thumbnail: /assets/ternary_operator.png
 ---
 
