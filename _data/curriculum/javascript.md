@@ -34,4 +34,6 @@ modules:
     slug: "functions-in-javascript"
   - title: "Arrays"
     slug: "arrays-in-javascript"
+  - title: "Strings"
+    slug: "strings"
 ---

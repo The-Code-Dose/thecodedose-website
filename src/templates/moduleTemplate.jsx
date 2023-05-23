@@ -75,29 +75,27 @@ export default function ModuleTemplate({
           </div>
         </div>
         <div className="module__container">
-          <article className="module__section">
-            <div className="module__left">
-              <div className="module__title">
-                <h1>{blogTitle}</h1>
-              </div>
-              <img className="module__thumbnail" src={thumbnail} />
-              <div
-                className="module__content"
-                dangerouslySetInnerHTML={{ __html: html }}
-              />
+          <div className="module__left">
+            <div className="module__title">
+              <h1>{blogTitle}</h1>
             </div>
-            <div className="module__table module__toc">
-              <h3 className="module__table-title">Table of Contents</h3>
-              <section
-                className="module__table-list"
-                dangerouslySetInnerHTML={{ __html: tableOfContents }}
-              />
-            </div>
+            <img className="module__thumbnail" src={thumbnail} />
+            <div
+              className="module__content"
+              dangerouslySetInnerHTML={{ __html: html }}
+            />
             <div className="module__nav-container">
               {previousModule >= 0 ? <Button link to={`/curriculum/${curriculumTitle}/${modules[previousModule].slug}`} text="< Previous" /> : <div />}
               {nextModule < modules.length ? <Button to={`/curriculum/${curriculumTitle}/${modules[nextModule].slug}`} link text="Next >" /> : <div />}
             </div>
-          </article>
+          </div>
+          <div className="module__table module__toc">
+            <h3 className="module__table-title">Table of Contents</h3>
+            <section
+              className="module__table-list"
+              dangerouslySetInnerHTML={{ __html: tableOfContents }}
+            />
+          </div>
         </div>
       </div>
     </Layout>
