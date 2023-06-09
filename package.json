@@ -32,6 +32,7 @@
     "sass": "^1.63.2"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.14",
     "eslint": "^8.42.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.8.0",
@@ -39,7 +40,10 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "gh-pages": "^5.0.0"
+    "gatsby-plugin-postcss": "^6.10.0",
+    "gh-pages": "^5.0.0",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
   },
   "keywords": [
     "gatsby",
