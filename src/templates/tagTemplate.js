@@ -1,10 +1,10 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import { graphql, Link } from 'gatsby';
-import Layout from '../components/layout';
-import PostLink from '../components/postLink';
+import React from "react";
+import Helmet from "react-helmet";
+import { graphql, Link } from "gatsby";
+import Layout from "../components/layout";
+import PostLink from "../components/postLink";
 
-import './tagTemplate.scss';
+import "./tagTemplate.scss";
 
 export default function TagTemplate({ pageContext, data }) {
   const { site, blogPosts, tagsGroup } = data;
@@ -15,7 +15,7 @@ export default function TagTemplate({ pageContext, data }) {
   const { siteMetadata } = site;
 
   const tagHeader = `${totalCount} post${
-    totalCount === 1 ? '' : 's'
+    totalCount === 1 ? "" : "s"
   } tagged with "${tag}"`;
 
   const Posts = edges
@@ -53,20 +53,20 @@ export default function TagTemplate({ pageContext, data }) {
 }
 
 export const pageQuery = graphql`
-  query($tag: String!) {
+  query ($tag: String!) {
     site {
       siteMetadata {
         title
       }
     }
     tagsGroup: allMarkdownRemark {
-      group(field: frontmatter___tags) {
+      group(field: { frontmatter: { tags: SELECT } }) {
         tag: fieldValue
       }
     }
     blogPosts: allMarkdownRemark(
       limit: 2000
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
       filter: { frontmatter: { tags: { in: [$tag] }, draft: { eq: false } } }
     ) {
       totalCount

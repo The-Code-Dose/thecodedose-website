@@ -9,7 +9,7 @@ export default function BlogTemplate({
   data,
 }) {
   const {
-    site, markdownRemark, blogPosts: { edges }, featuredPosts: { edges: featuredPosts },
+    site, markdownRemark, blogPosts: { edges },
   } = data;
   const { siteMetadata: { title: siteTitle } } = site;
   const {
@@ -90,13 +90,13 @@ export default function BlogTemplate({
 }
 
 export const pageQuery = graphql`
-  query($path: String!) {
+  query($pagePath: String!) {
     site {
       siteMetadata {
         title
       }
     }
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+    markdownRemark(frontmatter: { path: { eq: $pagePath } }) {
       html
       tableOfContents(pathToSlugField: "frontmatter.path")
       frontmatter {
@@ -112,27 +112,8 @@ export const pageQuery = graphql`
     }
     blogPosts: allMarkdownRemark(
       limit: 3
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: { frontmatter: { date: DESC } }
       filter: { frontmatter: { draft: { eq: false } } }
-      ) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            path
-            title
-            thumbnail
-            tags
-          }
-        }
-      }
-    }
-    featuredPosts: allMarkdownRemark(
-      limit: 3
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { featured: { eq: true }, draft: { eq: false } } }
       ) {
       edges {
         node {

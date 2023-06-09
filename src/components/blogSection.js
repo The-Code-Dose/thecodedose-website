@@ -15,7 +15,7 @@ export default () => {
         }
         latestBlogPosts: allMarkdownRemark(
           limit: 4
-          sort: { order: DESC, fields: [frontmatter___date] }
+          sort: { frontmatter: { date: DESC } }
           filter: {
             frontmatter: { draft: { eq: false }, featured: { eq: true } }
           }

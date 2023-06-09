@@ -11,7 +11,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const result = await graphql(`
     {
       postsRemark: allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
+        sort: { frontmatter: { date: DESC } }
         limit: 1000
         filter: { frontmatter: { template: { eq: "BlogPost" } } }
       ) {
@@ -25,7 +25,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         }
       }
       quizzesRemark: allMarkdownRemark(
-        sort: { order: DESC }
         limit: 1000
         filter: { frontmatter: { template: { eq: "QuizTemplate" } } }
       ) {
@@ -53,7 +52,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         }
       }
       tagsGroup: allMarkdownRemark(limit: 2000) {
-        group(field: frontmatter___tags) {
+        group(field: { frontmatter: { tags: SELECT } }) {
           fieldValue
         }
       }
@@ -67,35 +66,44 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   result.data.quizzesRemark.edges.forEach(({ node }) => {
+    const path = node.frontmatter.path;
     createPage({
-      path: node.frontmatter.path,
+      path,
       component: quizTemplate,
-      context: {}, // additional data can be passed via context
+      context: {
+        pagePath: path,
+      },
     });
   });
 
   result.data.modulesRemark.edges.forEach(({ node }) => {
+    const path = `/curriculum/${node.frontmatter.curriculum}/${node.frontmatter.slug}`;
     createPage({
-      path: `/curriculum/${node.frontmatter.curriculum}/${node.frontmatter.slug}`,
+      path,
       component: moduleTemplate,
       context: {
         curriculum: node.frontmatter.curriculum,
         slug: node.frontmatter.slug,
+        pagePath: path,
       },
     });
   });
 
   result.data.postsRemark.edges.forEach(({ node }) => {
+    const path = node.frontmatter.path;
     createPage({
-      path: node.frontmatter.path,
+      path,
       component: blogPostTemplate,
-      context: {}, // additional data can be passed via context
+      context: {
+        pagePath: path,
+      },
     });
   });
 
   result.data.tagsGroup.group.forEach(({ fieldValue }) => {
+    const path = `/tags/${fieldValue}/`;
     createPage({
-      path: `/tags/${fieldValue}/`,
+      path,
       component: tagTemplate,
       context: {
         tag: fieldValue,

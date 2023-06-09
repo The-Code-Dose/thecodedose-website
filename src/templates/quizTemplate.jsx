@@ -123,13 +123,13 @@ export default function QuizTemplate({ data }) {
 }
 
 export const pageQuery = graphql`
-  query($path: String!) {
+  query($pagePath: String!) {
     site {
       siteMetadata {
         title
       }
     }
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+    markdownRemark(frontmatter: { path: { eq: $pagePath } }) {
       frontmatter {
         path
         title
