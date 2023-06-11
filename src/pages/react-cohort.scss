@@ -1,0 +1,40 @@
+.react-cohort {
+  &__container {
+    font-family: 'Poppins', sans-serif;
+
+    h1, h2, h3, h4, h5, h6, a, button {
+      font-family: 'Unbounded', sans-serif;
+    }
+
+    p, li {
+      font-size: 18px;
+      line-height: 1.75;
+      font-weight: 400;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__hero {
+    background: linear-gradient(to top, rgba(15, 23, 42, 1), rgba(15, 23, 42, 0.3), rgba(15, 23, 42, 0.3)), url("../images/bg.png") ;
+    background-color: rgb(15, 23, 42);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__mentor {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+
+    &-container {
+
+    }
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 3fr;
+    }
+  }
+}
