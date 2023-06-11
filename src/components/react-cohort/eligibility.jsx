@@ -38,7 +38,7 @@ export default () => {
         results, apply now to secure your spot in this exclusive program.
       </p>
       <div className="inline-grid grid-cols-1 lg:grid-cols-2 gap-4 mt-8">
-        <div className="pr-10 py-14 lg:border-r border-slate-700">
+        <div className="lg:pr-10 py-14 lg:border-r border-slate-700">
           <h4 className="text-cyan-300 mb-10 text-3xl">
             Apply <span className="animate-pulse text-yellow-200">*ONLY*</span>{" "}
             if this sounds like you:
