@@ -112,13 +112,13 @@ export default () => {
           </div>
         </div>
         <img
-          className="mx-auto mt-10 self-center w-3/4 lg:w-1/3 h-fit"
+          className="mx-auto mt-10 self-center w-3/4 lg:w-1/3"
           src={outreachySelection}
         ></img>
       </div>
       <div className="lg:flex gap-5">
         <img
-          className="mx-auto mt-10 self-center w-3/4 lg:w-1/3 h-fit"
+          className="mx-auto mt-10 self-center w-3/4 lg:w-1/3"
           src={remoteEngineer}
         ></img>
         <div className="lg:w-2/3 font-medium text-fuchsia-300 pt-5 md:pt-10">

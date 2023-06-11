@@ -126,7 +126,7 @@ const ReactCohortPage = ({ data: { site } }) => {
             </div>
           </div>
           <img
-            className="lg:w-1/2 h-fit rounded-t-full mt-10 lg:mt-0 border border-slate-500"
+            className="lg:w-1/2 rounded-t-full mt-10 lg:mt-0 border border-slate-500"
             src={urvashi1}
           ></img>
         </div>
@@ -159,7 +159,9 @@ const ReactCohortPage = ({ data: { site } }) => {
               <h4 className="text-cyan-300 uppercase mb-5">
                 Weekly LIVE Sessions
               </h4>
-              <p>Doubt and 1:1 sessions every weekend to help resolve your issues</p>
+              <p>
+                Doubt and 1:1 sessions every weekend to help resolve your issues
+              </p>
             </motion.div>
             <motion.div
               initial={{ scale: 0 }}
@@ -310,8 +312,8 @@ const ReactCohortPage = ({ data: { site } }) => {
               </h3>
               <p>
                 I believe that learning to code shouldn't be intimidating, nor
-                boring. That's why I've built the curriculum designed to suit the modern
-                learner.
+                boring. That's why I've built the curriculum designed to suit
+                the modern learner.
               </p>
             </motion.div>
             <motion.div
