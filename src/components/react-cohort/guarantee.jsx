@@ -4,8 +4,10 @@ import { CheckBadgeIcon } from "@heroicons/react/24/outline";
 export default () => {
   return (
     <div id="guarantee" className="mx-10 md:mx-16 mt-32">
-      <h1 className="flex text-cyan-300 text-3xl">
-        <CheckBadgeIcon className="mr-3 w-10 h-10 text-yellow-300" />
+      <h1 className="lg:flex text-cyan-300 text-3xl">
+        <div>
+          <CheckBadgeIcon className="mr-3 w-10 h-10 text-yellow-300" />
+        </div>
         100% Money Back Guarantee
       </h1>
       <p className="mt-10">
