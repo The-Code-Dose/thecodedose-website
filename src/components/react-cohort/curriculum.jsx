@@ -188,7 +188,7 @@ export default () => {
                     <h3 className="uppercase text-lg text-yellow-200 font-medium leading-5">
                       {module.title}
                     </h3>
-                    <div className="mt-5 leading-relaxed space-x-1 text-md font-normal leading-4 text-gray-200">
+                    <div className="mt-5 leading-relaxed text-md font-normal leading-4 text-gray-200">
                       {module.description.map((point) => (
                         <div className="flex gap-3 mt-5">
                           <div>
