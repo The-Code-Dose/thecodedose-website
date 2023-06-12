@@ -7,6 +7,14 @@ import {
   ArrowLongRightIcon,
 } from "@heroicons/react/24/outline";
 import urvashi1 from "../images/urvashi_1.jpg";
+import chatIcon from "../images/chat_icon.png";
+import mentoringIcon from "../images/mentoring_icon.png";
+import placementIcon from "../images/placement_icon.png";
+import projectIcon from "../images/project_icon.png";
+import communityIcon from "../images/community_icon.png";
+import accessIcon from "../images/access_icon.png";
+import doubtsIcon from "../images/doubts_icon.png";
+import sessionsIcon from "../images/sessions_icon.png";
 
 import "./react-cohort.scss";
 import Curriculum from "../components/react-cohort/curriculum";
@@ -16,7 +24,7 @@ import Process from "../components/react-cohort/process";
 import PaymentStructure from "../components/react-cohort/paymentStructure";
 import Guarantee from "../components/react-cohort/guarantee";
 
-const ReactCohortPage = ({ data: { site } }) => {
+function ReactCohortPage({ data: { site } }) {
   return (
     <div className="react-cohort__container w-screen bg-slate-900 text-slate-100 pb-32">
       <Helmet>
@@ -128,7 +136,7 @@ const ReactCohortPage = ({ data: { site } }) => {
           <img
             className="lg:w-1/2 rounded-t-full mt-10 lg:mt-0 border border-slate-500"
             src={urvashi1}
-          ></img>
+          />
         </div>
         <Eligibility />
         <Mentor />
@@ -143,7 +151,8 @@ const ReactCohortPage = ({ data: { site } }) => {
               transition={{ delay: 0.05 }}
               className="bg-slate-800 p-10 border border-slate-500"
             >
-              <h4 className="text-cyan-300 uppercase mb-5">
+              <img className="lg:w-1/2" src={sessionsIcon} />
+              <h4 className="text-cyan-300 uppercase my-5">
                 Knowledge on demand
               </h4>
               <p>
@@ -156,7 +165,8 @@ const ReactCohortPage = ({ data: { site } }) => {
               transition={{ delay: 0.1 }}
               className="bg-slate-800 p-10 border border-slate-500"
             >
-              <h4 className="text-cyan-300 uppercase mb-5">
+              <img className="lg:w-1/2" src={doubtsIcon} />
+              <h4 className="text-cyan-300 uppercase my-5">
                 Weekly LIVE Sessions
               </h4>
               <p>
@@ -169,7 +179,8 @@ const ReactCohortPage = ({ data: { site } }) => {
               transition={{ delay: 0.15 }}
               className="bg-slate-800 p-10 border border-slate-500"
             >
-              <h4 className="text-cyan-300 uppercase mb-5">
+              <img className="lg:w-1/2" src={chatIcon} />
+              <h4 className="text-cyan-300 uppercase my-5">
                 Daily chat support
               </h4>
               <p>Daily chat support available on our Discord channel</p>
@@ -180,7 +191,8 @@ const ReactCohortPage = ({ data: { site } }) => {
               transition={{ delay: 0.2 }}
               className="bg-slate-800 p-10 border border-slate-500"
             >
-              <h4 className="text-cyan-300 uppercase mb-5">
+              <img className="lg:w-1/2" src={communityIcon} />
+              <h4 className="text-cyan-300 uppercase my-5">
                 Tight Knit developer community
               </h4>
               <p>Access to a community of like-minded developers</p>
@@ -191,7 +203,8 @@ const ReactCohortPage = ({ data: { site } }) => {
               transition={{ delay: 0.25 }}
               className="bg-slate-800 p-10 border border-slate-500"
             >
-              <h4 className="text-cyan-300 uppercase mb-5">
+              <img className="lg:w-1/2" src={accessIcon} />
+              <h4 className="text-cyan-300 uppercase my-5">
                 1 year access to all course content
               </h4>
               <p>
@@ -205,7 +218,8 @@ const ReactCohortPage = ({ data: { site } }) => {
               transition={{ delay: 0.3 }}
               className="bg-slate-800 p-10 border border-slate-500"
             >
-              <h4 className="text-cyan-300 uppercase mb-5">
+              <img className="lg:w-1/2" src={placementIcon} />
+              <h4 className="text-cyan-300 uppercase my-5">
                 Extended Placement Assistance
               </h4>
               <p>
@@ -219,7 +233,8 @@ const ReactCohortPage = ({ data: { site } }) => {
               transition={{ delay: 0.35 }}
               className="bg-slate-800 p-10 border border-slate-500"
             >
-              <h4 className="text-cyan-300 uppercase mb-5">
+              <img className="lg:w-1/2" src={projectIcon} />
+              <h4 className="text-cyan-300 uppercase my-5">
                 Project focused learning
               </h4>
               <p>Helping you build projects that stand out to recruiters</p>
@@ -230,7 +245,8 @@ const ReactCohortPage = ({ data: { site } }) => {
               transition={{ delay: 0.4 }}
               className="bg-slate-800 p-10 border border-slate-500"
             >
-              <h4 className="text-cyan-300 uppercase mb-5">1:1 Mentoring</h4>
+              <img className="lg:w-1/2" src={mentoringIcon} />
+              <h4 className="text-cyan-300 uppercase my-5">1:1 Mentoring</h4>
               <p>
                 Gain individualized guidance, feedback, and support tailored to
                 your needs.
@@ -350,7 +366,7 @@ const ReactCohortPage = ({ data: { site } }) => {
       </div>
     </div>
   );
-};
+}
 
 export default ReactCohortPage;
 
