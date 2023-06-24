@@ -36,14 +36,21 @@ function ReactCohortPricingLaunchPage({ data: { site } }) {
             <span className="block text-xs text-slate-400">*only for the members of the first cohort</span>
           </div>
         </div>
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          className="block mt-12 text-md px-6 py-3  border border-slate-500 w-full font-bold bg-cyan-300 px-4 py-2 text-slate-900"
+        <a
+          className="cursor-pointer"
+          target="blank"
+          href="https://forms.gle/EdwzEjpBd3UZNBeQ6"
         >
-          Join waitlist to get accepted
-        </motion.button>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="block mt-12 text-md px-6 py-3  border border-slate-500 w-full font-bold bg-cyan-300 px-4 py-2 text-slate-900"
+          >
+            Join waitlist to get accepted
+          </motion.button>
+        </a>
       </motion.div>
+
     </div>
   );
 }
