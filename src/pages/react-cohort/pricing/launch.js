@@ -31,7 +31,10 @@ function ReactCohortPricingLaunchPage({ data: { site } }) {
         <div className="lg:flex mt-5">
           <h1 className="line-through text-4xl text-slate-300 mr-5">₹30,000</h1>
           <div>
-            <h1 className="text-fuchsia-400 text-4xl font-bold">₹10,000</h1>
+            <div className="flex align-middle gap-3">
+              <h1 className="text-fuchsia-400 text-4xl font-bold">₹10,000</h1>
+              <span className="text-md self-center text-slate-400">+18% GST (TOTAL = ₹11,800)</span>
+            </div>
             <span className="uppercase font-bold text-fuchsia-400">Special Launch offer</span>
             <span className="block text-xs text-slate-400">*only for the members of the first cohort</span>
           </div>
