@@ -55,7 +55,7 @@ function ReactCohortPage({ data: { site } }) {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.1 }}
-              className="text-3xl font-extrabold md:text-3xl lg:leading-tight lg:m-auto pt-36"
+              className="text-3xl font-extrabold md:text-3xl lg:leading-tight lg:m-auto pt-28"
             >
               Your journey to become a high-earning
               <span className="block w-fit m-auto text-3xl md:text-5xl text-fuchsia-500 -z-1 px-2 text-bold bg-slate-800">
@@ -63,14 +63,6 @@ function ReactCohortPage({ data: { site } }) {
               </span>
               starts here
             </motion.h1>
-            <motion.h5
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.4 }}
-              className="px-10 lg:px-0 text-yellow-200 font-light mt-8 text-sm md:w-1/2 m-auto"
-            >
-              Apply now to get accepted and unlock a successful career in tech
-            </motion.h5>
             <a
               className="cursor-pointer"
               target="blank"
@@ -81,10 +73,25 @@ function ReactCohortPage({ data: { site } }) {
                 whileTap={{ scale: 0.9 }}
                 className="block mx-auto mt-12 text-lg px-6 py-3  border border-slate-500 uppercase font-bold bg-cyan-300 px-4 py-2 text-slate-900"
               >
-                I want to get in!
+                Join the waitlist
               </motion.button>
             </a>
             <span className="mt-3 text-xs">*Limited seats only*</span>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 0.2 }}
+              className="px-10 lg:px-0 text-yellow-200 flex justify-between mt-10 text-sm md:w-3/4 m-auto"
+            >
+              <div>
+                <h4 className="uppercase text-cyan-300 font-bold">Applications Close on</h4>
+                <span>30 June</span>
+              </div>
+              <div>
+                <h4 className="uppercase text-cyan-300 font-bold">Tentative Start Date</h4>
+                <span>25 July</span>
+              </div>
+            </motion.div>
             <ArrowLongDownIcon class="animate-bounce m-auto mt-16 h-12 w-12 text-cyan-400" />
             <a href="#start" className="text-xs text-cyan-400">
               Learn More
