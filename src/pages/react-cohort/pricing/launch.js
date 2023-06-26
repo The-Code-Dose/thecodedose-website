@@ -36,7 +36,8 @@ function ReactCohortPricingLaunchPage({ data: { site } }) {
               <span className="text-md self-center text-slate-400">+18% GST (TOTAL = ₹11,800)</span>
             </div>
             <span className="uppercase font-bold text-fuchsia-400">Special Launch offer</span>
-            <span className="block text-xs text-slate-400">*only for the members of the first cohort</span>
+            <span className="block text-xs text-slate-400">*Only for the members of the first cohort</span>
+            <span className="block text-xs text-slate-400">*Payment in installments available</span>
           </div>
         </div>
         <a
