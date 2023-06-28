@@ -66,17 +66,17 @@ function ReactCohortPage({ data: { site } }) {
             <a
               className="cursor-pointer"
               target="blank"
-              href="https://forms.gle/EdwzEjpBd3UZNBeQ6"
+              href="https://youtu.be/cquXsKmmIp4"
             >
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className="block mx-auto mt-12 text-lg px-6 py-3  border border-slate-500 uppercase font-bold bg-cyan-300 px-4 py-2 text-slate-900"
+                className="block mx-auto mt-12 text-md px-6 py-3  border border-slate-500 uppercase font-bold bg-cyan-300 px-4 py-2 text-slate-900"
               >
-                Join the waitlist
+                Access the free masterclass
               </motion.button>
             </a>
-            <span className="mt-3 text-xs">*Limited seats only*</span>
+            {/* <span className="mt-3 text-xs">*Limited seats only*</span> */}
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
