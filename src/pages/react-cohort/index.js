@@ -88,8 +88,8 @@ function ReactCohortPage({ data: { site } }) {
                 <span>30 June</span>
               </div>
               <div>
-                <h4 className="uppercase text-cyan-300 font-bold">Tentative Start Date</h4>
-                <span>25 July</span>
+                <h4 className="uppercase text-cyan-300 font-bold">Program Start Date</h4>
+                <span>24 July</span>
               </div>
             </motion.div>
             <ArrowLongDownIcon class="animate-bounce m-auto mt-16 h-12 w-12 text-cyan-400" />
