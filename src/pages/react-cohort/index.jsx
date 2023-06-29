@@ -1,28 +1,28 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { graphql } from "gatsby";
-import { motion } from "framer-motion";
+import React from 'react';
+import Helmet from 'react-helmet';
+import { graphql } from 'gatsby';
+import { motion } from 'framer-motion';
 import {
   ArrowLongDownIcon,
   ArrowLongRightIcon,
-} from "@heroicons/react/24/outline";
-import urvashi1 from "../../images/urvashi_1.jpg";
-import chatIcon from "../../images/chat_icon.png";
-import mentoringIcon from "../../images/mentoring_icon.png";
-import placementIcon from "../../images/placement_icon.png";
-import projectIcon from "../../images/project_icon.png";
-import communityIcon from "../../images/community_icon.png";
-import accessIcon from "../../images/access_icon.png";
-import doubtsIcon from "../../images/doubts_icon.png";
-import sessionsIcon from "../../images/sessions_icon.png";
+} from '@heroicons/react/24/outline';
+import urvashi1 from '../../images/urvashi_1.jpg';
+import chatIcon from '../../images/chat_icon.png';
+import mentoringIcon from '../../images/mentoring_icon.png';
+import placementIcon from '../../images/placement_icon.png';
+import projectIcon from '../../images/project_icon.png';
+import communityIcon from '../../images/community_icon.png';
+import accessIcon from '../../images/access_icon.png';
+import doubtsIcon from '../../images/doubts_icon.png';
+import sessionsIcon from '../../images/sessions_icon.png';
 
-import "./index.scss";
-import Curriculum from "../../components/react-cohort/curriculum";
-import Mentor from "../../components/react-cohort/mentor";
-import Eligibility from "../../components/react-cohort/eligibility";
-import Process from "../../components/react-cohort/process";
-import PaymentStructure from "../../components/react-cohort/paymentStructure";
-import Guarantee from "../../components/react-cohort/guarantee";
+import './index.scss';
+import Curriculum from '../../components/react-cohort/curriculum';
+import Mentor from '../../components/react-cohort/mentor';
+import Eligibility from '../../components/react-cohort/eligibility';
+import Process from '../../components/react-cohort/process';
+import PaymentStructure from '../../components/react-cohort/paymentStructure';
+import Guarantee from '../../components/react-cohort/guarantee';
 
 function ReactCohortPage({ data: { site } }) {
   return (
@@ -101,7 +101,7 @@ function ReactCohortPage({ data: { site } }) {
         <div id="start" className="lg:flex mx-10 md:mx-16 pt-20 gap-10">
           <div className="lg:w-1/2 ">
             <h1 className="text-slate-100 text-4xl w-full lg:w-3/4">
-              I will help you start making money as a React developer with a{" "}
+              I will help you start making money as a React developer with a{' '}
               <span className="text-fuchsia-400">
                 100% money-back guarantee*
               </span>
@@ -370,6 +370,23 @@ function ReactCohortPage({ data: { site } }) {
             What my mentees are saying:
           </h1>
         </div> */}
+        <div className="flex items-center justify-center gap-12 w-full text-xs mt-24">
+          <a href="privacy">
+            <span className="text-white">
+              Privacy Policy
+            </span>
+          </a>
+          <a href="tnc">
+            <span className="text-white">
+              Terms & Conditions
+            </span>
+          </a>
+          <a href="refund">
+            <span className="text-white">
+              Refund Policy
+            </span>
+          </a>
+        </div>
       </div>
     </div>
   );
