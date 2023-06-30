@@ -153,7 +153,7 @@ function ReactCohortAcceptedPage({ data: { site } }) {
           </motion.h1>
           <span className="mt-10 block text-yellow-300 text-sm">I am looking forward to having you as a part of the React Developer Program.</span>
           <PaymentsModal />
-          <span className="mt-3 text-xs">*Limited seats only*</span>
+          <span className="mt-3 text-xs">*Only 7 spots left</span>
         </div>
         <motion.div
           initial={{ opacity: 0 }}
