@@ -1,12 +1,124 @@
-import React from 'react';
+import React, { Fragment, useState } from 'react';
 import Helmet from 'react-helmet';
+import { Dialog, Transition } from '@headlessui/react';
 import { graphql } from 'gatsby';
 import { motion } from 'framer-motion';
 import {
   ArrowLongDownIcon,
   ArrowLongRightIcon,
 } from '@heroicons/react/24/outline';
+import UpiSs from '../../images/freecharge_upi.jpg';
 import './index.scss';
+
+export function PaymentsModal() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [upiSelected, setUpiSelected] = useState(false);
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  return (
+    <>
+      <div>
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          onClick={openModal}
+          className="block mx-auto mt-12 text-md px-6 py-3 uppercase font-bold bg-cyan-300 px-4 py-2 text-slate-900"
+        >
+          Reserve your spot today
+        </motion.button>
+      </div>
+
+      <Transition appear show={isOpen} as={Fragment}>
+        <Dialog as="div" className="relative z-10" onClose={closeModal}>
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-black bg-opacity-25" />
+          </Transition.Child>
+
+          <div className="fixed inset-0 overflow-y-auto">
+            <div className="flex min-h-full items-center justify-center p-4 text-center">
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0 scale-95"
+                enterTo="opacity-100 scale-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100 scale-100"
+                leaveTo="opacity-0 scale-95"
+              >
+                <Dialog.Panel className="w-full max-w-md transform overflow-hidden bg-slate-800 p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Title
+                    as="h3"
+                    className="text-lg font-bold leading-6 text-slate-50 uppercase"
+                  >
+                    Reserve your spot
+                  </Dialog.Title>
+                  <div className="mt-5">
+                    {upiSelected ? (
+                      <>
+                        <ul className="text-slate-100 mb-10">
+                          <li>1. Open the payment app of your choice.</li>
+                          <li>2. Search for UPI ID <span className="font-bold text-yellow-300">"factorem@freecharge"</span>.</li>
+                          <li>3. Set amount to <span className="font-bold text-yellow-300">₹3000</span>.</li>
+                          <li>4. Take a screenshot and email to <span className="font-bold text-yellow-300">thecodedoseofficial@gmail.com</span></li>
+                        </ul>
+                        <img
+                          className="border border-slate-500"
+                          src={UpiSs}
+                        />
+                      </>
+                    ) : (
+                      <p className="text-sm text-slate-300">
+                        Please choose a payment option:
+                      </p>
+                    )}
+                  </div>
+
+                  <div className="flex justify-between gap-5">
+                    <a
+                      className="cursor-pointer"
+                      target="blank"
+                      href="https://zohosecurepay.in/checkout/yk2f3eu1-gzjklzji5kpq1/React-Developer-Program-July-2023--RESERVE-your-spot"
+                    >
+                      <button
+                        type="button"
+                        className="block mx-auto mt-12 text-md font-bold bg-cyan-300 px-4 py-2 text-slate-900"
+                        onClick={closeModal}
+                      >
+                        Credit/Debit Card
+                      </button>
+                    </a>
+                    <button
+                      type="button"
+                      className={`block mx-auto mt-12 text-md font-bold px-4 py-2 text-slate-900 ${upiSelected ? 'bg-slate-300' : 'bg-cyan-300'}`}
+                      onClick={() => setUpiSelected(true)}
+                    >
+                      UPI (PayTM, PhonePe etc)
+                    </button>
+                  </div>
+                </Dialog.Panel>
+              </Transition.Child>
+            </div>
+          </div>
+        </Dialog>
+      </Transition>
+    </>
+  );
+}
 
 function ReactCohortAcceptedPage({ data: { site } }) {
   return (
@@ -40,19 +152,7 @@ function ReactCohortAcceptedPage({ data: { site } }) {
             Your application has been accepted
           </motion.h1>
           <span className="mt-10 block text-yellow-300 text-sm">I am looking forward to having you as a part of the React Developer Program.</span>
-          <a
-            className="cursor-pointer"
-            target="blank"
-            href="https://zohosecurepay.in/checkout/yk2f3eu1-gzjklzji5kpq1/React-Developer-Program-July-2023--RESERVE-your-spot"
-          >
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className="block mx-auto mt-12 text-md px-6 py-3  border border-slate-500 uppercase font-bold bg-cyan-300 px-4 py-2 text-slate-900"
-            >
-              Reserve your spot today
-            </motion.button>
-          </a>
+          <PaymentsModal />
           <span className="mt-3 text-xs">*Limited seats only*</span>
         </div>
         <motion.div
@@ -70,7 +170,7 @@ function ReactCohortAcceptedPage({ data: { site } }) {
             Pricing Structure
           </h1>
           <p className="mt-10">
-            Upon requests, I've decided to provide a flexible payment plan.
+            ₹Upon requests, I've decided to provide a flexible payment plan.
           </p>
           <ol className="mt-10">
             <li className="mb-5">
@@ -112,19 +212,7 @@ function ReactCohortAcceptedPage({ data: { site } }) {
               <span className="block text-xs text-slate-400">*Only for the members of the first cohort</span>
             </div>
           </div>
-          <a
-            className="cursor-pointer"
-            target="blank"
-            href="https://zohosecurepay.in/checkout/yk2f3eu1-gzjklzji5kpq1/React-Developer-Program-July-2023--RESERVE-your-spot"
-          >
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className="block mt-12 uppercase text-md px-6 py-3  border border-slate-500 w-full font-bold bg-cyan-300 px-4 py-2 text-slate-900"
-            >
-              Reserve your spot today
-            </motion.button>
-          </a>
+          <PaymentsModal />
         </motion.div>
       </div>
       <div id="steps" className="mt-32 mx-10 md:mx-16 pb-32">
