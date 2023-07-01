@@ -172,7 +172,7 @@ function ReactCohortAcceptedPage({ data: { site } }) {
             Program.
           </span>
           <PaymentsModal />
-          <span className="mt-3 text-xs">*Only 7 spots left</span>
+          <span className="mt-3 text-xs">*Only 6 spots left</span>
         </div>
         <motion.div
           initial={{ opacity: 0 }}
