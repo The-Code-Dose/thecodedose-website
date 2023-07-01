@@ -7,7 +7,7 @@ import {
   ArrowLongDownIcon,
   ArrowLongRightIcon,
 } from "@heroicons/react/24/outline";
-import UpiSs from "../../images/freecharge_upi.jpg";
+import UpiSs from "../../images/cohort-july-scanner-1.jpg";
 import "./index.scss";
 
 export function PaymentsModal() {
@@ -70,30 +70,14 @@ export function PaymentsModal() {
                   <div className="mt-5">
                     {upiSelected ? (
                       <>
-                        <ul className="text-slate-100 mb-10">
-                          <li>1. Open the payment app of your choice.</li>
-                          <li>
-                            2. Search for UPI ID{" "}
-                            <span className="font-bold text-yellow-300">
-                              "factorem@freecharge"
-                            </span>
-                            .
-                          </li>
-                          <li>
-                            3. Set amount to{" "}
-                            <span className="font-bold text-yellow-300">
-                              ₹3000
-                            </span>
-                            .
-                          </li>
-                          <li>
-                            4. Take a screenshot and email to{" "}
-                            <span className="font-bold text-yellow-300">
-                              thecodedoseofficial@gmail.com
-                            </span>
-                          </li>
-                        </ul>
-                        <img className="border border-slate-500" src={UpiSs} />
+                        <span className="text-slate-300">
+                          Scan this QR with the payment app of your choice and
+                          share the screenshot on thecodedoseofficial@gmail.com
+                        </span>
+                        <img
+                          className="border border-slate-500 mt-4"
+                          src={UpiSs}
+                        />
                       </>
                     ) : (
                       <p className="text-sm text-slate-300">
