@@ -1,14 +1,14 @@
-import React, { Fragment, useState } from 'react';
-import Helmet from 'react-helmet';
-import { Dialog, Transition } from '@headlessui/react';
-import { graphql } from 'gatsby';
-import { motion } from 'framer-motion';
+import React, { Fragment, useState } from "react";
+import Helmet from "react-helmet";
+import { Dialog, Transition } from "@headlessui/react";
+import { graphql } from "gatsby";
+import { motion } from "framer-motion";
 import {
   ArrowLongDownIcon,
   ArrowLongRightIcon,
-} from '@heroicons/react/24/outline';
-import UpiSs from '../../images/freecharge_upi.jpg';
-import './index.scss';
+} from "@heroicons/react/24/outline";
+import UpiSs from "../../images/freecharge_upi.jpg";
+import "./index.scss";
 
 export function PaymentsModal() {
   const [isOpen, setIsOpen] = useState(false);
@@ -72,14 +72,28 @@ export function PaymentsModal() {
                       <>
                         <ul className="text-slate-100 mb-10">
                           <li>1. Open the payment app of your choice.</li>
-                          <li>2. Search for UPI ID <span className="font-bold text-yellow-300">"factorem@freecharge"</span>.</li>
-                          <li>3. Set amount to <span className="font-bold text-yellow-300">₹3000</span>.</li>
-                          <li>4. Take a screenshot and email to <span className="font-bold text-yellow-300">thecodedoseofficial@gmail.com</span></li>
+                          <li>
+                            2. Search for UPI ID{" "}
+                            <span className="font-bold text-yellow-300">
+                              "factorem@freecharge"
+                            </span>
+                            .
+                          </li>
+                          <li>
+                            3. Set amount to{" "}
+                            <span className="font-bold text-yellow-300">
+                              ₹3000
+                            </span>
+                            .
+                          </li>
+                          <li>
+                            4. Take a screenshot and email to{" "}
+                            <span className="font-bold text-yellow-300">
+                              thecodedoseofficial@gmail.com
+                            </span>
+                          </li>
                         </ul>
-                        <img
-                          className="border border-slate-500"
-                          src={UpiSs}
-                        />
+                        <img className="border border-slate-500" src={UpiSs} />
                       </>
                     ) : (
                       <p className="text-sm text-slate-300">
@@ -92,7 +106,7 @@ export function PaymentsModal() {
                     <a
                       className="cursor-pointer"
                       target="blank"
-                      href="https://zohosecurepay.in/checkout/yk2f3eu1-gzjklzji5kpq1/React-Developer-Program-July-2023--RESERVE-your-spot"
+                      href="https://book.stripe.com/8wM4jQcGzb8VfO84gh"
                     >
                       <button
                         type="button"
@@ -104,7 +118,9 @@ export function PaymentsModal() {
                     </a>
                     <button
                       type="button"
-                      className={`block mx-auto mt-12 text-md font-bold px-4 py-2 text-slate-900 ${upiSelected ? 'bg-slate-300' : 'bg-cyan-300'}`}
+                      className={`block mx-auto mt-12 text-md font-bold px-4 py-2 text-slate-900 ${
+                        upiSelected ? "bg-slate-300" : "bg-cyan-300"
+                      }`}
                       onClick={() => setUpiSelected(true)}
                     >
                       UPI (PayTM, PhonePe etc)
@@ -151,7 +167,10 @@ function ReactCohortAcceptedPage({ data: { site } }) {
             </span>
             Your application has been accepted
           </motion.h1>
-          <span className="mt-10 block text-yellow-300 text-sm">I am looking forward to having you as a part of the React Developer Program.</span>
+          <span className="mt-10 block text-yellow-300 text-sm">
+            I am looking forward to having you as a part of the React Developer
+            Program.
+          </span>
           <PaymentsModal />
           <span className="mt-3 text-xs">*Only 7 spots left</span>
         </div>
@@ -174,13 +193,19 @@ function ReactCohortAcceptedPage({ data: { site } }) {
           </p>
           <ol className="mt-10">
             <li className="mb-5">
-              1. You can reserve your spot by <span className="font-bold text-yellow-300">July 10th</span>.
+              1. You can reserve your spot by{" "}
+              <span className="font-bold text-yellow-300">July 10th</span>.
             </li>
             <li className="mb-5">
-              2. You have to pay the rest of the fee amount by <span className="font-bold text-yellow-300">August 10th</span>.
+              2. You have to pay the rest of the fee amount by{" "}
+              <span className="font-bold text-yellow-300">August 10th</span>.
             </li>
             <li>
-              3. If you're facing any issues or need an extension, you can write to me via email - <span className="font-bold text-yellow-300">thecodedoseofficial@gmail.com</span>
+              3. If you're facing any issues or need an extension, you can write
+              to me via email -{" "}
+              <span className="font-bold text-yellow-300">
+                thecodedoseofficial@gmail.com
+              </span>
             </li>
           </ol>
         </div>
@@ -189,27 +214,33 @@ function ReactCohortAcceptedPage({ data: { site } }) {
           whileInView={{ scale: 1 }}
           className="w-full lg:w-1/2 lg:mx-10 md:mx-auto w-auto self-center mt-10 lg:mt-0 bg-slate-800 p-10 border border-slate-500"
         >
-          <h3 className="text-cyan-300 uppercase mb-5">
-            Pricing Details
-          </h3>
+          <h3 className="text-cyan-300 uppercase mb-5">Pricing Details</h3>
           <h5 className="text-yellow-400 mb-5">100% Money Back Guarantee</h5>
           <span className="text-xs text-slate-300">
-            If you are not able to make a return on your investment after 6 months
-            of finishing this program, i.e., you're not able to earn money, you will
-            qualify for a 100% money back guarantee and get a full refund. Note that
-            this guarantee is only valid if you diligently follow the coursework,
-            finish homework, build projects as guided and are actively looking for
-            work.
+            If you are not able to make a return on your investment after 6
+            months of finishing this program, i.e., you're not able to earn
+            money, you will qualify for a 100% money back guarantee and get a
+            full refund. Note that this guarantee is only valid if you
+            diligently follow the coursework, finish homework, build projects as
+            guided and are actively looking for work.
           </span>
           <div className="lg:flex mt-5">
-            <h1 className="line-through text-4xl text-slate-300 mr-5">₹30,000</h1>
+            <h1 className="line-through text-4xl text-slate-300 mr-5">
+              ₹30,000
+            </h1>
             <div>
               <div className="align-middle gap-3">
                 <h1 className="text-fuchsia-400 text-4xl font-bold">₹10,000</h1>
-                <span className="text-md self-center text-slate-400">+18% GST (TOTAL = ₹11,800)</span>
+                <span className="text-md self-center text-slate-400">
+                  +18% GST (TOTAL = ₹11,800)
+                </span>
               </div>
-              <span className="uppercase font-bold text-fuchsia-400">Special Launch offer</span>
-              <span className="block text-xs text-slate-400">*Only for the members of the first cohort</span>
+              <span className="uppercase font-bold text-fuchsia-400">
+                Special Launch offer
+              </span>
+              <span className="block text-xs text-slate-400">
+                *Only for the members of the first cohort
+              </span>
             </div>
           </div>
           <PaymentsModal />
@@ -225,7 +256,8 @@ function ReactCohortAcceptedPage({ data: { site } }) {
               <ArrowLongRightIcon className="w-8 h-8 text-green-300" />
             </div>
             <span>
-              Once you've reserved your spot, you will receive a welcome email within 24 hours.
+              Once you've reserved your spot, you will receive a welcome email
+              within 24 hours.
             </span>
           </div>
           <div className="flex gap-3 mt-5">
@@ -233,7 +265,8 @@ function ReactCohortAcceptedPage({ data: { site } }) {
               <ArrowLongRightIcon className="w-8 h-8 text-green-300" />
             </div>
             <span>
-              You'll be provided with a guide on the steps to take before the program officially begins.
+              You'll be provided with a guide on the steps to take before the
+              program officially begins.
             </span>
           </div>
           <div className="flex gap-3 mt-5">
@@ -241,7 +274,8 @@ function ReactCohortAcceptedPage({ data: { site } }) {
               <ArrowLongRightIcon className="w-8 h-8 text-green-300" />
             </div>
             <span>
-              You'll enter the community bonding period so that you get to know your peers better.
+              You'll enter the community bonding period so that you get to know
+              your peers better.
             </span>
           </div>
         </div>
