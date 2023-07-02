@@ -173,7 +173,7 @@ function ReactCohortAcceptedPage({ data: { site } }) {
             Pricing Structure
           </h1>
           <p className="mt-10">
-            ₹Upon requests, I've decided to provide a flexible payment plan.
+            Upon requests, I've decided to provide a flexible payment plan.
           </p>
           <ol className="mt-10">
             <li className="mb-5">
