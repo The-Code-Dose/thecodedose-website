@@ -73,6 +73,7 @@ export function PaymentsModal() {
                         <span className="text-slate-300">
                           Scan this QR with the payment app of your choice and
                           share the screenshot on thecodedoseofficial@gmail.com
+                          along with the name of the State of your residence.
                         </span>
                         <img
                           className="border border-slate-500 mt-4"
