@@ -28,10 +28,10 @@ export function PaymentsModal() {
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          onClick={openModal}
-          className="block mx-auto mt-12 text-md px-6 py-3 uppercase font-bold bg-cyan-300 px-4 py-2 text-slate-900"
+          // onClick={openModal}
+          className="block mx-auto mt-12 text-md px-6 py-3 uppercase font-bold bg-slate-300 px-4 py-2 text-slate-900"
         >
-          Reserve your spot today
+          Process has closed now.
         </motion.button>
       </div>
 
@@ -157,7 +157,6 @@ function ReactCohortAcceptedPage({ data: { site } }) {
             Program.
           </span>
           <PaymentsModal />
-          <span className="mt-3 text-xs">*Only 2 spots left</span>
         </div>
         <motion.div
           initial={{ opacity: 0 }}
