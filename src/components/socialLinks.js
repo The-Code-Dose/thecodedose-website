@@ -36,7 +36,7 @@ export default () => {
         <Link to="/blog">Blog</Link>
         <Link to="/travel">Travel</Link>
         <Link to="/cs-illustrated">CS Illustrated</Link>
-        <Link to="https://docs.google.com/forms/d/e/1FAIpQLSei2ZZfcQF1ULdqxVJQkWyRXvrWld4Y9SQSD23qFzMEpseBtA/viewform">
+        <Link to="https://forms.gle/KVFTHZYj3dXnanRV9">
           Apply for next React Cohort
         </Link>
         <a href={redbubble} target="__blank">
