@@ -1,7 +1,7 @@
 ---
 template: BlogPost
 path: /blog/8-things-i-bought-from-amazon-for-my-home-office-setup
-date: 2023-01-27T07:38:06Z
+date: 2023-08-01T07:38:06Z
 title: "8 Things I Bought For My Home Office Setup"
 tags:
   - planning
@@ -30,7 +30,7 @@ In a previous _iteration_ of my setup, I was using the BenQ monitor:
     <p>Enjoy extremely vibrant, precise and realistic images with 4K UHD 3840x2160 resolution, 95% DCI P3 color gamut, and 1.07 Billion Colors, Refresh Rate (Hz): 60</p>
     <div class="mt-5">
       <a class="button button--small button--yellow" href="https://amzn.to/3wwPIxb" target="__blank">Amazon IN</a>
-      <a class="button button--small button--yellow" href="https://capitaloneshopping.com/p/ben-q-ew-3270-u-premium-monitor-/95FMG7TMRV?run=82ba33f4-0a31-4f3e-82ca-c29fbb7502bd" target="__blank">Find Best Price</a>
+      <a class="button button--small button--yellow" href="https://capitaloneshopping.com/p/ben-q-ew-3270-u-premium-monitor-/95FMG7TMRV" target="__blank">Find Best Price</a>
     </div>
   </div>
 </div>
@@ -78,7 +78,7 @@ I own 3 keyboards that I use interchangeably.
     <p>White LED 60% Dye Sub PBT Mechanical Keyboard</p>
     <div class="mt-5">
       <a class="button button--small button--yellow block" href="https://amzn.to/3HDXmfe" target="__blank">Amazon IN</a>
-      <a class="button button--small button--yellow mt-5 block whitespace-nowrap" href="https://capitaloneshopping.com/p/varmilo-va-108-m-panda-white-led/XX2LVRGM6X?run=cb69daca-b2fe-4521-89d2-8e19092ce169" target="__blank">Find Best Price</a>
+      <a class="button button--small button--yellow mt-5 block whitespace-nowrap" href="https://capitaloneshopping.com/p/varmilo-va-108-m-panda-white-led/XX2LVRGM6X" target="__blank">Find Best Price</a>
     </div>
   </div>
 </div>
@@ -163,7 +163,6 @@ I recently bought a humidifier because I have dry skin and eyes.
     <p>he diffuser has 7 colored LEDs for a beautiful, soothing atmosphere or the use as night light</p>
     <div class="mt-5">
       <a class="button button--small button--yellow" href="https://amzn.to/407XET3" target="__blank">Amazon IN</a>
-      <a href="https://capitaloneshopping.com/p/sunset-lamp-rainbow-projection-l/KVD7R2RH6D?run=da716007-9670-472f-87e3-f4272f68f8f7" target="__blank">Find Best Price</a>
     </div>
   </div>
 </div>
@@ -198,6 +197,7 @@ I don't think I need to explain this one, the ones who get it, get it. The ones 
     <p>The light 5V USB power supply, cable with switch button, 1.5 meters long USB cable.</p>
     <div class="mt-5">
       <a class="button button--small button--yellow" href="https://amzn.to/3kDVlGY">Amazon IN</a>
+      <a class="button button--small button--yellow"  href="https://capitaloneshopping.com/p/sunset-lamp-rainbow-projection-l/KVD7R2RH6D?run=da716007-9670-472f-87e3-f4272f68f8f7" target="__blank">Find Best Price</a>
     </div>
   </div>
 </div>
