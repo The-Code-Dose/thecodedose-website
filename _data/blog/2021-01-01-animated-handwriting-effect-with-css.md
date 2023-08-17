@@ -54,11 +54,11 @@ The word 'the' has 2 paths -
 
 Select all the paths and 'Group Selection'.
 
-![](/assets/Screenshot 2021-01-01 at 5.35.44 PM.png)
+![](/assets/Screenshot%202021-01-01%20at%205.35.44%20PM.png)
 
 Now, select the group and click on 'Export' in the menu on the right. Make sure to select the file type as SVG.
 
-![](/assets/Screenshot 2021-01-01 at 5.37.42 PM.png)
+![](/assets/Screenshot%202021-01-01%20at%205.37.42%20PM.png)
 
 ## ✨Time to animate✨
 
@@ -112,13 +112,21 @@ To the `signature__base` class, experiment and figure out a value for property `
 
 I experimented with different values - 8, 80, 800, 8000. Finally decided 8000 was good enough for me.
 
-![](/assets/Screenshot 2021-01-01 at 6.04.14 PM.png "stroke-dasharray: 8")
+**stroke-dasharray: 8**
 
-![](/assets/Screenshot 2021-01-01 at 6.04.21 PM.png "stroke-dasharray: 80")
+![stroke-dasharray: 8](/assets/strokedash_80.png)
 
-![](/assets/Screenshot 2021-01-01 at 6.04.34 PM.png "stroke-dasharray: 800")
+**stroke-dasharray: 80**
 
-![](/assets/Screenshot 2021-01-01 at 6.04.41 PM.png "stroke-dasharray: 8000")
+![stroke-dasharray: 80](/assets/Screenshot%202021-01-01%20at%206.04.21%20PM.png)
+
+**stroke-dasharray: 800**
+
+![stroke-dasharray: 800](/assets/Screenshot%202021-01-01%20at%206.04.34%20PM.png)
+
+**stroke-dasharray: 8000**
+
+![stroke-dasharray: 8000](/assets/Screenshot%202021-01-01%20at%206.04.41%20PM.png)
 
 As you can see above, the value 8000 is perfect for me.
 
