@@ -1,14 +1,14 @@
-import React, { Fragment, useState } from "react";
-import Helmet from "react-helmet";
-import { Dialog, Transition } from "@headlessui/react";
-import { graphql } from "gatsby";
-import { motion } from "framer-motion";
+import React, { Fragment, useState } from 'react';
+import Helmet from 'react-helmet';
+import { Dialog, Transition } from '@headlessui/react';
+import { graphql } from 'gatsby';
+import { motion } from 'framer-motion';
 import {
   ArrowLongDownIcon,
   ArrowLongRightIcon,
-} from "@heroicons/react/24/outline";
-import UpiSs from "../../images/upi_8800.jpeg";
-import "./index.scss";
+} from '@heroicons/react/24/outline';
+import UpiSs from '../../images/upi_8800.jpeg';
+import './index.scss';
 
 export function PaymentsModal() {
   const [isOpen, setIsOpen] = useState(false);
@@ -104,7 +104,7 @@ export function PaymentsModal() {
                     <button
                       type="button"
                       className={`block mx-auto mt-12 text-md font-bold px-4 py-2 text-slate-900 ${
-                        upiSelected ? "bg-slate-300" : "bg-cyan-300"
+                        upiSelected ? 'bg-slate-300' : 'bg-cyan-300'
                       }`}
                       onClick={() => setUpiSelected(true)}
                     >
@@ -176,12 +176,12 @@ function ReactCohortAcceptedPage({ data: { site } }) {
           </p>
           <ol className="mt-10">
             <li className="mb-5">
-              1. You have to pay the rest of the fee amount by{" "}
+              1. You have to pay the rest of the fee amount by{' '}
               <span className="font-bold text-yellow-300">August 10th</span>.
             </li>
             <li>
               2. If you're facing any issues or need an extension, you can write
-              to me via email -{" "}
+              to me via email -{' '}
               <span className="font-bold text-yellow-300">
                 thecodedoseofficial@gmail.com
               </span>

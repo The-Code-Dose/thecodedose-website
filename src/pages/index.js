@@ -1,23 +1,23 @@
-import React, { useState } from "react";
-import Helmet from "react-helmet";
-import { graphql } from "gatsby";
-import addToMailchimp from "gatsby-plugin-mailchimp";
-import Button from "../components/button";
-import Layout from "../components/layout";
-import HeroHeader from "../components/heroHeader";
-import BlogSection from "../components/blogSection";
-import CSIllustrated from "../components/csIllustrated";
-import DsaRevisionNotes from "../components/dsaRevisionNotes";
-import ProductRecommendations from "../components/productRecommendations";
-import GatsbyBlog from "../components/gatsbyBlog";
-import RedBubble from "../components/redBubble";
-import Youtube from "../components/youtube";
-import demo from "../../static/assets/study-plans-demo.png";
+import React, { useState } from 'react';
+import Helmet from 'react-helmet';
+import { graphql } from 'gatsby';
+import addToMailchimp from 'gatsby-plugin-mailchimp';
+import Button from '../components/button';
+import Layout from '../components/layout';
+import HeroHeader from '../components/heroHeader';
+import BlogSection from '../components/blogSection';
+import CSIllustrated from '../components/csIllustrated';
+import DsaRevisionNotes from '../components/dsaRevisionNotes';
+import ProductRecommendations from '../components/productRecommendations';
+import GatsbyBlog from '../components/gatsbyBlog';
+import RedBubble from '../components/redBubble';
+import Youtube from '../components/youtube';
+import demo from '../../static/assets/study-plans-demo.png';
 
-import "./index.scss";
-import DmmtNotes from "../components/dmmtNotes";
+import './index.scss';
+import DmmtNotes from '../components/dmmtNotes';
 
-const IndexPage = ({ data: { site } }) => {
+function IndexPage({ data: { site } }) {
   const [newsletterDetails, setNewsletterDetails] = useState({});
   const [subscribed, setSubscribed] = useState(false);
 
@@ -29,10 +29,10 @@ const IndexPage = ({ data: { site } }) => {
     })
       .then((data) => {
         setSubscribed(true);
-        alert("Successfully subscribed!");
+        alert('Successfully subscribed!');
       })
       .catch(() => {
-        alert("Uh Oh! Something went wrong");
+        alert('Uh Oh! Something went wrong');
       });
   };
 
@@ -77,12 +77,10 @@ const IndexPage = ({ data: { site } }) => {
               className="site-footer__input"
               type="text"
               value={newsletterDetails.firstName}
-              onChange={(e) =>
-                setNewsletterDetails({
-                  ...newsletterDetails,
-                  firstName: e.target.value,
-                })
-              }
+              onChange={(e) => setNewsletterDetails({
+                ...newsletterDetails,
+                firstName: e.target.value,
+              })}
             />
           </label>
           <label>
@@ -91,12 +89,10 @@ const IndexPage = ({ data: { site } }) => {
               className="site-footer__input"
               type="text"
               value={newsletterDetails.lastName}
-              onChange={(e) =>
-                setNewsletterDetails({
-                  ...newsletterDetails,
-                  lastName: e.target.value,
-                })
-              }
+              onChange={(e) => setNewsletterDetails({
+                ...newsletterDetails,
+                lastName: e.target.value,
+              })}
             />
           </label>
           <label>
@@ -106,25 +102,23 @@ const IndexPage = ({ data: { site } }) => {
               type="text"
               value={newsletterDetails.email}
               required
-              onChange={(e) =>
-                setNewsletterDetails({
-                  ...newsletterDetails,
-                  email: e.target.value,
-                })
-              }
+              onChange={(e) => setNewsletterDetails({
+                ...newsletterDetails,
+                email: e.target.value,
+              })}
             />
           </label>
           <input
             className="site-footer__input newsletter-section__submit"
             type="submit"
-            value={subscribed ? "Subscribed" : "Subscribe!"}
+            value={subscribed ? 'Subscribed' : 'Subscribe!'}
             disabled={subscribed}
           />
         </form>
       </section>
     </Layout>
   );
-};
+}
 
 export default IndexPage;
 export const pageQuery = graphql`

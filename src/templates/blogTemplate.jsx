@@ -20,7 +20,6 @@ export default function BlogTemplate({
       date,
       author,
       path,
-      travel,
       tags,
     },
     html,
@@ -65,8 +64,8 @@ export default function BlogTemplate({
           </div>
         </div>
         <article className="blog-post__section">
-          <div  className="blog-post__left">
-            <img className="blog-post__thumbnail" src={thumbnail} />
+          <div className="blog-post__left">
+            <img className="blog-post__thumbnail" src={thumbnail} alt="thumbnail" />
             <div
               className="blog-post__content"
               dangerouslySetInnerHTML={{ __html: html }}

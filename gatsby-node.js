@@ -1,12 +1,12 @@
-const path = require("path");
+const path = require('path');
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
 
-  const blogPostTemplate = path.resolve("src/templates/blogTemplate.jsx");
-  const quizTemplate = path.resolve("src/templates/quizTemplate.jsx");
-  const moduleTemplate = path.resolve("src/templates/moduleTemplate.jsx");
-  const tagTemplate = path.resolve("src/templates/tagTemplate.js");
+  const blogPostTemplate = path.resolve('src/templates/blogTemplate.jsx');
+  const quizTemplate = path.resolve('src/templates/quizTemplate.jsx');
+  const moduleTemplate = path.resolve('src/templates/moduleTemplate.jsx');
+  const tagTemplate = path.resolve('src/templates/tagTemplate.js');
 
   const result = await graphql(`
     {
@@ -61,12 +61,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   // Handle errors
   if (result.errors) {
-    reporter.panicOnBuild("Error while running GraphQL query.");
+    reporter.panicOnBuild('Error while running GraphQL query.');
     return;
   }
 
   result.data.quizzesRemark.edges.forEach(({ node }) => {
-    const path = node.frontmatter.path;
+    const { path } = node.frontmatter;
     createPage({
       path,
       component: quizTemplate,
@@ -90,7 +90,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   });
 
   result.data.postsRemark.edges.forEach(({ node }) => {
-    const path = node.frontmatter.path;
+    const { path } = node.frontmatter;
     createPage({
       path,
       component: blogPostTemplate,

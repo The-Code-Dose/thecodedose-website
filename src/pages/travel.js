@@ -5,12 +5,12 @@ import Layout from '../components/layout';
 import PostLink from '../components/postLink';
 import './travel.scss';
 
-const TravelPage = ({
+function TravelPage({
   data: {
     site,
     blogPosts: { edges },
   },
-}) => {
+}) {
   const Posts = edges
     .filter((edge) => !!edge.node.frontmatter.date)
     .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
@@ -27,7 +27,7 @@ const TravelPage = ({
       <div className="travel__posts">{Posts}</div>
     </Layout>
   );
-};
+}
 
 export default TravelPage;
 export const pageQuery = graphql`

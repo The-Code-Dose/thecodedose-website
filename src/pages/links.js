@@ -6,27 +6,29 @@ import Layout from '../components/layout';
 
 import './links.scss';
 
-const LinksPage = ({ data: { site: { siteMetadata: { title, description, links } } } }) => (
-  <Layout>
-    <Helmet>
-      <title>
-        Links —
-        {title}
-      </title>
-      <meta
-        name="description"
-        content={`Contact page of ${description}`}
-      />
-    </Helmet>
-    <div>
-      <div className="links__container">
-        {links.map(({ name, href }) => (
-          <a href={href} className="links__link">{name}</a>
-        ))}
+function LinksPage({ data: { site: { siteMetadata: { title, description, links } } } }) {
+  return (
+    <Layout>
+      <Helmet>
+        <title>
+          Links —
+          {title}
+        </title>
+        <meta
+          name="description"
+          content={`Contact page of ${description}`}
+        />
+      </Helmet>
+      <div>
+        <div className="links__container">
+          {links.map(({ name, href }) => (
+            <a href={href} className="links__link">{name}</a>
+          ))}
+        </div>
       </div>
-    </div>
-  </Layout>
-);
+    </Layout>
+  );
+}
 export default LinksPage;
 export const pageQuery = graphql`
   query LinksPageQuery {

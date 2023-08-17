@@ -1,9 +1,9 @@
-import React from "react";
-import { useStaticQuery, graphql, Link } from "gatsby";
+import React from 'react';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 
-import "./socialLinks.scss";
+import './socialLinks.scss';
 
-export default () => {
+export default function () {
   const data = useStaticQuery(graphql`
     query SocialQuery {
       site {
@@ -24,7 +24,9 @@ export default () => {
   const {
     site: {
       siteMetadata: {
-        social: { instagram, redbubble, twitter, github, discord, youtube },
+        social: {
+          instagram, redbubble, twitter, github, discord, youtube,
+        },
       },
     },
   } = data;
@@ -62,4 +64,4 @@ export default () => {
       </div>
     </div>
   );
-};
+}

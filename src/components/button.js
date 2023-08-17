@@ -1,7 +1,7 @@
 import React from 'react';
 import './button.scss';
 
-export default ({
+export default function ({
   text,
   onClick,
   variant = 'yellow',
@@ -10,9 +10,9 @@ export default ({
   to,
   disabled,
   className,
-}) => {
+}) {
   if (link) {
-    return <a className={`button block mt-5 button--${variant} button--${size} ${className}`} href={to} target="__blank">{text}</a>
+    return <a className={`button block mt-5 button--${variant} button--${size} ${className}`} href={to} target="__blank">{text}</a>;
   }
   return (
     <button
@@ -22,5 +22,5 @@ export default ({
     >
       {text}
     </button>
-    )
-};
+  );
+}

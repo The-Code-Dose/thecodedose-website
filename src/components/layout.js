@@ -6,7 +6,7 @@ import Navigation from './navigation';
 import './layout.scss';
 import logo from '../images/logo.png';
 
-export default ({ children }) => {
+export default function ({ children }) {
   const [subscribed, setSubscribed] = useState(false);
   const [email, setEmail] = useState('');
 
@@ -50,4 +50,4 @@ export default ({ children }) => {
       </footer>
     </div>
   );
-};
+}

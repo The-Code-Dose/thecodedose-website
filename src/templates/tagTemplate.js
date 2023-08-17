@@ -1,10 +1,10 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { graphql, Link } from "gatsby";
-import Layout from "../components/layout";
-import PostLink from "../components/postLink";
+import React from 'react';
+import Helmet from 'react-helmet';
+import { graphql, Link } from 'gatsby';
+import Layout from '../components/layout';
+import PostLink from '../components/postLink';
 
-import "./tagTemplate.scss";
+import './tagTemplate.scss';
 
 export default function TagTemplate({ pageContext, data }) {
   const { site, blogPosts, tagsGroup } = data;
@@ -15,7 +15,7 @@ export default function TagTemplate({ pageContext, data }) {
   const { siteMetadata } = site;
 
   const tagHeader = `${totalCount} post${
-    totalCount === 1 ? "" : "s"
+    totalCount === 1 ? '' : 's'
   } tagged with "${tag}"`;
 
   const Posts = edges

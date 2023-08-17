@@ -1,10 +1,10 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import PostLink from "./postLink";
-import Button from "./button";
-import "./blogSection.scss";
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import PostLink from './postLink';
+import Button from './button';
+import './blogSection.scss';
 
-export default () => {
+export default function () {
   const data = useStaticQuery(
     graphql`
       query {
@@ -35,7 +35,7 @@ export default () => {
           }
         }
       }
-    `
+    `,
   );
 
   const {
@@ -77,4 +77,4 @@ export default () => {
       </div>
     </div>
   );
-};
+}

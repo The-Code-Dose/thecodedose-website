@@ -69,11 +69,12 @@ const PDFS = {
   ],
 };
 
-const CsIllustratedPage = ({
+function CsIllustratedPage({
   data: {
     site,
   },
-}) => (
+}) {
+  return (
     <Layout>
       <Helmet>
         <title>{site.siteMetadata.title}</title>
@@ -114,12 +115,13 @@ const CsIllustratedPage = ({
             Leetcode <span className="illustrated__heading--blue">Illustrated</span>
           </h1>
           <ul className="illustrated__content">
-          {PDFS.leetcode.map(pdf => <li><a href={`assets/pdf/${pdf.fileName}`} target="__blank">{pdf.title}</a></li>)}
+            {PDFS.leetcode.map(pdf => <li><a href={`assets/pdf/${pdf.fileName}`} target="__blank">{pdf.title}</a></li>)}
           </ul>
         </div>
       </div>
     </Layout>
   );
+}
 
 export default CsIllustratedPage;
 

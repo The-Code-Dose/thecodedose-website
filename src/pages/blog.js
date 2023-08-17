@@ -1,16 +1,16 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { graphql } from "gatsby";
-import Layout from "../components/layout";
-import PostLink from "../components/postLink";
-import "./blog.scss";
+import React from 'react';
+import Helmet from 'react-helmet';
+import { graphql } from 'gatsby';
+import Layout from '../components/layout';
+import PostLink from '../components/postLink';
+import './blog.scss';
 
-const BlogPage = ({
+function BlogPage({
   data: {
     site,
     blogPosts: { edges },
   },
-}) => {
+}) {
   const Posts = edges
     .filter((edge) => !!edge.node.frontmatter.date)
     .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
@@ -27,7 +27,7 @@ const BlogPage = ({
       <div className="blog__posts">{Posts}</div>
     </Layout>
   );
-};
+}
 
 export default BlogPage;
 export const pageQuery = graphql`
