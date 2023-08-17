@@ -68,7 +68,7 @@ export default function QuizTemplate({ data }) {
   const retakeQuiz = () => {
     setScore(-1);
     setQuestions(processedQuestions);
-  }
+  };
 
   const scoreElement = score > -1 ? (
     <div className="quiz__score-container">

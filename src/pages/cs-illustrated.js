@@ -82,7 +82,7 @@ function CsIllustratedPage({
       </Helmet>
       <div className="illustrated__container illustrated__container-one">
         <div className="illustrated__left">
-          <img className="illustrated__img" src={jsIllustratedThumbnail} />
+          <img className="illustrated__img" src={jsIllustratedThumbnail} alt="JS Illustrated" />
         </div>
         <div className="illustrated__right">
           <h1 className="illustrated__heading">
@@ -95,7 +95,7 @@ function CsIllustratedPage({
       </div>
       <div className="illustrated__container illustrated__container-two">
         <div className="illustrated__left">
-          <img className="illustrated__img" src={dsaIllustratedThumbnail} />
+          <img className="illustrated__img" src={dsaIllustratedThumbnail} alt="CS Illustrated" />
         </div>
         <div className="illustrated__right">
           <h1 className="illustrated__heading">
@@ -108,7 +108,7 @@ function CsIllustratedPage({
       </div>
       <div className="illustrated__container illustrated__container-three">
         <div className="illustrated__left">
-          <img className="illustrated__img" src={leetcodeIllustratedThumbnail} />
+          <img className="illustrated__img" src={leetcodeIllustratedThumbnail} alt="Leetcode Illustrated" />
         </div>
         <div className="illustrated__right">
           <h1 className="illustrated__heading">

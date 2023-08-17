@@ -23,6 +23,8 @@ export default function () {
       <div
         className="site-header__navigation--menu-icon"
         onClick={() => setOpenMenu(!openMenu)}
+        role="button"
+        tabIndex="0"
       >
         Menu
       </div>

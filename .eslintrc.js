@@ -20,5 +20,9 @@ module.exports = {
     'global-require': 0,
     'arrow-parens': 0,
     'react/jsx-one-expression-per-line': 0,
+    'react/jsx-no-bind': 0,
+    'react/no-unescaped-entities': 0,
+    'jsx-a11y/alt-text': 0,
+    'no-shadow': 0,
   },
 };

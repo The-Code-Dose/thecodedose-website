@@ -27,7 +27,7 @@ function IndexPage({ data: { site } }) {
       FNAME: newsletterDetails.firstName,
       LNAME: newsletterDetails.lastName,
     })
-      .then((data) => {
+      .then(() => {
         setSubscribed(true);
         alert('Successfully subscribed!');
       })
@@ -52,7 +52,7 @@ function IndexPage({ data: { site } }) {
         <p className="study-plans__content">
           Transform Your Learning Journey with Our Study Plans
         </p>
-        <img className="study-plans__demo" src={demo} />
+        <img className="study-plans__demo" src={demo} alt="demo" />
         <Button
           className="study-plans-section__btn"
           text="Explore"

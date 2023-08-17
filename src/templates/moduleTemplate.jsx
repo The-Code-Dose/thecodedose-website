@@ -78,7 +78,7 @@ export default function ModuleTemplate({
             <div className="module__title">
               <h1>{blogTitle}</h1>
             </div>
-            <img className="module__thumbnail" src={thumbnail} />
+            <img className="module__thumbnail" src={thumbnail} alt="thumbnail" />
             <div
               className="module__content"
               dangerouslySetInnerHTML={{ __html: html }}

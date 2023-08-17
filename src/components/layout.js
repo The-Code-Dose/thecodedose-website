@@ -13,7 +13,7 @@ export default function ({ children }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     addToMailchimp(email)
-      .then(data => {
+      .then(() => {
         setSubscribed(true);
         alert('Successfully subscribed!');
       })

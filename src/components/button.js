@@ -19,6 +19,7 @@ export default function ({
       className={`button mt-5 block button--${variant} button--${size} ${disabled ? 'button--disabled' : ''} ${className}`}
       onClick={onClick}
       disabled={disabled}
+      type="button"
     >
       {text}
     </button>

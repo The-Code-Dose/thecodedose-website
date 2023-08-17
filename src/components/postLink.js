@@ -8,7 +8,7 @@ function PostLink({
   post: {
     excerpt,
     frontmatter: {
-      path, thumbnail, title, date, tags,
+      path, thumbnail, title, date,
     },
   },
 }) {

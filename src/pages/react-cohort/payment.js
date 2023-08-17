@@ -4,7 +4,6 @@ import { Dialog, Transition } from '@headlessui/react';
 import { graphql } from 'gatsby';
 import { motion } from 'framer-motion';
 import {
-  ArrowLongDownIcon,
   ArrowLongRightIcon,
 } from '@heroicons/react/24/outline';
 import UpiSs from '../../images/upi_8800.jpeg';

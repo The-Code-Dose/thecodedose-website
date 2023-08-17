@@ -18,9 +18,9 @@ export function PaymentsModal() {
     setIsOpen(false);
   }
 
-  function openModal() {
-    setIsOpen(true);
-  }
+  // function openModal() {
+  //   setIsOpen(true);
+  // }
 
   return (
     <>
@@ -78,6 +78,7 @@ export function PaymentsModal() {
                         <img
                           className="border border-slate-500 mt-4"
                           src={UpiSs}
+                          alt="scanner"
                         />
                       </>
                     ) : (
