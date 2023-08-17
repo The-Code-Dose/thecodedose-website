@@ -39,7 +39,7 @@ Write down the word that you want to animate on a piece of paper. Click a photog
 
 I will be using the word 'the' for this tutorial.
 
-![](/assets/Screenshot 2021-01-01 at 5.19.23 PM.png)
+![](/assets/Screenshot%202021-01-01%20at%205.19.23%20PM.png)
 
 #### 2. Create the SVG using the pen tool
 
