@@ -33,6 +33,12 @@
   font-weight: 900;
 }
 
+@layer base {
+  .text-outline {
+    text-shadow: -1px -1px 0 #2a2a2a, 1px -1px 0 #2a2a2a, -1px 1px 0 #2a2a2a, 1px 1px 0 #2a2a2a, 4px 4px #2a2a2a;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -97,10 +103,10 @@ blockquote {
 a {
   text-decoration: none;
   color: var(--black);
+}
 
-  &:hover {
-    text-decoration: underline;
-  }
+p {
+  font-family: 'Poppins';
 }
 
 .gatsby-highlight {

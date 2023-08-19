@@ -4,9 +4,6 @@ import { Link } from 'gatsby';
 export default function () {
   return (
     <div className="flex px-10 py-24">
-      <div className="">
-        <img />
-      </div>
       <div
         className="flex flex-col items-center"
       >
