@@ -1,51 +1,60 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
+import { Bars3Icon } from '@heroicons/react/24/outline';
 
-export default function () {
+const links = [
+  {
+    label: 'Home',
+    path: '/',
+  },
+  {
+    label: 'Blog',
+    path: '/blog',
+  },
+  {
+    label: 'Resources',
+    path: '/resources',
+  },
+  {
+    label: 'Study Plans',
+    path: '/study-plans',
+  },
+  {
+    label: 'Shop',
+    path: 'https://www.redbubble.com/people/thecodedose/shop',
+  },
+];
+
+export default function ({ location }) {
   const [openMenu, setOpenMenu] = useState(false);
+  const currentPath = location?.pathname;
+
+  const linkElements = (
+    <>{links.map(({ label, path }) => (
+      <Link className={`font-semibold rounded-full transition-all text-xs px-5 py-2 border uppercase hover:no-underline ${((currentPath.includes(path) && path !== '/') || (currentPath === '/' && path === '/')) ? 'bg-pink drop-shadow-solid border border-black hover:drop-shadow-solid-extend text-black' : 'text-white border-purple hover:border-white'}`} to={path}>
+        {label}
+      </Link>
+    ))}
+    </>
+  );
 
   return (
     <>
-      <nav className="site-header__navigation--desktop">
-        <Link to="/">Home</Link>
-        <Link to="/blog">Blog</Link>
-        <Link to="/travel">Travel</Link>
-        <Link to="/study-plans">Study Plans</Link>
-        <Link to="/cs-illustrated">CS Illustrated</Link>
-        <Link to="/curriculum/javascript/your-first-javascript-program">Javascript</Link>
-        <a
-          href="https://www.redbubble.com/people/thecodedose/shop"
-          target="__blank"
-        >
-          Shop
-        </a>
+      <nav className="hidden md:flex gap-4 lg:gap-6 justify-around items-center">
+        {linkElements}
       </nav>
-      <div
-        className="site-header__navigation--menu-icon"
+      <button
+        className="block md:hidden text-white uppercase font-bold outline-none"
         onClick={() => setOpenMenu(!openMenu)}
-        role="button"
-        tabIndex="0"
+        type="button"
       >
-        Menu
-      </div>
-      <nav className="site-header__navigation--mobile">
-        {openMenu && (
-          <div>
-            <Link to="/">Home</Link>
-            <Link to="/blog">Blog</Link>
-            <Link to="/travel">Travel</Link>
-            <Link to="/study-plans">Study Plans</Link>
-            <Link to="/cs-illustrated">CS Illustrated</Link>
-            <Link to="/curriculum/javascript/your-first-javascript-program">Javascript</Link>
-            <a
-              href="https://www.redbubble.com/people/thecodedose/shop"
-              target="__blank"
-            >
-              Shop
-            </a>
-          </div>
-        )}
-      </nav>
+        <Bars3Icon className="w-6 h-6" />
+      </button>
+      {openMenu && (
+        <nav className="fixed top-20 flex flex-col left-0 bg-purple w-full rounded-xl px-6 py-5 border">
+          {linkElements}
+        </nav>
+      )}
     </>
   );
 }

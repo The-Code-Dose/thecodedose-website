@@ -6,7 +6,7 @@ import Question from '../components/question';
 import Button from '../components/button';
 import './quizTemplate.scss';
 
-export default function QuizTemplate({ data }) {
+export default function QuizTemplate({ data, location }) {
   const { site, markdownRemark } = data;
   const {
     siteMetadata: { title: siteTitle },
@@ -81,7 +81,7 @@ export default function QuizTemplate({ data }) {
   const showAnswer = score > -1;
 
   return (
-    <Layout>
+    <Layout location={location}>
       <Helmet>
         <title>{`${title} | ${siteTitle}`}</title>
         <meta name="description" content={description} />

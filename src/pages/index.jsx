@@ -17,7 +17,7 @@ import demo from '../../static/assets/study-plans-demo.png';
 import './index.scss';
 import DmmtNotes from '../components/dmmtNotes';
 
-function IndexPage({ data: { site } }) {
+function IndexPage({ data: { site }, location }) {
   const [newsletterDetails, setNewsletterDetails] = useState({});
   const [subscribed, setSubscribed] = useState(false);
 
@@ -37,7 +37,7 @@ function IndexPage({ data: { site } }) {
   };
 
   return (
-    <Layout>
+    <Layout location={location}>
       <Helmet>
         <title>{site.siteMetadata.title}</title>
         <meta name="description" content={site.siteMetadata.description} />
@@ -63,7 +63,7 @@ function IndexPage({ data: { site } }) {
       </div>
       <CSIllustrated />
       <DsaRevisionNotes />
-      <ProductRecommendations />
+      {/* <ProductRecommendations /> */}
       <GatsbyBlog />
       <DmmtNotes />
       <RedBubble />

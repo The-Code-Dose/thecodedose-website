@@ -7,6 +7,7 @@ import './blogTemplate.scss';
 
 export default function BlogTemplate({
   data,
+  location,
 }) {
   const {
     site, markdownRemark, blogPosts: { edges },
@@ -32,7 +33,7 @@ export default function BlogTemplate({
     .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
 
   return (
-    <Layout>
+    <Layout location={location}>
       <Helmet>
         <title>
           {`${blogTitle} | ${siteTitle}`}

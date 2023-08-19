@@ -6,7 +6,7 @@ import Navigation from './navigation';
 import './layout.scss';
 import logo from '../images/logo.png';
 
-export default function ({ children }) {
+export default function ({ children, location }) {
   const [subscribed, setSubscribed] = useState(false);
   const [email, setEmail] = useState('');
 
@@ -23,14 +23,12 @@ export default function ({ children }) {
   };
 
   return (
-    <div className="site-wrapper">
-      <header className="site-header">
-        <div className="site-title">
-          <Link to="/">
-            <img className="site-header__logo" src={logo} alt="Logo" />
-          </Link>
-        </div>
-        <Navigation />
+    <div className="bg-yellow px-10 py-3 w-full">
+      <header className="w-full flex justify-between items-center bg-purple px-10 py-3 rounded-full border drop-shadow-solid sticky top-5 z-10">
+        <Link to="/">
+          <img className="site-header__logo" src={logo} alt="Logo" />
+        </Link>
+        <Navigation location={location} />
       </header>
       {children}
       <footer className="site-footer">

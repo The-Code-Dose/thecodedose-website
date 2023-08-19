@@ -16,7 +16,12 @@ module.exports = {
       red: '#F15555',
       green: '#88fe77',
     },
-    extend: {},
+    extend: {
+      dropShadow: {
+        solid: '2px 2px #2a2a2a',
+        'solid-extend': '4px 4px #2a2a2a',
+      },
+    },
   },
   plugins: [],
 };
