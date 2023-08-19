@@ -23,13 +23,15 @@ export default function ({ children, location }) {
   };
 
   return (
-    <div className="bg-yellow px-10 py-3 w-full">
-      <header className="w-full flex justify-between items-center bg-purple px-10 py-3 rounded-full border drop-shadow-solid sticky top-5 z-10">
-        <Link to="/">
-          <img className="site-header__logo" src={logo} alt="Logo" />
-        </Link>
-        <Navigation location={location} />
-      </header>
+    <div className="bg-yellow w-full">
+      <div className="px-10 py-3 sticky top-2 z-10">
+        <header className="w-full flex justify-between items-center bg-purple px-10 py-3 rounded-full border drop-shadow-solid">
+          <Link to="/">
+            <img className="site-header__logo" src={logo} alt="Logo" />
+          </Link>
+          <Navigation location={location} />
+        </header>
+      </div>
       {children}
       <footer className="site-footer">
         <div className="site-footer__left">

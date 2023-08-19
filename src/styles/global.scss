@@ -63,6 +63,7 @@ h6,
 a,
 button {
   font-family: 'Unbounded', sans-serif;
+  font-weight: 800;
 }
 
 /* System Fonts as used by Medium and WordPress */
@@ -70,15 +71,6 @@ body {
   color: var(--black);
   font-family: 'Poppins';
   box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Archivo', sans-serif;
 }
 
 h1 {
