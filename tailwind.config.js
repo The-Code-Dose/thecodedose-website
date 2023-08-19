@@ -19,6 +19,7 @@ module.exports = {
     extend: {
       dropShadow: {
         solid: '2px 2px #2a2a2a',
+        'solid-white': '2px 2px #ffffff',
         'solid-extend': '4px 4px #2a2a2a',
         outline: '-1px -1px 0 #2a2a2a, 1px -1px 0 #2a2a2a, -1px 1px 0 #2a2a2a, 1px 1px 0 #2a2a2a',
       },

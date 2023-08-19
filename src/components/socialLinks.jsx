@@ -32,33 +32,33 @@ export default function () {
   } = data;
 
   return (
-    <div className="site-footer__right">
-      <div>
-        <Link to="/">Home</Link>
-        <Link to="/blog">Blog</Link>
-        <Link to="/travel">Travel</Link>
-        <Link to="/cs-illustrated">CS Illustrated</Link>
-        <Link to="https://forms.gle/KVFTHZYj3dXnanRV9">
+    <div className="flex flex-col md:flex-row gap-5 w-full md:w-1/2 bg-blue  p-10 rounded-2xl border border-black drop-shadow-solid">
+      <div className="flex text-xs md:text-right flex-col justify-between  w-full md:w-1/2">
+        <Link className="text-black" to="/">Home</Link>
+        <Link className="text-black" to="/blog">Blog</Link>
+        <Link className="text-black" to="/travel">Travel</Link>
+        <Link className="text-black" to="/cs-illustrated">CS Illustrated</Link>
+        <Link className="text-black" to="https://forms.gle/KVFTHZYj3dXnanRV9">
           Apply for next React Cohort
         </Link>
-        <a href={redbubble} target="__blank">
+        <a className="text-black" href={redbubble} target="__blank">
           Shop
         </a>
       </div>
-      <div>
-        <a href={instagram} target="__blank">
+      <div className="flex flex-col justify-between text-xs md:text-right w-full md:w-1/2">
+        <a className="text-black" href={instagram} target="__blank">
           Instagram
         </a>
-        <a href={discord} target="__blank">
+        <a className="text-black" href={discord} target="__blank">
           Discord
         </a>
-        <a href={twitter} target="__blank">
+        <a className="text-black" href={twitter} target="__blank">
           Twitter
         </a>
-        <a href={youtube} target="__blank">
+        <a className="text-black" href={youtube} target="__blank">
           YouTube
         </a>
-        <a href={github} target="__blank">
+        <a className="text-black" href={github} target="__blank">
           Github
         </a>
       </div>

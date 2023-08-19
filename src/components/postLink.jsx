@@ -13,7 +13,7 @@ function PostLink({
   },
 }) {
   return (
-    <article className="border border-black rounded-2xl gap-5 items-center p-8 drop-shadow-solid hover:drop-shadow-solid-extend transition-all bg-white hover:bg-yellow">
+    <article className="border border-black rounded-2xl gap-5 items-center p-8 drop-shadow-solid hover:scale-105 transition-all bg-white hover:bg-yellow">
       <Link className="flex flex-col gap-3 justify-between h-full hover:no-underline" to={path}>
         {!!thumbnail && (
         <img className="border border-black rounded-2xl drop-shadow-solid w-full" src={thumbnail} alt="" />
@@ -24,7 +24,7 @@ function PostLink({
           </Link>
         </h2>
         <p className="text-sm font-normal">{excerpt}</p>
-        <Link className="text-sm flex justify-between items-center uppercase hover:no-underline transition-all hover:drop-shadow-solid-extend border-black border drop-shadow-solid rounded-full px-4 py-1 mt-2 bg-pink" to="/blog/how-to-learn-coding">
+        <Link className="text-sm flex justify-between items-center uppercase hover:no-underline transition-all hover:scale-105 border-black border drop-shadow-solid rounded-full px-4 py-1 mt-2 bg-pink" to="/blog/how-to-learn-coding">
           Read More
           <ArrowLongRightIcon className="w-10 h-10" />
         </Link>
