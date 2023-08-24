@@ -25,9 +25,9 @@ const links = [
   },
 ];
 
-export default function ({ location }) {
+export default function () {
   const [openMenu, setOpenMenu] = useState(false);
-  const currentPath = location?.pathname;
+  const currentPath = typeof window !== "undefined" ? window.location.pathname : ""
 
   const linkElements = (
     <>{links.map(({ label, path }) => (

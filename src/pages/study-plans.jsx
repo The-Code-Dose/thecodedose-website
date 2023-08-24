@@ -13,9 +13,8 @@ const StudyPlansPage = ({
   data: {
     site,
   },
-  location,
 }) => (
-  <Layout location={location}>
+  <Layout>
     <Helmet>
       <title>{site.siteMetadata.title}</title>
       <meta name="description" content={site.siteMetadata.description} />

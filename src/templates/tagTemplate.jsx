@@ -6,7 +6,7 @@ import PostLink from '../components/postLink';
 
 import './tagTemplate.scss';
 
-export default function TagTemplate({ pageContext, data, location }) {
+export default function TagTemplate({ pageContext, data }) {
   const { site, blogPosts, tagsGroup } = data;
   const { tag } = pageContext;
 
@@ -23,7 +23,7 @@ export default function TagTemplate({ pageContext, data, location }) {
     .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
 
   return (
-    <Layout location={location}>
+    <Layout>
       <Helmet>
         <title>{siteMetadata.title}</title>
         <meta name="description" />

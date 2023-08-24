@@ -13,12 +13,12 @@ const WrappedHeader = withPadding(
       <Link to="/">
         <img className="w-8 m-0" src={logo} alt="Logo" />
       </Link>
-      <Navigation location={location} />
+      <Navigation />
     </header>
   ),
   'header', 'sticky -top-3 z-20 py-3');
 
-export default function ({ children, location }) {
+export default function ({ children }) {
   const [subscribed, setSubscribed] = useState(false);
   const [email, setEmail] = useState('');
 

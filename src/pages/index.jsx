@@ -15,9 +15,9 @@ import './index.scss';
 import DmmtNotes from '../components/dmmtNotes';
 import StudyPlansSection from '../components/studyPlansSection';
 
-function IndexPage({ data: { site }, location }) {
+function IndexPage({ data: { site } }) {
   return (
-    <Layout location={location}>
+    <Layout>
       <Helmet>
         <title>{site.siteMetadata.title}</title>
         <meta name="description" content={site.siteMetadata.description} />
