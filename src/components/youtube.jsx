@@ -1,25 +1,32 @@
 import React from 'react';
-import Button from './button';
+import { Link } from 'gatsby';
+import withPadding from '../hocs/withPadding';
 import Video from '../images/youtube.mp4';
-import './youtube.scss';
 
-export default function () {
+function YouTubeSection() {
   return (
-    <div className="youtube__container" id="youtube">
-      <div className="youtube__left">
-        <h2 className="youtube__heading">
-          Check us out on YouTube
-        </h2>
-        <p className="youtube__content">
-          Understand computer science concepts with hand-drawn animations.
-        </p>
-        <Button text="Open YouTube" variant="black" to="https://www.youtube.com/channel/UC74LLw9u0wG4arsn8wYpC7w" link />
+      <div className="bg-red px-10 py-16 border border-black rounded-2xl drop-shadow-solid flex flex-col-reverse md:flex-row items-center gap-10">
+        <div className="w-full md:w-1/2 flex gap-5 flex-col justify-between">
+          <h2 className="text-4xl md:text-6xl text-white text-outline 2xl:text-8xl">
+            Check us out on YouTube
+          </h2>
+          <p>
+            Understand computer science concepts with hand-drawn animations.
+          </p>
+          <Link
+            className="text-center w-fit uppercase hover:no-underline transition-all hover:scale-105 border-black border rounded-full px-8 py-4 bg-black text-white"
+            to="https://www.youtube.com/channel/thecodedose"
+          >
+            Open YouTube
+          </Link>
+        </div>
+        <div className="w-full md:w-1/2">
+          <video autoPlay muted loop className="w-full border-black rounded-2xl drop-shadow-solid">
+            <source src={Video} type="video/mp4" />
+          </video>
+        </div>
       </div>
-      <div className="youtube__right">
-        <video autoPlay muted loop className="youtube__video">
-          <source src={Video} type="video/mp4" />
-        </video>
-      </div>
-    </div>
   );
 }
+
+export default withPadding(YouTubeSection, 'youtube', 'bg-yellow');

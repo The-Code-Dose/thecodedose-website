@@ -3,28 +3,30 @@ import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import PostLink from '../components/postLink';
-import './blog.scss';
 
 function BlogPage({
   data: {
     site,
     blogPosts: { edges },
   },
+  location,
 }) {
   const Posts = edges
     .filter((edge) => !!edge.node.frontmatter.date)
     .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
 
   return (
-    <Layout>
+    <Layout location={location}>
       <Helmet>
         <title>{site.siteMetadata.title}</title>
         <meta name="description" content={site.siteMetadata.description} />
       </Helmet>
-      <div className="blog__title">
-        <h1>Blog</h1>
+      <div className='px-10 py-16'>
+        <div>
+          <h1>Blog</h1>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">{Posts}</div>
       </div>
-      <div className="blog__posts">{Posts}</div>
     </Layout>
   );
 }

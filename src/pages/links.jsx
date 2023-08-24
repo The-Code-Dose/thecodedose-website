@@ -6,9 +6,9 @@ import Layout from '../components/layout';
 
 import './links.scss';
 
-function LinksPage({ data: { site: { siteMetadata: { title, description, links } } } }) {
+function LinksPage({ location, data: { site: { siteMetadata: { title, description, links } } } }) {
   return (
-    <Layout>
+    <Layout location={location}>
       <Helmet>
         <title>
           Links —

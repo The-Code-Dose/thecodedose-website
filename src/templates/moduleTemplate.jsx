@@ -8,6 +8,7 @@ import Button from '../components/button';
 export default function ModuleTemplate({
   data,
   pageContext,
+  location,
 }) {
   const { slug } = pageContext;
 
@@ -39,7 +40,7 @@ export default function ModuleTemplate({
   const previousModule = currentModule - 1;
 
   return (
-    <Layout>
+    <Layout location={location}>
       <Helmet>
         <title>
           {`${blogTitle} | ${siteTitle}`}

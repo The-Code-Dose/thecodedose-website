@@ -1,10 +1,9 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import withPadding from '../hocs/withPadding';
 import PostLink from './postLink';
-import Button from './button';
-import './blogSection.scss';
 
-export default function () {
+function BlogSection() {
   const data = useStaticQuery(
     graphql`
       query {
@@ -44,37 +43,18 @@ export default function () {
 
   const posts = edges.filter((edge) => !!edge.node.frontmatter.date);
 
-  const featuredPost = posts.shift();
-
   const LatestPosts = posts.map((edge) => (
     <PostLink key={edge.node.id} post={edge.node} />
   ));
 
   return (
-    <div className="blog-section" id="blog">
-      <div className="blog-section__heading">
-        <h1>Read our blog</h1>
+    <>
+      <h1 className="uppercase text-5xl md:text-7xl text-center text-white text-outline">latest articles</h1>
+      <div className="gap-5 mt-20 grid md:grid-cols-2 lg:grid-cols-4 2xl:gap-20">
+        {LatestPosts}
       </div>
-      <div className="blog-section__container">
-        <div className="blog-section__featured">
-          <h2 className="blog-section__featured-title">
-            {featuredPost.node.frontmatter.title}
-          </h2>
-          <img
-            src={featuredPost.node.frontmatter.thumbnail}
-            className="blog-section__featured-thumbnail"
-          />
-          <div className="post-meta">{featuredPost.node.frontmatter.date}</div>
-          <p>{featuredPost.node.excerpt}</p>
-          <Button
-            text="Read more"
-            color="yellow"
-            link
-            to={featuredPost.node.frontmatter.path}
-          />
-        </div>
-        <div className="blog-section__list">{LatestPosts}</div>
-      </div>
-    </div>
+    </>
   );
 }
+
+export default withPadding(BlogSection, 'blog', 'bg-blue');

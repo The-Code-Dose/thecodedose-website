@@ -7,6 +7,7 @@ import './blogTemplate.scss';
 
 export default function BlogTemplate({
   data,
+  location,
 }) {
   const {
     site, markdownRemark, blogPosts: { edges },
@@ -32,7 +33,7 @@ export default function BlogTemplate({
     .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
 
   return (
-    <Layout>
+    <Layout location={location}>
       <Helmet>
         <title>
           {`${blogTitle} | ${siteTitle}`}
@@ -49,12 +50,14 @@ export default function BlogTemplate({
         <meta name="twitter:description" content={blogMetaDescription} />
         <meta name="twitter:image" content={thumbnail} />
       </Helmet>
-      <div className="blog-post__container">
-        <div className="blog-post__title">
-          <h1>{blogTitle}</h1>
-          <span className="blog-post__date">{date} • </span>
-          <span className="blog-post__author">{author} • </span>
-          <span className="blog-post__read">{timeToRead} min read</span>
+      <div className="bg-yellow px-5 py-8 md:px-10 md:py-24 2xl:px- 5">
+        <div className="flex flex-col items-center pt-3 break-words">
+          <h1 className="text-5xl text-center">{blogTitle}</h1>
+          <div>
+            <span className="blog-post__date">{date} • </span>
+            <span className="blog-post__author">{author} • </span>
+            <span className="blog-post__read">{timeToRead} min read</span>
+          </div>
           <div className="blog-post__tags-container">
             {tags.map(tag => (
               <Link className="blog-post__tag" to={`/tags/${tag}`}>
@@ -63,25 +66,18 @@ export default function BlogTemplate({
             ))}
           </div>
         </div>
-        <article className="blog-post__section">
-          <div className="blog-post__left">
-            <img className="blog-post__thumbnail" src={thumbnail} alt="thumbnail" />
+        <article className="px-8 lg:px-10 py-16 flex flex-col items-center my-10 bg-white border border-black rounded-2xl drop-shadow-solid">
+          <div className="w-full md:w-3/4 break-words">
+            <img className="border border-black rounded-2xl drop-shadow-solid my-5" src={thumbnail} alt="thumbnail" />
             <div
-              className="blog-post__content"
+              className="break-words"
               dangerouslySetInnerHTML={{ __html: html }}
             />
           </div>
-          <div className="blog-post__table">
-            <h3 className="blog-post__table-title">Table of Contents</h3>
-            <section
-              className="blog-post__table-list"
-              dangerouslySetInnerHTML={{ __html: tableOfContents }}
-            />
-          </div>
         </article>
-        <section className="blog-post__related-articles">
-          <h2 className="blog-post__related-articles__heading">Recent Articles</h2>
-          <div className="blog-post__related-articles--list">{Posts}</div>
+        <section className="bg-pink text-white p-10 border border-black rounded-2xl drop-shadow-solid mb-10">
+          <h2 className="text-5xl md:text-6xl text-center text-outline">Recent Articles</h2>
+          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4 mt-10">{Posts}</div>
         </section>
       </div>
     </Layout>
@@ -117,7 +113,7 @@ export const pageQuery = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 250)
+          excerpt(pruneLength: 150)
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             path

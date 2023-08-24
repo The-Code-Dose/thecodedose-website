@@ -1,12 +1,24 @@
 import React, { useState } from 'react';
 import addToMailchimp from 'gatsby-plugin-mailchimp';
+import withPadding from '../hocs/withPadding';
 import { Link } from 'gatsby';
 import SocialLinks from './socialLinks';
 import Navigation from './navigation';
 import './layout.scss';
 import logo from '../images/logo.png';
 
-export default function ({ children }) {
+const WrappedHeader = withPadding(
+  () => (
+    <header className="w-full flex justify-between items-center bg-purple px-10 py-3 rounded-full border drop-shadow-solid">
+      <Link to="/">
+        <img className="w-8 m-0" src={logo} alt="Logo" />
+      </Link>
+      <Navigation location={location} />
+    </header>
+  ),
+  'header', 'sticky -top-3 z-20 py-3');
+
+export default function ({ children, location }) {
   const [subscribed, setSubscribed] = useState(false);
   const [email, setEmail] = useState('');
 
@@ -23,27 +35,26 @@ export default function ({ children }) {
   };
 
   return (
-    <div className="site-wrapper">
-      <header className="site-header">
-        <div className="site-title">
-          <Link to="/">
-            <img className="site-header__logo" src={logo} alt="Logo" />
-          </Link>
-        </div>
-        <Navigation />
-      </header>
+    <div className="bg-yellow w-full">
+      <WrappedHeader />
       {children}
-      <footer className="site-footer">
-        <div className="site-footer__left">
+      <footer className="bg-black flex flex-col md:flex-row justify-between gap-10 px-10 py-10">
+        <div className="bg-purple p-10 rounded-2xl border border-black drop-shadow-solid flex flex-col gap-5 justify-between">
           <Link to="/">
-            <img className="site-footer__logo" src={logo} alt="Logo" />
+            <img className="w-20" src={logo} alt="Logo" />
           </Link>
-          <h4>
+          <p className="text-white">
             Subscribe to receive latest updates right in your inbox!
-          </h4>
-          <form className="site-footer__form" onSubmit={handleSubmit}>
-            <input className="site-footer__input" placeholder="Email Address" onChange={(e) => setEmail(e.target.value)} required />
-            <input className="button button--yellow" type="submit" value={subscribed ? 'Subscribed' : 'Subscribe!'} disabled={subscribed} />
+          </p>
+          <form className="flex flex-col lg:flex-row justify-between" onSubmit={handleSubmit}>
+            <input className="border w-full lg:w-1/2 border-black drop-shadow-solid my-2 px-4 py-2 rounded-full" placeholder="Email Address" onChange={(e) => setEmail(e.target.value)} required />
+            <button
+              className="bg-pink text-black uppercase my-2 px-4 py-2 rounded-full border border-black drop-shadow-solid hover:scale-105 transition-all"
+              type="submit"
+              disabled={subscribed}
+            >
+              {subscribed ? 'Subscribed' : 'Subscribe!'}
+            </button>
           </form>
         </div>
         <SocialLinks />
