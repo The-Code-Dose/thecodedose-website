@@ -84,7 +84,7 @@
     &-list {
       margin: 50px 20px;
       height: 400px;
-      overflow-y: scroll;
+      overflow-y: auto;
       scrollbar-width: thin; /* For Firefox */
       scrollbar-color: var(--black) #f1f1f1; /* For Firefox */
 
