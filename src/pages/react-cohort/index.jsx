@@ -66,14 +66,14 @@ function ReactCohortPage({ data: { site } }) {
             <a
               className="cursor-pointer"
               target="blank"
-              href="https://youtu.be/cquXsKmmIp4"
+              href="https://products.thecodedose.com/"
             >
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className="block mx-auto mt-12 text-md px-6 py-3  border border-slate-500 uppercase font-bold bg-cyan-300 px-4 py-2 text-slate-900"
               >
-                Access the free masterclass
+                Buy Now!
               </motion.button>
             </a>
             {/* <span className="mt-3 text-xs">*Limited seats only*</span> */}
