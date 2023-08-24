@@ -11,10 +11,10 @@ const links = [
     label: 'Blog',
     path: '/blog',
   },
-  {
-    label: 'Resources',
-    path: '/resources',
-  },
+  // {
+  //   label: 'Resources',
+  //   path: '/resources',
+  // },
   {
     label: 'Study Plans',
     path: '/study-plans',
@@ -40,7 +40,7 @@ export default function ({ location }) {
 
   return (
     <>
-      <nav className="hidden md:flex gap-4 lg:gap-6 justify-around items-center">
+      <nav className="leading-normal hidden md:flex gap-4 lg:gap-6 justify-around items-center">
         {linkElements}
       </nav>
       <button

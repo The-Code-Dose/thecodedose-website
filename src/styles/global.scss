@@ -70,6 +70,7 @@ a,
 button {
   font-family: 'Unbounded', sans-serif;
   font-weight: 800;
+  overflow-wrap: break-word;
 }
 
 /* System Fonts as used by Medium and WordPress */
@@ -95,6 +96,10 @@ h4 {
   font: 18px;
 }
 
+h1, h2, h3, h4, h5, h6 , iframe{
+  margin: 2rem 0rem;
+}
+
 blockquote {
   border-left: 3px solid var(--primary-color);
   padding-left: 10px;
@@ -106,8 +111,9 @@ a {
   cursor: pointer;
 }
 
-p {
+p, ul, ol {
   font-family: 'Poppins';
+  line-height: 1.8rem;
 }
 
 .gatsby-highlight {
@@ -119,6 +125,7 @@ pre {
   text-shadow: none;
   padding: 10px;
   overflow: auto;
+  margin: 2rem 0rem;
 }
 
 .divider {

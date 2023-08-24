@@ -1,10 +1,22 @@
 import React, { useState } from 'react';
 import addToMailchimp from 'gatsby-plugin-mailchimp';
+import withPadding from '../hocs/withPadding';
 import { Link } from 'gatsby';
 import SocialLinks from './socialLinks';
 import Navigation from './navigation';
 import './layout.scss';
 import logo from '../images/logo.png';
+
+const WrappedHeader = withPadding(
+  () => (
+    <header className="w-full flex justify-between items-center bg-purple px-10 py-3 rounded-full border drop-shadow-solid">
+      <Link to="/">
+        <img className="w-8 m-0" src={logo} alt="Logo" />
+      </Link>
+      <Navigation location={location} />
+    </header>
+  ),
+  'header', 'sticky -top-3 z-20 py-3');
 
 export default function ({ children, location }) {
   const [subscribed, setSubscribed] = useState(false);
@@ -24,14 +36,7 @@ export default function ({ children, location }) {
 
   return (
     <div className="bg-yellow w-full">
-      <div className="px-10 py-3 sticky top-2 z-20">
-        <header className="w-full flex justify-between items-center bg-purple px-10 py-3 rounded-full border drop-shadow-solid">
-          <Link to="/">
-            <img className="w-8" src={logo} alt="Logo" />
-          </Link>
-          <Navigation location={location} />
-        </header>
-      </div>
+      <WrappedHeader />
       {children}
       <footer className="bg-black flex flex-col md:flex-row justify-between gap-10 px-10 py-10">
         <div className="bg-purple p-10 rounded-2xl border border-black drop-shadow-solid flex flex-col gap-5 justify-between">

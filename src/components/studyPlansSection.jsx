@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import withPadding from '../hocs/withPadding';
 import demo from '../../static/assets/study-plans-demo.png';
 
 function StudyPlansSection() {
   return (
-    <div className="bg-black px-10 py-24 text-white flex flex-col items-center" id="study-plans">
+    <div className="text-white flex flex-col items-center">
       <h1 className="text-yellow text-6xl md:text-7xl uppercase text-center">
         Study Plans
       </h1>
@@ -22,4 +23,4 @@ function StudyPlansSection() {
   );
 }
 
-export default StudyPlansSection;
+export default withPadding(StudyPlansSection, 'study-plans', 'bg-black');

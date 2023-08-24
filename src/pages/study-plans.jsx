@@ -30,7 +30,7 @@ const StudyPlansPage = ({
         Transform Your Learning Journey with Our Study Plans
       </p>
     </div>
-    <div className="study-plans__info">
+    <div className="study-plans__info bg-white">
       <h1 className="study-plans__info-heading">
         Achieve Your Coding Goals with Customizable Notion Templates
       </h1>
@@ -62,7 +62,7 @@ const StudyPlansPage = ({
 
       <Button text="View Demo" variant="blue" link to="https://youtu.be/v8pNl4GifUQ" />
     </div>
-    <section className="dsa-plan__container" id="dsa-notes">
+    <section className="dsa-plan__container bg-white" id="dsa-notes">
       <div className="dsa-plan__left">
         <div className="dsa-plan__heading-container">
           <h1 className="dsa-plan__heading">
@@ -119,7 +119,7 @@ const StudyPlansPage = ({
           </h1>
           <h3 className="python-plan__subheading">Master Python in just 20 days!</h3>
         </div>
-        <div className="python-plan__content-container">
+        <div className="python-plan__content-container bg-white">
           <p className="python-plan__content">
             This study plan is tailored to help you learn Python in just 20 days, and  will equip you with all the foundational knowledge and practical skills you need to succeed. By the end of this plan, you'll be proficient in Python and ready to explore advanced topics like Data Science, Machine Learning, and more.
           </p>
@@ -127,7 +127,7 @@ const StudyPlansPage = ({
         </div>
       </div>
     </section>
-    <section id="combo" className="study-plans__combo">
+    <section id="combo" className="study-plans__combo bg-white">
       <h1 className="study-plans__combo-heading">
         Special Offer
       </h1>

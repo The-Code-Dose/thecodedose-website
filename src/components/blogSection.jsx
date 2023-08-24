@@ -1,8 +1,9 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import withPadding from '../hocs/withPadding';
 import PostLink from './postLink';
 
-export default function () {
+function BlogSection() {
   const data = useStaticQuery(
     graphql`
       query {
@@ -47,11 +48,13 @@ export default function () {
   ));
 
   return (
-    <div className="px-10 py-24 bg-blue" id="blog">
+    <>
       <h1 className="uppercase text-5xl md:text-7xl text-center text-white text-outline">latest articles</h1>
-      <div className="gap-5 mt-20 grid md:grid-cols-2 lg:grid-cols-4">
+      <div className="gap-5 mt-20 grid md:grid-cols-2 lg:grid-cols-4 2xl:gap-20">
         {LatestPosts}
       </div>
-    </div>
+    </>
   );
 }
+
+export default withPadding(BlogSection, 'blog', 'bg-blue');
