@@ -6,7 +6,7 @@ function Privacy() {
       <h1>Privacy Policy</h1>
       <br />
       <h2>Introduction</h2>
-      Factorem Technologies OPC Pvt Ltd ("we", "us", "our", or "Factorem")
+      Urvashi ("we", "us", "our", or "Urvashi")
       respects the privacy of our users ("user", "you", or "your") and is
       committed to protecting it through our compliance with this Privacy
       Policy. This Privacy Policy describes how your personal information is
@@ -61,7 +61,7 @@ function Privacy() {
       <br />
       <br />
       <h2>Changes to This Privacy Policy</h2>
-      Factorem Technologies OPC Pvt Ltd has the discretion to update this
+      Urvashi has the discretion to update this
       privacy policy at any time. When we do, we will post a notification on the
       main page of our site. We encourage users to frequently check this page
       for any changes to stay informed about how we are helping to protect the
@@ -72,7 +72,7 @@ function Privacy() {
       If you have any questions or comments about this Privacy Policy, please
       contact us at:
       <br /><br />
-      Factorem Technologies OPC Pvt Ltd<br /> Email: ops@factorem.tech
+      Urvashi<br /> Email: thecodedoseofficial@gmail.com
     </div>
   );
 }
