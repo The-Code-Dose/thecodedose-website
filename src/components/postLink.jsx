@@ -24,7 +24,7 @@ function PostLink({
           </Link>
         </h2>
         <p className="text-sm font-normal">{excerpt}</p>
-        <Link className="text-sm flex justify-between items-center uppercase hover:no-underline transition-all hover:scale-105 border-black border drop-shadow-solid rounded-full px-4 py-1 mt-2 bg-pink" to="/blog/how-to-learn-coding">
+        <Link className="text-sm flex justify-between items-center uppercase hover:no-underline transition-all hover:scale-105 border-black border drop-shadow-solid rounded-full px-4 py-1 mt-2 bg-pink" to={path}>
           Read More
           <ArrowLongRightIcon className="w-10 h-10" />
         </Link>
