@@ -34,41 +34,42 @@ export default function () {
   const linkElements = (
     <>
       {links.map(({ label, path }) => (
-        <Menu.Item>
-          {({ active }) => (
-            <Link
-              className={`menu-item font-semibold rounded-full transition-all text-xs px-5 py-2 border uppercase hover:no-underline ${
-                (currentPath.includes(path) && path !== "/") ||
-                (currentPath === "/" && path === "/")
-                  ? "bg-pink drop-shadow-solid border border-black hover:drop-shadow-solid-extend text-black"
-                  : "text-white border-purple hover:border-white"
-              } ${active ? "active" : ""} p-0 m-0`}
-              to={path}
-            >
-              {label}
-            </Link>
-          )}
-        </Menu.Item>
+        <Link
+          key={path}
+          className={`menu-item font-semibold rounded-full transition-all text-xs px-5 py-2 border uppercase hover:no-underline ${
+            (currentPath.includes(path) && path !== "/") ||
+            (currentPath === "/" && path === "/")
+              ? "bg-pink drop-shadow-solid border border-black hover:drop-shadow-solid-extend text-black"
+              : "text-white border-purple hover:border-white"
+          }`}
+          to={path}
+        >
+          {label}
+        </Link>
       ))}
     </>
   );
 
   return (
-    <div className="menu-container flex justify-between items-center w-full">
-      <Menu as="nav">
+    <div className="smaller">
+      <Menu as="nav" className="md:hidden">
         <Transition show={openMenu}>
           <nav
             className={`fixed top-20 flex flex-col left-0 bg-purple w-full rounded-xl px-6 py-5 border ${
               openMenu ? "mt-3" : ""
             }`}
-            style={{ maxWidth: "100%" }}
           >
             {linkElements}
           </nav>
         </Transition>
       </Menu>
+
+      <nav className="larger leading-normal hidden md:flex gap-4 lg:gap-6 justify-around items-center">
+        {linkElements}
+      </nav>
+
       <button
-        className="text-white uppercase font-bold outline-none"
+        className="text-white uppercase font-bold outline-none md:hidden"
         onClick={() => setOpenMenu(!openMenu)}
         type="button"
       >
