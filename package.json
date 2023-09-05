@@ -5,7 +5,7 @@
   "version": "1.6.0",
   "license": "MIT",
   "dependencies": {
-    "@headlessui/react": "^1.7.15",
+    "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
     "framer-motion": "^10.12.16",
     "gatsby": "^5.10.0",
