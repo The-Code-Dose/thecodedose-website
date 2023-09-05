@@ -4,7 +4,7 @@ import withPadding from '../hocs/withPadding';
 
 function HeroSection() {
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center mt-12">
       <div
         className="flex flex-col items-center"
       >

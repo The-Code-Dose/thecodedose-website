@@ -49,9 +49,9 @@ export default function BlogTemplate({
         <meta name="twitter:description" content={blogMetaDescription} />
         <meta name="twitter:image" content={thumbnail} />
       </Helmet>
-      <div className="bg-yellow px-5 py-8 md:px-10 md:py-24 2xl:px- 5">
-        <div className="flex flex-col items-center pt-3 break-words">
-          <h1 className="text-5xl text-center">{blogTitle}</h1>
+      <div className="px-5 py-8 md:px-10 md:py-24 2xl:px-5 mt-24">
+        <div className="flex flex-col items-center pt-3 break-words bg-yellow p-10 border border-black rounded-2xl drop-shadow-solid">
+          <h1 className="text-3xl md:text-5xl text-center">{blogTitle}</h1>
           <div>
             <span className="blog-post__date">{date} • </span>
             <span className="blog-post__author">{author} • </span>
@@ -65,9 +65,8 @@ export default function BlogTemplate({
             ))}
           </div>
         </div>
-        <article className="px-8 lg:px-10 py-16 flex flex-col items-center my-10 bg-white border border-black rounded-2xl drop-shadow-solid">
+        <article className="px-8 lg:px-10 py-12 flex flex-col items-center my-10 rounded-2xl">
           <div className="w-full md:w-3/4 break-words">
-            <img className="border border-black rounded-2xl drop-shadow-solid my-5" src={thumbnail} alt="thumbnail" />
             <div
               className="break-words"
               dangerouslySetInnerHTML={{ __html: html }}

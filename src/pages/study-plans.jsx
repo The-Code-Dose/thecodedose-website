@@ -20,9 +20,9 @@ const StudyPlansPage = ({
       <meta name="description" content={site.siteMetadata.description} />
     </Helmet>
     <div
-      className="study-plans__header"
+      className="study-plans__header pb-16"
     >
-      <h1 className="study-plans__heading">
+      <h1 className="study-plans__heading mt-16">
         <span className="study-plans__heading--focus">Coding</span> Study Plans
       </h1>
       <p className="study-plans__content">
@@ -37,8 +37,9 @@ const StudyPlansPage = ({
       <p>
         These study plans are hosted on Notion and are designed to help you achieve your goals, no matter how busy your schedule. With customizable timelines and a variety of resources, you can stay motivated and on track throughout your journey.
       </p>
-
-      <img className="study-plans__demo" src={demo} />
+      <div className='flex justify-center'>
+        <img className="study-plans__demo" src={demo} />
+      </div>
 
       <div className="study-plans__info-features">
         <div>
@@ -58,8 +59,9 @@ const StudyPlansPage = ({
           <p>The templates also include a Pomodoro timer, so you can manage your time effectively and stay productive. This time management technique has been proven to increase focus and productivity, making it the perfect addition to the templates.</p>
         </div>
       </div>
-
-      <Button text="View Demo" variant="blue" link to="https://youtu.be/v8pNl4GifUQ" />
+      <div className='flex justify-center'>
+        <Button text="View Demo" variant="blue" link to="https://youtu.be/v8pNl4GifUQ" />
+      </div>
     </div>
     <section className="dsa-plan__container bg-white" id="dsa-notes">
       <div className="dsa-plan__left">
@@ -134,9 +136,13 @@ const StudyPlansPage = ({
         Get flat 10% OFF on this combo
       </h2>
       <p>Data Structures & Algorithms + JavaScript + Git/GitHub Self Study Plans</p>
-      <img className="study-plans__combo-img" src={combo} />
+      <div className='flex justify-center'>
+        <img className="study-plans__combo-img" src={combo} />
+      </div>
       <h2 className="study-plans__combo-subheading-2">Get ADDITIONAL 30% OFF using the coupon 'WEBSITE30'</h2>
-      <Button className="study-plans__combo-btn" text="I want this!" variant="yellow" link to="https://tagmango.com/mangocheckout/644775cbeaa7cabe22e983c2" />
+      <div className='flex justify-center'>
+        <Button className="study-plans__combo-btn" text="I want this!" variant="yellow" link to="https://tagmango.com/mangocheckout/644775cbeaa7cabe22e983c2" />
+      </div>
     </section>
   </Layout>
 );
