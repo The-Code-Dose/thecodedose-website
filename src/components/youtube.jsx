@@ -29,4 +29,4 @@ function YouTubeSection() {
   );
 }
 
-export default withPadding(YouTubeSection, 'youtube', 'bg-yellow');
+export default withPadding(YouTubeSection, 'youtube', 'my-12');

@@ -1,17 +1,19 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import { graphql, Link } from 'gatsby';
-import Layout from '../components/layout';
-import PostLink from '../components/postLink';
-import './blogTemplate.scss';
+import React from "react";
+import Helmet from "react-helmet";
+import { graphql, Link } from "gatsby";
+import Layout from "../components/layout";
+import PostLink from "../components/postLink";
+import "./blogTemplate.scss";
 
-export default function BlogTemplate({
-  data,
-}) {
+export default function BlogTemplate({ data }) {
   const {
-    site, markdownRemark, blogPosts: { edges },
+    site,
+    markdownRemark,
+    blogPosts: { edges },
   } = data;
-  const { siteMetadata: { title: siteTitle } } = site;
+  const {
+    siteMetadata: { title: siteTitle },
+  } = site;
   const {
     frontmatter: {
       title: blogTitle,
@@ -34,9 +36,7 @@ export default function BlogTemplate({
   return (
     <Layout>
       <Helmet>
-        <title>
-          {`${blogTitle} | ${siteTitle}`}
-        </title>
+        <title>{`${blogTitle} | ${siteTitle}`}</title>
         <meta name="description" content={blogMetaDescription} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`https://thecodedose.com${path}`} />
@@ -58,7 +58,7 @@ export default function BlogTemplate({
             <span className="blog-post__read">{timeToRead} min read</span>
           </div>
           <div className="blog-post__tags-container">
-            {tags.map(tag => (
+            {tags.map((tag) => (
               <Link className="blog-post__tag" to={`/tags/${tag}`}>
                 {tag}
               </Link>
@@ -74,8 +74,12 @@ export default function BlogTemplate({
           </div>
         </article>
         <section className="bg-pink text-white p-10 border border-black rounded-2xl drop-shadow-solid mb-10">
-          <h2 className="text-5xl md:text-6xl text-center text-outline">Recent Articles</h2>
-          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4 mt-10">{Posts}</div>
+          <h2 className="text-5xl md:text-6xl text-center text-outline">
+            Recent Articles
+          </h2>
+          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4 mt-10">
+            {Posts}
+          </div>
         </section>
       </div>
     </Layout>
@@ -83,7 +87,7 @@ export default function BlogTemplate({
 }
 
 export const pageQuery = graphql`
-  query($pagePath: String!) {
+  query ($pagePath: String!) {
     site {
       siteMetadata {
         title
@@ -107,7 +111,7 @@ export const pageQuery = graphql`
       limit: 3
       sort: { frontmatter: { date: DESC } }
       filter: { frontmatter: { draft: { eq: false } } }
-      ) {
+    ) {
       edges {
         node {
           id

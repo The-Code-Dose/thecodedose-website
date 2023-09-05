@@ -9,14 +9,14 @@ import CodingBabySticker from '../images/coding-baby-tshirt.png';
 
 function RedbubbleSection() {
   return (
-    <div className="flex flex-col md:flex-row">
-      <div className="grid grid-cols-2 gap-1 w-full md:w-1/4 2xl:w-1/2">
+    <div className="flex flex-col gap-10 md:flex-row">
+      <div className="grid grid-cols-2 gap-10 w-full md:w-1/4 xl:w-1/2">
         <img className="transition-all hover:skew-x-3" src={NoicestProgrammerTee} />
         <img className="transition-all hover:skew-x-3" src={WitchCoffeeCoaster} />
         <img className="transition-all hover:skew-x-3" src={CodingTeaSticker} />
         <img className="transition-all hover:skew-x-3" src={CodingBabySticker} />
       </div>
-      <div className="w-full flex gap-5 flex-col md:w-3/4 2xl:w-1/2 justify-between bg-white border border-black rounded-2xl p-10 drop-shadow-solid">
+      <div className="w-full flex gap-5 flex-col md:w-3/4 xl:w-1/2 justify-between bg-white border border-black rounded-2xl p-10 drop-shadow-solid">
         <h2 className="text-3xl md:text-6xl 2xl:text-8xl">
           Check out our RedBubble store
         </h2>

@@ -16,7 +16,7 @@ function BlogSection() {
           limit: 4
           sort: { frontmatter: { date: DESC } }
           filter: {
-            frontmatter: { draft: { eq: false }, featured: { eq: true } }
+            frontmatter: { draft: { eq: false }, template: { eq: "BlogPost" } }
           }
         ) {
           edges {
@@ -41,7 +41,7 @@ function BlogSection() {
     latestBlogPosts: { edges },
   } = data;
 
-  const posts = edges.filter((edge) => !!edge.node.frontmatter.date);
+  const posts = edges;
 
   const LatestPosts = posts.map((edge) => (
     <PostLink key={edge.node.id} post={edge.node} />
