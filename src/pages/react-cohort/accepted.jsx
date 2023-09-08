@@ -1,14 +1,14 @@
-import React, { Fragment, useState } from 'react';
-import Helmet from 'react-helmet';
-import { Dialog, Transition } from '@headlessui/react';
-import { graphql } from 'gatsby';
-import { motion } from 'framer-motion';
+import React, { Fragment, useState } from "react";
+import Helmet from "react-helmet";
+import { Dialog, Transition } from "@headlessui/react";
+import { graphql } from "gatsby";
+import { motion } from "framer-motion";
 import {
   ArrowLongDownIcon,
   ArrowLongRightIcon,
-} from '@heroicons/react/24/outline';
-import UpiSs from '../../images/cohort-july-scanner-1.jpg';
-import './index.scss';
+} from "@heroicons/react/24/outline";
+import UpiSs from "../../images/cohort-july-scanner-1.jpg";
+import "./index.scss";
 
 export function PaymentsModal() {
   const [isOpen, setIsOpen] = useState(false);
@@ -105,7 +105,7 @@ export function PaymentsModal() {
                     <button
                       type="button"
                       className={`block mx-auto mt-12 text-md font-bold px-4 py-2 text-slate-900 ${
-                        upiSelected ? 'bg-slate-300' : 'bg-cyan-300'
+                        upiSelected ? "bg-slate-300" : "bg-cyan-300"
                       }`}
                       onClick={() => setUpiSelected(true)}
                     >
@@ -131,13 +131,13 @@ function ReactCohortAcceptedPage({ data: { site } }) {
       </Helmet>
       <div className="react-cohort__hero h-screen text-center w-full">
         <nav className="z-10 hidden font-light md:flex border-b border-slate-500 sticky top-0 w-full py-4 flex justify-center bg-slate-900 shadow-lg">
-          <a className="text-yellow-200 mx-3" href="/react-cohort">
+          <a className="text-yellow mx-3" href="/react-cohort">
             Home
           </a>
-          <a className="text-yellow-200 mx-3" href="#pricing">
+          <a className="text-yellow mx-3" href="#pricing">
             Pricing Structure
           </a>
-          <a className="text-yellow-200 mx-3" href="#steps">
+          <a className="text-yellow mx-3" href="#steps">
             Next Steps
           </a>
         </nav>
@@ -153,7 +153,7 @@ function ReactCohortAcceptedPage({ data: { site } }) {
             </span>
             Your application has been accepted
           </motion.h1>
-          <span className="mt-10 block text-yellow-300 text-sm">
+          <span className="mt-10 block text-yellow text-sm">
             I am looking forward to having you as a part of the React Developer
             Program.
           </span>
@@ -163,7 +163,7 @@ function ReactCohortAcceptedPage({ data: { site } }) {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="text-yellow-200 absolute flex w-full justify-center bottom-10 text-sm"
+          className="text-yellow absolute flex w-full justify-center bottom-10 text-sm"
         >
           <ArrowLongDownIcon class="animate-bounce h-12 w-12 text-cyan-400" />
         </motion.div>
@@ -178,17 +178,17 @@ function ReactCohortAcceptedPage({ data: { site } }) {
           </p>
           <ol className="mt-10">
             <li className="mb-5">
-              1. You can reserve your spot by{' '}
-              <span className="font-bold text-yellow-300">July 10th</span>.
+              1. You can reserve your spot by{" "}
+              <span className="font-bold text-yellow">July 10th</span>.
             </li>
             <li className="mb-5">
-              2. You have to pay the rest of the fee amount by{' '}
-              <span className="font-bold text-yellow-300">August 10th</span>.
+              2. You have to pay the rest of the fee amount by{" "}
+              <span className="font-bold text-yellow">August 10th</span>.
             </li>
             <li>
               3. If you're facing any issues or need an extension, you can write
-              to me via email -{' '}
-              <span className="font-bold text-yellow-300">
+              to me via email -{" "}
+              <span className="font-bold text-yellow">
                 thecodedoseofficial@gmail.com
               </span>
             </li>
@@ -200,15 +200,6 @@ function ReactCohortAcceptedPage({ data: { site } }) {
           className="w-full lg:w-1/2 lg:mx-10 md:mx-auto w-auto self-center mt-10 lg:mt-0 bg-slate-800 p-10 border border-slate-500"
         >
           <h3 className="text-cyan-300 uppercase mb-5">Pricing Details</h3>
-          <h5 className="text-yellow-400 mb-5">100% Money Back Guarantee</h5>
-          <span className="text-xs text-slate-300">
-            If you are not able to make a return on your investment after 6
-            months of finishing this program, i.e., you're not able to earn
-            money, you will qualify for a 100% money back guarantee and get a
-            full refund. Note that this guarantee is only valid if you
-            diligently follow the coursework, finish homework, build projects as
-            guided and are actively looking for work.
-          </span>
           <div className="lg:flex mt-5">
             <h1 className="line-through text-4xl text-slate-300 mr-5">
               ₹30,000

@@ -15,7 +15,7 @@ function TermsAndConditions() {
       <p>You may be able to create a user account in the future. You will be required to provide a valid email address, your name, and phone number to create an account. By creating an account, you agree to provide accurate and complete information.</p>
 
       <h2 className="text-2xl font-bold">3. Refund Policy</h2>
-      <p>We offer a 100% money-back guarantee. If you diligently follow the coursework, finish homework, build projects as guided, are actively looking for work, and are unable to make a return on your investment within six months of finishing this program, you qualify for a full refund. Please note that this guarantee is only valid under the conditions stated above.</p>
+      <p>We do not offer any refunds.</p>
 
       <h2 className="text-2xl font-bold">4. Privacy</h2>
       <p>We respect your privacy and do not sell your information to anyone. To learn more, please refer to our Privacy Policy.</p>

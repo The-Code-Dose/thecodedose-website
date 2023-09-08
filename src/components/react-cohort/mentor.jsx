@@ -32,10 +32,7 @@ export default () => {
     >
       <h1 className="text-cyan-300 mb-10 text-5xl">But first, who am I?</h1>
       <div className="react-cohort__mentor">
-        <img
-          className="w-full"
-          src={mentor}
-        ></img>
+        <img className="w-full" src={mentor}></img>
         <div className="m-auto md:px-10">
           <p className="mb-0">
             Hi, I am Urvashi and I’ve been writing React code since{" "}
@@ -66,8 +63,8 @@ export default () => {
             </div>
             <span className="self-center">
               Soon I came to know about this program called{" "}
-              <span className="text-yellow-300 font-semibold">Outreachy</span>{" "}
-              and I made it my goal to get accepted!
+              <span className="text-yellow font-semibold">Outreachy</span> and I
+              made it my goal to get accepted!
             </span>
           </div>
           <div className="flex mt-5 gap-5">
@@ -77,11 +74,11 @@ export default () => {
             <span className="self-center">
               I was soon accepted as an intern in the summer of 2018 where I got
               to work with the{" "}
-              <span className="text-yellow-300 font-semibold">
+              <span className="text-yellow font-semibold">
                 Wikimedia Foundation
               </span>{" "}
               and earned a stipend of{" "}
-              <span className="text-yellow-300 font-semibold">
+              <span className="text-yellow font-semibold">
                 $5500 including a trip to Singapore!
               </span>
             </span>
@@ -93,11 +90,11 @@ export default () => {
             <span className="self-center">
               After that I continued to do multiple internships and also
               participated in the{" "}
-              <span className="text-yellow-300 font-semibold">
+              <span className="text-yellow font-semibold">
                 Google Summer of Code
               </span>{" "}
               the next summer and earned another{" "}
-              <span className="text-yellow-300 font-semibold">$2400</span>.
+              <span className="text-yellow font-semibold">$2400</span>.
             </span>
           </div>
           <div className="flex mt-5 gap-5">
@@ -106,8 +103,8 @@ export default () => {
             </div>
             <span className="self-center">
               In my final semester, I joined{" "}
-              <span className="text-yellow-300 font-semibold">HackerRank</span>{" "}
-              as a Software Engineer intern and moved to Banglore.
+              <span className="text-yellow font-semibold">HackerRank</span> as a
+              Software Engineer intern and moved to Banglore.
             </span>
           </div>
         </div>

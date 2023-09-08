@@ -16,7 +16,7 @@ export default () => {
       <div className="text-xl mb-5 mt-5">
         {STEPS.map((step, i) => (
           <div className="my-10">
-            <h3 className="inline-block text-yellow-300 text-3xl text-extrabold">
+            <h3 className="inline-block text-yellow text-3xl text-extrabold">
               {i + 1}.
             </h3>{" "}
             <span className="text-xl">{step}</span>

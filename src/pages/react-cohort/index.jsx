@@ -1,28 +1,29 @@
-import React from 'react';
-import Helmet from 'react-helmet';
-import { graphql } from 'gatsby';
-import { motion } from 'framer-motion';
+import React from "react";
+import Helmet from "react-helmet";
+import { graphql } from "gatsby";
+import { motion } from "framer-motion";
 import {
   ArrowLongDownIcon,
   ArrowLongRightIcon,
-} from '@heroicons/react/24/outline';
-import urvashi1 from '../../images/urvashi_1.jpg';
-import chatIcon from '../../images/chat_icon.png';
-import mentoringIcon from '../../images/mentoring_icon.png';
-import placementIcon from '../../images/placement_icon.png';
-import projectIcon from '../../images/project_icon.png';
-import communityIcon from '../../images/community_icon.png';
-import accessIcon from '../../images/access_icon.png';
-import doubtsIcon from '../../images/doubts_icon.png';
-import sessionsIcon from '../../images/sessions_icon.png';
+} from "@heroicons/react/24/outline";
+import urvashi1 from "../../images/urvashi_1.jpg";
+import chatIcon from "../../images/chat_icon.png";
+import mentoringIcon from "../../images/mentoring_icon.png";
+import placementIcon from "../../images/placement_icon.png";
+import projectIcon from "../../images/project_icon.png";
+import communityIcon from "../../images/community_icon.png";
+import accessIcon from "../../images/access_icon.png";
+import doubtsIcon from "../../images/doubts_icon.png";
+import sessionsIcon from "../../images/sessions_icon.png";
 
-import './index.scss';
-import Curriculum from '../../components/react-cohort/curriculum';
-import Mentor from '../../components/react-cohort/mentor';
-import Eligibility from '../../components/react-cohort/eligibility';
-import Process from '../../components/react-cohort/process';
-import PaymentStructure from '../../components/react-cohort/paymentStructure';
-import Guarantee from '../../components/react-cohort/guarantee';
+import "./index.scss";
+import Curriculum from "../../components/react-cohort/curriculum";
+import Mentor from "../../components/react-cohort/mentor";
+import Eligibility from "../../components/react-cohort/eligibility";
+import Process from "../../components/react-cohort/process";
+import PaymentStructure from "../../components/react-cohort/paymentStructure";
+
+import "./index.scss";
 
 function ReactCohortPage({ data: { site } }) {
   return (
@@ -33,19 +34,19 @@ function ReactCohortPage({ data: { site } }) {
       </Helmet>
       <div>
         <nav className="z-10 hidden font-light md:flex border-b border-slate-500 sticky top-0 w-full py-4 flex justify-center bg-slate-900 shadow-lg">
-          <a className="text-yellow-200 mx-3" href="#eligibility">
+          <a className="text-yellow mx-3" href="#eligibility">
             Eligibility
           </a>
-          <a className="text-yellow-200 mx-3" href="#mentor">
+          <a className="text-yellow mx-3" href="#mentor">
             About Me
           </a>
-          <a className="text-yellow-200 mx-3" href="#program-details">
+          <a className="text-yellow mx-3" href="#program-details">
             Program Details
           </a>
-          <a className="text-yellow-200 mx-3" href="#process">
+          <a className="text-yellow mx-3" href="#process">
             Process
           </a>
-          <a className="text-yellow-200 mx-3" href="#curriculum">
+          <a className="text-yellow mx-3" href="#curriculum">
             Curriculum
           </a>
         </nav>
@@ -81,14 +82,18 @@ function ReactCohortPage({ data: { site } }) {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="px-10 lg:px-0 text-yellow-200 flex justify-between mt-10 text-sm md:w-3/4 m-auto"
+              className="px-10 lg:px-0 text-yellow flex justify-between mt-10 text-sm md:w-3/4 m-auto"
             >
               <div>
-                <h4 className="uppercase text-cyan-300 font-bold">Applications Close on</h4>
+                <h4 className="uppercase text-cyan-300 font-bold">
+                  Applications Close on
+                </h4>
                 <span>30 June</span>
               </div>
               <div>
-                <h4 className="uppercase text-cyan-300 font-bold">Program Start Date</h4>
+                <h4 className="uppercase text-cyan-300 font-bold">
+                  Program Start Date
+                </h4>
                 <span>24 July</span>
               </div>
             </motion.div>
@@ -100,13 +105,6 @@ function ReactCohortPage({ data: { site } }) {
         </div>
         <div id="start" className="lg:flex mx-10 md:mx-16 pt-20 gap-10">
           <div className="lg:w-1/2 ">
-            <h1 className="text-slate-100 text-4xl w-full lg:w-3/4">
-              I will help you start making money as a React developer with a{' '}
-              <span className="text-fuchsia-400">
-                100% money-back guarantee*
-              </span>
-              !
-            </h1>
             <div className="mt-10">
               <div className="flex gap-3">
                 <div>
@@ -339,32 +337,11 @@ function ReactCohortPage({ data: { site } }) {
                 the modern learner.
               </p>
             </motion.div>
-            <motion.div
-              initial={{ scale: 0 }}
-              whileInView={{ scale: 1 }}
-              transition={{ delay: 0.3 }}
-              className="bg-slate-800 p-10 border border-slate-500"
-            >
-              <h3>
-                <a
-                  href="#guarantee"
-                  className="text-cyan-300 hover:text-fuchsia-300 cursor-pointer uppercase mb-5"
-                >
-                  100% Money Back Guarantee*
-                </a>
-              </h3>
-              <p>
-                If you are not able to make a return on your investment within 6
-                months of finishing this program, you will qualify for a 100%
-                money back guarantee and get a full refund.
-              </p>
-            </motion.div>
           </div>
         </div>
         <Process />
         <Curriculum />
         <PaymentStructure />
-        <Guarantee />
         {/* <div className="mx-10 md:mx-16 mt-36" id="testimonials">
           <h1 className="text-fuchsia-400 text-5xl">
             What my mentees are saying:
@@ -372,19 +349,13 @@ function ReactCohortPage({ data: { site } }) {
         </div> */}
         <div className="flex items-center justify-center gap-12 w-full text-xs mt-24">
           <a href="privacy">
-            <span className="text-white">
-              Privacy Policy
-            </span>
+            <span className="text-white">Privacy Policy</span>
           </a>
           <a href="tnc">
-            <span className="text-white">
-              Terms & Conditions
-            </span>
+            <span className="text-white">Terms & Conditions</span>
           </a>
           <a href="refund">
-            <span className="text-white">
-              Refund Policy
-            </span>
+            <span className="text-white">Refund Policy</span>
           </a>
         </div>
       </div>

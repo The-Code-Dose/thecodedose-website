@@ -1,13 +1,11 @@
-import React, { Fragment, useState } from 'react';
-import Helmet from 'react-helmet';
-import { Dialog, Transition } from '@headlessui/react';
-import { graphql } from 'gatsby';
-import { motion } from 'framer-motion';
-import {
-  ArrowLongRightIcon,
-} from '@heroicons/react/24/outline';
-import UpiSs from '../../images/upi_8800.jpeg';
-import './index.scss';
+import React, { Fragment, useState } from "react";
+import Helmet from "react-helmet";
+import { Dialog, Transition } from "@headlessui/react";
+import { graphql } from "gatsby";
+import { motion } from "framer-motion";
+import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
+import UpiSs from "../../images/upi_8800.jpeg";
+import "./index.scss";
 
 export function PaymentsModal() {
   const [isOpen, setIsOpen] = useState(false);
@@ -103,7 +101,7 @@ export function PaymentsModal() {
                     <button
                       type="button"
                       className={`block mx-auto mt-12 text-md font-bold px-4 py-2 text-slate-900 ${
-                        upiSelected ? 'bg-slate-300' : 'bg-cyan-300'
+                        upiSelected ? "bg-slate-300" : "bg-cyan-300"
                       }`}
                       onClick={() => setUpiSelected(true)}
                     >
@@ -129,13 +127,13 @@ function ReactCohortAcceptedPage({ data: { site } }) {
       </Helmet>
       <div className="react-cohort__hero h-screen text-center w-full">
         <nav className="z-10 hidden font-light md:flex border-b border-slate-500 sticky top-0 w-full py-4 flex justify-center bg-slate-900 shadow-lg">
-          <a className="text-yellow-200 mx-3" href="/react-cohort">
+          <a className="text-yellow mx-3" href="/react-cohort">
             Home
           </a>
-          <a className="text-yellow-200 mx-3" href="#pricing">
+          <a className="text-yellow mx-3" href="#pricing">
             Pricing Structure
           </a>
-          <a className="text-yellow-200 mx-3" href="#steps">
+          <a className="text-yellow mx-3" href="#steps">
             Next Steps
           </a>
         </nav>
@@ -157,7 +155,7 @@ function ReactCohortAcceptedPage({ data: { site } }) {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="px-10 lg:px-0 text-yellow-200 mt-10 text-sm md:w-3/4 m-auto"
+          className="px-10 lg:px-0 text-yellow mt-10 text-sm md:w-3/4 m-auto"
         >
           <div>
             <h4 className="uppercase text-cyan-300 font-bold">Deadline</h4>
@@ -175,13 +173,13 @@ function ReactCohortAcceptedPage({ data: { site } }) {
           </p>
           <ol className="mt-10">
             <li className="mb-5">
-              1. You have to pay the rest of the fee amount by{' '}
-              <span className="font-bold text-yellow-300">August 10th</span>.
+              1. You have to pay the rest of the fee amount by{" "}
+              <span className="font-bold text-yellow">August 10th</span>.
             </li>
             <li>
               2. If you're facing any issues or need an extension, you can write
-              to me via email -{' '}
-              <span className="font-bold text-yellow-300">
+              to me via email -{" "}
+              <span className="font-bold text-yellow">
                 thecodedoseofficial@gmail.com
               </span>
             </li>
@@ -193,19 +191,8 @@ function ReactCohortAcceptedPage({ data: { site } }) {
           className="w-full lg:w-1/2 lg:mx-10 md:mx-auto w-auto self-center mt-10 lg:mt-0 bg-slate-800 p-10 border border-slate-500"
         >
           <h3 className="text-cyan-300 uppercase mb-5">Pricing Details</h3>
-          <h5 className="text-yellow-400 mb-5">100% Money Back Guarantee</h5>
-          <span className="text-xs text-slate-300">
-            If you are not able to make a return on your investment after 6
-            months of finishing this program, i.e., you're not able to earn
-            money, you will qualify for a 100% money back guarantee and get a
-            full refund. Note that this guarantee is only valid if you
-            diligently follow the coursework, finish homework, build projects as
-            guided and are actively looking for work.
-          </span>
           <div className="lg:flex mt-5">
-            <h1 className="text-2xl text-slate-300 mr-5">
-              ₹11800 - ₹3000
-            </h1>
+            <h1 className="text-2xl text-slate-300 mr-5">₹11800 - ₹3000</h1>
             <div>
               <div className="align-middle gap-3">
                 <h1 className="text-fuchsia-400 text-3xl font-bold">= ₹8800</h1>
@@ -228,8 +215,8 @@ function ReactCohortAcceptedPage({ data: { site } }) {
               <ArrowLongRightIcon className="w-8 h-8 text-green-300" />
             </div>
             <span>
-              Once you've completed the payment, you will receive the confirmation
-              within 24 hours.
+              Once you've completed the payment, you will receive the
+              confirmation within 24 hours.
             </span>
           </div>
           <div className="flex gap-3 mt-5">
@@ -251,19 +238,13 @@ function ReactCohortAcceptedPage({ data: { site } }) {
         </div>
         <div className="flex items-center justify-center gap-12 w-full text-xs mt-24">
           <a href="/react-cohort/privacy">
-            <span className="text-white">
-              Privacy Policy
-            </span>
+            <span className="text-white">Privacy Policy</span>
           </a>
           <a href="/react-cohort/tnc">
-            <span className="text-white">
-              Terms & Conditions
-            </span>
+            <span className="text-white">Terms & Conditions</span>
           </a>
           <a href="/react-cohort/refund">
-            <span className="text-white">
-              Refund Policy
-            </span>
+            <span className="text-white">Refund Policy</span>
           </a>
         </div>
       </div>

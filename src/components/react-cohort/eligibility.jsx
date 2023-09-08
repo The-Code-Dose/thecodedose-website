@@ -1,10 +1,10 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { XMarkIcon, CheckIcon } from '@heroicons/react/24/outline';
+import React from "react";
+import { motion } from "framer-motion";
+import { XMarkIcon, CheckIcon } from "@heroicons/react/24/outline";
 
 const ELIGIBLE = [
-  'You have basic understanding of HTML, CSS & JavaScript.',
-  'You want to become a React developer.',
+  "You have basic understanding of HTML, CSS & JavaScript.",
+  "You want to become a React developer.",
   `You are ambitious and want to start making money with your
   skills.`,
   `You have the grit and determination to put your all in for the
@@ -12,10 +12,10 @@ const ELIGIBLE = [
 ];
 
 const NOT_ELIGIBLE = [
-  'You already have a full-time job and are looking for a switch.',
-  'You are a complete beginner to programming.',
-  'You are not interested in frontend development.',
-  'You cannot spend 15-20 hours every week for the next 4 months.',
+  "You already have a full-time job and are looking for a switch.",
+  "You are a complete beginner to programming.",
+  "You are not interested in frontend development.",
+  "You cannot spend 15-20 hours every week for the next 4 months.",
 ];
 
 export default function () {
@@ -26,22 +26,22 @@ export default function () {
       </h1>
       <p className="w-full lg:w-3/4">
         In order to maximize the impact of our first cohort, I will be working
-        closely on a{' '}
+        closely on a{" "}
         <span className="text-fuchsia-300 font-semibold">1:1 basis</span>. As a
         result, I will only be able to select a limited number of individuals
         who possess the right mindset and drive to make the most of this
-        opportunity. <br></br>If you are ready to take your skills to the next level and
-        are{' '}
+        opportunity. <br></br>If you are ready to take your skills to the next
+        level and are{" "}
         <span className="text-fuchsia-300 font-semibold">
           committed to achieving outstanding
-        </span>{' '}
+        </span>{" "}
         results, apply now to secure your spot in this exclusive program.
       </p>
       <div className="inline-grid grid-cols-1 lg:grid-cols-2 gap-4 mt-8">
         <div className="lg:pr-10 py-14 lg:border-r border-slate-700">
           <h4 className="text-cyan-300 mb-10 text-3xl">
-            Apply <span className="animate-pulse text-yellow-200">*ONLY*</span>{' '}
-            if this sounds like you:
+            Apply <span className="animate-pulse text-yellow">*ONLY*</span> if
+            this sounds like you:
           </h4>
           <p>
             <ul>
@@ -71,8 +71,8 @@ export default function () {
         </div>
         <div className="lg:pl-10 py-14">
           <h4 className="text-cyan-300 mb-10 text-3xl">
-            This is <span className="animate-pulse text-yellow-200">*NOT*</span>{' '}
-            for you if:
+            This is <span className="animate-pulse text-yellow">*NOT*</span> for
+            you if:
           </h4>
           <p>
             <ul>

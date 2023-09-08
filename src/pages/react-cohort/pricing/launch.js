@@ -19,15 +19,6 @@ function ReactCohortPricingLaunchPage({ data: { site } }) {
         <h3 className="text-cyan-300 uppercase mb-5">
           Pricing Details
         </h3>
-        <h5 className="text-yellow-400 mb-5">100% Money Back Guarantee</h5>
-        <span className="text-xs text-slate-300">
-          If you are not able to make a return on your investment after 6 months
-          of finishing this program, i.e., you're not able to earn money, you will
-          qualify for a 100% money back guarantee and get a full refund. Note that
-          this guarantee is only valid if you diligently follow the coursework,
-          finish homework, build projects as guided and are actively looking for
-          work.
-        </span>
         <div className="lg:flex mt-5">
           <h1 className="line-through text-4xl text-slate-300 mr-5">₹30,000</h1>
           <div>
