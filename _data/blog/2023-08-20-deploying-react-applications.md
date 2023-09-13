@@ -2,20 +2,20 @@
 template: BlogPost
 path: /blog/deploying-react-projects-online
 date: 2023-08-16T12:30:00.000Z
-title: Deploying React Projects online
+title: 4 Ways to Deploy Your Personal React Projects for Free
 metaDescription:
-thumbnail: /assets/
+thumbnail: /assets/deploy-react-projects.jpeg
 author: Rehan Choudhury
 draft: false
-tags: []
+tags: [react]
 ---
 
 In this article, you'll learn how to deploy your React applications using four different services, all for free!
 
-- Code Sandbox
-- Github Pages
-- Vercel
-- Netlify
+* Code Sandbox
+* Github Pages
+* Vercel
+* Netlify
 
 
 # Code Sandbox
