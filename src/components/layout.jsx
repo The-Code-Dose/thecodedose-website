@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import addToMailchimp from "gatsby-plugin-mailchimp";
+import React from "react";
 import withPadding from "../hocs/withPadding";
 import { Link } from "gatsby";
 import SocialLinks from "./socialLinks";
@@ -9,7 +8,7 @@ import logo from "../images/logo.png";
 
 const WrappedHeader = withPadding(
   () => (
-    <header className="w-full flex justify-between items-center bg-purple px-10 py-3 rounded-full border drop-shadow-solid">
+    <header className="w-full flex justify-between items-center bg-purple px-10 py-3 rounded-full border border-black drop-shadow-solid">
       <Link to="/">
         <img className="w-8 m-0" src={logo} alt="Logo" />
       </Link>

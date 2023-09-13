@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Fragment } from "react";
 import { Link } from "gatsby";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import { Menu, Transition } from "@headlessui/react";
@@ -27,7 +27,6 @@ const links = [
 ];
 
 export default function () {
-  const [openMenu, setOpenMenu] = useState(false);
   const currentPath =
     typeof window !== "undefined" ? window.location.pathname : "";
 
@@ -51,30 +50,31 @@ export default function () {
   );
 
   return (
-    <div className="smaller">
-      <Menu as="nav" className="md:hidden">
-        <Transition show={openMenu}>
-          <nav
-            className={`fixed top-20 flex flex-col left-0 bg-purple w-full rounded-xl px-6 py-5 border ${
-              openMenu ? "mt-3" : ""
-            }`}
-          >
-            {linkElements}
-          </nav>
-        </Transition>
-      </Menu>
-
-      <nav className="larger leading-normal hidden md:flex gap-4 lg:gap-6 justify-around items-center">
+    <div>
+      <nav className="leading-normal hidden md:flex gap-4 lg:gap-6 justify-around items-center">
         {linkElements}
       </nav>
 
-      <button
-        className="text-white uppercase font-bold outline-none md:hidden"
-        onClick={() => setOpenMenu(!openMenu)}
-        type="button"
-      >
-        <Bars3Icon className="w-6 h-6" />
-      </button>
+      <Menu as="nav" className="md:hidden flex self-center">
+        <Menu.Button className="text-white uppercase font-bold outline-none md:hidden">
+          <Bars3Icon className="w-6 h-6" />
+        </Menu.Button>
+        <Transition
+          as={Fragment}
+          enter="transition ease-out duration-100"
+          enterFrom="transform opacity-0 scale-95"
+          enterTo="transform opacity-100 scale-100"
+          leave="transition ease-in duration-75"
+          leaveFrom="transform opacity-100 scale-100"
+          leaveTo="transform opacity-0 scale-95"
+        >
+          <Menu.Items
+            className={`fixed top-20 flex flex-col left-0 bg-purple w-full rounded-xl px-6 py-5 border gap-1`}
+          >
+            {linkElements}
+          </Menu.Items>
+        </Transition>
+      </Menu>
     </div>
   );
 }
