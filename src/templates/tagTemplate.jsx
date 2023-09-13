@@ -20,7 +20,7 @@ export default function TagTemplate({ pageContext, data }) {
 
   const Posts = edges
     .filter((edge) => !!edge.node.frontmatter.date)
-    .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
+    .map((edge) => <PostLink key={edge.node.id} post={edge.node} direction='column' />);
 
   return (
     <Layout>
@@ -30,16 +30,17 @@ export default function TagTemplate({ pageContext, data }) {
       </Helmet>
       <div className="tagpage__container">
         <div className="tagpage__title">
-          <h1>{tag}</h1>
+          <h1 className='mt-16'>{tag}</h1>
           <span className="tagpage__subheading">{tagHeader} &darr;</span>
         </div>
-        <div className="tagpage__posts">{Posts}</div>
-
+        <div className='px-5 py-14 md:px-10 md:py-24 2xl:px-5'>
+          <div className="gap-5 mt-20 grid md:grid-cols-2 lg:grid-cols-4 2xl:gap-20">{Posts}</div>
+        </div>
         <section>
           <div className="tagpage__all-tags">
             <h1 className="">All Tags</h1>
           </div>
-          <div className="tagpage__tags-container">
+          <div className="tagpage__tags-container px-5 py-14 md:px-10 md:py-24 2xl:px-5">
             {tags.map(({ tag: tagName }) => (
               <Link to={`/tags/${tagName}`} className="post__tag">
                 {tagName}

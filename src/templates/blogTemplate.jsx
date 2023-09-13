@@ -4,6 +4,15 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 import PostLink from "../components/postLink";
 import "./blogTemplate.scss";
+import withPadding from "../hocs/withPadding";
+
+const WrappedArticle = withPadding(({ html }) => (
+  <article className="flex flex-col items-center my-10 rounded-2xl">
+    <div className="w-full md:w-3/4 break-words">
+      <div className="break-words" dangerouslySetInnerHTML={{ __html: html }} />
+    </div>
+  </article>
+));
 
 export default function BlogTemplate({ data }) {
   const {
@@ -31,7 +40,14 @@ export default function BlogTemplate({ data }) {
 
   const Posts = edges
     .filter((edge) => !!edge.node.frontmatter.date)
-    .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
+    .map((edge) => (
+      <PostLink
+        key={edge.node.id}
+        post={edge.node}
+        showExcerpt
+        direction="column"
+      />
+    ));
 
   return (
     <Layout>
@@ -65,14 +81,7 @@ export default function BlogTemplate({ data }) {
             ))}
           </div>
         </div>
-        <article className="px-8 lg:px-10 py-12 flex flex-col items-center my-10 rounded-2xl">
-          <div className="w-full md:w-3/4 break-words">
-            <div
-              className="break-words"
-              dangerouslySetInnerHTML={{ __html: html }}
-            />
-          </div>
-        </article>
+        <WrappedArticle html={html} />
         <section className="bg-pink text-white p-10 border border-black rounded-2xl drop-shadow-solid mb-10">
           <h2 className="text-5xl md:text-6xl text-center text-outline">
             Recent Articles
@@ -108,9 +117,11 @@ export const pageQuery = graphql`
       timeToRead
     }
     blogPosts: allMarkdownRemark(
-      limit: 3
+      limit: 4
       sort: { frontmatter: { date: DESC } }
-      filter: { frontmatter: { draft: { eq: false } } }
+      filter: {
+        frontmatter: { draft: { eq: false }, template: { eq: "BlogPost" } }
+      }
     ) {
       edges {
         node {

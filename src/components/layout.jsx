@@ -3,7 +3,6 @@ import withPadding from "../hocs/withPadding";
 import { Link } from "gatsby";
 import SocialLinks from "./socialLinks";
 import Navigation from "./navigation";
-import "./layout.scss";
 import logo from "../images/logo.png";
 
 const WrappedHeader = withPadding(

@@ -44,7 +44,7 @@ function BlogSection() {
   const posts = edges;
 
   const LatestPosts = posts.map((edge) => (
-    <PostLink key={edge.node.id} post={edge.node} />
+    <PostLink key={edge.node.id} post={edge.node} direction='column' />
   ));
 
   return (
