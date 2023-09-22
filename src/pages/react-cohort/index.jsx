@@ -348,6 +348,9 @@ function ReactCohortPage({ data: { site } }) {
           </h1>
         </div> */}
         <div className="flex items-center justify-center gap-12 w-full text-xs mt-24">
+          <a href="contact">
+            <span className="text-white">Contact</span>
+          </a>
           <a href="privacy">
             <span className="text-white">Privacy Policy</span>
           </a>
