@@ -4,6 +4,32 @@ import { ShareIcon } from '@heroicons/react/24/outline';
 function SocialShare({ title }) {
   const shareUrl = window.location.href
 
+  const platforms = [
+    {
+      name: "Twitter",
+      baseUrl: "https://twitter.com/share?url",
+      param: "text"
+    },
+    {
+      name: "Facebook",
+      baseUrl: "https://www.facebook.com/sharer/sharer.php?u",
+      param: ""
+    },
+    {
+      name: "Linkedin",
+      baseUrl: "https://www.linkedin.com/shareArticle?url",
+      param: "title"
+    },
+
+  ]
+
+  const getHref = ({ baseUrl, param }) => {
+    const encodedCurrentUrl = encodeURIComponent(window.location.href)
+    const encodedParamQuery = param ? `&${param}=${encodeURIComponent(title)}` : ""
+    
+    return `${baseUrl}=${encodedCurrentUrl}${encodedParamQuery}`
+  }
+
   return (
     <div className='flex justify-center items-center w-full gap-3 py-3'>
       <a
