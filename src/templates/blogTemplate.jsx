@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 import PostLink from "../components/postLink";
+import SocialShare from "../components/socialShare";
 import "./blogTemplate.scss";
 import withPadding from "../hocs/withPadding";
 
@@ -80,8 +81,10 @@ export default function BlogTemplate({ data }) {
               </Link>
             ))}
           </div>
+          <SocialShare title={blogTitle} />
         </div>
         <WrappedArticle html={html} />
+        <SocialShare title={blogTitle} />
         <section className="bg-pink text-white p-10 border border-black rounded-2xl drop-shadow-solid mb-10">
           <h2 className="text-5xl md:text-6xl text-center text-outline">
             Recent Articles
