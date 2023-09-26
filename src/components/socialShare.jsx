@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { ShareIcon } from '@heroicons/react/24/outline';
 
 function SocialShare({ title }) {
+  const [encodedCurrentUrl, setEncodedCurrentUrl] = useState("")
   const platforms = [
     {
       name: "Twitter",
@@ -19,7 +20,13 @@ function SocialShare({ title }) {
       param: "title"
     },
   ]
-  const encodedCurrentUrl = encodeURIComponent(window.location.href)
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // Access the window object only on the client side
+      setEncodedCurrentUrl(encodeURIComponent(window.location.href))
+    }
+  }, [])
 
   const getHref = ({ baseUrl, param }) => {
     const encodedParamQuery = param ? `&${param}=${encodeURIComponent(title)}` : ""
