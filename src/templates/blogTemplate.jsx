@@ -85,7 +85,7 @@ export default function BlogTemplate({ data }) {
         </div>
         <WrappedArticle html={html} />
         <SocialShare title={blogTitle} />
-        <section className="bg-pink text-white p-10 border border-black rounded-2xl drop-shadow-solid mb-10">
+        <section className="bg-pink text-white p-10 border border-black rounded-2xl drop-shadow-solid mt-24 mb-10">
           <h2 className="text-5xl md:text-6xl text-center text-outline">
             Recent Articles
           </h2>
