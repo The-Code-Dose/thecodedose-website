@@ -3,16 +3,15 @@ import { motion } from "framer-motion";
 import { XMarkIcon, CheckIcon } from "@heroicons/react/24/outline";
 
 const ELIGIBLE = [
-  "You have basic understanding of HTML, CSS & JavaScript.",
-  "You want to become a React developer.",
-  `You are ambitious and want to start making money with your
-  skills.`,
+  "You are comfortable with HTML, CSS & JavaScript.",
+  "You want to learn React development.",
+  `You are tired of tutorial hell.`,
   `You have the grit and determination to put your all in for the
   next 4 months.`,
 ];
 
 const NOT_ELIGIBLE = [
-  "You already have a full-time job and are looking for a switch.",
+  "You already know React.",
   "You are a complete beginner to programming.",
   "You are not interested in frontend development.",
   "You cannot spend 15-20 hours every week for the next 4 months.",
@@ -25,7 +24,7 @@ export default function () {
         Who is this program made for?
       </h1>
       <p className="w-full lg:w-3/4">
-        In order to maximize the impact of our first cohort, I will be working
+        In order to maximize the impact of our second cohort, I will be working
         closely on a{" "}
         <span className="text-fuchsia-300 font-semibold">1:1 basis</span>. As a
         result, I will only be able to select a limited number of individuals

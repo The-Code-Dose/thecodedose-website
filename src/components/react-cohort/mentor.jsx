@@ -19,9 +19,8 @@ const BOTTOM_SECTION_POINTS = [
   from anywhere!`,
   `And now I can’t wait to teach you how to do the same!`,
   `Since 2020, I have been sharing my learnings and journey on Instagram, YouTube and now on my blog, attempting to help others
-  to code and make a career in tech`,
-  `I decided to start mentoring in the beginning of 2023, and launch this program for
-  only a select few students to make the most impact working 1:1.`,
+  to code and build a career in tech.`,
+  `I decided to start mentoring in the beginning of 2023, and launched this program.`,
 ];
 
 export default () => {
@@ -30,18 +29,18 @@ export default () => {
       className="mx-10 pt-10 mt-32 md:px-12 react-cohort__mentor-container"
       id="mentor"
     >
-      <h1 className="text-cyan-300 mb-10 text-5xl">But first, who am I?</h1>
+      <h1 className="text-cyan-300 mb-10 text-5xl">Meet your mentor</h1>
       <div className="react-cohort__mentor">
         <img className="w-full" src={mentor}></img>
         <div className="m-auto md:px-10">
           <p className="mb-0">
             Hi, I am Urvashi and I’ve been writing React code since{" "}
-            <span className="text-cyan-300 font-semibold">5 years</span>. Even
+            <span className="text-cyan-300 font-semibold">5+ years</span>. Even
             though I did my B.Tech in Computer Science, they never really taught
             us React or even JavaScript. I started learning React by myself in
             my second year of engineering and within a couple of months{" "}
             <span className="text-cyan-300 font-semibold">
-              I got my first paid internship with a monthly stipend of Rs 10K.
+              I got my first paid internship.
             </span>
           </p>
         </div>
@@ -53,7 +52,7 @@ export default () => {
               <ArrowRightCircleIcon className="w-8 h-8 text-green-300" />
             </div>
             <span className="w-11/12 self-center">
-              But I knew I could do better so I started contributing to Open
+              But I knew I could do more so I started contributing to Open
               Source projects.
             </span>
           </div>

@@ -6,15 +6,6 @@ import {
   ArrowLongDownIcon,
   ArrowLongRightIcon,
 } from "@heroicons/react/24/outline";
-import urvashi1 from "../../images/urvashi_1.jpg";
-import chatIcon from "../../images/chat_icon.png";
-import mentoringIcon from "../../images/mentoring_icon.png";
-import placementIcon from "../../images/placement_icon.png";
-import projectIcon from "../../images/project_icon.png";
-import communityIcon from "../../images/community_icon.png";
-import accessIcon from "../../images/access_icon.png";
-import doubtsIcon from "../../images/doubts_icon.png";
-import sessionsIcon from "../../images/sessions_icon.png";
 
 import "./index.scss";
 import Curriculum from "../../components/react-cohort/curriculum";
@@ -22,8 +13,9 @@ import Mentor from "../../components/react-cohort/mentor";
 import Eligibility from "../../components/react-cohort/eligibility";
 import Process from "../../components/react-cohort/process";
 import PaymentStructure from "../../components/react-cohort/paymentStructure";
-
-import "./index.scss";
+import Testimonials from "../../components/react-cohort/testimonials";
+import Features from "../../components/react-cohort/features";
+import WhyFrontend from '../../components/react-cohort/whyFrontend';
 
 function ReactCohortPage({ data: { site } }) {
   return (
@@ -58,11 +50,10 @@ function ReactCohortPage({ data: { site } }) {
               transition={{ delay: 0.1 }}
               className="text-3xl font-extrabold md:text-3xl lg:leading-tight lg:m-auto pt-28"
             >
-              Your journey to become a high-earning
-              <span className="block w-fit m-auto text-3xl md:text-5xl text-fuchsia-500 -z-1 px-2 text-bold bg-slate-800">
-                React Developer
+              <span className="block w-fit m-auto text-4xl md:text-6xl text-fuchsia-500 -z-1 px-2 text-bold bg-slate-800">
+                The Frontend Pill
               </span>
-              starts here
+              Learn frontend development with ReactJS
             </motion.h1>
             <a
               className="cursor-pointer"
@@ -74,7 +65,7 @@ function ReactCohortPage({ data: { site } }) {
                 whileTap={{ scale: 0.9 }}
                 className="block mx-auto mt-12 text-md px-6 py-3  border border-slate-500 uppercase font-bold bg-cyan-300 px-4 py-2 text-slate-900"
               >
-                Buy Now!
+                Sign Up for Free Webinar
               </motion.button>
             </a>
             {/* <span className="mt-3 text-xs">*Limited seats only*</span> */}
@@ -104,7 +95,7 @@ function ReactCohortPage({ data: { site } }) {
           </div>
         </div>
         <div id="start" className="lg:flex mx-10 md:mx-16 pt-20 gap-10">
-          <div className="lg:w-1/2 ">
+          <div className="">
             <div className="mt-10">
               <div className="flex gap-3">
                 <div>
@@ -138,127 +129,12 @@ function ReactCohortPage({ data: { site } }) {
               to help individuals like you enter the world of tech.
             </div>
           </div>
-          <img
-            className="lg:w-1/2 rounded-t-full mt-10 lg:mt-0 border border-slate-500"
-            src={urvashi1}
-          />
         </div>
         <Eligibility />
         <Mentor />
-        <div id="program-details" className="mt-32 mx-10 md:mx-16">
-          <h1 className="text-fuchsia-400 mb-10 text-5xl">
-            What's included in the program?
-          </h1>
-          <div className="inline-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
-            <motion.div
-              initial={{ scale: 0 }}
-              whileInView={{ scale: 1 }}
-              transition={{ delay: 0.05 }}
-              className="bg-slate-800 p-10 border border-slate-500"
-            >
-              <img className="lg:w-1/2" src={sessionsIcon} />
-              <h4 className="text-cyan-300 uppercase my-5">
-                Knowledge on demand
-              </h4>
-              <p>
-                Weekly recorded sessions that you can take at your convenience
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ scale: 0 }}
-              whileInView={{ scale: 1 }}
-              transition={{ delay: 0.1 }}
-              className="bg-slate-800 p-10 border border-slate-500"
-            >
-              <img className="lg:w-1/2" src={doubtsIcon} />
-              <h4 className="text-cyan-300 uppercase my-5">
-                Weekly LIVE Sessions
-              </h4>
-              <p>
-                Doubt and 1:1 sessions every weekend to help resolve your issues
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ scale: 0 }}
-              whileInView={{ scale: 1 }}
-              transition={{ delay: 0.15 }}
-              className="bg-slate-800 p-10 border border-slate-500"
-            >
-              <img className="lg:w-1/2" src={chatIcon} />
-              <h4 className="text-cyan-300 uppercase my-5">
-                Daily chat support
-              </h4>
-              <p>Daily chat support available on our Discord channel</p>
-            </motion.div>
-            <motion.div
-              initial={{ scale: 0 }}
-              whileInView={{ scale: 1 }}
-              transition={{ delay: 0.2 }}
-              className="bg-slate-800 p-10 border border-slate-500"
-            >
-              <img className="lg:w-1/2" src={communityIcon} />
-              <h4 className="text-cyan-300 uppercase my-5">
-                Tight Knit developer community
-              </h4>
-              <p>Access to a community of like-minded developers</p>
-            </motion.div>
-            <motion.div
-              initial={{ scale: 0 }}
-              whileInView={{ scale: 1 }}
-              transition={{ delay: 0.25 }}
-              className="bg-slate-800 p-10 border border-slate-500"
-            >
-              <img className="lg:w-1/2" src={accessIcon} />
-              <h4 className="text-cyan-300 uppercase my-5">
-                1 year access to all course content
-              </h4>
-              <p>
-                All course content will be available to you even after the
-                program ends
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ scale: 0 }}
-              whileInView={{ scale: 1 }}
-              transition={{ delay: 0.3 }}
-              className="bg-slate-800 p-10 border border-slate-500"
-            >
-              <img className="lg:w-1/2" src={placementIcon} />
-              <h4 className="text-cyan-300 uppercase my-5">
-                Extended Placement Assistance
-              </h4>
-              <p>
-                I will offer extended support until you get your first
-                paying-gig, with no extra cost!
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ scale: 0 }}
-              whileInView={{ scale: 1 }}
-              transition={{ delay: 0.35 }}
-              className="bg-slate-800 p-10 border border-slate-500"
-            >
-              <img className="lg:w-1/2" src={projectIcon} />
-              <h4 className="text-cyan-300 uppercase my-5">
-                Project focused learning
-              </h4>
-              <p>Helping you build projects that stand out to recruiters</p>
-            </motion.div>
-            <motion.div
-              initial={{ scale: 0 }}
-              whileInView={{ scale: 1 }}
-              transition={{ delay: 0.4 }}
-              className="bg-slate-800 p-10 border border-slate-500"
-            >
-              <img className="lg:w-1/2" src={mentoringIcon} />
-              <h4 className="text-cyan-300 uppercase my-5">1:1 Mentoring</h4>
-              <p>
-                Gain individualized guidance, feedback, and support tailored to
-                your needs.
-              </p>
-            </motion.div>
-          </div>
-        </div>
+        <Testimonials />
+        <Features />
+        <WhyFrontend />
         <div className="mx-10 md:mx-16 mt-32" id="eligibility">
           <h1 className="text-fuchsia-400 mb-10 text-5xl">
             How is this program different than others?
@@ -342,11 +218,6 @@ function ReactCohortPage({ data: { site } }) {
         <Process />
         <Curriculum />
         <PaymentStructure />
-        {/* <div className="mx-10 md:mx-16 mt-36" id="testimonials">
-          <h1 className="text-fuchsia-400 text-5xl">
-            What my mentees are saying:
-          </h1>
-        </div> */}
         <div className="flex items-center justify-center gap-12 w-full text-xs mt-24">
           <a href="contact">
             <span className="text-white">Contact</span>
