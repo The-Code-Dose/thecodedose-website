@@ -1,8 +1,23 @@
 .react-cohort {
-  &__container {
+  &__container, &__showcase {
     font-family: 'Poppins', sans-serif;
 
-    h1, h2, h3, h4, h5, h6, a, button {
+    h1, h2, h3, h4, h5, h6, button {
+      font-family: 'Unbounded', sans-serif;
+    }
+  }
+
+  &__showcase {
+    background: linear-gradient(to top, rgba(15, 23, 42, 1), rgba(15, 23, 42, 0.3), rgba(15, 23, 42, 0.3)), url("../../images/bg.png") ;
+    background-color: rgb(15, 23, 42);
+
+    p {
+      font-family: 'Poppins';
+    }
+  }
+
+  &__container {
+    a {
       font-family: 'Unbounded', sans-serif;
     }
 
