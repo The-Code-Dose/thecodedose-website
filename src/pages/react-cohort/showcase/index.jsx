@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { graphql } from "gatsby";
-import { projects } from './projects';
+import { graphql, Link } from "gatsby";
+import { projects, blogs } from './projects';
 import "../index.scss";
 
 
@@ -12,20 +12,58 @@ function ReactCohortShowcasePage({ data: { site } }) {
         <title>{site.siteMetadata.title}</title>
         <meta name="description" content={site.siteMetadata.description} />
       </Helmet>
-      <div className="w-fit m-auto text-center">
-        <h1 className="mb-3 text-4xl md:text-6xl text-fuchsia-500 -z-1 px-2 text-bold bg-slate-800">
+      <nav className="z-10 font-light flex border-b border-slate-500 fixed top-0 w-full py-4 flex justify-center bg-slate-900 shadow-lg">
+        <Link className="text-yellow mx-3" to="/react-cohort">
+          Home
+        </Link>
+        <a className="text-yellow mx-3" to="/react-cohort-cohort">
           Showcase
+        </a>
+      </nav>
+      <div className="flex items-center flex-col">
+        <h1 className="mb-3 rounded-md text-4xl md:text-7xl text-fuchsia-500 px-5 py-2 text-bold bg-slate-800">
+          🏆 Showcase
         </h1>
-        <p className="text-cyan-300">Batch 1</p>
+        <p className="text-lg text-yellow rounded-md bg-slate-700 w-fit px-5 opacity-80 -rotate-6 font-bold uppercase -translate-y-3 md:-translate-y-5">
+          Batch I
+        </p>
       </div>
-      <div className="mt-10 mx-5 md:mx-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {projects.map(({ title, thumbnail, url, author }) => (
-          <a href={url} className="bg-slate-800 p-5 md:p-10 border rounded-md border-slate-500" target="_blank">
-            <img src={thumbnail} className="rounded-md" />
-            <h4 className='text-white my-3'>{title}</h4>
-            <p className='text-white text-xs text-slate-500'>{author}</p>
-          </a>
-        ))}
+      <div className="mx-5 md:mx-16">
+        <h2 className="text-cyan-300 text-3xl md:text-4xl mt-24 mb-18">
+          🛠️ Projects
+        </h2>
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {projects.map(({ title, thumbnail, url, author, tags }) => (
+            <div className="bg-slate-800 p-5 md:p-10 border rounded-md border-slate-500 hover:drop-shadow-[0_5px_10px_rgba(255,255,255,0.2)]">
+              <a href={url} target="_blank">
+                <img src={thumbnail} className="rounded-md" />
+              </a>
+              <h4 className="text-white mt-8 mb-3">{title}</h4>
+              <p className="text-xs text-slate-400">{author}</p>
+              <div className="mt-5 gap-3 flex">
+                {tags?.map((tag) => (
+                  <span className="text-cyan-400 px-3 py-2 border border-cyan-400 rounded-full text-xs">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+        <h2 className="text-cyan-300 text-3xl md:text-4xl mt-24 mb-18">
+          📝 Articles
+        </h2>
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {blogs.map(({ title, thumbnail, url, author, tags }) => (
+            <div className="bg-slate-800 p-5 md:p-10 border rounded-md border-slate-500 hover:drop-shadow-[0_5px_10px_rgba(255,255,255,0.2)]">
+              <a href={url} target="_blank">
+                <img src={thumbnail} className="rounded-md" />
+              </a>
+              <h4 className="text-white mt-8 mb-3">{title}</h4>
+              <p className="text-xs text-slate-400">{author}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
