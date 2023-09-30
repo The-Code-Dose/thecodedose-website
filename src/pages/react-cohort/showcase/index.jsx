@@ -1,7 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql, Link } from "gatsby";
-import { projects, blogs } from './projects';
+import { projects, blogs } from '../../../utils/constants/showcase';
 import "../index.scss";
 
 
