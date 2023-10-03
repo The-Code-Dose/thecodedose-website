@@ -49,6 +49,8 @@ export default function () {
         <p className="text-xs">Footnotes:</p>
         <a
           className="text-indigo-400 underline"
+          rel="noopener noreferrer"
+          target='_blank'
           href="https://norvig.com/21-days.html"
         >
           Teach yourself programming in 10 years

@@ -28,8 +28,8 @@ const SECTIONS = [
     contributions to real world projects.`,
   },
   {
-    title: "Engineering Mindset",
-    description: ``,
+    title: "Best LMS for personalised learning",
+    description: `Our interactive learning environment is powered by Moodle which helps us provide more engaging eLearning experiences.`,
   },
 ];
 
@@ -39,7 +39,7 @@ export default function () {
       <h1 className="text-fuchsia-400 mb-10 text-5xl">
         How is this program different than others?
       </h1>
-      <div className="inline-grid grid-cols-1 md:grid-cols-3 w-full gap-4 mt-10">
+      <div className="inline-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-4 mt-10">
         {SECTIONS.map(({ title, description }, index) => (
           <motion.div
             initial={{ scale: 0 }}

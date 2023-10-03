@@ -44,31 +44,29 @@ function ReactCohortPage({ data: { site } }) {
         </nav>
         <div className="react-cohort__hero h-screen text-center w-full flex items-center justify-center">
           <div className="w-full md:w-2/3 flex flex-col items-center">
-            <motion.h1
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.1 }}
-              className="w-fit text-4xl rounded-md mx-3 md:text-6xl text-fuchsia-400 mb-3 -z-1 p-4 text-bold border bg-radial-glass opacity-85 backdrop-blur-sm drop-shadow-[0_5px_10px_rgba(34,211,238,0.3)] border-cyan-400/20"
-            >
+            <h1 className="w-fit text-4xl rounded-md mx-3 md:text-6xl text-fuchsia-400 mb-3 -z-1 p-4 text-bold border bg-radial-glass opacity-85 backdrop-blur-sm drop-shadow-[0_5px_10px_rgba(34,211,238,0.3)] border-cyan-400/20">
               The Frontend Pill
-            </motion.h1>
+            </h1>
+            <span className="text-lg text-yellow font-bold rounded-md bg-indigo-900 w-fit px-5 opacity-80 -rotate-6 font-bold uppercase -translate-y-3 md:-translate-y-5 border border-cyan-400/20">
+              Batch II
+            </span>
             <motion.h2 className="text-xl mt-0 font-extrabold md:text-3xl lg:leading-tight lg:m-auto">
               Learn frontend development with ReactJS
             </motion.h2>
             <a
               className="cursor-pointer"
               target="blank"
-              href="https://products.thecodedose.com/"
+              href="https://forms.gle/CwSveJPJe3YKptxZ7"
             >
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className="block mx-auto mt-16 mb-12 text-md px-6 py-3 uppercase font-bold bg-cyan-300 px-4 py-2 text-neutral-900"
               >
-                Sign Up for Free Webinar
+                Join the Waitlist
               </motion.button>
             </a>
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
@@ -86,7 +84,7 @@ function ReactCohortPage({ data: { site } }) {
                 </h4>
                 <span>14 November (Tentative)</span>
               </div>
-            </motion.div>
+            </motion.div> */}
             <div className="flex mt-5 flex-col items-center justify-center">
               <ArrowLongDownIcon class="animate-bounce h-12 w-12 text-cyan-400" />
               <a href="#start" className="text-xs text-cyan-400">
@@ -101,7 +99,7 @@ function ReactCohortPage({ data: { site } }) {
         >
           <div className="mt-10 text-xl font-bold text-indigo-100 flex flex-col gap-5">
             {INTRO_CONTENT.map((c) => (
-              <div className="bg-radial-glass rounded-md border border-indigo-700/30 px-8 py-10 flex gap-3">
+              <div className="bg-radial-glass rounded-md border border-indigo-700/30 px-4 md:px-8 py-10 flex gap-3">
                 <div>
                   <ArrowRightIcon className="w-8 h-8" />
                 </div>

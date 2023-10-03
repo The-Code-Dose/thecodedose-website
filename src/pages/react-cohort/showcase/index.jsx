@@ -7,10 +7,11 @@ import {
 } from "../../../utils/constants/react-cohort/showcase";
 import "../index.scss";
 import Navigation from "../../../components/react-cohort/navigation";
+import Footer from '../../../components/react-cohort/footer';
 
 function ReactCohortShowcasePage({ data: { site } }) {
   return (
-    <div className="react-cohort__showcase bg-neutral-900 text-slate-100 py-20">
+    <div className="react-cohort__showcase bg-neutral-900 text-slate-100 pt-20">
       <Helmet>
         <title>{site.siteMetadata.title}</title>
         <meta name="description" content={site.siteMetadata.description} />
@@ -20,7 +21,7 @@ function ReactCohortShowcasePage({ data: { site } }) {
         <h1 className="mb-3 w-fit text-4xl rounded-md mx-3 md:text-6xl text-fuchsia-400 mb-3 -z-1 p-4 text-bold border bg-radial-glass opacity-85 backdrop-blur-sm drop-shadow-[0_5px_10px_rgba(34,211,238,0.3)] border-cyan-400/20">
           🏆 Showcase
         </h1>
-        <p className="text-lg text-yellow rounded-md bg-indigo-900 w-fit px-5 opacity-80 -rotate-6 font-bold uppercase -translate-y-3 md:-translate-y-5">
+        <p className="text-lg border border-cyan-400/20 text-yellow rounded-md bg-indigo-900 w-fit px-5 opacity-80 -rotate-6 font-bold uppercase -translate-y-3 md:-translate-y-5">
           Batch I
         </p>
       </div>
@@ -67,6 +68,7 @@ function ReactCohortShowcasePage({ data: { site } }) {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

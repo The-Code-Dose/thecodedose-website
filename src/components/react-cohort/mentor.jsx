@@ -15,18 +15,17 @@ const BOTTOM_SECTION_POINTS = [
   Engineer.`,
   `After about 9 months, I left HackerRank to pursue a career as a remote
   engineer working with global companies to make a higher income.`,
+  `For an year, I worked as a technical curriculum engineer where I learnt the ins and outs of building an effective teaching curriculum for industry professionals.`,
+  `Later I switched to a remote US-based startup working as Full Stack Web Developer.`,
   `I earned multiple lakhs in a month that allowed me to travel and work
   from anywhere!`,
   `And now I can’t wait to teach you how to do the same!`,
-  `Since 2020, I have been sharing my learnings and journey on Instagram, YouTube and now on my blog, attempting to help others
-  to code and build a career in tech.`,
-  `I decided to start mentoring in the beginning of 2023, and launched this program.`,
 ];
 
 export default () => {
   return (
     <div
-      className="mx-10 pt-10 mt-32 md:px-12 react-cohort__mentor-container"
+      className="mx-10 pt-10 mt-32 px-5 md:px-12 bg-radial-glass border border-indigo-700/30 rounded-lg"
       id="mentor"
     >
       <h1 className="text-cyan-300 mb-10 text-5xl mt-0">Meet your mentor</h1>
@@ -62,7 +61,7 @@ export default () => {
             </div>
             <span className="self-center">
               Soon I came to know about this program called{" "}
-              <span className="text-yellow font-semibold">Outreachy</span> and I
+              <span className="text-fuchsia-400 font-semibold">Outreachy</span> and I
               made it my goal to get accepted!
             </span>
           </div>
@@ -73,11 +72,11 @@ export default () => {
             <span className="self-center">
               I was soon accepted as an intern in the summer of 2018 where I got
               to work with the{" "}
-              <span className="text-yellow font-semibold">
+              <span className="text-fuchsia-400 font-semibold">
                 Wikimedia Foundation
               </span>{" "}
               and earned a stipend of{" "}
-              <span className="text-yellow font-semibold">
+              <span className="text-fuchsia-400 font-semibold">
                 $5500 including a trip to Singapore!
               </span>
             </span>
@@ -89,11 +88,11 @@ export default () => {
             <span className="self-center">
               After that I continued to do multiple internships and also
               participated in the{" "}
-              <span className="text-yellow font-semibold">
+              <span className="text-fuchsia-400 font-semibold">
                 Google Summer of Code
               </span>{" "}
               the next summer and earned another{" "}
-              <span className="text-yellow font-semibold">$2400</span>.
+              <span className="text-fuchsia-400 font-semibold">$2400</span>.
             </span>
           </div>
           <div className="flex mt-5 gap-5">
@@ -102,7 +101,7 @@ export default () => {
             </div>
             <span className="self-center">
               In my final semester, I joined{" "}
-              <span className="text-yellow font-semibold">HackerRank</span> as a
+              <span className="text-fuchsia-400 font-semibold">HackerRank</span> as a
               Software Engineer intern and moved to Banglore.
             </span>
           </div>
@@ -113,11 +112,7 @@ export default () => {
         ></img>
       </div>
       <div className="lg:flex gap-5">
-        <img
-          className="mx-auto mt-10 self-center w-3/4 lg:w-1/3"
-          src={remoteEngineer}
-        ></img>
-        <div className="lg:w-2/3 font-medium text-fuchsia-400 pt-5 md:pt-10">
+        <div className="font-medium bg-gradient-to-r from-indigo-100 to-indigo-300 bg-clip-text text-transparent pt-5 md:pt-10">
           {BOTTOM_SECTION_POINTS.map((content) => {
             return (
               <div className="flex space-between gap-5 my-10">

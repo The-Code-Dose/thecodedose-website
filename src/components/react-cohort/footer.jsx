@@ -30,7 +30,7 @@ export default function () {
       >
         Made with React &#x2764;
       </a>
-      <nav className="font-light flex mt-3 gap-5 justify-center shadow-lg">
+      <nav className="font-light flex flex-col md:flex-row mt-3 gap-5 justify-center shadow-lg">
         {FOOTER_LINKS.map(({ label, link }) => (
           <Link
             className="text-white hover:text-fuchsia-400"

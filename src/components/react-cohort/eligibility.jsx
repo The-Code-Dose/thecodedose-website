@@ -28,8 +28,8 @@ export default function () {
         to achieving outstanding results, apply now to secure your spot in this
         program.
       </p>
-      <div className="inline-grid grid-cols-1 lg:grid-cols-2 gap-4 mt-8 bg-radial-glass border border-indigo-700/30 rounded-lg py-5 px-10">
-        <div className="lg:pr-10 py-14 lg:border-r border-indigo-900">
+      <div className="inline-grid grid-cols-1 lg:grid-cols-2 gap-4 mt-8 bg-radial-glass border border-indigo-700/30 rounded-lg py-3 md:py-5 px-5 md:px-10">
+        <div className="lg:pr-10 md:py-14 lg:border-r border-indigo-900">
           <h4 className="text-indigo-100 mb-10 text-3xl">
             Apply <span className="animate-pulse text-fuchsia-400">*ONLY*</span> if
             this sounds like you:
@@ -47,15 +47,15 @@ export default function () {
             </ul>
             <a
               className="cursor-pointer"
-              target="blank"
-              href="https://forms.gle/EdwzEjpBd3UZNBeQ6"
+              target="_blank"
+              href="https://forms.gle/CwSveJPJe3YKptxZ7"
             >
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 className="block mt-12 text-lg px-6 py-3 uppercase font-bold bg-cyan-300 text-neutral-900"
               >
-                Enroll Now
+                Join the waitlist
               </motion.button>
             </a>
           </p>

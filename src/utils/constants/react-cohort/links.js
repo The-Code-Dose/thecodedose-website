@@ -7,10 +7,10 @@ export const LINKS = [
     label: "Showcase",
     link: "/react-cohort/showcase",
   },
-  {
-    label: "Pricing Plans",
-    link: "/react-cohort/pricing",
-  },
+  // {
+  //   label: "Pricing Plans",
+  //   link: "/react-cohort/pricing",
+  // },
 ];
 
 export const HOME_LINKS = [
@@ -19,19 +19,15 @@ export const HOME_LINKS = [
     link: "#eligibility",
   },
   {
-    label: "Mentor",
-    link: "#mentor",
-  },
-  {
     label: "Details",
     link: "#details",
   },
   {
-    label: "Process",
-    link: "#process",
-  },
-  {
     label: "Curriculum",
     link: "#curriculum",
+  },
+  {
+    label: "Mentor",
+    link: "#mentor",
   },
 ];
