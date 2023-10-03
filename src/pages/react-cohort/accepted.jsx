@@ -29,7 +29,7 @@ export function PaymentsModal() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           // onClick={openModal}
-          className="block mx-auto mt-12 text-md px-6 py-3 uppercase font-bold bg-slate-300 px-4 py-2 text-slate-900"
+          className="block mx-auto mt-12 text-md px-6 py-3 uppercase font-bold bg-slate-300 px-4 py-2 text-neutral-900"
         >
           Process has closed now.
         </motion.button>
@@ -63,26 +63,26 @@ export function PaymentsModal() {
                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden bg-slate-800 p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
-                    className="text-lg font-bold leading-6 text-slate-50 uppercase"
+                    className="text-lg font-bold leading-6 text-neutral-50 uppercase"
                   >
                     Reserve your spot
                   </Dialog.Title>
                   <div className="mt-5">
                     {upiSelected ? (
                       <>
-                        <span className="text-slate-300">
+                        <span className="text-neutral-300">
                           Scan this QR with the payment app of your choice and
                           share the screenshot on thecodedoseofficial@gmail.com
                           along with the billing address of bank account holder.
                         </span>
                         <img
-                          className="border border-slate-500 mt-4"
+                          className="border border-neutral-500 mt-4"
                           src={UpiSs}
                           alt="scanner"
                         />
                       </>
                     ) : (
-                      <p className="text-sm text-slate-300">
+                      <p className="text-sm text-neutral-300">
                         Please choose a payment option:
                       </p>
                     )}
@@ -96,7 +96,7 @@ export function PaymentsModal() {
                     >
                       <button
                         type="button"
-                        className="block mx-auto mt-12 text-md font-bold bg-cyan-300 px-4 py-2 text-slate-900"
+                        className="block mx-auto mt-12 text-md font-bold bg-cyan-300 px-4 py-2 text-neutral-900"
                         onClick={closeModal}
                       >
                         Credit/Debit Card
@@ -104,7 +104,7 @@ export function PaymentsModal() {
                     </a>
                     <button
                       type="button"
-                      className={`block mx-auto mt-12 text-md font-bold px-4 py-2 text-slate-900 ${
+                      className={`block mx-auto mt-12 text-md font-bold px-4 py-2 text-neutral-900 ${
                         upiSelected ? "bg-slate-300" : "bg-cyan-300"
                       }`}
                       onClick={() => setUpiSelected(true)}
@@ -124,13 +124,13 @@ export function PaymentsModal() {
 
 function ReactCohortAcceptedPage({ data: { site } }) {
   return (
-    <div className="react-cohort__container justify-center align-middle w-screen bg-slate-900 text-slate-100">
+    <div className="react-cohort__container justify-center align-middle w-screen bg-slate-900 text-neutral-100">
       <Helmet>
         <title>{site.siteMetadata.title}</title>
         <meta name="description" content={site.siteMetadata.description} />
       </Helmet>
       <div className="react-cohort__hero h-screen text-center w-full">
-        <nav className="z-10 hidden font-light md:flex border-b border-slate-500 sticky top-0 w-full py-4 flex justify-center bg-slate-900 shadow-lg">
+        <nav className="z-10 hidden font-light md:flex border-b border-neutral-500 sticky top-0 w-full py-4 flex justify-center bg-slate-900 shadow-lg">
           <a className="text-yellow mx-3" href="/react-cohort">
             Home
           </a>
@@ -197,24 +197,24 @@ function ReactCohortAcceptedPage({ data: { site } }) {
         <motion.div
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
-          className="w-full lg:w-1/2 lg:mx-10 md:mx-auto w-auto self-center mt-10 lg:mt-0 bg-slate-800 p-10 border border-slate-500"
+          className="w-full lg:w-1/2 lg:mx-10 md:mx-auto w-auto self-center mt-10 lg:mt-0 bg-slate-800 p-10 border border-neutral-500"
         >
           <h3 className="text-cyan-300 uppercase mb-5">Pricing Details</h3>
           <div className="lg:flex mt-5">
-            <h1 className="line-through text-4xl text-slate-300 mr-5">
+            <h1 className="line-through text-4xl text-neutral-300 mr-5">
               ₹30,000
             </h1>
             <div>
               <div className="align-middle gap-3">
                 <h1 className="text-fuchsia-400 text-4xl font-bold">₹10,000</h1>
-                <span className="text-md self-center text-slate-400">
+                <span className="text-md self-center text-neutral-400">
                   +18% GST (TOTAL = ₹11,800)
                 </span>
               </div>
               <span className="uppercase font-bold text-fuchsia-400">
                 Special Launch offer
               </span>
-              <span className="block text-xs text-slate-400">
+              <span className="block text-xs text-neutral-400">
                 *Only for the members of the first cohort
               </span>
             </div>

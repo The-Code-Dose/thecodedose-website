@@ -26,7 +26,7 @@ export function PaymentsModal() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={openModal}
-          className="block mx-auto mt-12 text-md px-6 py-3 uppercase font-bold bg-cyan-300 px-4 py-2 text-slate-900"
+          className="block mx-auto mt-12 text-md px-6 py-3 uppercase font-bold bg-cyan-300 px-4 py-2 text-neutral-900"
         >
           Pay the remaining fee
         </motion.button>
@@ -57,28 +57,28 @@ export function PaymentsModal() {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden bg-slate-800 p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-full max-w-md transform overflow-hidden bg-neutral-800 p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
-                    className="text-lg font-bold leading-6 text-slate-50 uppercase"
+                    className="text-lg font-bold leading-6 text-neutral-50 uppercase"
                   >
                     Reserve your spot
                   </Dialog.Title>
                   <div className="mt-5">
                     {upiSelected ? (
                       <>
-                        <span className="text-slate-300">
+                        <span className="text-neutral-300">
                           Scan this QR with the payment app of your choice and
                           share the screenshot on thecodedoseofficial@gmail.com
                           along with the billing address of bank account holder.
                         </span>
                         <img
-                          className="border border-slate-500 mt-4"
+                          className="border border-neutral-500 mt-4"
                           src={UpiSs}
                         />
                       </>
                     ) : (
-                      <p className="text-sm text-slate-300">
+                      <p className="text-sm text-neutral-300">
                         Please choose a payment option:
                       </p>
                     )}
@@ -92,7 +92,7 @@ export function PaymentsModal() {
                     >
                       <button
                         type="button"
-                        className="block mx-auto mt-12 text-md font-bold bg-cyan-300 px-4 py-2 text-slate-900"
+                        className="block mx-auto mt-12 text-md font-bold bg-cyan-300 px-4 py-2 text-neutral-900"
                         onClick={closeModal}
                       >
                         Credit/Debit Card
@@ -100,8 +100,8 @@ export function PaymentsModal() {
                     </a>
                     <button
                       type="button"
-                      className={`block mx-auto mt-12 text-md font-bold px-4 py-2 text-slate-900 ${
-                        upiSelected ? "bg-slate-300" : "bg-cyan-300"
+                      className={`block mx-auto mt-12 text-md font-bold px-4 py-2 text-neutral-900 ${
+                        upiSelected ? "bg-neutral-300" : "bg-cyan-300"
                       }`}
                       onClick={() => setUpiSelected(true)}
                     >
@@ -120,13 +120,13 @@ export function PaymentsModal() {
 
 function ReactCohortAcceptedPage({ data: { site } }) {
   return (
-    <div className="react-cohort__container justify-center align-middle w-screen bg-slate-900 text-slate-100">
+    <div className="react-cohort__container justify-center align-middle w-screen bg-neutral-900 text-neutral-100">
       <Helmet>
         <title>{site.siteMetadata.title}</title>
         <meta name="description" content={site.siteMetadata.description} />
       </Helmet>
       <div className="react-cohort__hero h-screen text-center w-full">
-        <nav className="z-10 hidden font-light md:flex border-b border-slate-500 sticky top-0 w-full py-4 flex justify-center bg-slate-900 shadow-lg">
+        <nav className="z-10 hidden font-light md:flex border-b border-neutral-500 sticky top-0 w-full py-4 flex justify-center bg-neutral-900 shadow-lg">
           <a className="text-yellow mx-3" href="/react-cohort">
             Home
           </a>
@@ -144,7 +144,7 @@ function ReactCohortAcceptedPage({ data: { site } }) {
             transition={{ delay: 0.1 }}
             className="text-3xl font-extrabold md:text-3xl lg:leading-tight lg:m-auto pt-28"
           >
-            <span className="block w-fit m-auto mb-10 text-3xl md:text-5xl text-fuchsia-500 -z-1 px-2 text-bold bg-slate-800">
+            <span className="block w-fit m-auto mb-10 text-3xl md:text-5xl text-fuchsia-500 -z-1 px-2 text-bold bg-neutral-800">
               Welcome to the program
             </span>
             Your spot was successfully reserved!
@@ -188,15 +188,15 @@ function ReactCohortAcceptedPage({ data: { site } }) {
         <motion.div
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
-          className="w-full lg:w-1/2 lg:mx-10 md:mx-auto w-auto self-center mt-10 lg:mt-0 bg-slate-800 p-10 border border-slate-500"
+          className="w-full lg:w-1/2 lg:mx-10 md:mx-auto w-auto self-center mt-10 lg:mt-0 bg-neutral-800 p-10 border border-neutral-500"
         >
           <h3 className="text-cyan-300 uppercase mb-5">Pricing Details</h3>
           <div className="lg:flex mt-5">
-            <h1 className="text-2xl text-slate-300 mr-5">₹11800 - ₹3000</h1>
+            <h1 className="text-2xl text-neutral-300 mr-5">₹11800 - ₹3000</h1>
             <div>
               <div className="align-middle gap-3">
                 <h1 className="text-fuchsia-400 text-3xl font-bold">= ₹8800</h1>
-                <span className="text-md self-center text-slate-400">
+                <span className="text-md self-center text-neutral-400">
                   (including 18% GST)
                 </span>
               </div>

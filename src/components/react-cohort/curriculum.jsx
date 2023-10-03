@@ -11,141 +11,153 @@ export default function () {
     "Month 1": [
       {
         id: 1,
-        title: "Module 1: HTML & CSS Best Practices",
+        title: "Module 1: Introduction",
         description: [
-          "Master the art of writing clean code in HTML and CSS.",
-          "Learn industry best practices to create well-structured, responsive webpages that meet modern design standards.",
-          "Learn how to use modern CSS frameworks like TailwindCSS to build professional looking websites in a fraction of the time.",
+          "Overview of how the web and browsers work.",
+          "Learn about UI/UX and how to leverage AI to build professional looking designs",
+          "Learn industry best practices to create well-structured, responsive and accessible webpages.",
+          "Learn how to use modern CSS frameworks like TailwindCSS and CSS Preprocessors like SASS along with the BEM methodology.",
         ],
       },
       {
         id: 2,
-        title: "Module 2: Advanced JavaScript & Best Practices",
+        title: "Module 2: JavaScript Best Practices",
         description: [
+          "Revise your understanding of commonly misunderstood JavaScript concepts.",
           "Explore advanced concepts and design patterns to write efficient and maintainable JS code.",
-          "Learn how to use code quality guides by Google & AirBnb to take your JS projects to the next level.",
           "Integrate tools like ESLint and Prettier to enforce code quality.",
         ],
       },
       {
-        id: 3,
-        title: "Module 3: ReactJS Fundamentals",
+        id: 2,
+        title: "Module 3: Advanced JavaScript",
         description: [
-          "Dive into the fundamentals of ReactJS to build a solid foundation in component-based development.",
-          "Learn state management, props and JSX syntax to create dynamic and interactive user interfaces with ease.",
-          "Learn how to add styles to React components using styled-components.",
+          "Learn advanced JavaScript concepts like closures, promises, callbacks etc.",
+          "Explore how JavaScript works under the hood.",
+          "Learn about modern(ES6+) JavaScript concepts.",
         ],
       },
       {
         id: 4,
-        title: "Module 4: Intermediate ReactJS",
+        title: "Module 4: ReactJS Fundamentals",
         description: [
-          "Explore advanced concepts such as hooks, refs, context API, and advanced state management.",
-          "Learn how to create reusable React code using higher order components.",
-          "Learn how to handle events and create custom hooks.",
+          "Dive into the fundamentals of ReactJS to build a solid foundation in component-based development.",
+          "Learn state management, props and JSX syntax to create dynamic and interactive user interfaces with ease.",
+          "Learn how to style your React applications using different techniques.",
         ],
       },
     ],
     "Month 2": [
       {
         id: 1,
-        title: "Module 1: Mini Project",
-        description: ["Apply your skills to a hands-on mini project."],
+        title: "Module 1: Practicing React Basics",
+        description: [
+          "Explore about best practices and common mistakes that beginners make.",
+          "Learn how to deploy React applications using Vercel, Netlify, CodeSandbox and GitHub Pages.",
+          "Apply your skills to create a mini project.",
+        ],
       },
       {
         id: 2,
-        title: "Module 2: Advanced ReactJS",
+        title: "Module 2: Intermediate ReactJS",
         description: [
-          "Explore routing using react-router.",
-          "Learn how to fetch and manage data using react-query.",
-          "Build complex forms using react-hook-form.",
+          "Understand what React refs are and when to use them.",
+          "Learn how to create reusable React code using higher order components.",
+          "Use component libraries such as HeadlessUI and MaterialUI for faster development.",
+          "Explore framer-motion to add interactive animations to your apps.",
         ],
       },
       {
         id: 3,
-        title: "Module 3: Exploring the React Ecosystem",
+        title: "Module 3: Best Practices & Mini Project",
         description: [
-          "Learn how to integrate popular libraries such as Redux, Framer Motion etc.",
-          "Use component libraries such as HeadlessUI for faster development.",
-          "Create amazing looking charts and visualisation components using visx and Recharts.",
+          "Learn about common React patterns and best practices.",
+          "Build a project to put your learnings to test.",
         ],
       },
       {
         id: 4,
-        title: "Module 4: Testing & Performance Optimization",
+        title: "Module 4: Advanced ReactJS",
         description: [
-          "Learn what testing is and why it is important.",
-          "Master the art of testing React applications using libraries like React Testing Library, Jest and Enzyme.",
-          "Learn how to optimize performance to ensure your React projects are robust, reliable, and efficient.",
+          "Explore advanced concepts such a context API and reducers.",
+          "Explore routing using react-router.",
+          "Build complex forms using react-hook-form.",
         ],
       },
     ],
     "Month 3": [
       {
         id: 1,
-        title: "Module 1: Introduction to Open Source",
+        title: "Module 1: Performance Optimization",
         description: [
-          "Explore the vast landscape of open-source projects and discover how to contribute effectively.",
-          "Learn about version control, collaborating with other developers, and making meaningful contributions to open-source projects.",
-          "Learn about programs like Google Summer of Code and tips and tricks to apply.",
+          "Learn how to create custom hooks.",
+          "Learn how to optimize performance using memoization.",
+          "Explore virtualization using react-window.",
+          "Learn how to use the React Developer Tools and Profiler.",
         ],
       },
       {
         id: 2,
-        title: "Module 2: Group Project",
+        title: "Module 2: Introduction to Open Source",
         description: [
-          "Develop a functional web application in a group.",
-          "Apply your newly acquired skills and knowledge to create an engaging and interactive web application.",
+          "Explore the vast landscape of open-source projects and discover how to contribute effectively.",
+          "Learn about programs like Google Summer of Code and tips and tricks to apply.",
+          "Dip your toes in open source by contributing to the The Code Dose website.",
         ],
       },
       {
         id: 3,
-        title: "Module 3: Building a Portfolio Website",
+        title: "Module 3: State Management & Testing",
+        description: [
+          "Learn what testing is and why it is important.",
+          "Manage server state using react-query.",
+          "Explore complex state management using Redux and understand when to use it.",
+        ],
+      },
+      {
+        id: 4,
+        title: "Module 4: Building a Portfolio Website",
         description: [
           "Build your professional portfolio website.",
           "Showcase your skills, projects, and achievements in an elegant and visually appealing manner.",
           "Craft a portfolio that stands out and captivates potential employers and clients.",
         ],
       },
-      {
-        id: 4,
-        title: "Module 4: Interview Preparation",
-        description: [
-          "Sharpen your interview skills and prepare for technical interviews as a React developer.",
-          "Gain insights into the interview process, learn effective techniques for showcasing your expertise, and master common interview questions.",
-          "Enhance your resume, improve your communication skills, and boost your confidence to excel in technical interviews.",
-        ],
-      },
     ],
     "Month 4": [
       {
         id: 1,
-        title: "Module 1: Capstone Project",
+        title: "Module 1: Beyond Frontend",
         description: [
-          "Showcase your comprehensive skills and knowledge.",
-          "Apply everything you've learned to develop a substantial and impactful React application.",
+          "Learn what TypeScript is and how to use it in your own apps.",
+          "Learn about RESTful APIs and GraphQL.",
+          "Explore CI/CD using GitHub Actions.",
         ],
       },
       {
         id: 2,
-        title: "Module 2: Capstone Project Contd.",
+        title: "Module 2: NextJS",
         description: [
-          "Continue working on your capstone project, refining and enhancing your React application with advanced features and functionalities.",
-          "Take your project to the next level and demonstrate your expertise.",
+          "Learn the fundamentals of Next.js and server-side rendering.",
+          "Dive into key Next.js features like API routes, dynamic routing, and data fetching methods to create a seamless user experience.",
+          "Learn how to deploy your Next.js applications.",
         ],
       },
       {
         id: 3,
-        title: "Module 3: Applying for Internships",
+        title: "Module 3: Interview Preparation & Project Building",
         description: [
-          "Prepare for internships and gain valuable insights on the application process.",
-          "Learn effective strategies, polish your resume, and enhance your interviewing skills to secure internship opportunities as a React developer.",
+          "Sharpen your interview skills and prepare for technical interviews as a frontend developer.",
+          "Gain insights into the interview process, learn effective techniques for showcasing your expertise, and master common interview questions.",
+          "Enhance your resume, improve your communication skills, and boost your confidence to excel in technical interviews.",
         ],
       },
       {
         id: 4,
-        title: "Module 4: What's next?",
+        title: "Module 4: Applying for Internships & Project Building",
         description: [
+          "Prepare for internships and gain valuable insights on the application process.",
+          "Learn effective strategies, polish your resume, and enhance your interviewing skills to secure internship opportunities as a React developer.",
           "Gain valuable career guidance, discover potential career paths, and learn about industry trends to help you navigate your next steps as a React developer.",
         ],
       },
@@ -158,12 +170,12 @@ export default function () {
         What you'll learn
       </h1>
       <div>
-        <p className="text-xs mb-10">
+        <p className="text-sm mb-10">
           *This is a tentative curriculum and it is subjected to change as it
           continues to develop further.
         </p>
         <Tab.Group>
-          <Tab.List className="md:flex bg-slate-800 p-3 border border-slate-500">
+          <Tab.List className="md:flex bg-radial-glass p-3 border rounded-md border-indigo-700/30">
             {Object.keys(categories).map((category) => (
               <Tab
                 key={category}
@@ -172,7 +184,7 @@ export default function () {
                     "text-left md:text-center w-full text-xl uppercase p-3 font-medium leading-5",
                     selected
                       ? "text-cyan-300"
-                      : "text-slate-100 hover:text-white"
+                      : "text-neutral-100 hover:text-white"
                   )
                 }
               >
@@ -180,12 +192,12 @@ export default function () {
               </Tab>
             ))}
           </Tab.List>
-          <Tab.Panels className="mt-2">
+          <Tab.Panels className="mt-2 border bg-radial-glass rounded-md border-indigo-700/30">
             {Object.values(categories).map((modules, idx) => (
               <Tab.Panel key={idx} className="py-3" s>
                 {modules.map((module) => (
-                  <div key={module.id} className="relative p-3 mt-3">
-                    <h3 className="uppercase text-lg text-yellow font-medium leading-5">
+                  <div key={module.id} className="relative p-5">
+                    <h3 className="uppercase text-lg text-indigo-100 font-medium leading-5">
                       {module.title}
                     </h3>
                     <div className="mt-5 leading-relaxed text-md font-normal leading-4 text-gray-200">
