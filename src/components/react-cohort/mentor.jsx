@@ -117,7 +117,7 @@ export default () => {
           className="mx-auto mt-10 self-center w-3/4 lg:w-1/3"
           src={remoteEngineer}
         ></img>
-        <div className="lg:w-2/3 font-medium text-fuchsia-300 pt-5 md:pt-10">
+        <div className="lg:w-2/3 font-medium text-fuchsia-400 pt-5 md:pt-10">
           {BOTTOM_SECTION_POINTS.map((content) => {
             return (
               <div className="flex space-between gap-5 my-10">

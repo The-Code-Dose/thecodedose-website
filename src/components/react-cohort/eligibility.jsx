@@ -24,16 +24,14 @@ export default function () {
         📌 Who is this program made for?
       </h1>
       <p className="w-full lg:w-3/4">
-        If you are ready to take your skills to the next level and are{" "}
-        <span className="text-fuchsia-300 font-semibold">
-          committed to achieving outstanding
-        </span>{" "}
-        results, apply now to secure your spot in this program.
+        If you are ready to take your skills to the next level and are committed
+        to achieving outstanding results, apply now to secure your spot in this
+        program.
       </p>
       <div className="inline-grid grid-cols-1 lg:grid-cols-2 gap-4 mt-8 bg-radial-glass border border-indigo-700/30 rounded-lg py-5 px-10">
         <div className="lg:pr-10 py-14 lg:border-r border-indigo-900">
           <h4 className="text-indigo-100 mb-10 text-3xl">
-            Apply <span className="animate-pulse text-yellow">*ONLY*</span> if
+            Apply <span className="animate-pulse text-fuchsia-400">*ONLY*</span> if
             this sounds like you:
           </h4>
           <p>
@@ -64,7 +62,7 @@ export default function () {
         </div>
         <div className="lg:pl-10 py-14">
           <h4 className="text-indigo-100 mb-10 text-3xl">
-            This is <span className="animate-pulse text-yellow">*NOT*</span> for
+            This is <span className="animate-pulse text-fuchsia-400">*NOT*</span> for
             you if:
           </h4>
           <p>

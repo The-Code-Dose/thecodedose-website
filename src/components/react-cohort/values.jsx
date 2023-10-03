@@ -29,7 +29,7 @@ export default function () {
   return (
     <div className="mx-10 md:mx-16 mt-32" id="eligibility">
       <h1 className="text-cyan-300 mb-10 text-5xl">💎 Our Values</h1>
-      <div className="inline-grid grid-cols-1 md:grid-cols-4 w-full gap-4">
+      <div className="inline-grid grid-cols-1 md:grid-cols-4 w-full gap-4 mt-10">
         {SECTIONS.map(({ title, description }, index) => (
           <motion.div
             initial={{ scale: 0 }}

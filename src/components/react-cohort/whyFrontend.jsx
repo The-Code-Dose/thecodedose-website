@@ -6,30 +6,53 @@ export default function () {
       <h1 className="text-fuchsia-400 mb-10 text-5xl">
         🤔 Why just Frontend Development in the next 4 months?
       </h1>
-      <div className="bg-radial-glass border border-indigo-700/30 rounded-lg px-10 py-8">
+      <div className="text-indigo-200 leading-9 text-sm bg-radial-glass border border-indigo-700/30 rounded-lg mt-20 px-10 py-8">
         <p>
-          We know there are courses out there that claim to teach you full stack
-          web development within 4 to 6 months but we don’t believe this is
-          possible (at least for the 99% people out there).
+          As a beginner, it might sound very attractive to hear "learn full
+          stack web development in 4 months without any prior coding
+          experience". We believe that this is a recipe for disaster. Think of
+          it like constructing a building; you wouldn't start with the roof
+          before laying a solid foundation. Similarly, diving into full-stack
+          development without mastering the basics first is a surefire way to
+          build a shaky skillset.
         </p>
         <br />
         <p>
-          As a beginner, it sounds very attractive to "learn full stack web
-          development in 4 months without any prior coding experience". This is
-          a recipe for disaster.
+          Our course adopts a different approach. It's intensive and aimed at
+          those who already have their fundamentals clear. We believe in
+          understanding the 'why' before the 'how'. For instance, you won't just
+          learn how to use a library; you'll learn why that library was created,
+          what problems it solves, and where it fits in the larger ecosystem of
+          frontend development. This understanding is crucial for writing not
+          just functional but also efficient and maintainable code.
         </p>
         <br />
         <p>
-          You’ll just scratch the surface and most probably end up very confused
-          about everything. Superficial knowledge will lead to holes in your
-          understanding. Unable to build anything from scratch because all you
-          did was to copy paste projects without understanding why it works.
-          This course requires you already know coding, even if that means our
-          market is reduced. Know ins and outs of React and frontend. Teach
-          yourself programming in 10 years
-          [https://norvig.com/21-days.html](https://t.co/M3gf5J7lVp)
-          Transparency We’re not in the business of selling dreams
+          In this course, you'll experience a blend of theoretical knowledge
+          backed by practical coding exercises. We go beyond the surface-level
+          tutorials and guide you through in-depth lessons that fill the gaps
+          left by quick-and-dirty tutorials. Our aim is to equip you with skills
+          that empower you to create projects from scratch with full
+          comprehension, rather than just piecing together code snippets from
+          Stack Overflow or ChatGPT.
         </p>
+        <br />
+        <p>
+          So if you're someone who is committed to truly mastering frontend
+          development, who wants to go beyond just getting things to 'work' and
+          understand the intricacies of what you're building, then this course
+          is for you. But if you're looking for shortcuts or easy wins, you
+          might want to look elsewhere. We're here for those who are ready to
+          dig deep and come out as proficient, well-rounded frontend developers.
+        </p>
+        <hr className="mb-5 mt-10 border border-indigo-700/30" />
+        <p className="text-xs">Footnotes:</p>
+        <a
+          className="text-indigo-400 underline"
+          href="https://norvig.com/21-days.html"
+        >
+          Teach yourself programming in 10 years
+        </a>
       </div>
     </div>
   );

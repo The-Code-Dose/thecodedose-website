@@ -17,7 +17,7 @@ function ReactCohortShowcasePage({ data: { site } }) {
       </Helmet>
       <Navigation />
       <div className="flex items-center flex-col">
-        <h1 className="mb-3 rounded-md text-4xl md:text-7xl text-fuchsia-500 px-5 py-2 text-bold bg-indigo-1000">
+        <h1 className="mb-3 w-fit text-4xl rounded-md mx-3 md:text-6xl text-fuchsia-400 mb-3 -z-1 p-4 text-bold border bg-radial-glass opacity-85 backdrop-blur-sm drop-shadow-[0_5px_10px_rgba(34,211,238,0.3)] border-cyan-400/20">
           🏆 Showcase
         </h1>
         <p className="text-lg text-yellow rounded-md bg-indigo-900 w-fit px-5 opacity-80 -rotate-6 font-bold uppercase -translate-y-3 md:-translate-y-5">

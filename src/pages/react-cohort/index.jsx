@@ -48,7 +48,7 @@ function ReactCohortPage({ data: { site } }) {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.1 }}
-              className="w-fit text-4xl rounded-md mx-3 md:text-6xl text-fuchsia-500 mb-3 -z-1 p-2 text-bold bg-indigo-1000"
+              className="w-fit text-4xl rounded-md mx-3 md:text-6xl text-fuchsia-400 mb-3 -z-1 p-4 text-bold border bg-radial-glass opacity-85 backdrop-blur-sm drop-shadow-[0_5px_10px_rgba(34,211,238,0.3)] border-cyan-400/20"
             >
               The Frontend Pill
             </motion.h1>
@@ -75,19 +75,19 @@ function ReactCohortPage({ data: { site } }) {
               className="px-10 lg:px-0 text-indigo-100 flex justify-between text-sm md:w-3/4 m-auto"
             >
               <div>
-                <h4 className="uppercase text-cyan-300 font-bold">
+                <h4 className="uppercase text-fuchsia-400 font-bold">
                   Webinar Date
                 </h4>
                 <span>15 October</span>
               </div>
               <div>
-                <h4 className="uppercase text-cyan-300 font-bold">
+                <h4 className="uppercase text-fuchsia-400 font-bold">
                   Program Begins
                 </h4>
                 <span>14 November (Tentative)</span>
               </div>
             </motion.div>
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex mt-5 flex-col items-center justify-center">
               <ArrowLongDownIcon class="animate-bounce h-12 w-12 text-cyan-400" />
               <a href="#start" className="text-xs text-cyan-400">
                 Learn More
@@ -105,7 +105,9 @@ function ReactCohortPage({ data: { site } }) {
                 <div>
                   <ArrowRightIcon className="w-8 h-8" />
                 </div>
-                <span>{c}</span>
+                <span className="bg-gradient-to-r from-indigo-100 to-indigo-300 bg-clip-text text-transparent">
+                  {c}
+                </span>
               </div>
             ))}
           </div>
@@ -115,10 +117,10 @@ function ReactCohortPage({ data: { site } }) {
         </div>
         <Eligibility />
         <Features />
-        <WhyFrontend />
         <Curriculum />
         <WhyUs />
         <Values />
+        <WhyFrontend />
         <Mentor />
         <Testimonials />
         <PaymentStructure />

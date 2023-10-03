@@ -69,7 +69,7 @@ export default function () {
             transition={{ delay: index * 0.05 }}
             className="p-10 rounded-md border border-indigo-700/30 bg-radial-glass"
           >
-            <img className="lg:w-1/2" src={icon} />
+            <img className="w-20 h-20" src={icon} />
             <h4 className="text-cyan-300 uppercase my-5">{title}</h4>
             <p>{description}</p>
           </motion.div>

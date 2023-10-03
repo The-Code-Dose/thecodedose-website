@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 const SECTIONS = [
   {
     title: "Going deep into things",
-    description: ``,
+    description: `We go beyond the surface-level tutorials and guide you through in-depth lessons that fill the gaps left by quick-and-dirty tutorials.`,
   },
   {
-    title: "10X Engineering with Generative AI",
+    title: "Smart Engineering with AI",
     description: `Our modern curriculum is specifically designed to equip you with the
     skills and knowledge needed to leverage the potential of Generative
-    AI and take your productivity to new heights.`,
+    AI and use it smartly and not blindly.`,
   },
   {
     title: "Focus on building in public",
@@ -18,10 +18,9 @@ const SECTIONS = [
     visibility to potential recruiters and build credibility among your peers.`,
   },
   {
-    title: "Carefully crafted curriculum",
-    description: `I believe that learning to code shouldn't be intimidating, nor
-    boring. That's why I've built the curriculum designed to suit the
-    modern learner.`,
+    title: "Modern curriculum",
+    description: `We believe that learning to code shouldn't be intimidating, nor
+    boring. That's why our curriculum is designed to use a blend of modern learning techniques. No more boring lectures!`,
   },
   {
     title: "Open Source Contribution Guidance",
@@ -40,7 +39,7 @@ export default function () {
       <h1 className="text-fuchsia-400 mb-10 text-5xl">
         How is this program different than others?
       </h1>
-      <div className="inline-grid grid-cols-1 md:grid-cols-3 w-full gap-4">
+      <div className="inline-grid grid-cols-1 md:grid-cols-3 w-full gap-4 mt-10">
         {SECTIONS.map(({ title, description }, index) => (
           <motion.div
             initial={{ scale: 0 }}
