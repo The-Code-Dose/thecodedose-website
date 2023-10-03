@@ -17,7 +17,7 @@ export default () => {
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="block mt-12 text-lg px-6 py-3  border border-slate-500 uppercase font-bold bg-cyan-300 text-slate-900"
+            className="block mt-12 text-lg px-6 py-3  border border-neutral-500 uppercase font-bold bg-cyan-300 text-neutral-900"
           >
             Start application
           </motion.button>

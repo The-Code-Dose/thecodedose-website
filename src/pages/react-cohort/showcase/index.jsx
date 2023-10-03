@@ -1,30 +1,26 @@
 import React from "react";
 import Helmet from "react-helmet";
-import { graphql, Link } from "gatsby";
-import { projects, blogs } from '../../../utils/constants/showcase';
+import { graphql } from "gatsby";
+import {
+  projects,
+  blogs,
+} from "../../../utils/constants/react-cohort/showcase";
 import "../index.scss";
-
+import Navigation from "../../../components/react-cohort/navigation";
 
 function ReactCohortShowcasePage({ data: { site } }) {
   return (
-    <div className="react-cohort__showcase bg-slate-900 text-slate-100 py-20">
+    <div className="react-cohort__showcase bg-neutral-900 text-slate-100 py-20">
       <Helmet>
         <title>{site.siteMetadata.title}</title>
         <meta name="description" content={site.siteMetadata.description} />
       </Helmet>
-      <nav className="z-10 font-light flex border-b border-slate-500 fixed top-0 w-full py-4 flex justify-center bg-slate-900 shadow-lg">
-        <Link className="text-yellow mx-3" to="/react-cohort">
-          Home
-        </Link>
-        <a className="text-yellow mx-3" to="/react-cohort-cohort">
-          Showcase
-        </a>
-      </nav>
+      <Navigation />
       <div className="flex items-center flex-col">
-        <h1 className="mb-3 rounded-md text-4xl md:text-7xl text-fuchsia-500 px-5 py-2 text-bold bg-slate-800">
+        <h1 className="mb-3 rounded-md text-4xl md:text-7xl text-fuchsia-500 px-5 py-2 text-bold bg-indigo-1000">
           🏆 Showcase
         </h1>
-        <p className="text-lg text-yellow rounded-md bg-slate-700 w-fit px-5 opacity-80 -rotate-6 font-bold uppercase -translate-y-3 md:-translate-y-5">
+        <p className="text-lg text-yellow rounded-md bg-indigo-900 w-fit px-5 opacity-80 -rotate-6 font-bold uppercase -translate-y-3 md:-translate-y-5">
           Batch I
         </p>
       </div>
@@ -34,13 +30,16 @@ function ReactCohortShowcasePage({ data: { site } }) {
         </h2>
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {projects.map(({ title, thumbnail, url, author, tags }) => (
-            <div className="bg-slate-800 p-5 md:p-10 border rounded-md border-slate-500 hover:drop-shadow-[0_5px_10px_rgba(255,255,255,0.2)]">
+            <div className="p-5 md:p-10 border rounded-md bg-radial-glass border border-indigo-700/30 hover:drop-shadow-[0_5px_10px_rgba(34,211,238,0.3)] hover:border-cyan-400/20">
               <a href={url} target="_blank">
-                <img src={thumbnail} className="rounded-md" />
+                <img
+                  src={thumbnail}
+                  className="rounded-md border border-indigo-700/30"
+                />
               </a>
               <h4 className="text-white mt-8 mb-3">{title}</h4>
               <p className="text-xs text-slate-400">{author}</p>
-              <div className="mt-5 gap-3 flex">
+              <div className="mt-5 gap-3 flex flex-wrap">
                 {tags?.map((tag) => (
                   <span className="text-cyan-400 px-3 py-2 border border-cyan-400 rounded-full text-xs">
                     {tag}
@@ -54,10 +53,13 @@ function ReactCohortShowcasePage({ data: { site } }) {
           📝 Articles
         </h2>
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {blogs.map(({ title, thumbnail, url, author, tags }) => (
-            <div className="bg-slate-800 p-5 md:p-10 border rounded-md border-slate-500 hover:drop-shadow-[0_5px_10px_rgba(255,255,255,0.2)]">
+          {blogs.map(({ title, thumbnail, url, author, tags }) => (
+            <div className="p-5 md:p-10 rounded-md bg-radial-glass border border-indigo-700/30 hover:drop-shadow-[0_5px_10px_rgba(34,211,238,0.3)] hover:border-cyan-400/20">
               <a href={url} target="_blank">
-                <img src={thumbnail} className="rounded-md" />
+                <img
+                  src={thumbnail}
+                  className="rounded-md border border-indigo-700/30"
+                />
               </a>
               <h4 className="text-white mt-8 mb-3">{title}</h4>
               <p className="text-xs text-slate-400">{author}</p>

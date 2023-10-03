@@ -29,7 +29,7 @@ export default () => {
       className="mx-10 pt-10 mt-32 md:px-12 react-cohort__mentor-container"
       id="mentor"
     >
-      <h1 className="text-cyan-300 mb-10 text-5xl">Meet your mentor</h1>
+      <h1 className="text-cyan-300 mb-10 text-5xl mt-0">Meet your mentor</h1>
       <div className="react-cohort__mentor">
         <img className="w-full" src={mentor}></img>
         <div className="m-auto md:px-10">
@@ -122,7 +122,7 @@ export default () => {
             return (
               <div className="flex space-between gap-5 my-10">
                 <div>
-                  <PlusCircleIcon className="w-8 h-8 text-slate-100" />
+                  <PlusCircleIcon className="w-8 h-8 text-neutral-100" />
                 </div>
                 <span className="block leading-relaxed text-lg">{content}</span>
               </div>

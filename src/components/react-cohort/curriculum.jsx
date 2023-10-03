@@ -158,12 +158,12 @@ export default function () {
         What you'll learn
       </h1>
       <div>
-        <p className="text-xs mb-10">
+        <p className="text-sm mb-10">
           *This is a tentative curriculum and it is subjected to change as it
           continues to develop further.
         </p>
         <Tab.Group>
-          <Tab.List className="md:flex bg-slate-800 p-3 border border-slate-500">
+          <Tab.List className="md:flex bg-radial-glass p-3 border rounded-md border-indigo-700/30">
             {Object.keys(categories).map((category) => (
               <Tab
                 key={category}
@@ -172,7 +172,7 @@ export default function () {
                     "text-left md:text-center w-full text-xl uppercase p-3 font-medium leading-5",
                     selected
                       ? "text-cyan-300"
-                      : "text-slate-100 hover:text-white"
+                      : "text-neutral-100 hover:text-white"
                   )
                 }
               >
@@ -180,12 +180,12 @@ export default function () {
               </Tab>
             ))}
           </Tab.List>
-          <Tab.Panels className="mt-2">
+          <Tab.Panels className="mt-2 border bg-radial-glass rounded-md border-indigo-700/30">
             {Object.values(categories).map((modules, idx) => (
               <Tab.Panel key={idx} className="py-3" s>
                 {modules.map((module) => (
-                  <div key={module.id} className="relative p-3 mt-3">
-                    <h3 className="uppercase text-lg text-yellow font-medium leading-5">
+                  <div key={module.id} className="relative p-5">
+                    <h3 className="uppercase text-lg text-indigo-100 font-medium leading-5">
                       {module.title}
                     </h3>
                     <div className="mt-5 leading-relaxed text-md font-normal leading-4 text-gray-200">
