@@ -145,18 +145,17 @@ export default function () {
       },
       {
         id: 3,
-        title: "Module 3: Interview Preparation & Project Building",
+        title: "Module 3: Introduction to Frontend Security",
         description: [
-          "Sharpen your interview skills and prepare for technical interviews as a frontend developer.",
-          "Gain insights into the interview process, learn effective techniques for showcasing your expertise, and master common interview questions.",
-          "Enhance your resume, improve your communication skills, and boost your confidence to excel in technical interviews.",
+          "Learn best practices for input validation, content security policies, and secure handling of tokens and user data.",
+          "Dive into common vulnerabilities like Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF) that impact frontend applications.",
+          "Explore the best practices for using cookies, local and session storage for storing data on the frontend.",
         ],
       },
       {
         id: 4,
-        title: "Module 4: Applying for Internships & Project Building",
+        title: "Module 4: Resume Building & Interview Preparation",
         description: [
-          "Prepare for internships and gain valuable insights on the application process.",
           "Learn effective strategies, polish your resume, and enhance your interviewing skills to secure internship opportunities as a React developer.",
           "Gain valuable career guidance, discover potential career paths, and learn about industry trends to help you navigate your next steps as a React developer.",
         ],
