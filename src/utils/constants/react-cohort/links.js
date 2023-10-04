@@ -20,7 +20,7 @@ export const HOME_LINKS = [
   },
   {
     label: "Details",
-    link: "#details",
+    link: "#program-details",
   },
   {
     label: "Curriculum",
