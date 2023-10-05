@@ -37,7 +37,7 @@ function SocialShare({ title }) {
   };
 
   return (
-    <div className="flex justify-center items-center w-full gap-3 py-3">
+    <div className="flex flex-wrap justify-center items-center w-full gap-3 py-3">
       {platforms.map((platform) => (
         <a href={getHref(platform)} target="_blank" rel="noopener noreferrer">
           <div className="flex justify-center items-center px-2 py-1 gap-2 text-xs bg-white border border-black rounded-full">
