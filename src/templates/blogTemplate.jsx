@@ -4,7 +4,6 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
 import PostLink from "../components/postLink";
 import SocialShare from "../components/socialShare";
-import "./blogTemplate.scss";
 import withPadding from "../hocs/withPadding";
 
 const WrappedArticle = withPadding(({ html }) => (
@@ -70,13 +69,13 @@ export default function BlogTemplate({ data }) {
         <div className="flex flex-col items-center pt-3 break-words bg-yellow p-10 border border-black rounded-2xl drop-shadow-solid">
           <h1 className="text-3xl md:text-5xl text-center">{blogTitle}</h1>
           <div>
-            <span className="blog-post__date">{date} • </span>
-            <span className="blog-post__author">{author} • </span>
-            <span className="blog-post__read">{timeToRead} min read</span>
+            <span className="text-xs">{date} • </span>
+            <span className="text-xs">{author} • </span>
+            <span className="text-xs">{timeToRead} min read</span>
           </div>
-          <div className="blog-post__tags-container">
+          <div>
             {tags.map((tag) => (
-              <Link className="blog-post__tag" to={`/tags/${tag}`}>
+              <Link className="text-xs rounded-2xl border border-black border-solid py-2 px-2.5 my-1.5 mx-2 inline-block bg-white capitalize" to={`/tags/${tag}`}>
                 {tag}
               </Link>
             ))}
