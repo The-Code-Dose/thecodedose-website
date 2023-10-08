@@ -39,7 +39,7 @@ const WrappedTableOfContents = ({
     <AnimatePresence>
       {isTableOfContentsOpen && (
         <motion.div
-          className="text-sm sm:text-lg w-full md:w-3/4 break-words flex justify-center text-md sm:text-lg"
+          className="text-sm sm:text-lg w-full md:w-3/4 break-words flex justify-center px-4"
           dangerouslySetInnerHTML={{ __html: html }}
           initial={{
             height: 0,
