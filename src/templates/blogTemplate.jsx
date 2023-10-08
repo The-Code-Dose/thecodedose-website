@@ -23,12 +23,12 @@ const WrappedTableOfContents = ({
   setTableOfContentsOpen,
 }) => (
   <section className="flex flex-col gap-2 bg-blue p-3 mt-10 items-center rounded-2xl border border-black rounded-2xl drop-shadow-solid">
-    <div className="flex items-center gap-2 sm:gap-4">
+    <div
+      className="flex justify-center items-center gap-2 sm:gap-4 w-full"
+      onClick={() => setTableOfContentsOpen((prev) => !prev)}
+    >
       <h2 className="text-xl sm:text-2xl m-0">Table Of Contents</h2>
-      <p
-        className="cursor-pointer"
-        onClick={() => setTableOfContentsOpen((prev) => !prev)}
-      >
+      <p>
         {isTableOfContentsOpen ? (
           <ChevronUpIcon className="h-6 2-6"></ChevronUpIcon>
         ) : (
