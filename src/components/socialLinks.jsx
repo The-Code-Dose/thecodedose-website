@@ -1,34 +1,6 @@
-import React from 'react';
-import { useStaticQuery, graphql, Link } from 'gatsby';
-
-import './socialLinks.scss';
-
-const links = [
-  {
-    label: "Home",
-    path: "/",
-  },
-  {
-    label: "Blog",
-    path: "/blog",
-  },
-  // {
-  //   label: 'Resources',
-  //   path: '/resources',
-  // },
-  {
-    label: "Study Plans",
-    path: "/study-plans",
-  },
-  {
-    label: "Shop",
-    path: "https://www.redbubble.com/people/thecodedose/shop",
-  },
-  {
-    label: "Apply for next React Cohort",
-    path: "https://forms.gle/KVFTHZYj3dXnanRV9",
-  },
-];
+import React from "react";
+import { useStaticQuery, graphql, Link } from "gatsby";
+import { LINKS } from "../utils/constants/links.js";
 
 export default function () {
   const data = useStaticQuery(graphql`
@@ -51,9 +23,7 @@ export default function () {
   const {
     site: {
       siteMetadata: {
-        social: {
-          instagram, twitter, github, discord, youtube,
-        },
+        social: { instagram, twitter, github, discord, youtube },
       },
     },
   } = data;
@@ -84,7 +54,11 @@ export default function () {
   return (
     <div className="flex flex-col md:flex-row gap-5 w-full md:w-1/2  p-10 rounded-2xl border border-black drop-shadow-solid">
       <div className="flex text-xs md:text-right flex-col justify-between gap-5 w-full md:w-1/2 ">
-        {links.map(({ path, label }) => <Link className="text-white" to={path}>{label}</Link>)}
+        {LINKS.map(({ path, label }) => (
+          <Link className="text-white" to={path}>
+            {label}
+          </Link>
+        ))}
       </div>
       <div className="flex flex-col justify-between text-xs md:text-right gap-5  w-full md:w-1/2">
         {social.map(({ path, label }) => (

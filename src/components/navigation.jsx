@@ -2,29 +2,7 @@ import React, { useState, Fragment } from "react";
 import { Link } from "gatsby";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import { Menu, Transition } from "@headlessui/react";
-
-const links = [
-  {
-    label: "Home",
-    path: "/",
-  },
-  {
-    label: "Blog",
-    path: "/blog",
-  },
-  // {
-  //   label: 'Resources',
-  //   path: '/resources',
-  // },
-  {
-    label: "Study Plans",
-    path: "/study-plans",
-  },
-  {
-    label: "Shop",
-    path: "https://www.redbubble.com/people/thecodedose/shop",
-  },
-];
+import { LINKS } from "../utils/constants/links.js";
 
 export default function () {
   const currentPath =
@@ -32,7 +10,7 @@ export default function () {
 
   const linkElements = (
     <>
-      {links.map(({ label, path }) => (
+      {LINKS.map(({ label, path }) => (
         <Link
           key={path}
           className={`menu-item font-semibold rounded-full transition-all text-xs px-5 py-2 border uppercase hover:no-underline ${
