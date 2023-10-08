@@ -5,6 +5,9 @@ import Layout from "../components/layout";
 import PostLink from "../components/postLink";
 import SocialShare from "../components/socialShare";
 import withPadding from "../hocs/withPadding";
+import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/outline";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const WrappedArticle = withPadding(({ html }) => (
   <article className="flex flex-col items-center my-10 rounded-2xl">
@@ -13,6 +16,67 @@ const WrappedArticle = withPadding(({ html }) => (
     </div>
   </article>
 ));
+
+const WrappedTableOfContents = ({
+  html,
+  isTableOfContentsOpen,
+  setTableOfContentsOpen,
+}) => (
+  <section className="flex flex-col gap-2 bg-blue p-3 mt-10 items-center rounded-2xl border border-black rounded-2xl drop-shadow-solid">
+    <div
+      className="flex justify-center items-center gap-2 sm:gap-4 w-full"
+      onClick={() => setTableOfContentsOpen((prev) => !prev)}
+    >
+      <h2 className="text-xl sm:text-2xl m-0">Table Of Contents</h2>
+      <p>
+        {isTableOfContentsOpen ? (
+          <ChevronUpIcon className="h-6 2-6"></ChevronUpIcon>
+        ) : (
+          <ChevronDownIcon className="h-6 w-6"></ChevronDownIcon>
+        )}
+      </p>
+    </div>
+    <AnimatePresence>
+      {isTableOfContentsOpen && (
+        <motion.div
+          className="text-sm sm:text-lg w-full md:w-3/4 break-words flex justify-center px-4"
+          dangerouslySetInnerHTML={{ __html: html }}
+          initial={{
+            height: 0,
+            opacity: 0,
+          }}
+          animate={{
+            height: "auto",
+            opacity: 1,
+            transition: {
+              height: {
+                duration: 0.5,
+                delay: 0.2,
+              },
+              opacity: {
+                duration: 0.2,
+                delay: 0.5,
+              },
+            },
+          }}
+          exit={{
+            height: 0,
+            opacity: 0,
+            transition: {
+              height: {
+                duration: 0.5,
+                delay: 0.2,
+              },
+              opacity: {
+                duration: 0.2,
+              },
+            },
+          }}
+        ></motion.div>
+      )}
+    </AnimatePresence>
+  </section>
+);
 
 export default function BlogTemplate({ data }) {
   const {
@@ -37,7 +101,6 @@ export default function BlogTemplate({ data }) {
     tableOfContents,
     timeToRead,
   } = markdownRemark;
-
   const Posts = edges
     .filter((edge) => !!edge.node.frontmatter.date)
     .map((edge) => (
@@ -48,6 +111,7 @@ export default function BlogTemplate({ data }) {
         direction="column"
       />
     ));
+  const [isTableOfContentsOpen, setTableOfContentsOpen] = useState(false);
 
   return (
     <Layout>
@@ -75,13 +139,21 @@ export default function BlogTemplate({ data }) {
           </div>
           <div>
             {tags.map((tag) => (
-              <Link className="text-xs rounded-2xl border border-black border-solid py-2 px-2.5 my-1.5 mx-2 inline-block bg-white capitalize" to={`/tags/${tag}`}>
+              <Link
+                className="text-xs rounded-2xl border border-black border-solid py-2 px-2.5 my-1.5 mx-2 inline-block bg-white capitalize"
+                to={`/tags/${tag}`}
+              >
                 {tag}
               </Link>
             ))}
           </div>
           <SocialShare title={blogTitle} />
         </div>
+        <WrappedTableOfContents
+          html={tableOfContents}
+          isTableOfContentsOpen={isTableOfContentsOpen}
+          setTableOfContentsOpen={setTableOfContentsOpen}
+        />
         <WrappedArticle html={html} />
         <SocialShare title={blogTitle} />
         <section className="bg-pink text-white p-10 border border-black rounded-2xl drop-shadow-solid mt-24 mb-10">
