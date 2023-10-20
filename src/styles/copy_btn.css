@@ -1,0 +1,30 @@
+.gatsby-remark-prismjs-copy-button-container {
+    touch-action: none;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 37px;
+    left: 8px;
+    margin-top: -20px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.gatsby-remark-prismjs-copy-button {
+    position: relative;
+    top: 7px;
+    right: 20px;
+    cursor: pointer;
+    pointer-events: initial;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 3px 3px 2px;
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.gatsby-remark-prismjs-copy-button:hover {
+    background-color: #ff84ca;
+    color: #2a2a2a;
+    filter: drop-shadow(2px 2px white);
+}

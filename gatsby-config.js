@@ -20,6 +20,9 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: 'gatsby-remark-prismjs-copy-button'
+          },
+          {
             resolve: 'gatsby-remark-prismjs',
             options: {
               classPrefix: 'language-',
