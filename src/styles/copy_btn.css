@@ -20,11 +20,12 @@
     font-weight: 500;
     padding: 3px 3px 2px;
     border-radius: 3px;
+    border: 1px solid transparent;
+    transition: border 0.2s ease-in-out;
     color: rgba(255, 255, 255, 0.88);
 }
 
 .gatsby-remark-prismjs-copy-button:hover {
-    background-color: #ff84ca;
-    color: #2a2a2a;
-    filter: drop-shadow(2px 2px white);
+    border: 1px solid white;
+    background-color: transparent;
 }
