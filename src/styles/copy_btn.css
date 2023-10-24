@@ -1,4 +1,4 @@
-.gatsby-remark-prismjs-copy-button-container {
+div .gatsby-remark-prismjs-copy-button-container {
     touch-action: none;
     display: flex;
     justify-content: flex-end;
@@ -10,7 +10,7 @@
     pointer-events: none;
 }
 
-.gatsby-remark-prismjs-copy-button {
+div .gatsby-remark-prismjs-copy-button {
     position: relative;
     top: 7px;
     right: 20px;
@@ -25,7 +25,7 @@
     color: rgba(255, 255, 255, 0.88);
 }
 
-.gatsby-remark-prismjs-copy-button:hover {
+div .gatsby-remark-prismjs-copy-button:hover {
     border: 1px solid white;
     background-color: transparent;
 }
