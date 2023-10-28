@@ -12,8 +12,8 @@ export const LINKS = [
   //   path: '/resources',
   // },
   {
-    label: "Study Plans",
-    path: "/study-plans",
+    label: "Resources",
+    path: "https://thecodedose.graphy.com/products#nav_bar",
   },
   {
     label: "Shop",
