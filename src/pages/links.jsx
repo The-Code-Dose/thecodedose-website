@@ -1,28 +1,30 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React from 'react';
-import Helmet from 'react-helmet';
-import { graphql } from 'gatsby';
-import Layout from '../components/layout';
+import React from "react";
+import Helmet from "react-helmet";
+import { graphql } from "gatsby";
+import Layout from "../components/layout";
 
-import './links.scss';
+import "./links.scss";
 
-function LinksPage({ data: { site: { siteMetadata: { title, description, links } } } }) {
+function LinksPage({
+  data: {
+    site: {
+      siteMetadata: { title, description, links },
+    },
+  },
+}) {
   return (
     <Layout>
       <Helmet>
-        <title>
-          Links —
-          {title}
-        </title>
-        <meta
-          name="description"
-          content={`Contact page of ${description}`}
-        />
+        <title>Links —{title}</title>
+        <meta name="description" content={`Contact page of ${description}`} />
       </Helmet>
       <div>
-        <div className="links__container">
+        <div className="links__container px-10 py-16">
           {links.map(({ name, href }) => (
-            <a href={href} className="links__link">{name}</a>
+            <a href={href} className="links__link">
+              {name}
+            </a>
           ))}
         </div>
       </div>
