@@ -22,17 +22,19 @@ function IndexPage({ data: { site } }) {
         <title>{site.siteMetadata.title}</title>
         <meta name="description" content={site.siteMetadata.description} />
       </Helmet>
-      <HeroHeader />
-      <BlogSection />
-      <StudyPlansSection />
-      {/* <CSIllustrated /> */}
-      {/* <DsaRevisionNotes /> */}
-      {/* <ProductRecommendations /> */}
-      {/* <GatsbyBlog />
+      <div className="snap-mandatory snap-y">
+        <HeroHeader />
+        <BlogSection />
+        <StudyPlansSection />
+        {/* <CSIllustrated /> */}
+        {/* <DsaRevisionNotes /> */}
+        {/* <ProductRecommendations /> */}
+        {/* <GatsbyBlog />
       <DmmtNotes /> */}
-      <RedBubble />
-      <Youtube />
-      {/* <NewsletterSection /> */}
+        <RedBubble />
+        <Youtube />
+        {/* <NewsletterSection /> */}
+      </div>
     </Layout>
   );
 }
