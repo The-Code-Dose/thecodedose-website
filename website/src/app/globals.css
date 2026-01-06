@@ -45,29 +45,3 @@ body {
   font-family: var(--font-dm-sans);
   cursor: url("/cursor.png") 0 0, auto;
 }
-
-h1 {
-  font-size: 8rem;
-  font-weight: 800;
-}
-
-h2 {
-  font-size: 6rem;
-  font-weight: 800;
-}
-
-h3 {
-  font-size: 4rem;
-  font-weight: 800;
-}
-
-h4 {
-  font-size: 2rem;
-  font-weight: 800;
-}
-
-h5 {
-  font-size: 1rem;
-  font-weight: 800;
-}
-
