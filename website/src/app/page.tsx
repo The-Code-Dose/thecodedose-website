@@ -5,13 +5,7 @@ import { motion, useScroll, useTransform } from "motion/react"
 import MovingObject from "./components/moving-object"
 import FolderReveal from "./components/folder-reveal"
 
-const isMobile = () => {
-  const width = window.innerWidth
-  if (width < 768) return true
-  return false
-}
-
-function Contact() {
+function Contact({ isMobile }: { isMobile: boolean }) {
   const [clicked, setClicked] = useState(false)
 
   return (
@@ -35,8 +29,8 @@ function Contact() {
         />
         <motion.div
           onClick={() => setClicked(true)}
-          initial={{ y: isMobile() ? 300 : 500, rotate: 10 }}
-          whileInView={{ y: isMobile() ? 200 : 0, rotate: 0 }}
+          initial={{ y: isMobile ? 300 : 500, rotate: 10 }}
+          whileInView={{ y: isMobile ? 200 : 0, rotate: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
           className='bg-zinc-50 w-[50vw] lg:w-[40vw] h-[50vw] absolute left-1/2 -translate-x-1/2 rounded-2xl'
         ></motion.div>
@@ -53,7 +47,7 @@ function Contact() {
   )
 }
 
-function Studio() {
+function Studio({ isMobile }: { isMobile: boolean }) {
   const ref = useRef(null)
   const dragRef = useRef(null)
   const containerRef = useRef(null)
@@ -96,7 +90,7 @@ function Studio() {
             height={300}
           />
           <motion.img
-            whileInView={{ top: isMobile() ? "40%" : "20%", left: "20%" }}
+            whileInView={{ top: isMobile ? "40%" : "20%", left: "20%" }}
             transition={{ duration: 0.5, delay: 1 }}
             viewport={{ once: true }}
             src='/images/sticker-1.png'
@@ -107,7 +101,7 @@ function Studio() {
             className='w-24 lg:w-50 z-10 drop-shadow-xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
           />
           <motion.img
-            whileInView={{ top: isMobile() ? "60%" : "70%", left: "20%" }}
+            whileInView={{ top: isMobile ? "60%" : "70%", left: "20%" }}
             transition={{ duration: 0.5, delay: 1.3 }}
             viewport={{ once: true }}
             src='/images/sticker-2.png'
@@ -118,7 +112,7 @@ function Studio() {
             className='w-24 lg:w-50 z-10 drop-shadow-xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
           />
           <motion.img
-            whileInView={{ top: isMobile() ? "30%" : "10%", left: "50%" }}
+            whileInView={{ top: isMobile ? "30%" : "10%", left: "50%" }}
             transition={{ duration: 0.5, delay: 0.8 }}
             viewport={{ once: true }}
             src='/images/sticker-3.png'
@@ -129,7 +123,7 @@ function Studio() {
             className='w-24 lg:w-50 z-10 drop-shadow-xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
           />
           <motion.img
-            whileInView={{ top: isMobile() ? "70%" : "90%", left: "50%" }}
+            whileInView={{ top: isMobile ? "70%" : "90%", left: "50%" }}
             transition={{ duration: 0.5, delay: 1.5 }}
             viewport={{ once: true }}
             src='/images/sticker-4.png'
@@ -140,7 +134,7 @@ function Studio() {
             className='w-24 lg:w-50 z-10 drop-shadow-xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
           />
           <motion.img
-            whileInView={{ top: isMobile() ? "30%" : "20%", left: "80%" }}
+            whileInView={{ top: isMobile ? "30%" : "20%", left: "80%" }}
             transition={{ duration: 0.5, delay: 1 }}
             viewport={{ once: true }}
             src='/images/sticker-5.png'
@@ -151,7 +145,7 @@ function Studio() {
             className='w-24 lg:w-50 z-10 drop-shadow-xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
           />
           <motion.img
-            whileInView={{ top: isMobile() ? "60%" : "80%", left: "80%" }}
+            whileInView={{ top: isMobile ? "60%" : "80%", left: "80%" }}
             transition={{ duration: 0.5, delay: 1.2 }}
             viewport={{ once: true }}
             src='/images/sticker-6.png'
@@ -189,7 +183,7 @@ function Studio() {
             </div>
           </div>
         </div>
-        <Contact />
+        <Contact isMobile={isMobile} />
       </div>
     </motion.div>
   )
@@ -197,6 +191,13 @@ function Studio() {
 
 export default function Home() {
   const ref = useRef(null)
+
+  const isMobile = () => {
+    if (typeof window === "undefined") return false
+    const width = window.innerWidth
+    if (width < 768) return true
+    return false
+  }
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -356,7 +357,7 @@ export default function Home() {
             height={800}
           ></motion.img>
         </motion.div>
-        <Studio />
+        <Studio isMobile={isMobile()} />
       </main>
     </div>
   )

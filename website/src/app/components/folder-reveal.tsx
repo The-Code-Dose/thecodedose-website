@@ -1,16 +1,21 @@
 import Image from "next/image"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 
-const isMobile = () => {
-  const width = window.innerWidth
-  if (width < 768) return true
-  return false
+type FolderRevealProps = {
+  items: [string, string, string] // exactly 3 items
+  slug: string
 }
 
-export default function FolderReveal({ items, slug }) {
-  const [hovered, setHovered] = useState(false)
-  const defaultPos = isMobile() ? 30 : 0
+export default function FolderReveal({ items, slug }: FolderRevealProps) {
+  const [hovered, setHovered] = useState<boolean>(false)
+  const [defaultPos, setDefaultPos] = useState<number>(0)
+
+  useEffect(() => {
+    const isMobile = window.innerWidth < 768
+    setDefaultPos(isMobile ? 30 : 0)
+  }, [])
+
   return (
     <div
       className='w-full relative'
@@ -24,38 +29,42 @@ export default function FolderReveal({ items, slug }) {
         width={400}
         height={300}
       />
+
       <motion.div
         animate={{
-          y: hovered ? `${-70 + defaultPos}%` : defaultPos+ '%',
+          y: hovered ? `${-70 + defaultPos}%` : `${defaultPos}%`,
           rotate: hovered ? -20 : 0,
           x: hovered ? -20 : 0,
         }}
         transition={{ duration: 0.3 }}
-        className='w-[50%] p-5 flex justify-center absolute h-[100px] h-[150px] rounded-2xl bg-white lg:top-18 md:top-8 left-1/2 -translate-x-1/2 rotate-6'
+        className='w-[50%] p-5 flex justify-center absolute h-[150px] rounded-2xl bg-white lg:top-18 md:top-8 left-1/2 -translate-x-1/2 rotate-6'
       >
         <h5 className='text-blu-500'>{items[0]}</h5>
       </motion.div>
+
       <motion.div
         animate={{
-          y: hovered ? `${-30 + defaultPos}%` : defaultPos + '%',
+          y: hovered ? `${-30 + defaultPos}%` : `${defaultPos}%`,
           x: hovered ? 20 : 0,
           rotate: hovered ? 10 : 0,
         }}
         transition={{ duration: 0.3 }}
-        className='w-[50%] p-5 flex justify-center absolute h-[100px] h-[150px] rounded-2xl bg-moss-500 lg:top-18 md:top-8 right-12 rotate-6'
+        className='w-[50%] p-5 flex justify-center absolute h-[150px] rounded-2xl bg-moss-500 lg:top-18 md:top-8 right-12 rotate-6'
       >
         <h5 className='text-butter-500'>{items[1]}</h5>
       </motion.div>
+
       <motion.div
         animate={{
-          y: hovered ? `${-10 + defaultPos}%` : defaultPos+ '%',
+          y: hovered ? `${-10 + defaultPos}%` : `${defaultPos}%`,
           rotate: hovered ? -10 : 0,
         }}
         transition={{ duration: 0.3 }}
-        className='w-[50%] p-5 flex justify-center absolute h-[100px] h-[150px] rounded-2xl bg-butter-500 lg:top-18 md:top-8 left-12 -rotate-3'
+        className='w-[50%] p-5 flex justify-center absolute h-[150px] rounded-2xl bg-butter-500 lg:top-18 md:top-8 left-12 -rotate-3'
       >
         <h5 className='text-blu-500'>{items[2]}</h5>
       </motion.div>
+
       <Image
         src={`/images/folder-front-${slug}.png`}
         alt='poster'
