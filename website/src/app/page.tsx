@@ -347,11 +347,11 @@ export default function Home() {
           <motion.img
             src='/images/computer.png'
             alt='cd'
-            className='w-[80vw] lg:w-[50vw] fixed left-1/2 -translate-x-1/2'
+            className='w-[80vw] md:w-[50vw] fixed left-1/2 -translate-x-1/2'
             style={{
               scale,
               opacity,
-              bottom: isMobile() ? "0%" : `-${position.get()}%`,
+              bottom: isMobile() ? "5%" : `-${position.get()}%`,
             }}
             width={800}
             height={800}
